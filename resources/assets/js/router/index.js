@@ -28,6 +28,9 @@ import Page500 from '../views/pages/Page500';
 import Login from '../views/pages/Login';
 import Register from '../views/pages/Register';
 
+// Views - Company
+import Company from '../views/company/Company';
+
 Vue.use(Router);
 
 export default new Router({
@@ -120,7 +123,23 @@ export default new Router({
                             component: SimpleLineIcons
                         }
                     ]
+                },
+                {
+                    path: '/company',
+                    redirect: '/company/company',
+                    name: 'company',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'company',
+                            name: 'Company',
+                            component: Company
+                        }
+                    ]
                 }
+
             ]
         },
         {
