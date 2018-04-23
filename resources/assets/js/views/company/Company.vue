@@ -21,21 +21,23 @@
                                 <small>Form</small>
                             </div>
                             <div class="card-block">
-                                <div class="row">
-                                    <div class="form-group col-sm-6">
-                                        <label for="customer">Account</label>
-                                        <input type="text" class="form-control" id="account" placeholder="JLE">
+                                <form @submit.prevent="addAccount" class="mb-3">
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label for="customer">Account</label>
+                                            <input type="text" class="form-control" placeholder="JLE" v-model="account.name">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="postal-code">Email</label>
+                                            <input type="text" class="form-control" v-model="account.email" placeholder="craig.brydon@jle.co.nz">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6">
-                                        <label for="postal-code">Email</label>
-                                        <input type="text" class="form-control" id="account_email" placeholder="craig.brydon@jle.co.nz">
+                                    <!--/.row-->
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default">Cancel</button>
                                     </div>
-                                </div>
-                                <!--/.row-->
-                                <div class="form-actions">
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
-                                    <button type="button" class="btn btn-default">Cancel</button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -146,7 +148,7 @@
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="postal-code">Phone</label>
-                                <input type="text" class="form-control" id="contact_email" placeholder="02108535263">
+                                <input type="text" class="form-control" id="contact_phone" placeholder="02108535263">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="company">Links</label>
@@ -163,49 +165,33 @@
             </div>
         </div>
     </div>
-    </div>
     <!--/.col-->
-
-    <!--/.col-->
-    </div>
-    </div>
-    <!--/.row-->
 </template>
 <script>
     export default {
         name: "company",
         data() {
             return {
-                options: [],
                 accounts: [],
-                articles: [],
-                article: {
+                account: {
                     id: "",
-                    title: "",
-                    body: ""
+                    name: "",
+                    email: "",
+                    update_by:"1"
                 },
-                article_id: "",
+                id: "",
                 pagination: {},
                 edit: false
             };
         },
-
-        created() {
-            let options = [
-                { text: "One", ID: "A" },
-                { text: "Two", ID: "B" },
-                { text: "Three", ID: "C" }
-            ];
-        },
-
         methods: {
-            fetchArticles(page_url) {
+            fetchAccounts(page_url) {
                 let vm = this;
                 page_url = page_url || "/api/accounts";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.articles = res.data;
+                        this.accounts = res.data;
                         console.log(res);
                         vm.makePagination(res.meta, res.links);
                     })
@@ -221,62 +207,62 @@
 
                 this.pagination = pagination;
             },
-            deleteArticle(id) {
+            deleteAccount(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/article/${id}`, {
+                    fetch(`api/account/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("Article Removed");
-                            this.fetchArticles();
+                            alert("Account Removed");
+                            this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 }
             },
-            addArticle() {
+            addAccount() {
                 if (this.edit === false) {
                     // Add
-                    fetch("api/article", {
+                    fetch("api/account", {
                         method: "post",
-                        body: JSON.stringify(this.article),
+                        body: JSON.stringify(this.account),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.article.title = "";
-                            this.article.body = "";
-                            alert("Article Added");
-                            this.fetchArticles();
+                            this.account.name = "";
+                            this.account.email = "";
+                            alert("Account Added");
+                            this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 } else {
                     // Update
-                    fetch("api/article", {
+                    fetch("api/account", {
                         method: "put",
-                        body: JSON.stringify(this.article),
+                        body: JSON.stringify(this.account),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.article.title = "";
-                            this.article.body = "";
-                            alert("Article Updated");
-                            this.fetchArticles();
+                            this.account.name = "";
+                            this.account.email = "";
+                            alert("Account Updated");
+                            this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 }
             },
-            editArticle(article) {
+            editAccount(account) {
                 this.edit = true;
-                this.article.id = article.id;
-                this.article.article_id = article.id;
-                this.article.title = article.title;
-                this.article.body = article.body;
+                this.account.id = account.id;
+                this.account.name = account.name;
+                this.account.email = account.email;
+                this.account.update_by = account.update_by;
             }
         }
     };

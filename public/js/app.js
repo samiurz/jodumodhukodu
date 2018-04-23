@@ -47790,35 +47790,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "company",
     data: function data() {
         return {
-            options: [],
             accounts: [],
-            articles: [],
-            article: {
+            account: {
                 id: "",
-                title: "",
-                body: ""
+                name: "",
+                email: "",
+                update_by: "1"
             },
-            article_id: "",
+            id: "",
             pagination: {},
             edit: false
         };
     },
-    created: function created() {
-        var options = [{ text: "One", ID: "A" }, { text: "Two", ID: "B" }, { text: "Three", ID: "C" }];
-    },
-
 
     methods: {
-        fetchArticles: function fetchArticles(page_url) {
+        fetchAccounts: function fetchAccounts(page_url) {
             var _this = this;
 
             var vm = this;
@@ -47826,7 +47817,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             fetch(page_url).then(function (res) {
                 return res.json();
             }).then(function (res) {
-                _this.articles = res.data;
+                _this.accounts = res.data;
                 console.log(res);
                 vm.makePagination(res.meta, res.links);
             }).catch(function (err) {
@@ -47843,69 +47834,69 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             this.pagination = pagination;
         },
-        deleteArticle: function deleteArticle(id) {
+        deleteAccount: function deleteAccount(id) {
             var _this2 = this;
 
             if (confirm("Are You Sure?")) {
-                fetch("api/article/" + id, {
+                fetch("api/account/" + id, {
                     method: "delete"
                 }).then(function (res) {
                     return res.json();
                 }).then(function (data) {
-                    alert("Article Removed");
-                    _this2.fetchArticles();
+                    alert("Account Removed");
+                    _this2.fetchAccounts();
                 }).catch(function (err) {
                     return console.log(err);
                 });
             }
         },
-        addArticle: function addArticle() {
+        addAccount: function addAccount() {
             var _this3 = this;
 
             if (this.edit === false) {
                 // Add
-                fetch("api/article", {
+                fetch("api/account", {
                     method: "post",
-                    body: JSON.stringify(this.article),
+                    body: JSON.stringify(this.account),
                     headers: {
                         "content-type": "application/json"
                     }
                 }).then(function (res) {
                     return res.json();
                 }).then(function (data) {
-                    _this3.article.title = "";
-                    _this3.article.body = "";
-                    alert("Article Added");
-                    _this3.fetchArticles();
+                    _this3.account.name = "";
+                    _this3.account.email = "";
+                    alert("Account Added");
+                    _this3.fetchAccounts();
                 }).catch(function (err) {
                     return console.log(err);
                 });
             } else {
                 // Update
-                fetch("api/article", {
+                fetch("api/account", {
                     method: "put",
-                    body: JSON.stringify(this.article),
+                    body: JSON.stringify(this.account),
                     headers: {
                         "content-type": "application/json"
                     }
                 }).then(function (res) {
                     return res.json();
                 }).then(function (data) {
-                    _this3.article.title = "";
-                    _this3.article.body = "";
-                    alert("Article Updated");
-                    _this3.fetchArticles();
+                    _this3.account.name = "";
+                    _this3.account.email = "";
+                    alert("Account Updated");
+                    _this3.fetchAccounts();
                 }).catch(function (err) {
                     return console.log(err);
                 });
             }
         },
-        editArticle: function editArticle(article) {
+        editAccount: function editAccount(account) {
             this.edit = true;
-            this.article.id = article.id;
-            this.article.article_id = article.id;
-            this.article.title = article.title;
-            this.article.body = article.body;
+            this.account.id = account.id;
+            this.account.name = account.name;
+            this.account.email = account.email;
+            this.account.update_by = account.update_by;
         }
     }
 });
@@ -111975,15 +111966,91 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "animated fadeIn"
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
     staticClass: "col-sm-12"
-  }, [_c('ul', {
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "tab-content"
+  }, [_c('div', {
+    staticClass: "tab-pane active",
+    attrs: {
+      "id": "account",
+      "role": "tabpanel"
+    }
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addAccount($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Account")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.account.name),
+      expression: "account.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "JLE"
+    },
+    domProps: {
+      "value": (_vm.account.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.account, "name", $event.target.value)
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "postal-code"
+    }
+  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.account.email),
+      expression: "account.email"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "craig.brydon@jle.co.nz"
+    },
+    domProps: {
+      "value": (_vm.account.email)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.account, "email", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _vm._m(2)])])])]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
     staticClass: "nav nav-tabs",
     attrs: {
       "role": "tablist"
@@ -112018,49 +112085,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "role": "tab",
       "aria-controls": "contact"
     }
-  }, [_vm._v("Contact")])])]), _vm._v(" "), _c('div', {
-    staticClass: "tab-content"
-  }, [_c('div', {
-    staticClass: "tab-pane active",
-    attrs: {
-      "id": "account",
-      "role": "tabpanel"
-    }
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
+  }, [_vm._v("Contact")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Account")]), _vm._v(" "), _c('small', [_vm._v("Form")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "customer"
-    }
-  }, [_vm._v("Account")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "account",
-      "placeholder": "JLE"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "account_email",
-      "placeholder": "craig.brydon@jle.co.nz"
-    }
-  })])]), _vm._v(" "), _c('div', {
+  }, [_c('strong', [_vm._v("Account")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "form-actions"
   }, [_c('button', {
     staticClass: "btn btn-primary",
@@ -112072,7 +112103,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "button"
     }
-  }, [_vm._v("Cancel")])])])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Cancel")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "tab-pane",
     attrs: {
       "id": "company",
@@ -112195,7 +112228,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "button"
     }
-  }, [_vm._v("Cancel")])])])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Cancel")])])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "tab-pane",
     attrs: {
       "id": "contact",
@@ -112281,7 +112316,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-control",
     attrs: {
       "type": "text",
-      "id": "contact_email",
+      "id": "contact_phone",
       "placeholder": "02108535263"
     }
   })]), _vm._v(" "), _c('div', {
@@ -112309,7 +112344,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "button"
     }
-  }, [_vm._v("Cancel")])])])])])])])
+  }, [_vm._v("Cancel")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
