@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Http\Resources\Json\Resource;
 
-class Contact extends JsonResource
+class Contact extends Resource
 {
     public function toArray($request)
     {
