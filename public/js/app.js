@@ -47758,21 +47758,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "company",
@@ -47780,32 +47765,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             selectedAccount: "",
             options: [],
-            accounts: [{
-                id: 18,
-                name: "In debitis ab aliquid.",
-                email: "lucas26@example.com",
-                update_by: "Aut quod nihil rerum."
-            }, {
-                id: 19,
-                name: "Est dolor eos soluta ullam.",
-                email: "dboyle@example.org",
-                update_by: "Maxime ut est doloremque."
-            }, {
-                id: 20,
-                name: "Culpa neque qui vitae.",
-                email: "lkohler@example.net",
-                update_by: "Sit omnis minima quaerat."
-            }, {
-                id: 21,
-                name: "Eius totam dolorem sint.",
-                email: "kgleichner@example.com",
-                update_by: "Veniam impedit maiores rerum."
-            }, {
-                id: 22,
-                name: "Aliquid esse nisi suscipit.",
-                email: "qdubuque@example.org",
-                update_by: "Quod sed ea corporis laborum."
-            }],
+            accounts: [],
             articles: [],
             article: {
                 id: "",
@@ -47819,7 +47779,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     created: function created() {
         this.fetchAccounts();
-        var options = [{ text: "One", ID: "A" }, { text: "Two", ID: "B" }, { text: "Three", ID: "C" }];
     },
 
 
@@ -112556,18 +112515,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "for": "select"
     }
   }, [_vm._v("Accounts")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selectedAccount),
+      expression: "selectedAccount"
+    }],
     staticClass: "form-control",
     attrs: {
-      "id": "account",
+      "id": "select",
       "name": "select"
-    }
-  }, _vm._l((_vm.options), function(option) {
-    return _c('option', {
-      domProps: {
-        "value": option.ID
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.selectedAccount = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
       }
-    }, [_vm._v("\n                                            " + _vm._s(option.text) + "\n                                        ")])
-  }))]), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6)])])]), _vm._v(" "), _c('div', {
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
+    return _c('option', {
+      key: account.id,
+      domProps: {
+        "value": account.id
+      }
+    }, [_vm._v(_vm._s(account.name))])
+  })], 2)]), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6)])])]), _vm._v(" "), _c('div', {
     staticClass: "tab-pane",
     attrs: {
       "id": "contact",

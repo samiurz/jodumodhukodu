@@ -49,25 +49,10 @@
                                 <div class="row">
                                     <div class="form-group col-sm-6">
                                         <label class="col-md-3 form-control-label" for="select">Accounts</label>
-                                        <!-- <select id="select" name="select" class="form-control">
-                                            <option value="0">Please select</option>
-                                            <option value="1">JLE</option>
-                                            <option value="2">Dyson</option>
-                                        </select> -->
-                                        <select id="account" name="select" class="form-control">
-                                            <option v-for="option in options" v-bind:value="option.ID">
-                                                {{ option.text }}
-                                            </option>
+                                        <select id="select" name="select" class="form-control" v-model="selectedAccount">
+                                            <option value="">Select a Account</option>
+                                            <option v-for="account in accounts"  v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
                                         </select>
-                                        <!-- <select v-model="accounts" class="Radio__admin">
-                                                                            <option disabled selected>Type?</option>
-                                                                            <option v-for="account in accounts" v-bind:value="account.id">
-                                                                </select>   
-                                                                <select v-model="selected">
-                                                                    <option v-for="option in options" v-bind:value="option.ID">
-                                                                        {{ option.text }}
-                                                                    </option>
-                                                                </select> -->
                                     </div>
                                     <div class="form-group col-sm-6">
                                         <label for="company">Company Name</label>
@@ -157,38 +142,7 @@
             return {
                 selectedAccount: "",
                 options: [],
-                accounts: [
-                    {
-                        id: 18,
-                        name: "In debitis ab aliquid.",
-                        email: "lucas26@example.com",
-                        update_by: "Aut quod nihil rerum."
-                    },
-                    {
-                        id: 19,
-                        name: "Est dolor eos soluta ullam.",
-                        email: "dboyle@example.org",
-                        update_by: "Maxime ut est doloremque."
-                    },
-                    {
-                        id: 20,
-                        name: "Culpa neque qui vitae.",
-                        email: "lkohler@example.net",
-                        update_by: "Sit omnis minima quaerat."
-                    },
-                    {
-                        id: 21,
-                        name: "Eius totam dolorem sint.",
-                        email: "kgleichner@example.com",
-                        update_by: "Veniam impedit maiores rerum."
-                    },
-                    {
-                        id: 22,
-                        name: "Aliquid esse nisi suscipit.",
-                        email: "qdubuque@example.org",
-                        update_by: "Quod sed ea corporis laborum."
-                    }
-                ],
+                accounts: [],
                 articles: [],
                 article: {
                     id: "",
@@ -203,11 +157,6 @@
 
         created() {
             this.fetchAccounts();
-            let options = [
-                { text: "One", ID: "A" },
-                { text: "Two", ID: "B" },
-                { text: "Three", ID: "C" }
-            ];
         },
 
         methods: {
