@@ -42,6 +42,7 @@ Route::post('account', 'AccountController@store');
 Route::put('account', 'AccountController@store');
 // Delete account
 Route::delete('account/{id}', 'AccountController@destroy');
+
 #Company Routes
 // List companies
 Route::get('companies', 'CompanyController@index');
@@ -66,6 +67,7 @@ Route::post('contact', 'ContactController@store');
 Route::put('contact', 'ContactController@store');
 // Delete Contact
 Route::delete('contact/{id}', 'ContactController@destroy');
+
 #Block Routes
 // List Blocks
 Route::get('blocks', 'BlockController@index');
@@ -77,6 +79,7 @@ Route::post('block', 'BlockController@store');
 Route::put('block', 'BlockController@store');
 // Delete Blocks
 Route::delete('block/{id}', 'BlockController@destroy');
+
 #Block Status Routes
 // List block status
 Route::get('blockstats', 'BlockStatController@index');
@@ -88,6 +91,7 @@ Route::post('blockstat', 'BlockStatController@store');
 Route::put('blockstat', 'BlockStatController@store');
 // Delete block status
 Route::delete('blockstat/{id}', 'BlockStatController@destroy');
+
 #Module Status Routes
 // List block status
 Route::get('modules', 'ModuleController@index');

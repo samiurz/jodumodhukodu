@@ -4,10 +4,10 @@
             <div class="col-sm-12">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#account" role="tab" aria-controls="account">Account</a>
+                        <a class="nav-link" data-toggle="tab" href="#account" role="tab" aria-controls="account">Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#company" role="tab" aria-controls="company">Company</a>
+                        <a class="nav-link active" data-toggle="tab" href="#company" role="tab" aria-controls="company">Company</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact">Contact</a>
@@ -49,16 +49,16 @@
                                 <div class="row">
                                     <div class="form-group col-sm-6">
                                         <label class="col-md-3 form-control-label" for="select">Accounts</label>
-                                        <select id="select" name="select" class="form-control">
+                                        <!-- <select id="select" name="select" class="form-control">
                                             <option value="0">Please select</option>
                                             <option value="1">JLE</option>
                                             <option value="2">Dyson</option>
+                                        </select> -->
+                                        <select id="account" name="select" class="form-control">
+                                            <option v-for="option in options" v-bind:value="option.ID">
+                                                {{ option.text }}
+                                            </option>
                                         </select>
-                                        <!-- <select id="account" name="select" class="form-control">
-                                                            <option v-for="option in options" v-bind:value="option.ID">
-                                                                {{ option.text }}
-                                                            </option>
-                                                        </select> -->
                                         <!-- <select v-model="accounts" class="Radio__admin">
                                                                             <option disabled selected>Type?</option>
                                                                             <option v-for="account in accounts" v-bind:value="account.id">
@@ -108,11 +108,15 @@
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label class="col-md-3 form-control-label" for="select">Company</label>
-                                <select id="select" name="select" class="form-control">
+                                <select  id="select" name="select" class="form-control" v-model="selectedContinent">
+                                    <option value="">Select a Continent</option>
+                                    <option v-for="(country_obj, article) in articles" :value="article.id">{{article.name}}</option>
+                                </select>
+                                <!-- <select id="select" name="select" class="form-control">
                                     <option value="0">Select A Company</option>
                                     <option value="1">Nestle Professional</option>
                                     <option value="2">Air NZ</option>
-                                </select>
+                                </select> -->
                                 <!-- <select id="account" name="select" class="form-control">
                                                             <option v-for="option in options" v-bind:value="option.ID">
                                                                 {{ option.text }}
@@ -136,7 +140,7 @@
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label for="postal-code">Email</label>
-                                <input type="text" class="form-control" id="contact_email" placeholder="paul.stevenson@jle.co.nz">
+                                <input type="text" class="form-control" placeholder="paul.stevenson@jle.co.nz">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="company">Password</label>
@@ -163,19 +167,14 @@
             </div>
         </div>
     </div>
-    </div>
     <!--/.col-->
-
-    <!--/.col-->
-    </div>
-    </div>
-    <!--/.row-->
 </template>
 <script>
     export default {
         name: "company",
         data() {
             return {
+                selectedContinent: "",
                 options: [],
                 accounts: [],
                 articles: [],
@@ -191,6 +190,7 @@
         },
 
         created() {
+            this.fetchArticles();
             let options = [
                 { text: "One", ID: "A" },
                 { text: "Two", ID: "B" },
@@ -206,7 +206,7 @@
                     .then(res => res.json())
                     .then(res => {
                         this.articles = res.data;
-                        console.log(res);
+                        console.log(this.articles);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
