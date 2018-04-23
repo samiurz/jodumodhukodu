@@ -47773,33 +47773,39 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "company",
     data: function data() {
         return {
-            selectedContinent: "",
+            selectedAccount: "",
             options: [],
-            accounts: [],
+            accounts: [{
+                id: 18,
+                name: "In debitis ab aliquid.",
+                email: "lucas26@example.com",
+                update_by: "Aut quod nihil rerum."
+            }, {
+                id: 19,
+                name: "Est dolor eos soluta ullam.",
+                email: "dboyle@example.org",
+                update_by: "Maxime ut est doloremque."
+            }, {
+                id: 20,
+                name: "Culpa neque qui vitae.",
+                email: "lkohler@example.net",
+                update_by: "Sit omnis minima quaerat."
+            }, {
+                id: 21,
+                name: "Eius totam dolorem sint.",
+                email: "kgleichner@example.com",
+                update_by: "Veniam impedit maiores rerum."
+            }, {
+                id: 22,
+                name: "Aliquid esse nisi suscipit.",
+                email: "qdubuque@example.org",
+                update_by: "Quod sed ea corporis laborum."
+            }],
             articles: [],
             article: {
                 id: "",
@@ -47812,13 +47818,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     created: function created() {
-        this.fetchArticles();
+        this.fetchAccounts();
         var options = [{ text: "One", ID: "A" }, { text: "Two", ID: "B" }, { text: "Three", ID: "C" }];
     },
 
 
     methods: {
-        fetchArticles: function fetchArticles(page_url) {
+        fetchAccounts: function fetchAccounts(page_url) {
             var _this = this;
 
             var vm = this;
@@ -47826,8 +47832,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             fetch(page_url).then(function (res) {
                 return res.json();
             }).then(function (res) {
-                _this.articles = res.data;
-                console.log(_this.articles);
+                _this.accounts = res.data;
+                console.log(_this.accounts);
                 vm.makePagination(res.meta, res.links);
             }).catch(function (err) {
                 return console.log(err);
@@ -47853,7 +47859,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     return res.json();
                 }).then(function (data) {
                     alert("Article Removed");
-                    _this2.fetchArticles();
+                    _this2.fetchAccounts();
                 }).catch(function (err) {
                     return console.log(err);
                 });
@@ -47876,7 +47882,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this3.article.title = "";
                     _this3.article.body = "";
                     alert("Article Added");
-                    _this3.fetchArticles();
+                    _this3.fetchAccounts();
                 }).catch(function (err) {
                     return console.log(err);
                 });
@@ -47894,7 +47900,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this3.article.title = "";
                     _this3.article.body = "";
                     alert("Article Updated");
-                    _this3.fetchArticles();
+                    _this3.fetchAccounts();
                 }).catch(function (err) {
                     return console.log(err);
                 });
@@ -112580,8 +112586,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.selectedContinent),
-      expression: "selectedContinent"
+      value: (_vm.selectedAccount),
+      expression: "selectedAccount"
     }],
     staticClass: "form-control",
     attrs: {
@@ -112596,20 +112602,49 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.selectedContinent = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+        _vm.selectedAccount = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
       }
     }
   }, [_c('option', {
     attrs: {
       "value": ""
     }
-  }, [_vm._v("Select a Continent")]), _vm._v(" "), _vm._l((_vm.articles), function(country_obj, article) {
+  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
     return _c('option', {
+      key: account.id,
       domProps: {
-        "value": article.id
+        "value": account.id
       }
-    }, [_vm._v(_vm._s(article.name))])
-  })], 2)]), _vm._v(" "), _vm._m(7)]), _vm._v(" "), _vm._m(8), _vm._v(" "), _vm._m(9), _vm._v(" "), _vm._m(10)])])])])])
+    }, [_vm._v(_vm._s(account.name))])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "company"
+    }
+  }, [_vm._v("Contact")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.selectedAccount),
+      expression: "selectedAccount"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "contact",
+      "placeholder": "Paul Stevenson"
+    },
+    domProps: {
+      "value": (_vm.selectedAccount)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.selectedAccount = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _vm._m(7), _vm._v(" "), _vm._m(8), _vm._v(" "), _vm._m(9)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('ul', {
     staticClass: "nav nav-tabs",
@@ -112797,21 +112832,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "button"
     }
   }, [_vm._v("Cancel")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Contact")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "contact",
-      "placeholder": "Paul Stevenson"
-    }
-  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "row"

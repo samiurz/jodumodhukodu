@@ -108,33 +108,14 @@
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label class="col-md-3 form-control-label" for="select">Company</label>
-                                <select  id="select" name="select" class="form-control" v-model="selectedContinent">
-                                    <option value="">Select a Continent</option>
-                                    <option v-for="(country_obj, article) in articles" :value="article.id">{{article.name}}</option>
+                                <select id="select" name="select" class="form-control" v-model="selectedAccount">
+                                    <option value="">Select a Account</option>
+                                    <option v-for="account in accounts"  v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
                                 </select>
-                                <!-- <select id="select" name="select" class="form-control">
-                                    <option value="0">Select A Company</option>
-                                    <option value="1">Nestle Professional</option>
-                                    <option value="2">Air NZ</option>
-                                </select> -->
-                                <!-- <select id="account" name="select" class="form-control">
-                                                            <option v-for="option in options" v-bind:value="option.ID">
-                                                                {{ option.text }}
-                                                            </option>
-                                                        </select> -->
-                                <!-- <select v-model="accounts" class="Radio__admin">
-                                                                            <option disabled selected>Type?</option>
-                                                                            <option v-for="account in accounts" v-bind:value="account.id">
-                                                                </select>   
-                                                                <select v-model="selected">
-                                                                    <option v-for="option in options" v-bind:value="option.ID">
-                                                                        {{ option.text }}
-                                                                    </option>
-                                                                </select> -->
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="company">Contact</label>
-                                <input type="text" class="form-control" id="contact" placeholder="Paul Stevenson">
+                                <input type="text" class="form-control" id="contact" placeholder="Paul Stevenson" v-model="selectedAccount">
                             </div>
                         </div>
                         <div class="row">
@@ -174,9 +155,40 @@
         name: "company",
         data() {
             return {
-                selectedContinent: "",
+                selectedAccount: "",
                 options: [],
-                accounts: [],
+                accounts: [
+                    {
+                        id: 18,
+                        name: "In debitis ab aliquid.",
+                        email: "lucas26@example.com",
+                        update_by: "Aut quod nihil rerum."
+                    },
+                    {
+                        id: 19,
+                        name: "Est dolor eos soluta ullam.",
+                        email: "dboyle@example.org",
+                        update_by: "Maxime ut est doloremque."
+                    },
+                    {
+                        id: 20,
+                        name: "Culpa neque qui vitae.",
+                        email: "lkohler@example.net",
+                        update_by: "Sit omnis minima quaerat."
+                    },
+                    {
+                        id: 21,
+                        name: "Eius totam dolorem sint.",
+                        email: "kgleichner@example.com",
+                        update_by: "Veniam impedit maiores rerum."
+                    },
+                    {
+                        id: 22,
+                        name: "Aliquid esse nisi suscipit.",
+                        email: "qdubuque@example.org",
+                        update_by: "Quod sed ea corporis laborum."
+                    }
+                ],
                 articles: [],
                 article: {
                     id: "",
@@ -190,7 +202,7 @@
         },
 
         created() {
-            this.fetchArticles();
+            this.fetchAccounts();
             let options = [
                 { text: "One", ID: "A" },
                 { text: "Two", ID: "B" },
@@ -199,14 +211,14 @@
         },
 
         methods: {
-            fetchArticles(page_url) {
+            fetchAccounts(page_url) {
                 let vm = this;
                 page_url = page_url || "/api/accounts";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.articles = res.data;
-                        console.log(this.articles);
+                        this.accounts = res.data;
+                        console.log(this.accounts);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -229,7 +241,7 @@
                         .then(res => res.json())
                         .then(data => {
                             alert("Article Removed");
-                            this.fetchArticles();
+                            this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 }
@@ -249,7 +261,7 @@
                             this.article.title = "";
                             this.article.body = "";
                             alert("Article Added");
-                            this.fetchArticles();
+                            this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 } else {
@@ -266,7 +278,7 @@
                             this.article.title = "";
                             this.article.body = "";
                             alert("Article Updated");
-                            this.fetchArticles();
+                            this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 }
