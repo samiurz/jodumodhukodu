@@ -21,21 +21,45 @@
                                 <small>Form</small>
                             </div>
                             <div class="card-block">
-                                <div class="row">
-                                    <div class="form-group col-sm-6">
-                                        <label for="customer">Account</label>
-                                        <input type="text" class="form-control" id="account" placeholder="JLE">
+                                <form @submit.prevent="addAccount" class="mb-3">
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label for="customer">Account</label>
+                                            <input type="text" class="form-control" placeholder="JLE" v-model="account.name">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="postal-code">Email</label>
+                                            <input type="text" class="form-control" v-model="account.email" placeholder="craig.brydon@jle.co.nz">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6">
-                                        <label for="postal-code">Email</label>
-                                        <input type="text" class="form-control" id="account_email" placeholder="craig.brydon@jle.co.nz">
+                                    <!--/.row-->
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default">Cancel</button>
                                     </div>
-                                </div>
-                                <!--/.row-->
-                                <div class="form-actions">
-                                    <button type="submit" class="btn btn-primary">Save changes</button>
-                                    <button type="button" class="btn btn-default">Cancel</button>
-                                </div>
+                                </form>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
+                                        <a class="page-link" href="#" @click="fetchAccounts(pagination.prev_page_url)">Previous</a>
+                                    </li>
+
+                                    <li class="page-item disabled">
+                                        <a class="page-link text-dark" href="#">Page {{ pagination.current_page }} of {{ pagination.last_page }}</a>
+                                    </li>
+
+                                    <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
+                                        <a class="page-link" href="#" @click="fetchAccounts(pagination.next_page_url)">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="card card-body mb-2" v-for="account in accounts" v-bind:key="account.id">
+                                <h3>{{ account.name }}</h3>
+                                <p>{{ account.email }}</p>
+                                <hr>
+                                <button @click="editAccount(account)" class="btn btn-warning mb-2">Edit</button>
+                                <button @click="deleteAccount(account.id)" class="btn btn-danger">Delete</button>
                             </div>
                         </div>
                     </div>
@@ -51,7 +75,7 @@
                                         <label class="col-md-3 form-control-label" for="select">Accounts</label>
                                         <select id="select" name="select" class="form-control" v-model="selectedAccount">
                                             <option value="">Select a Account</option>
-                                            <option v-for="account in accounts"  v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
+                                            <option v-for="account in accounts" v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-sm-6">
@@ -95,7 +119,7 @@
                                 <label class="col-md-3 form-control-label" for="select">Company</label>
                                 <select id="select" name="select" class="form-control" v-model="selectedAccount">
                                     <option value="">Select a Account</option>
-                                    <option v-for="account in accounts"  v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
+                                    <option v-for="account in accounts" v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
                                 </select>
                             </div>
                             <div class="form-group col-sm-6">
@@ -141,15 +165,14 @@
         data() {
             return {
                 selectedAccount: "",
-                options: [],
                 accounts: [],
-                articles: [],
-                article: {
+                account: {
                     id: "",
-                    title: "",
-                    body: ""
+                    name: "",
+                    email: "",
+                    update_by: "1"
                 },
-                article_id: "",
+                id: "",
                 pagination: {},
                 edit: false
             };
@@ -182,23 +205,23 @@
 
                 this.pagination = pagination;
             },
-            deleteArticle(id) {
+            deleteAccount(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/article/${id}`, {
+                    fetch(`api/account/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("Article Removed");
+                            alert("Account Removed");
                             this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 }
             },
-            addArticle() {
+            addAccount() {
                 if (this.edit === false) {
                     // Add
-                    fetch("api/article", {
+                    fetch("api/account", {
                         method: "post",
                         body: JSON.stringify(this.article),
                         headers: {
@@ -207,37 +230,37 @@
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.article.title = "";
-                            this.article.body = "";
-                            alert("Article Added");
+                            this.account.name = "";
+                            this.account.email = "";
+                            alert("Account Added");
                             this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 } else {
                     // Update
-                    fetch("api/article", {
+                    fetch("api/account", {
                         method: "put",
-                        body: JSON.stringify(this.article),
+                        body: JSON.stringify(this.account),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.article.title = "";
-                            this.article.body = "";
-                            alert("Article Updated");
+                            this.account.name = "";
+                            this.account.email = "";
+                            alert("Account Updated");
                             this.fetchAccounts();
                         })
                         .catch(err => console.log(err));
                 }
             },
-            editArticle(article) {
+            editAccount(account) {
                 this.edit = true;
-                this.article.id = article.id;
-                this.article.article_id = article.id;
-                this.article.title = article.title;
-                this.article.body = article.body;
+                this.account.id = account.id;
+                this.account.name = account.name;
+                this.account.email = account.email;
+                this.account.update_by = account.update_by;
             }
         }
     };

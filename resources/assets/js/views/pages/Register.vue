@@ -6,7 +6,7 @@
           <div class="card mx-2">
             <div class="card-block p-2">
               <h1>Register</h1>
-              <p class="text-muted">Create your account</p>
+              <p class="text-muted">Create An Admin Account</p>
               <div class="input-group mb-1">
                 <span class="input-group-addon"><i class="icon-user"></i></span>
                 <input type="text" class="form-control" placeholder="Username">
