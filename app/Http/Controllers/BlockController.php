@@ -34,7 +34,7 @@ class BlockController extends Controller
         $blocks = $request->isMethod('put') ? Block::findOrFail($request->id) : new Block;
 
         $blocks->id = $request->input('id');
-        $blocks->blocks_name = $request->input('blocks_name');
+        $blocks->name = $request->input('name');
         $blocks->update_by = $request->input('update_by');
         if($blocks->save()) {
             return new BlockResource($blocks);

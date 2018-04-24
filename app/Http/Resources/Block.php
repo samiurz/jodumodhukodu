@@ -12,7 +12,7 @@ class Block extends Resource
 
         return [
             'id' => $this->id,
-            'blocks_name' => $this->blocks_name,
+            'name' => $this->name,
             'update_by' => $this->update_by
         ];
     }

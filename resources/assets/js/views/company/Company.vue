@@ -223,7 +223,7 @@
                     // Add
                     fetch("api/account", {
                         method: "post",
-                        body: JSON.stringify(this.article),
+                        body: JSON.stringify(this.account),
                         headers: {
                             "content-type": "application/json"
                         }
