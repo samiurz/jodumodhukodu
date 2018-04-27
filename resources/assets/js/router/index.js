@@ -156,7 +156,6 @@ export default new Router({
                         }
                     ]
                 }
-
             ]
         },
         {
