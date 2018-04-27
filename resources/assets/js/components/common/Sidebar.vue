@@ -69,20 +69,9 @@
                         </li>     
                     </ul>
                 </router-link>
-                  <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/block'}" disabled>
-                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
-                        <i class="icon-star"></i> Blocks</div>
-                    <ul class="nav-dropdown-items">
-                        <li class="nav-item">
-                            <router-link :to="'/block/block'" class="nav-link" exact>
-                                <i class="icon-star"></i> Blocks</router-link>
-                        </li>     
-                    </ul>
-                </router-link>
                 <li class="nav-item">
-                    <router-link :to="'/widgets'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Widgets
-                        <span class="badge badge-info">NEW</span>
+                    <router-link :to="'/block/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Blocks
                     </router-link>
                 </li>
                 <li class="nav-item">

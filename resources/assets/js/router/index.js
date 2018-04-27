@@ -30,8 +30,10 @@ import Register from '../views/pages/Register';
 
 // Views - Company
 import Company from '../views/company/Company';
+
 // Views - Block
 import Block from '../views/block/block';
+import BlockList from '../views/block/list';
 
 Vue.use(Router);
 
@@ -153,6 +155,11 @@ export default new Router({
                             path: 'block',
                             name: 'block',
                             component: Block
+                        },
+                        {
+                            path: 'list',
+                            name: 'Block List',
+                            component: BlockList
                         }
                     ]
                 }
