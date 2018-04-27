@@ -4,28 +4,55 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>block</strong>
+                        <strong>LIST</strong>
                         <small>Form</small>
+                        <button class="btn btn-warning mb-2">
+                            <router-link :to="'/block/block'" class="nav-link" exact>Add</router-link>
+                        </button>
                     </div>
                     <div class="card-block">
-                        <form @submit.prevent="addBlock" class="mb-3">
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="customer">Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter Block Name" v-model="block.name">
-                                </div>
+                            <div class="card">
+                                <table class="table" v-for="block in blocks" v-bind:key="block.id">
+                                    <thead>
+                                        <tr>
+                                            <th>name</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ block.name }}</td>
+                                            <td> 
+                                                <button  class="btn btn-warning mb-2">
+                                                    <router-link :to="{ name: 'block', params: { id: block }}">Edit</router-link>
+                                                </button>
+                                            </td>
+                                            <td> <button @click="deleteBlock(block.id)" class="btn btn-danger">Delete</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination">
+                                    <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
+                                        <a class="page-link" href="#" @click="fetchBlocks(pagination.prev_page_url)">Previous</a>
+                                    </li>
+            
+                                    <li class="page-item disabled">
+                                        <a class="page-link text-dark" href="#">Page {{ pagination.current_page }} of {{ pagination.last_page }}</a>
+                                    </li>
+            
+                                    <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
+                                        <a class="page-link" href="#" @click="fetchBlocks(pagination.next_page_url)">Next</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <!--/.row-->
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Save changes</button>
-                                <button type="button" class="btn btn-default">Cancel</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
+
             </div>
+        
         </div>
-    </div>
     <!--/.col-->
 </template>
 <script>
@@ -47,8 +74,7 @@
         },
 
         created() {
-            if(this.$route.params.id != undefined)
-                this.editBlock(this.$route.params.id);
+            this.fetchBlocks();
         },
 
         methods: {
@@ -101,7 +127,7 @@
                         .then(data => {
                             this.block.name = "";
                             alert("block Added");
-                            this.$router.push('/block/list');
+                            this.fetchBlocks();
                         })
                         .catch(err => console.log(err));
                 } else {
@@ -117,7 +143,7 @@
                         .then(data => {
                             this.block.name = "";
                             alert("block Updated");
-                            this.$router.push('/block/list');
+                            this.fetchBlocks();
                         })
                         .catch(err => console.log(err));
                 }
