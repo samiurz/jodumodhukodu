@@ -2,19 +2,6 @@
     <div class="animated fadeIn">
         <div class="row">
             <div class="col-sm-12">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#account" role="tab" aria-controls="account">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#company" role="tab" aria-controls="company">Company</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact">Contact</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="account" role="tabpanel">
                         <div class="card">
                             <div class="card-header">
                                 <strong>Account</strong>
@@ -155,8 +142,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
     <!--/.col-->
 </template>
 <script>

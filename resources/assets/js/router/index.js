@@ -35,6 +35,10 @@ import Company from '../views/company/Company';
 import BlockList from '../views/block/list';
 import BlockForm from '../views/block/form';
 
+// Views - Block
+import LabelList from '../views/label/list';
+import LabelForm from '../views/label/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -160,6 +164,26 @@ export default new Router({
                             path: 'list',
                             name: 'Block List',
                             component: BlockList
+                        }
+                    ]
+                },
+                {
+                    path: '/label',
+                    redirect: '/label/list',
+                    name: 'Label',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'label',
+                            name: 'Label Form',
+                            component: LabelForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Label List',
+                            component: LabelList
                         }
                     ]
                 }

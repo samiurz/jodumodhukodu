@@ -66,12 +66,17 @@
                         <li class="nav-item">
                             <router-link :to="'/company/company'" class="nav-link" exact>
                                 <i class="icon-star"></i> Company</router-link>
-                        </li>     
+                        </li>
                     </ul>
                 </router-link>
                 <li class="nav-item">
                     <router-link :to="'/block/list'" class="nav-link" exact>
                         <i class="icon-calculator"></i> Blocks
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/label/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Label
                     </router-link>
                 </li>
                 <li class="nav-item">
@@ -103,22 +108,21 @@
                                 <i class="icon-star"></i> Error 500</router-link>
                         </li>
                     </ul>
-                </li> 
+                </li>
             </ul>
         </nav>
     </div>
 </template>
 <script>
-
     export default {
-        name: 'sidebar',
+        name: "sidebar",
         methods: {
             handleClick(e) {
-                e.preventDefault()
-                e.target.parentElement.classList.toggle('open')
+                e.preventDefault();
+                e.target.parentElement.classList.toggle("open");
             }
         }
-    }
+    };
 </script>
 
 <style lang="css">
