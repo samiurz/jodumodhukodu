@@ -15,8 +15,9 @@ class Company extends Resource
             'account_id' => $this->account_id,
             'company_name' => $this->company_name,
             'is_customer' => $this->is_customer,
-            'links' => $this->email,
-            'links' => $this->address,
+            'links' => $this->links,
+            'email' => $this->email,
+            'address' => $this->address,
             'update_by' => $this->update_by
         ];
     }
