@@ -75,6 +75,11 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
+                    <router-link :to="'/blockassociation/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Block Association
+                    </router-link>
+                </li>
+                <li class="nav-item">
                     <router-link :to="'/charts'" class="nav-link" exact>
                         <i class="icon-pie-chart"></i> Charts</router-link>
                 </li>

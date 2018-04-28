@@ -40,6 +40,10 @@ import BlockForm from '../views/block/form';
 import LabelList from '../views/label/list';
 import LabelForm from '../views/label/form';
 
+// Views - Block
+import BlockAssociationList from '../views/blockassociation/list';
+import BlockAssociationForm from '../views/blockassociation/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -190,6 +194,26 @@ export default new Router({
                             path: 'list',
                             name: 'Label List',
                             component: LabelList
+                        }
+                    ]
+                },
+                {
+                    path: '/blockassociation',
+                    redirect: '/blockassociation/list',
+                    name: 'Block Association',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Block Association Form',
+                            component: BlockAssociationForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Block Association List',
+                            component: BlockAssociationList
                         }
                     ]
                 }
