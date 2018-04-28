@@ -6,9 +6,9 @@
                     <div class="card-header">
                         <strong>LIST</strong>
                         <small>Form</small>
-                        <button class="btn btn-warning mb-2">
-                            <router-link :to="'/block/block'" class="nav-link" exact>Add</router-link>
-                        </button>
+                        <router-link :to="{ name: 'Block Form'}">
+                            <button class="btn btn-warning">Add</button>
+                        </router-link>
                     </div>
                     <div class="card-block">
                             <div class="card">
@@ -25,7 +25,7 @@
                                             <td>{{ block.name }}</td>
                                             <td> 
                                                 <button  class="btn btn-warning mb-2">
-                                                    <router-link :to="{ name: 'block', params: { id: block }}">Edit</router-link>
+                                                    <router-link :to="{ name: 'Block Form', params: { id: block }}">Edit</router-link>
                                                 </button>
                                             </td>
                                             <td> <button @click="deleteBlock(block.id)" class="btn btn-danger">Delete</button></td>

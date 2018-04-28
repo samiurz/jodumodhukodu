@@ -18,7 +18,9 @@
                             <!--/.row-->
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Save changes</button>
-                                <button type="button" class="btn btn-default">Cancel</button>
+                                <router-link :to="{ name: 'Block List'}" >
+                                    <button type="button" class="btn btn-default">Cancel</button>
+                                </router-link>
                             </div>
                         </form>
                     </div>

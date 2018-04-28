@@ -32,8 +32,8 @@ import Register from '../views/pages/Register';
 import Company from '../views/company/Company';
 
 // Views - Block
-import Block from '../views/block/block';
 import BlockList from '../views/block/list';
+import BlockForm from '../views/block/form';
 
 Vue.use(Router);
 
@@ -145,16 +145,16 @@ export default new Router({
                 },
                 {
                     path: '/block',
-                    redirect: '/block/block',
-                    name: 'block',
+                    redirect: '/block/list',
+                    name: 'Block',
                     component: {
                         render(c) { return c('router-view'); }
                     },
                     children: [
                         {
                             path: 'block',
-                            name: 'block',
-                            component: Block
+                            name: 'Block Form',
+                            component: BlockForm
                         },
                         {
                             path: 'list',
