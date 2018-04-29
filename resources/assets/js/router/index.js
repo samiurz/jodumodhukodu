@@ -29,7 +29,8 @@ import Login from '../views/pages/Login';
 import Register from '../views/pages/Register';
 
 // Views - Company
-import Company from '../views/company/Company';
+import CompanyList from '../views/company/list';
+import CompanyForm from '../views/company/form';
 
 // Views - Block
 import BlockList from '../views/block/list';
@@ -38,6 +39,10 @@ import BlockForm from '../views/block/form';
 // Views - Block
 import LabelList from '../views/label/list';
 import LabelForm from '../views/label/form';
+
+// Views - Block
+import BlockAssociationList from '../views/blockassociation/list';
+import BlockAssociationForm from '../views/blockassociation/form';
 
 Vue.use(Router);
 
@@ -134,16 +139,21 @@ export default new Router({
                 },
                 {
                     path: '/company',
-                    redirect: '/company/company',
-                    name: 'company',
+                    redirect: '/company/list',
+                    name: 'Company',
                     component: {
                         render(c) { return c('router-view'); }
                     },
                     children: [
                         {
-                            path: 'company',
-                            name: 'Company',
-                            component: Company
+                            path: 'form',
+                            name: 'Company Form',
+                            component: CompanyForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Company List',
+                            component: CompanyList
                         }
                     ]
                 },
@@ -156,7 +166,7 @@ export default new Router({
                     },
                     children: [
                         {
-                            path: 'block',
+                            path: 'form',
                             name: 'Block Form',
                             component: BlockForm
                         },
@@ -176,7 +186,7 @@ export default new Router({
                     },
                     children: [
                         {
-                            path: 'label',
+                            path: 'form',
                             name: 'Label Form',
                             component: LabelForm
                         },
@@ -184,6 +194,26 @@ export default new Router({
                             path: 'list',
                             name: 'Label List',
                             component: LabelList
+                        }
+                    ]
+                },
+                {
+                    path: '/blockassociation',
+                    redirect: '/blockassociation/list',
+                    name: 'Block Association',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Block Association Form',
+                            component: BlockAssociationForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Block Association List',
+                            component: BlockAssociationList
                         }
                     ]
                 }

@@ -59,24 +59,24 @@
                         </li>
                     </ul>
                 </router-link>
-                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/company'}" disabled>
-                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
-                        <i class="icon-star"></i> Company</div>
-                    <ul class="nav-dropdown-items">
-                        <li class="nav-item">
-                            <router-link :to="'/company/company'" class="nav-link" exact>
-                                <i class="icon-star"></i> Company</router-link>
-                        </li>
-                    </ul>
-                </router-link>
+                 <li class="nav-item">
+                    <router-link :to="'/company/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Company
+                    </router-link>
+                </li>
                 <li class="nav-item">
                     <router-link :to="'/block/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Blocks
+                        <i class="icon-calculator"></i> Block
                     </router-link>
                 </li>
                 <li class="nav-item">
                     <router-link :to="'/label/list'" class="nav-link" exact>
                         <i class="icon-calculator"></i> Label
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/blockassociation/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Block Association
                     </router-link>
                 </li>
                 <li class="nav-item">
