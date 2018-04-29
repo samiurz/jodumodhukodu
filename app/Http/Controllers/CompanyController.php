@@ -17,7 +17,7 @@ class CompanyController extends Controller
     public function index()
     {
         // Get Companies
-        $companies = Company::orderBy('created_at', 'desc')->paginate(15);
+        $companies = Company::with('account')->orderBy('created_at', 'desc')->paginate(15);
 
         // Return collection of companies as a resource
         return CompanyResource::collection($companies);

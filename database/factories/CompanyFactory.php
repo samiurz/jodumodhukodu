@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Company::class, function (Faker $faker) {
     return [
-        'account_id' => $faker->text(30),
+        'account_id' => $faker->randomDigit,
         'company_name' => $faker->text(30),
         'is_customer' => $faker->text(30),
         'links' => $faker->text(30),
