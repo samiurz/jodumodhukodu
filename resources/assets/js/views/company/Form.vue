@@ -40,10 +40,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--/.row-->
-                            <div class="form-group">
-                                <label for="country">Address</label>
-                                <textarea id="address" name="textarea-input" rows="9" class="form-control" v-model="company.address" placeholder="Content.."></textarea>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="country">Address</label>
+                                    <textarea id="address" name="textarea-input" rows="9" class="form-control" v-model="company.address" placeholder="Address.."></textarea>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="country">Comments</label>
+                                    <textarea id="comments" name="textarea-input" rows="9" class="form-control" v-model="company.comments" placeholder="Comments.."></textarea>
+                                </div>
                             </div>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Save changes</button>
@@ -74,6 +79,7 @@
                     links: "",
                     email: "",
                     address: "",
+                    comments:"",
                     update_by: "1"
                 },
                 id: "",
@@ -112,7 +118,7 @@
                 this.pagination = pagination;
             },
             addcompany() {
-                if(this.company.is_customer === ''){
+                if (this.company.is_customer === '') {
                     this.company.is_customer = false
                 }
                 if (this.edit === false) {
@@ -132,6 +138,7 @@
                             this.company.links = "";
                             this.company.email = "";
                             this.company.address = "";
+                            this.company.comments = "";
                             this.company.update_by = "";
                             alert("Company Added");
                             this.$router.push("/company/list");
@@ -164,6 +171,7 @@
                 this.company.links = company.links;
                 this.company.email = company.email;
                 this.company.address = company.address;
+                this.company.comments = company.comments;
                 this.company.update_by = company.update_by;
             }
         }

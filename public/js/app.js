@@ -48298,6 +48298,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "company",
@@ -48313,6 +48318,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 links: "",
                 email: "",
                 address: "",
+                comments: "",
                 update_by: "1"
             },
             id: "",
@@ -48375,6 +48381,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.company.links = "";
                     _this2.company.email = "";
                     _this2.company.address = "";
+                    _this2.company.comments = "";
                     _this2.company.update_by = "";
                     alert("Company Added");
                     _this2.$router.push("/company/list");
@@ -48409,6 +48416,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.company.links = company.links;
             this.company.email = company.email;
             this.company.address = company.address;
+            this.company.comments = company.comments;
             this.company.update_by = company.update_by;
         }
     }
@@ -111222,7 +111230,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _vm._v(" No/Yes\n                                    ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
   }, [_c('label', {
     attrs: {
       "for": "country"
@@ -111239,7 +111249,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "id": "address",
       "name": "textarea-input",
       "rows": "9",
-      "placeholder": "Content.."
+      "placeholder": "Address.."
     },
     domProps: {
       "value": (_vm.company.address)
@@ -111251,6 +111261,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "country"
+    }
+  }, [_vm._v("Comments")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.comments),
+      expression: "company.comments"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "comments",
+      "name": "textarea-input",
+      "rows": "9",
+      "placeholder": "Comments.."
+    },
+    domProps: {
+      "value": (_vm.company.comments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.company, "comments", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
     staticClass: "form-actions"
   }, [_c('button', {
     staticClass: "btn btn-primary",
