@@ -15,14 +15,14 @@ class CreateAssetModelsTable extends Migration
     {
         Schema::create('asset_models', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('company_id');
-            $table->string('model_type');
-            $table->string('model_image');
-            $table->string('model_rent');
-            $table->string('model_rent_frequency');
+            $table->integer('company_id');
+            $table->integer('model_type_id');
+            $table->string('image');
+            $table->string('rent');
+            $table->string('frequency');
             $table->string('minimum_stock');
             $table->string('current_stock');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

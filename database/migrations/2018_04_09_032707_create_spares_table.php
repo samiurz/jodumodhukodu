@@ -15,16 +15,16 @@ class CreateSparesTable extends Migration
     {
         Schema::create('spares', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('account_id');
-            $table->string('asset_id');
-            $table->string('spare_serial');
-            $table->string('spare_type');
-            $table->string('spare_description');
-            $table->string('spare_image');
-            $table->string('spare_manufacturar_id');
+            $table->integer('account_id');
+            $table->integer('asset_id');
+            $table->string('serial');
+            $table->string('type');
+            $table->string('description');
+            $table->string('image');
+            $table->integer('manufacturar_id');
             $table->string('minimum_stock');
             $table->string('current_stock');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

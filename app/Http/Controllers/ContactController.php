@@ -35,11 +35,12 @@ class ContactController extends Controller
 
         $contacts->id = $request->input('id');
         $contacts->company_id = $request->input('company_id');
-        $contacts->contact_name = $request->input('contact_name');
+        $contacts->name = $request->input('name');
         $contacts->phone = $request->input('phone');
         $contacts->links = $request->input('links');
         $contacts->email = $request->input('email');
         $contacts->password = $request->input('password');
+        $contacts->update_by = $request->input('update_by');
 
         if($contacts->save()) {
             return new ContactResource($contacts);

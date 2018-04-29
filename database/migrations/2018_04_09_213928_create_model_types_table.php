@@ -15,10 +15,10 @@ class CreateModelTypesTable extends Migration
     {
         Schema::create('model_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('company_id');
-            $table->string('model_make');
-            $table->string('model_type');
-            $table->string('update_by');
+            $table->integer('company_id');
+            $table->string('make');
+            $table->string('type');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

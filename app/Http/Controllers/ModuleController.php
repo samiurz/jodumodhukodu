@@ -35,7 +35,7 @@ class ModuleController extends Controller
 
         $modules->id = $request->input('id');
         $modules->block_id = $request->input('block_id');
-        $modules->module_name = $request->input('module_name');
+        $modules->name = $request->input('name');
         $modules->comment = $request->input('comment');
         $modules->update_by = $request->input('update_by');
         

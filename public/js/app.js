@@ -34385,17 +34385,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(269),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(578),
-=======
   __webpack_require__(572),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\App.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -34406,9 +34402,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fd613d44", Component.options)
+    hotAPI.createRecord("data-v-57696f23", Component.options)
   } else {
-    hotAPI.reload("data-v-fd613d44", Component.options)
+    hotAPI.reload("data-v-57696f23", Component.options)
   }
 })()}
 
@@ -47500,7 +47496,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             blocks: [],
             block: {
                 id: "",
-                blocks_name: "",
+                name: "",
                 update_by: "1"
             },
             id: "",
@@ -48029,14 +48025,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "label",
+    name: "blockassociation",
     data: function data() {
         return {
             selectedAccount: "",
@@ -48352,7 +48343,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             company: {
                 id: "",
                 account_id: "",
-                company_name: "",
+                name: "",
                 is_customer: "",
                 links: "",
                 email: "",
@@ -48414,7 +48405,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     return res.json();
                 }).then(function (data) {
                     _this2.company.account_id = "";
-                    _this2.company.company_name = "";
+                    _this2.company.name = "";
                     _this2.company.is_customer = "";
                     _this2.company.links = "";
                     _this2.company.email = "";
@@ -48448,7 +48439,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.edit = true;
             this.company.id = company.id;
             this.company.account_id = company.account_id;
-            this.company.company_name = company.company_name;
+            this.company.name = company.name;
             this.company.is_customer = company.is_customer;
             this.company.links = company.links;
             this.company.email = company.email;
@@ -48545,7 +48536,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             company: {
                 id: "",
                 account_id: "",
-                company_name: "",
+                name: "",
                 is_customer: "",
                 links: "",
                 email: "",
@@ -72037,21 +72028,21 @@ exports.push([module.i, "\n.dropdown-toggle::after {\n    /*display: none !impor
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(29)();
-exports.push([module.i, "\n.modal {\r\n  transition: all 0.3s ease;\n}\n.modal.in {\r\n  background-color: rgba(0,0,0,0.5);\n}\n.modal.zoom .modal-dialog {\r\n  transform: scale(0.1);\r\n  top: 300px;\r\n  opacity: 0;\r\n  transition: all 0.3s;\n}\n.modal.zoom.in .modal-dialog {\r\n  transform: scale(1);\r\n  transform: translate3d(0, -300px, 0);\r\n  opacity: 1;\n}\r\n", ""]);
+exports.push([module.i, "\n.nav-link {\n    cursor: pointer;\n}\n", ""]);
 
 /***/ }),
 /* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(29)();
-exports.push([module.i, "\n.btn {\n   margin-bottom: 4px;\n}\n", ""]);
+exports.push([module.i, "\n.modal {\r\n  transition: all 0.3s ease;\n}\n.modal.in {\r\n  background-color: rgba(0,0,0,0.5);\n}\n.modal.zoom .modal-dialog {\r\n  transform: scale(0.1);\r\n  top: 300px;\r\n  opacity: 0;\r\n  transition: all 0.3s;\n}\n.modal.zoom.in .modal-dialog {\r\n  transform: scale(1);\r\n  transform: translate3d(0, -300px, 0);\r\n  opacity: 1;\n}\r\n", ""]);
 
 /***/ }),
 /* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(29)();
-exports.push([module.i, "\n.nav-link {\n    cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.btn {\n   margin-bottom: 4px;\n}\n", ""]);
 
 /***/ }),
 /* 367 */
@@ -106261,27 +106252,19 @@ module.exports = {
 
 
 /* styles */
-<<<<<<< HEAD
-__webpack_require__(582)
-=======
 __webpack_require__(592)
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(268),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(555),
-=======
   __webpack_require__(570),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\node_modules\\vue-strap\\src\\Modal.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\node_modules\\vue-strap\\src\\Modal.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106292,9 +106275,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-326865b6", Component.options)
+    hotAPI.createRecord("data-v-50d10591", Component.options)
   } else {
-    hotAPI.reload("data-v-326865b6", Component.options)
+    hotAPI.reload("data-v-50d10591", Component.options)
   }
 })()}
 
@@ -106309,17 +106292,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(270),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(557),
-=======
   __webpack_require__(587),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Aside.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\components\\common\\Aside.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Aside.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106330,9 +106309,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-46ff4f2a", Component.options)
+    hotAPI.createRecord("data-v-fb746f22", Component.options)
   } else {
-    hotAPI.reload("data-v-46ff4f2a", Component.options)
+    hotAPI.reload("data-v-fb746f22", Component.options)
   }
 })()}
 
@@ -106347,17 +106326,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(271),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(574),
-=======
   __webpack_require__(576),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Breadcrumb.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\components\\common\\Breadcrumb.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Breadcrumb.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106368,9 +106343,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c36a03fe", Component.options)
+    hotAPI.createRecord("data-v-6ee687dc", Component.options)
   } else {
-    hotAPI.reload("data-v-c36a03fe", Component.options)
+    hotAPI.reload("data-v-6ee687dc", Component.options)
   }
 })()}
 
@@ -106385,17 +106360,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(272),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(564),
-=======
   __webpack_require__(556),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Footer.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\components\\common\\Footer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Footer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106406,9 +106377,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-62df4ace", Component.options)
+    hotAPI.createRecord("data-v-07cdec18", Component.options)
   } else {
-    hotAPI.reload("data-v-62df4ace", Component.options)
+    hotAPI.reload("data-v-07cdec18", Component.options)
   }
 })()}
 
@@ -106427,17 +106398,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(273),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(553),
-=======
   __webpack_require__(561),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Header.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\components\\common\\Header.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Header.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106448,9 +106415,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-207a82ea", Component.options)
+    hotAPI.createRecord("data-v-1d4b6de6", Component.options)
   } else {
-    hotAPI.reload("data-v-207a82ea", Component.options)
+    hotAPI.reload("data-v-1d4b6de6", Component.options)
   }
 })()}
 
@@ -106465,17 +106432,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(274),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(568),
-=======
   __webpack_require__(582),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Navbar.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\components\\common\\Navbar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Navbar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106486,9 +106449,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d427e8e", Component.options)
+    hotAPI.createRecord("data-v-ca69a42e", Component.options)
   } else {
-    hotAPI.reload("data-v-6d427e8e", Component.options)
+    hotAPI.reload("data-v-ca69a42e", Component.options)
   }
 })()}
 
@@ -106501,27 +106464,19 @@ module.exports = Component.exports
 
 
 /* styles */
-<<<<<<< HEAD
-__webpack_require__(584)
-=======
 __webpack_require__(591)
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(275),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(572),
-=======
   __webpack_require__(564),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Sidebar.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\components\\common\\Sidebar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Sidebar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106532,9 +106487,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-a7b51664", Component.options)
+    hotAPI.createRecord("data-v-2fb2b0d3", Component.options)
   } else {
-    hotAPI.reload("data-v-a7b51664", Component.options)
+    hotAPI.reload("data-v-2fb2b0d3", Component.options)
   }
 })()}
 
@@ -106549,17 +106504,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(276),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(556),
-=======
   __webpack_require__(585),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\containers\\Full.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\containers\\Full.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Full.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106570,9 +106521,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3c5c7e2e", Component.options)
+    hotAPI.createRecord("data-v-d9d761a4", Component.options)
   } else {
-    hotAPI.reload("data-v-3c5c7e2e", Component.options)
+    hotAPI.reload("data-v-d9d761a4", Component.options)
   }
 })()}
 
@@ -106587,17 +106538,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(277),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(558),
-=======
   __webpack_require__(574),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Charts.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\Charts.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Charts.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106608,9 +106555,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4f118f29", Component.options)
+    hotAPI.createRecord("data-v-6d7a2f04", Component.options)
   } else {
-    hotAPI.reload("data-v-4f118f29", Component.options)
+    hotAPI.reload("data-v-6d7a2f04", Component.options)
   }
 })()}
 
@@ -106625,17 +106572,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(278),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(566),
-=======
   __webpack_require__(560),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Dashboard.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\Dashboard.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Dashboard.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106646,9 +106589,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-67ef7ef0", Component.options)
+    hotAPI.createRecord("data-v-19320d35", Component.options)
   } else {
-    hotAPI.reload("data-v-67ef7ef0", Component.options)
+    hotAPI.reload("data-v-19320d35", Component.options)
   }
 })()}
 
@@ -106663,17 +106606,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(279),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(562),
-=======
   __webpack_require__(557),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Widgets.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\Widgets.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Widgets.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106684,9 +106623,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5b4b1e8b", Component.options)
+    hotAPI.createRecord("data-v-09f67a10", Component.options)
   } else {
-    hotAPI.reload("data-v-5b4b1e8b", Component.options)
+    hotAPI.reload("data-v-09f67a10", Component.options)
   }
 })()}
 
@@ -106701,17 +106640,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(280),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(559),
-=======
   __webpack_require__(577),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\block\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\block\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106722,9 +106657,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4fc8893a", Component.options)
+    hotAPI.createRecord("data-v-725078d6", Component.options)
   } else {
-    hotAPI.reload("data-v-4fc8893a", Component.options)
+    hotAPI.reload("data-v-725078d6", Component.options)
   }
 })()}
 
@@ -106739,17 +106674,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(281),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(577),
-=======
   __webpack_require__(558),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\block\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\block\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -106760,9 +106691,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-f87c9fd8", Component.options)
+    hotAPI.createRecord("data-v-0a5e2b22", Component.options)
   } else {
-    hotAPI.reload("data-v-f87c9fd8", Component.options)
+    hotAPI.reload("data-v-0a5e2b22", Component.options)
   }
 })()}
 
@@ -106851,7 +106782,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\BarExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\charts\\BarExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -106861,9 +106792,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ff398426", Component.options)
+    hotAPI.createRecord("data-v-88ac919c", Component.options)
   } else {
-    hotAPI.reload("data-v-ff398426", Component.options)
+    hotAPI.reload("data-v-88ac919c", Component.options)
   }
 })()}
 
@@ -106884,7 +106815,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\DoughnutExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\charts\\DoughnutExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -106894,9 +106825,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-000b7362", Component.options)
+    hotAPI.createRecord("data-v-5eb20586", Component.options)
   } else {
-    hotAPI.reload("data-v-000b7362", Component.options)
+    hotAPI.reload("data-v-5eb20586", Component.options)
   }
 })()}
 
@@ -106917,7 +106848,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\LineExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\charts\\LineExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -106927,9 +106858,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5a4f8930", Component.options)
+    hotAPI.createRecord("data-v-f04f8eea", Component.options)
   } else {
-    hotAPI.reload("data-v-5a4f8930", Component.options)
+    hotAPI.reload("data-v-f04f8eea", Component.options)
   }
 })()}
 
@@ -106950,7 +106881,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\PieExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\charts\\PieExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -106960,9 +106891,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2ad1da58", Component.options)
+    hotAPI.createRecord("data-v-25dd8c19", Component.options)
   } else {
-    hotAPI.reload("data-v-2ad1da58", Component.options)
+    hotAPI.reload("data-v-25dd8c19", Component.options)
   }
 })()}
 
@@ -106983,7 +106914,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\PolarAreaExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\charts\\PolarAreaExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -106993,9 +106924,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4cc73795", Component.options)
+    hotAPI.createRecord("data-v-e0c62dcc", Component.options)
   } else {
-    hotAPI.reload("data-v-4cc73795", Component.options)
+    hotAPI.reload("data-v-e0c62dcc", Component.options)
   }
 })()}
 
@@ -107016,7 +106947,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\RadarExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\charts\\RadarExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107026,9 +106957,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3857999a", Component.options)
+    hotAPI.createRecord("data-v-883654c2", Component.options)
   } else {
-    hotAPI.reload("data-v-3857999a", Component.options)
+    hotAPI.reload("data-v-883654c2", Component.options)
   }
 })()}
 
@@ -107043,21 +106974,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(290),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(561),
-=======
   __webpack_require__(562),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-<<<<<<< HEAD
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\company\\Company.vue"
-=======
 Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\company\\form.vue"
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107068,15 +106991,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-<<<<<<< HEAD
-    hotAPI.createRecord("data-v-55ab1272", Component.options)
-  } else {
-    hotAPI.reload("data-v-55ab1272", Component.options)
-=======
     hotAPI.createRecord("data-v-1e5d57e5", Component.options)
   } else {
     hotAPI.reload("data-v-1e5d57e5", Component.options)
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   }
 })()}
 
@@ -107125,17 +107042,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(292),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(560),
-=======
   __webpack_require__(555),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Buttons.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\Buttons.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Buttons.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107146,9 +107059,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-53d336c8", Component.options)
+    hotAPI.createRecord("data-v-039f13f7", Component.options)
   } else {
-    hotAPI.reload("data-v-53d336c8", Component.options)
+    hotAPI.reload("data-v-039f13f7", Component.options)
   }
 })()}
 
@@ -107163,17 +107076,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(293),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(571),
-=======
   __webpack_require__(563),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Cards.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\Cards.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Cards.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107184,9 +107093,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-793ab03e", Component.options)
+    hotAPI.createRecord("data-v-204d7a59", Component.options)
   } else {
-    hotAPI.reload("data-v-793ab03e", Component.options)
+    hotAPI.reload("data-v-204d7a59", Component.options)
   }
 })()}
 
@@ -107201,17 +107110,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(294),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(552),
-=======
   __webpack_require__(583),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Forms.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\Forms.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Forms.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107222,9 +107127,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1897e1ec", Component.options)
+    hotAPI.createRecord("data-v-ca724db6", Component.options)
   } else {
-    hotAPI.reload("data-v-1897e1ec", Component.options)
+    hotAPI.reload("data-v-ca724db6", Component.options)
   }
 })()}
 
@@ -107239,17 +107144,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(295),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(549),
-=======
   __webpack_require__(567),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Modals.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\Modals.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Modals.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107260,9 +107161,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-012338ca", Component.options)
+    hotAPI.createRecord("data-v-3ab4dce0", Component.options)
   } else {
-    hotAPI.reload("data-v-012338ca", Component.options)
+    hotAPI.reload("data-v-3ab4dce0", Component.options)
   }
 })()}
 
@@ -107275,27 +107176,19 @@ module.exports = Component.exports
 
 
 /* styles */
-<<<<<<< HEAD
-__webpack_require__(583)
-=======
 __webpack_require__(593)
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(296),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(565),
-=======
   __webpack_require__(579),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\SocialButtons.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\SocialButtons.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] SocialButtons.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107306,9 +107199,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-678970af", Component.options)
+    hotAPI.createRecord("data-v-7f69efca", Component.options)
   } else {
-    hotAPI.reload("data-v-678970af", Component.options)
+    hotAPI.reload("data-v-7f69efca", Component.options)
   }
 })()}
 
@@ -107323,17 +107216,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(297),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(554),
-=======
   __webpack_require__(575),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Switches.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\Switches.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Switches.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107344,9 +107233,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2c100452", Component.options)
+    hotAPI.createRecord("data-v-6d8539dc", Component.options)
   } else {
-    hotAPI.reload("data-v-2c100452", Component.options)
+    hotAPI.reload("data-v-6d8539dc", Component.options)
   }
 })()}
 
@@ -107361,17 +107250,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(298),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(550),
-=======
   __webpack_require__(566),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Tables.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\components\\Tables.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Tables.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107382,9 +107267,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-083aa1cc", Component.options)
+    hotAPI.createRecord("data-v-3729285f", Component.options)
   } else {
-    hotAPI.reload("data-v-083aa1cc", Component.options)
+    hotAPI.reload("data-v-3729285f", Component.options)
   }
 })()}
 
@@ -107405,7 +107290,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardBarChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\dashboard\\CardBarChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107415,9 +107300,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-263eaee0", Component.options)
+    hotAPI.createRecord("data-v-b2eb3b56", Component.options)
   } else {
-    hotAPI.reload("data-v-263eaee0", Component.options)
+    hotAPI.reload("data-v-b2eb3b56", Component.options)
   }
 })()}
 
@@ -107438,7 +107323,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine1ChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\dashboard\\CardLine1ChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107448,9 +107333,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-385ec4fa", Component.options)
+    hotAPI.createRecord("data-v-2e81217f", Component.options)
   } else {
-    hotAPI.reload("data-v-385ec4fa", Component.options)
+    hotAPI.reload("data-v-2e81217f", Component.options)
   }
 })()}
 
@@ -107471,7 +107356,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine2ChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\dashboard\\CardLine2ChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107481,9 +107366,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-edeeba0a", Component.options)
+    hotAPI.createRecord("data-v-7f2aff80", Component.options)
   } else {
-    hotAPI.reload("data-v-edeeba0a", Component.options)
+    hotAPI.reload("data-v-7f2aff80", Component.options)
   }
 })()}
 
@@ -107504,7 +107389,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine3ChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\dashboard\\CardLine3ChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107514,9 +107399,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4c9afe08", Component.options)
+    hotAPI.createRecord("data-v-605644fe", Component.options)
   } else {
-    hotAPI.reload("data-v-4c9afe08", Component.options)
+    hotAPI.reload("data-v-605644fe", Component.options)
   }
 })()}
 
@@ -107537,7 +107422,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\MainChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\dashboard\\MainChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107547,9 +107432,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1ef4b974", Component.options)
+    hotAPI.createRecord("data-v-7e9c4462", Component.options)
   } else {
-    hotAPI.reload("data-v-1ef4b974", Component.options)
+    hotAPI.reload("data-v-7e9c4462", Component.options)
   }
 })()}
 
@@ -107570,7 +107455,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\SocialBoxChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\dashboard\\SocialBoxChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -107580,9 +107465,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03b35eea", Component.options)
+    hotAPI.createRecord("data-v-176ea5e0", Component.options)
   } else {
-    hotAPI.reload("data-v-03b35eea", Component.options)
+    hotAPI.reload("data-v-176ea5e0", Component.options)
   }
 })()}
 
@@ -107597,17 +107482,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(305),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(570),
-=======
   __webpack_require__(581),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\icons\\FontAwesome.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\icons\\FontAwesome.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] FontAwesome.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107618,9 +107499,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6f79987b", Component.options)
+    hotAPI.createRecord("data-v-aa7fdc80", Component.options)
   } else {
-    hotAPI.reload("data-v-6f79987b", Component.options)
+    hotAPI.reload("data-v-aa7fdc80", Component.options)
   }
 })()}
 
@@ -107635,17 +107516,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(306),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(573),
-=======
   __webpack_require__(578),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\icons\\SimpleLineIcons.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\icons\\SimpleLineIcons.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] SimpleLineIcons.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107656,9 +107533,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-b9d7b44a", Component.options)
+    hotAPI.createRecord("data-v-784274a0", Component.options)
   } else {
-    hotAPI.reload("data-v-b9d7b44a", Component.options)
+    hotAPI.reload("data-v-784274a0", Component.options)
   }
 })()}
 
@@ -107673,17 +107550,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(307),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(575),
-=======
   __webpack_require__(559),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\label\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\label\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107694,9 +107567,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c642da9a", Component.options)
+    hotAPI.createRecord("data-v-13edcd0e", Component.options)
   } else {
-    hotAPI.reload("data-v-c642da9a", Component.options)
+    hotAPI.reload("data-v-13edcd0e", Component.options)
   }
 })()}
 
@@ -107717,7 +107590,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\label\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\label\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107728,9 +107601,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5e508ce6", Component.options)
+    hotAPI.createRecord("data-v-47e6f3e8", Component.options)
   } else {
-    hotAPI.reload("data-v-5e508ce6", Component.options)
+    hotAPI.reload("data-v-47e6f3e8", Component.options)
   }
 })()}
 
@@ -107745,17 +107618,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(309),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(569),
-=======
   __webpack_require__(565),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Login.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\pages\\Login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107766,9 +107635,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6e29308c", Component.options)
+    hotAPI.createRecord("data-v-33c378bf", Component.options)
   } else {
-    hotAPI.reload("data-v-6e29308c", Component.options)
+    hotAPI.reload("data-v-33c378bf", Component.options)
   }
 })()}
 
@@ -107783,17 +107652,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(310),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(576),
-=======
   __webpack_require__(580),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Page404.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\pages\\Page404.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page404.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107804,9 +107669,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d18ef34c", Component.options)
+    hotAPI.createRecord("data-v-a75f2bc2", Component.options)
   } else {
-    hotAPI.reload("data-v-d18ef34c", Component.options)
+    hotAPI.reload("data-v-a75f2bc2", Component.options)
   }
 })()}
 
@@ -107821,17 +107686,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(311),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(567),
-=======
   __webpack_require__(568),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Page500.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\pages\\Page500.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page500.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107842,9 +107703,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-683338d2", Component.options)
+    hotAPI.createRecord("data-v-3e037148", Component.options)
   } else {
-    hotAPI.reload("data-v-683338d2", Component.options)
+    hotAPI.reload("data-v-3e037148", Component.options)
   }
 })()}
 
@@ -107859,17 +107720,13 @@ var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(312),
   /* template */
-<<<<<<< HEAD
-  __webpack_require__(551),
-=======
   __webpack_require__(586),
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Register.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\pages\\Register.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -107880,9 +107737,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0ea6423c", Component.options)
+    hotAPI.createRecord("data-v-f2dd1886", Component.options)
   } else {
-    hotAPI.reload("data-v-0ea6423c", Component.options)
+    hotAPI.reload("data-v-f2dd1886", Component.options)
   }
 })()}
 
@@ -107891,7113 +107748,6 @@ module.exports = Component.exports
 
 /***/ }),
 /* 555 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "wrapper"
-  }, [_c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('button', {
-    staticClass: "btn btn-secondary",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.myModal = true
-      }
-    }
-  }, [_vm._v("Launch demo modal")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-secondary",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.largeModal = true
-      }
-    }
-  }, [_vm._v("Launch large modal")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-secondary",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.smallModal = true
-      }
-    }
-  }, [_vm._v("Launch small modal")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.primaryModal = true
-      }
-    }
-  }, [_vm._v("Launch primary modal")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-success",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.successModal = true
-      }
-    }
-  }, [_vm._v("Launch success modal")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-warning",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.warningModal = true
-      }
-    }
-  }, [_vm._v("Launch warning modal")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-danger",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.dangerModal = true
-      }
-    }
-  }, [_vm._v("Launch danger modal")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-info",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.infoModal = true
-      }
-    }
-  }, [_vm._v("Launch info modal")])])])])])]), _vm._v(" "), _c('modal', {
-    attrs: {
-      "title": "Modal title",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.myModal = false
-      }
-    },
-    model: {
-      value: (_vm.myModal),
-      callback: function($$v) {
-        _vm.myModal = $$v
-      },
-      expression: "myModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    attrs: {
-      "title": "Modal title",
-      "large": "",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.largeModal = false
-      }
-    },
-    model: {
-      value: (_vm.largeModal),
-      callback: function($$v) {
-        _vm.largeModal = $$v
-      },
-      expression: "largeModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    attrs: {
-      "title": "Modal title",
-      "small": "",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.smallModal = false
-      }
-    },
-    model: {
-      value: (_vm.smallModal),
-      callback: function($$v) {
-        _vm.smallModal = $$v
-      },
-      expression: "smallModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    staticClass: "modal-primary",
-    attrs: {
-      "title": "Modal title",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.primaryModal = false
-      }
-    },
-    model: {
-      value: (_vm.primaryModal),
-      callback: function($$v) {
-        _vm.primaryModal = $$v
-      },
-      expression: "primaryModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    staticClass: "modal-success",
-    attrs: {
-      "title": "Modal title",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.successModal = false
-      }
-    },
-    model: {
-      value: (_vm.successModal),
-      callback: function($$v) {
-        _vm.successModal = $$v
-      },
-      expression: "successModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    staticClass: "modal-warning",
-    attrs: {
-      "title": "Modal title",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.warningModal = false
-      }
-    },
-    model: {
-      value: (_vm.warningModal),
-      callback: function($$v) {
-        _vm.warningModal = $$v
-      },
-      expression: "warningModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    staticClass: "modal-danger",
-    attrs: {
-      "title": "Modal title",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.dangerModal = false
-      }
-    },
-    model: {
-      value: (_vm.dangerModal),
-      callback: function($$v) {
-        _vm.dangerModal = $$v
-      },
-      expression: "dangerModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
-    staticClass: "modal-info",
-    attrs: {
-      "title": "Modal title",
-      "effect": "fade/zoom"
-    },
-    on: {
-      "ok": function($event) {
-        _vm.infoModal = false
-      }
-    },
-    model: {
-      value: (_vm.infoModal),
-      callback: function($$v) {
-        _vm.infoModal = $$v
-      },
-      expression: "infoModal"
-    }
-  }, [_c('div', {
-    staticClass: "modal-header",
-    attrs: {
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")])], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Bootstrap Modals\n          ")])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-012338ca", module.exports)
-  }
-}
-
-/***/ }),
-/* 550 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Simple Table\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('table', {
-    staticClass: "table"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Samppa Nori")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Estavan Lykos")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-danger"
-  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Chetan Mohamed")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-default"
-  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Derick Maximinus")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-warning"
-  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Friderik Dávid")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item active"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Next")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-lg-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Striped Table\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('table', {
-    staticClass: "table table-striped"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Yiorgos Avraamu")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Avram Tarasios")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-danger"
-  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Quintin Ed")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-default"
-  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Enéas Kwadwo")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-warning"
-  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Agapetus Tadeáš")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item active"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Next")])])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Condensed Table\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('table', {
-    staticClass: "table table-condensed"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Carwyn Fachtna")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Nehemiah Tatius")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-danger"
-  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Ebbe Gemariah")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-default"
-  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Eustorgios Amulius")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-warning"
-  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Leopold Gáspár")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item active"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Next")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-lg-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Bordered Table\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('table', {
-    staticClass: "table table-bordered"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Pompeius René")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Paĉjo Jadon")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-danger"
-  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Micheal Mercurius")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-default"
-  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Ganesha Dubhghall")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-warning"
-  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Hiroto Šimun")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item active"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Next")])])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Combined All Table\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('table', {
-    staticClass: "table table-bordered table-striped table-condensed"
-  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Vishnu Serghei")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Zbyněk Phoibos")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-danger"
-  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Einar Randall")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-default"
-  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Félix Troels")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-warning"
-  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Aulus Agmundr")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('nav', [_c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item active"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item"
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Next")])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-083aa1cc", module.exports)
-  }
-}
-
-/***/ }),
-/* 551 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "app flex-row align-items-center"
-  }, [_c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "row justify-content-center"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card mx-2"
-  }, [_c('div', {
-    staticClass: "card-block p-2"
-  }, [_c('h1', [_vm._v("Register")]), _vm._v(" "), _c('p', {
-    staticClass: "text-muted"
-  }, [_vm._v("Create An Admin Account")]), _vm._v(" "), _c('div', {
-    staticClass: "input-group mb-1"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "icon-user"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "Username"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "input-group mb-1"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("@")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "Email"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "input-group mb-1"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "icon-lock"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "placeholder": "Password"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "input-group mb-2"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "icon-lock"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "placeholder": "Repeat password"
-    }
-  })]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-block btn-success",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Create Account")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer p-2"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-6"
-  }, [_c('button', {
-    staticClass: "btn btn-block btn-facebook",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("facebook")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-6"
-  }, [_c('button', {
-    staticClass: "btn btn-block btn-twitter",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("twitter")])])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-0ea6423c", module.exports)
-  }
-}
-
-/***/ }),
-/* 552 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Credit Card")]), _vm._v(" "), _c('small', [_vm._v("Form")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "name"
-    }
-  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "name",
-      "placeholder": "Enter your name"
-    }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "ccnumber"
-    }
-  }, [_vm._v("Credit Card Number")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "ccnumber",
-      "placeholder": "0000 0000 0000 0000"
-    }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "ccmonth"
-    }
-  }, [_vm._v("Month")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "ccmonth"
-    }
-  }, [_c('option', [_vm._v("1")]), _vm._v(" "), _c('option', [_vm._v("2")]), _vm._v(" "), _c('option', [_vm._v("3")]), _vm._v(" "), _c('option', [_vm._v("4")]), _vm._v(" "), _c('option', [_vm._v("5")]), _vm._v(" "), _c('option', [_vm._v("6")]), _vm._v(" "), _c('option', [_vm._v("7")]), _vm._v(" "), _c('option', [_vm._v("8")]), _vm._v(" "), _c('option', [_vm._v("9")]), _vm._v(" "), _c('option', [_vm._v("10")]), _vm._v(" "), _c('option', [_vm._v("11")]), _vm._v(" "), _c('option', [_vm._v("12")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "ccyear"
-    }
-  }, [_vm._v("Year")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "ccyear"
-    }
-  }, [_c('option', [_vm._v("2014")]), _vm._v(" "), _c('option', [_vm._v("2015")]), _vm._v(" "), _c('option', [_vm._v("2016")]), _vm._v(" "), _c('option', [_vm._v("2017")]), _vm._v(" "), _c('option', [_vm._v("2018")]), _vm._v(" "), _c('option', [_vm._v("2019")]), _vm._v(" "), _c('option', [_vm._v("2020")]), _vm._v(" "), _c('option', [_vm._v("2021")]), _vm._v(" "), _c('option', [_vm._v("2022")]), _vm._v(" "), _c('option', [_vm._v("2023")]), _vm._v(" "), _c('option', [_vm._v("2024")]), _vm._v(" "), _c('option', [_vm._v("2025")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "cvv"
-    }
-  }, [_vm._v("CVV/CVC")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "cvv",
-      "placeholder": "123"
-    }
-  })])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Company")]), _vm._v(" "), _c('small', [_vm._v("Form")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Company")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "company",
-      "placeholder": "Enter your company name"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "vat"
-    }
-  }, [_vm._v("VAT")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "vat",
-      "placeholder": "PL1234567890"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "street"
-    }
-  }, [_vm._v("Street")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "street",
-      "placeholder": "Enter street name"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-8"
-  }, [_c('label', {
-    attrs: {
-      "for": "city"
-    }
-  }, [_vm._v("City")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "city",
-      "placeholder": "Enter your city"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Postal Code")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "postal-code",
-      "placeholder": "Postal Code"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "country"
-    }
-  }, [_vm._v("Country")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "country",
-      "placeholder": "Country name"
-    }
-<<<<<<< HEAD
-  })])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Basic Form")]), _vm._v(" Elements\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post",
-      "enctype": "multipart/form-data"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Static")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('p', {
-    staticClass: "form-control-static"
-  }, [_vm._v("Username")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "text-input"
-    }
-  }, [_vm._v("Text Input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "text-input",
-      "name": "text-input",
-      "placeholder": "Text"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("This is a help text")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "email-input"
-    }
-  }, [_vm._v("Email Input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "email-input",
-      "name": "email-input",
-      "placeholder": "Enter Email"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Please enter your email")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "password-input"
-    }
-  }, [_vm._v("Password")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "password-input",
-      "name": "password-input",
-      "placeholder": "Password"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Please enter a complex password")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "disabled-input"
-    }
-  }, [_vm._v("Disabled Input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "disabled-input",
-      "name": "disabled-input",
-      "placeholder": "Disabled",
-      "disabled": ""
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "textarea-input"
-    }
-  }, [_vm._v("Textarea")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('textarea', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "textarea-input",
-      "name": "textarea-input",
-      "rows": "9",
-      "placeholder": "Content.."
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Select")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "0"
-    }
-  }, [_vm._v("Please select")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("Option #3")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Select Large")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('select', {
-    staticClass: "form-control form-control-lg",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "0"
-    }
-  }, [_vm._v("Please select")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("Option #3")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Select Small")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('select', {
-    staticClass: "form-control form-control-sm",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "0"
-    }
-  }, [_vm._v("Please select")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("Option #3")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Disabled Select")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "disabledSelect",
-      "disabled": ""
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "0"
-    }
-  }, [_vm._v("Please select")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("Option #3")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "multiple-select"
-    }
-  }, [_vm._v("Multiple select")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "multiple-select",
-      "name": "multiple-select",
-      "size": "5",
-      "multiple": ""
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("Option #3")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4"
-    }
-  }, [_vm._v("Option #4")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5"
-    }
-  }, [_vm._v("Option #5")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6"
-    }
-  }, [_vm._v("Option #6")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "7"
-    }
-  }, [_vm._v("Option #7")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "8"
-    }
-  }, [_vm._v("Option #8")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "9"
-    }
-  }, [_vm._v("Option #9")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "10"
-    }
-  }, [_vm._v("Option #10")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Radios")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('div', {
-    staticClass: "radio"
-  }, [_c('label', {
-    attrs: {
-      "for": "radio1"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "radio",
-      "id": "radio1",
-      "name": "radios",
-      "value": "option1"
-    }
-  }), _vm._v(" Option 1\n                  ")])]), _vm._v(" "), _c('div', {
-    staticClass: "radio"
-  }, [_c('label', {
-    attrs: {
-      "for": "radio2"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "radio",
-      "id": "radio2",
-      "name": "radios",
-      "value": "option2"
-    }
-  }), _vm._v(" Option 2\n                  ")])]), _vm._v(" "), _c('div', {
-    staticClass: "radio"
-  }, [_c('label', {
-    attrs: {
-      "for": "radio3"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "radio",
-      "id": "radio3",
-      "name": "radios",
-      "value": "option3"
-    }
-  }), _vm._v(" Option 3\n                  ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Inline Radios")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('label', {
-    staticClass: "radio-inline",
-    attrs: {
-      "for": "inline-radio1"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "radio",
-      "id": "inline-radio1",
-      "name": "inline-radios",
-      "value": "option1"
-    }
-  }), _vm._v(" One\n                ")]), _vm._v(" "), _c('label', {
-    staticClass: "radio-inline",
-    attrs: {
-      "for": "inline-radio2"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "radio",
-      "id": "inline-radio2",
-      "name": "inline-radios",
-      "value": "option2"
-    }
-  }), _vm._v(" Two\n                ")]), _vm._v(" "), _c('label', {
-    staticClass: "radio-inline",
-    attrs: {
-      "for": "inline-radio3"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "radio",
-      "id": "inline-radio3",
-      "name": "inline-radios",
-      "value": "option3"
-    }
-  }), _vm._v(" Three\n                ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Checkboxes")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('div', {
-    staticClass: "checkbox"
-  }, [_c('label', {
-    attrs: {
-      "for": "checkbox1"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "checkbox1",
-      "name": "checkbox1",
-      "value": "option1"
-    }
-  }), _vm._v(" Option 1\n                  ")])]), _vm._v(" "), _c('div', {
-    staticClass: "checkbox"
-  }, [_c('label', {
-    attrs: {
-      "for": "checkbox2"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "checkbox2",
-      "name": "checkbox2",
-      "value": "option2"
-    }
-  }), _vm._v(" Option 2\n                  ")])]), _vm._v(" "), _c('div', {
-    staticClass: "checkbox"
-  }, [_c('label', {
-    attrs: {
-      "for": "checkbox3"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "checkbox3",
-      "name": "checkbox3",
-      "value": "option3"
-    }
-  }), _vm._v(" Option 3\n                  ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Inline Checkboxes")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('label', {
-    staticClass: "checkbox-inline",
-    attrs: {
-      "for": "inline-checkbox1"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "inline-checkbox1",
-      "name": "inline-checkbox1",
-      "value": "option1"
-    }
-  }), _vm._v("One\n                ")]), _vm._v(" "), _c('label', {
-    staticClass: "checkbox-inline",
-    attrs: {
-      "for": "inline-checkbox2"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "inline-checkbox2",
-      "name": "inline-checkbox2",
-      "value": "option2"
-    }
-  }), _vm._v("Two\n                ")]), _vm._v(" "), _c('label', {
-    staticClass: "checkbox-inline",
-    attrs: {
-      "for": "inline-checkbox3"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "inline-checkbox3",
-      "name": "inline-checkbox3",
-      "value": "option3"
-    }
-  }), _vm._v("Three\n                ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "file-input"
-    }
-  }, [_vm._v("File input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    attrs: {
-      "type": "file",
-      "id": "file-input",
-      "name": "file-input"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "file-multiple-input"
-    }
-  }, [_vm._v("Multiple File input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    attrs: {
-      "type": "file",
-      "id": "file-multiple-input",
-      "name": "file-multiple-input",
-      "multiple": ""
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-=======
-  }, [_vm._v("Block level button")])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-039f13f7", module.exports)
-  }
-}
-
-/***/ }),
-/* 556 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('footer', {
-    staticClass: "app-footer"
-  }, [_c('a', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-<<<<<<< HEAD
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
-=======
-  }, [_vm._v("JLE")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-07cdec18", module.exports)
-  }
-}
-
-/***/ }),
-/* 557 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-lg-3"
-  }, [_c('div', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Inline")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-inline",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "exampleInputName2"
-    }
-  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "exampleInputName2",
-      "placeholder": "Jane Doe"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "exampleInputEmail2"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "exampleInputEmail2",
-      "placeholder": "jane.doe@example.com"
-    }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Horizontal")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "hf-email"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "hf-email",
-      "name": "hf-email",
-      "placeholder": "Enter Email.."
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Please enter your email")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "hf-password"
-    }
-  }, [_vm._v("Password")]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "hf-password",
-      "name": "hf-password",
-      "placeholder": "Enter Password.."
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Please enter your password")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Normal")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "nf-email"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "nf-email",
-      "name": "nf-email",
-      "placeholder": "Enter Email.."
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Please enter your email")])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "nf-password"
-    }
-  }, [_vm._v("Password")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "nf-password",
-      "name": "nf-password",
-      "placeholder": "Enter Password.."
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Please enter your password")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Input "), _c('strong', [_vm._v("Grid")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-3"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-3"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-4"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-5"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-5"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-6"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-7"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-7"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-8"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-8"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-9"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-9"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-10"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-10"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-11"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-11"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-sm-12"
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-user"
-  }), _vm._v(" Login")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Input "), _c('strong', [_vm._v("Sizes")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-sm-3 form-control-label",
-    attrs: {
-      "for": "input-small"
-    }
-  }, [_vm._v("Small Input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('input', {
-    staticClass: "form-control form-control-sm",
-    attrs: {
-      "type": "text",
-      "id": "input-small",
-      "name": "input-small",
-      "placeholder": ".form-control-sm"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-sm-3 form-control-label",
-    attrs: {
-      "for": "input-normal"
-    }
-  }, [_vm._v("Normal Input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input-normal",
-      "name": "input-normal",
-      "placeholder": "Normal"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('label', {
-    staticClass: "col-sm-3 form-control-label",
-    attrs: {
-      "for": "input-large"
-    }
-  }, [_vm._v("Large Input")]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('input', {
-    staticClass: "form-control form-control-lg",
-    attrs: {
-      "type": "text",
-      "id": "input-large",
-      "name": "input-large",
-      "placeholder": ".form-control-lg"
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Validation states")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "form-group has-success"
-  }, [_c('label', {
-    staticClass: "form-form-control-label",
-    attrs: {
-      "for": "inputSuccess1"
-    }
-  }, [_vm._v("Input with success")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "inputSuccess1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group has-warning"
-  }, [_c('label', {
-    staticClass: "form-form-control-label",
-    attrs: {
-      "for": "inputWarning1"
-    }
-  }, [_vm._v("Input with warning")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "inputWarning1"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group has-danger"
-  }, [_c('label', {
-    staticClass: "form-form-control-label",
-    attrs: {
-      "for": "inputError1"
-    }
-  }, [_vm._v("Input with error")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "inputError1"
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Validation states")]), _vm._v(" with optional icons\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "form-group has-success"
-  }, [_c('label', {
-    staticClass: "form-form-control-label",
-    attrs: {
-      "for": "inputSuccess2"
-    }
-  }, [_vm._v("Input with success")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control form-control-success",
-    attrs: {
-      "type": "text",
-      "id": "inputSuccess2"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group has-warning"
-  }, [_c('label', {
-    staticClass: "form-form-control-label",
-    attrs: {
-      "for": "inputWarning2"
-    }
-  }, [_vm._v("Input with warning")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control form-control-warning",
-    attrs: {
-      "type": "text",
-      "id": "inputWarning2"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group has-danger has-feedback"
-  }, [_c('label', {
-    staticClass: "form-form-control-label",
-    attrs: {
-      "for": "inputError2"
-    }
-  }, [_vm._v("Input with error")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control form-control-danger",
-    attrs: {
-      "type": "text",
-      "id": "inputError2"
-    }
-  })])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Icon/Text")]), _vm._v(" Groups\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-user"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input1-group1",
-      "name": "input1-group1",
-      "placeholder": "Username"
-    }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "input2-group1",
-      "name": "input2-group1",
-      "placeholder": "Email"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-envelope-o"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-euro"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input3-group1",
-      "name": "input3-group1",
-      "placeholder": ".."
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v(".00")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-success",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Buttons")]), _vm._v(" Groups\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-search"
-  }), _vm._v(" Search")])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input1-group2",
-      "name": "input1-group2",
-      "placeholder": "Username"
-    }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "input2-group2",
-      "name": "input2-group2",
-      "placeholder": "Email"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Submit")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-facebook"
-  })])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input3-group2",
-      "name": "input3-group2",
-      "placeholder": "Search"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-twitter"
-  })])])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-success",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Dropdowns")]), _vm._v(" Groups\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('div', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary dropdown-toggle",
-    attrs: {
-      "type": "button",
-      "data-toggle": "dropdown"
-    }
-  }, [_vm._v("Action "), _c('span', {
-    staticClass: "caret"
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-menu"
-  }, [_c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-divider",
-    attrs: {
-      "role": "separator"
-    }
-  }), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Separated link")])])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input1-group3",
-      "name": "input1-group3",
-      "placeholder": "Username"
-    }
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "input2-group3",
-      "name": "input2-group3",
-      "placeholder": "Email"
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary dropdown-toggle",
-    attrs: {
-      "type": "button",
-      "data-toggle": "dropdown"
-    }
-<<<<<<< HEAD
-  }, [_vm._v("Action "), _c('span', {
-    staticClass: "caret"
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-menu dropdown-menu-right"
-  }, [_c('a', {
-    staticClass: "dropdown-item",
-=======
-  })])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-09f67a10", module.exports)
-  }
-}
-
-/***/ }),
-/* 558 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("LIST")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-divider",
-    attrs: {
-      "role": "separator"
-    }
-  }), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-<<<<<<< HEAD
-  }, [_vm._v("Separated link")])])])])])]), _vm._v(" "), _c('div', {
-=======
-  }, [_vm._v("Next")])])])], 2)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-0a5e2b22", module.exports)
-  }
-}
-
-/***/ }),
-/* 559 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('div', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    }
-<<<<<<< HEAD
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary dropdown-toggle dropdown-toggle-split",
-=======
-  }, [_vm._v("Cancel")])])], 1)])])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("block")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-13edcd0e", module.exports)
-  }
-}
-
-/***/ }),
-/* 560 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-lg-3"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-primary"
-  }, [_c('div', {
-    staticClass: "card-block pb-0"
-  }, [_c('dropdown', {
-    staticClass: "float-right",
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "type": "button",
-      "data-toggle": "dropdown"
-    }
-  }, [_c('span', {
-    staticClass: "caret"
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-menu"
-  }, [_c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-divider",
-    attrs: {
-      "role": "separator"
-    }
-  }), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Separated link")])])]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "input3-group3",
-      "name": "input3-group3",
-      "placeholder": ".."
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-primary dropdown-toggle",
-    attrs: {
-      "type": "button",
-      "data-toggle": "dropdown"
-    }
-  }, [_c('span', {
-    staticClass: "caret"
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-menu dropdown-menu-right"
-  }, [_c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-divider",
-    attrs: {
-      "role": "separator"
-    }
-  }), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Separated link")])])])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-success",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-dot-circle-o"
-  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "reset"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-ban"
-  }), _vm._v(" Reset")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Use the grid for big devices! "), _c('small', [_c('code', [_vm._v(".col-lg-*")]), _vm._v(" "), _c('code', [_vm._v(".col-md-*")]), _vm._v(" "), _c('code', [_vm._v(".col-sm-*")])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-8"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-8"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-4"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-7"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-7"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-5"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-5"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-6"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-6"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-5"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-5"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-7"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-7"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-md-4"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-4"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-8"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-md-8"
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-warning",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-info",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-success",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Input Grid for small devices! "), _c('small', [_c('code', [_vm._v(".col-*")])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal ",
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-4"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-4"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-8"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-8"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-5"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-5"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-7"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-7"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-6"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-6"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-6"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-6"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-7"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-5"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-5"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-5"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group row"
-  }, [_c('div', {
-    staticClass: "col-8"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-8"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-4"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": ".col-4"
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-danger",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-warning",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-info",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-success",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Action")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Example Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("Username")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "username3",
-      "name": "username3"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-user"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "email3",
-      "name": "email3"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-envelope"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("Password")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "password3",
-      "name": "password3"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-asterisk"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Submit")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Example Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "username2",
-      "name": "username2",
-      "placeholder": "Username"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-user"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "email2",
-      "name": "email2",
-      "placeholder": "Email"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-envelope"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "password2",
-      "name": "password2",
-      "placeholder": "Password"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-asterisk"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-default",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Submit")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Example Form\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    attrs: {
-      "action": "",
-      "method": "post"
-    }
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-user"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "username",
-      "name": "username",
-      "placeholder": "Username"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-envelope"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "email",
-      "id": "email",
-      "name": "email",
-      "placeholder": "Email"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-asterisk"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "password",
-      "name": "password",
-      "placeholder": "Password"
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-sm btn-success",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Submit")])])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-edit"
-  }), _vm._v("Form Elements\n          "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    staticClass: "btn-setting",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-settings"
-  })]), _vm._v(" "), _c('a', {
-    staticClass: "btn-minimize",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-arrow-up"
-  })]), _vm._v(" "), _c('a', {
-    staticClass: "btn-close",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-close"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "form-horizontal"
-  }, [_c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "form-control-label",
-    attrs: {
-      "for": "prependedInput"
-    }
-  }, [_vm._v("Prepended text")]), _vm._v(" "), _c('div', {
-    staticClass: "controls"
-  }, [_c('div', {
-    staticClass: "input-prepend input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("@")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "prependedInput",
-      "size": "16",
-      "type": "text"
-    }
-  })]), _vm._v(" "), _c('p', {
-    staticClass: "help-block"
-  }, [_vm._v("Here's some help text")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "form-control-label",
-    attrs: {
-      "for": "appendedInput"
-    }
-  }, [_vm._v("Appended text")]), _vm._v(" "), _c('div', {
-    staticClass: "controls"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "appendedInput",
-      "size": "16",
-      "type": "text"
-    }
-  }), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v(".00")])]), _vm._v(" "), _c('span', {
-    staticClass: "help-block"
-  }, [_vm._v("Here's more help text")])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "form-control-label",
-    attrs: {
-      "for": "appendedPrependedInput"
-    }
-  }, [_vm._v("Append and prepend")]), _vm._v(" "), _c('div', {
-    staticClass: "controls"
-  }, [_c('div', {
-    staticClass: "input-prepend input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v("$")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "appendedPrependedInput",
-      "size": "16",
-      "type": "text"
-    }
-  }), _c('span', {
-    staticClass: "input-group-addon"
-  }, [_vm._v(".00")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "form-control-label",
-    attrs: {
-      "for": "appendedInputButton"
-    }
-  }, [_vm._v("Append with button")]), _vm._v(" "), _c('div', {
-    staticClass: "controls"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "appendedInputButton",
-      "size": "16",
-      "type": "text"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Go!")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    staticClass: "form-control-label",
-    attrs: {
-      "for": "appendedInputButtons"
-    }
-  }, [_vm._v("Two-button append")]), _vm._v(" "), _c('div', {
-    staticClass: "controls"
-  }, [_c('div', {
-    staticClass: "input-group"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "appendedInputButtons",
-      "size": "16",
-      "type": "text"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Search")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Options")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Cancel")])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-1897e1ec", module.exports)
-  }
-}
-
-/***/ }),
-/* 553 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('navbar', [_c('button', {
-    staticClass: "navbar-toggler mobile-sidebar-toggler hidden-lg-up",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.mobileSidebarToggle
-    }
-  }, [_vm._v("☰")]), _vm._v(" "), _c('a', {
-    staticClass: "navbar-brand",
-    attrs: {
-      "href": "#"
-    }
-  }), _vm._v(" "), _c('ul', {
-    staticClass: "nav navbar-nav hidden-md-down"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('a', {
-    staticClass: "nav-link navbar-toggler sidebar-toggler",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": _vm.sidebarToggle
-    }
-  }, [_vm._v("☰")])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item px-1"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Dashboard")])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item px-1"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Users")])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item px-1"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Settings")])])]), _vm._v(" "), _c('ul', {
-    staticClass: "nav navbar-nav ml-auto"
-  }, [_c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-bell"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "badge badge-pill badge-danger"
-  }, [_vm._v("5")])])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-list"
-  })])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-location-pin"
-  })])]), _vm._v(" "), _c('dropdown', {
-    staticClass: "nav-item",
-    attrs: {
-      "size": "nav"
-    }
-  }, [_c('span', {
-    attrs: {
-      "slot": "button"
-    },
-    slot: "button"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "static/img/avatars/6.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "hidden-md-down"
-  }, [_vm._v("admin")])]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-menu dropdown-menu-right",
-    attrs: {
-      "slot": "dropdown-menu"
-    },
-    slot: "dropdown-menu"
-  }, [_c('div', {
-    staticClass: "dropdown-header text-center"
-  }, [_c('strong', [_vm._v("Account")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-<<<<<<< HEAD
-=======
-    staticClass: "fa fa-cc-stripe",
-    staticStyle: {
-      "font-size": "24px"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "small text-muted"
-  }, [_vm._v("Last login")]), _vm._v(" "), _c('strong', [_vm._v("1 hour ago")])])]), _vm._v(" "), _c('tr', [_c('td', {
-    staticClass: "text-center"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "static/img/avatars/4.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "avatar-status badge-default"
-  })])]), _vm._v(" "), _c('td', [_c('div', [_vm._v("Enéas Kwadwo")]), _vm._v(" "), _c('div', {
-    staticClass: "small text-muted"
-  }, [_c('span', [_vm._v("New")]), _vm._v(" | Registered: Jan 1, 2015\n                  ")])]), _vm._v(" "), _c('td', {
-    staticClass: "text-center"
-  }, [_c('img', {
-    staticStyle: {
-      "height": "24px"
-    },
-    attrs: {
-      "src": "static/img/flags/France.png",
-      "alt": "France"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "clearfix"
-  }, [_c('div', {
-    staticClass: "float-left"
-  }, [_c('strong', [_vm._v("98%")])]), _vm._v(" "), _c('div', {
-    staticClass: "float-right"
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Jun 11, 2015 - Jul 10, 2015")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-danger",
-    staticStyle: {
-      "width": "98%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "98",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })])]), _vm._v(" "), _c('td', {
-    staticClass: "text-center"
-  }, [_c('i', {
-    staticClass: "fa fa-paypal",
-    staticStyle: {
-      "font-size": "24px"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "small text-muted"
-  }, [_vm._v("Last login")]), _vm._v(" "), _c('strong', [_vm._v("Last month")])])]), _vm._v(" "), _c('tr', [_c('td', {
-    staticClass: "text-center"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "static/img/avatars/5.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "avatar-status badge-success"
-  })])]), _vm._v(" "), _c('td', [_c('div', [_vm._v("Agapetus Tadeáš")]), _vm._v(" "), _c('div', {
-    staticClass: "small text-muted"
-  }, [_c('span', [_vm._v("New")]), _vm._v(" | Registered: Jan 1, 2015\n                  ")])]), _vm._v(" "), _c('td', {
-    staticClass: "text-center"
-  }, [_c('img', {
-    staticStyle: {
-      "height": "24px"
-    },
-    attrs: {
-      "src": "static/img/flags/Spain.png",
-      "alt": "Spain"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "clearfix"
-  }, [_c('div', {
-    staticClass: "float-left"
-  }, [_c('strong', [_vm._v("22%")])]), _vm._v(" "), _c('div', {
-    staticClass: "float-right"
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Jun 11, 2015 - Jul 10, 2015")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-info",
-    staticStyle: {
-      "width": "22%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "22",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })])]), _vm._v(" "), _c('td', {
-    staticClass: "text-center"
-  }, [_c('i', {
-    staticClass: "fa fa-google-wallet",
-    staticStyle: {
-      "font-size": "24px"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "small text-muted"
-  }, [_vm._v("Last login")]), _vm._v(" "), _c('strong', [_vm._v("Last week")])])]), _vm._v(" "), _c('tr', [_c('td', {
-    staticClass: "text-center"
-  }, [_c('div', {
-    staticClass: "avatar"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "static/img/avatars/6.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "avatar-status badge-danger"
-  })])]), _vm._v(" "), _c('td', [_c('div', [_vm._v("Friderik Dávid")]), _vm._v(" "), _c('div', {
-    staticClass: "small text-muted"
-  }, [_c('span', [_vm._v("New")]), _vm._v(" | Registered: Jan 1, 2015\n                  ")])]), _vm._v(" "), _c('td', {
-    staticClass: "text-center"
-  }, [_c('img', {
-    staticStyle: {
-      "height": "24px"
-    },
-    attrs: {
-      "src": "static/img/flags/Poland.png",
-      "alt": "Poland"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "clearfix"
-  }, [_c('div', {
-    staticClass: "float-left"
-  }, [_c('strong', [_vm._v("43%")])]), _vm._v(" "), _c('div', {
-    staticClass: "float-right"
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Jun 11, 2015 - Jul 10, 2015")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-success",
-    staticStyle: {
-      "width": "43%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "43",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })])]), _vm._v(" "), _c('td', {
-    staticClass: "text-center"
-  }, [_c('i', {
-    staticClass: "fa fa-cc-amex",
-    staticStyle: {
-      "font-size": "24px"
-    }
-  })]), _vm._v(" "), _c('td', [_c('div', {
-    staticClass: "small text-muted"
-  }, [_vm._v("Last login")]), _vm._v(" "), _c('strong', [_vm._v("Yesterday")])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-19320d35", module.exports)
-  }
-}
-
-/***/ }),
-/* 561 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('navbar', [_c('button', {
-    staticClass: "navbar-toggler mobile-sidebar-toggler hidden-lg-up",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": _vm.mobileSidebarToggle
-    }
-  }, [_vm._v("☰")]), _vm._v(" "), _c('a', {
-    staticClass: "navbar-brand",
-    attrs: {
-      "href": "#"
-    }
-  }), _vm._v(" "), _c('ul', {
-    staticClass: "nav navbar-nav hidden-md-down"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('a', {
-    staticClass: "nav-link navbar-toggler sidebar-toggler",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": _vm.sidebarToggle
-    }
-  }, [_vm._v("☰")])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item px-1"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Dashboard")])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item px-1"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Users")])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item px-1"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Settings")])])]), _vm._v(" "), _c('ul', {
-    staticClass: "nav navbar-nav ml-auto"
-  }, [_c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-bell"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "badge badge-pill badge-danger"
-  }, [_vm._v("5")])])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-list"
-  })])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-location-pin"
-  })])]), _vm._v(" "), _c('dropdown', {
-    staticClass: "nav-item",
-    attrs: {
-      "size": "nav"
-    }
-  }, [_c('span', {
-    attrs: {
-      "slot": "button"
-    },
-    slot: "button"
-  }, [_c('img', {
-    staticClass: "img-avatar",
-    attrs: {
-      "src": "static/img/avatars/6.jpg",
-      "alt": "admin@bootstrapmaster.com"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "hidden-md-down"
-  }, [_vm._v("admin")])]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-menu dropdown-menu-right",
-    attrs: {
-      "slot": "dropdown-menu"
-    },
-    slot: "dropdown-menu"
-  }, [_c('div', {
-    staticClass: "dropdown-header text-center"
-  }, [_c('strong', [_vm._v("Account")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    staticClass: "fa fa-bell-o"
-  }), _vm._v(" Updates\n                    "), _c('span', {
-    staticClass: "badge badge-info"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-envelope-o"
-  }), _vm._v(" Messages\n                    "), _c('span', {
-    staticClass: "badge badge-success"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-tasks"
-  }), _vm._v(" Tasks\n                    "), _c('span', {
-    staticClass: "badge badge-danger"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-comments"
-  }), _vm._v(" Comments\n                    "), _c('span', {
-    staticClass: "badge badge-warning"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('div', {
-    staticClass: "dropdown-header text-center"
-  }, [_c('strong', [_vm._v("Settings")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-user"
-  }), _vm._v(" Profile")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-wrench"
-  }), _vm._v(" Settings")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-usd"
-  }), _vm._v(" Payments\n                    "), _c('span', {
-    staticClass: "badge badge-default"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-file"
-  }), _vm._v(" Projects\n                    "), _c('span', {
-    staticClass: "badge badge-primary"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('div', {
-    staticClass: "divider"
-  }), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-shield"
-  }), _vm._v(" Lock Account")]), _vm._v(" "), _c('a', {
-    staticClass: "dropdown-item",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "fa fa-lock"
-  }), _vm._v(" Logout")])])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item hidden-md-down"
-  }, [_c('a', {
-    staticClass: "nav-link navbar-toggler aside-menu-toggler",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": _vm.asideToggle
-    }
-  }, [_vm._v("☰")])])], 1)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-207a82ea", module.exports)
-  }
-}
-
-/***/ }),
-<<<<<<< HEAD
-/* 554 */
-=======
-/* 562 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "mb-3",
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.addcompany($event)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Accounts")]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.account_id),
-      expression: "company.account_id"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.$set(_vm.company, "account_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
-      }
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": ""
-    }
-  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
-    return _c('option', {
-      key: account.id,
-      domProps: {
-        "value": account.id
-      }
-    }, [_vm._v(_vm._s(account.name))])
-  })], 2)]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Company Name")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.company_name),
-      expression: "company.company_name"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "Nestle Professional"
-    },
-    domProps: {
-      "value": (_vm.company.company_name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.company, "company_name", $event.target.value)
-      }
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "customer"
-    }
-  }, [_vm._v("Links")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.links),
-      expression: "company.links"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "www.nestle.co.nz"
-    },
-    domProps: {
-      "value": (_vm.company.links)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.company, "links", $event.target.value)
-      }
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.email),
-      expression: "company.email"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "tech.nestle@nestle.co.nz"
-    },
-    domProps: {
-      "value": (_vm.company.email)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.company, "email", $event.target.value)
-      }
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Customer?")]), _vm._v(" "), _c('div', {
-    staticClass: "checkbox"
-  }, [_c('label', {
-    attrs: {
-      "for": "checkbox1"
-    }
-  }, [_c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.is_customer),
-      expression: "company.is_customer"
-    }],
-    attrs: {
-      "type": "checkbox",
-      "id": "checkbox1",
-      "name": "checkbox1",
-      "value": "0"
-    },
-    domProps: {
-      "checked": Array.isArray(_vm.company.is_customer) ? _vm._i(_vm.company.is_customer, "0") > -1 : (_vm.company.is_customer)
-    },
-    on: {
-      "change": function($event) {
-        var $$a = _vm.company.is_customer,
-          $$el = $event.target,
-          $$c = $$el.checked ? (true) : (false);
-        if (Array.isArray($$a)) {
-          var $$v = "0",
-            $$i = _vm._i($$a, $$v);
-          if ($$el.checked) {
-            $$i < 0 && (_vm.$set(_vm.company, "is_customer", $$a.concat([$$v])))
-          } else {
-            $$i > -1 && (_vm.$set(_vm.company, "is_customer", $$a.slice(0, $$i).concat($$a.slice($$i + 1))))
-          }
-        } else {
-          _vm.$set(_vm.company, "is_customer", $$c)
-        }
-      }
-    }
-  }), _vm._v(" No/Yes\n                                    ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "country"
-    }
-  }, [_vm._v("Address")]), _vm._v(" "), _c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.address),
-      expression: "company.address"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "id": "address",
-      "name": "textarea-input",
-      "rows": "9",
-      "placeholder": "Content.."
-    },
-    domProps: {
-      "value": (_vm.company.address)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.company, "address", $event.target.value)
-      }
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'Company List'
-      }
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Cancel")])])], 1)])])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Company")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-1e5d57e5", module.exports)
-  }
-}
-
-/***/ }),
-/* 563 */
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          3d Switch\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-3d switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-3d switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-3d switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-3d switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-3d switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-3d switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch default\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-default switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch default - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-default switch-pill switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-<<<<<<< HEAD
-  }, [_c('label', {
-    staticClass: "switch switch-default switch-primary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-=======
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-204d7a59", module.exports)
-  }
-}
-
-/***/ }),
-/* 564 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "sidebar"
-  }, [_c('nav', {
-    staticClass: "sidebar-nav"
-  }, [_c('ul', {
-    staticClass: "nav"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/dashboard'
-    }
-  }, [_c('i', {
-    staticClass: "icon-speedometer"
-  }), _vm._v(" Dashboard\n                    "), _c('span', {
-    staticClass: "badge badge-info"
-  }, [_vm._v("NEW")])])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-title"
-  }, [_vm._v("\n                UI Elements\n            ")]), _vm._v(" "), _c('router-link', {
-    staticClass: "nav-item nav-dropdown",
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-secondary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-success-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-warning-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-info-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-danger-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch outline - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-default switch-pill switch-primary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-secondary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-success-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-warning-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-info-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-<<<<<<< HEAD
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-danger-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch outline alternative\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-default switch-primary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-=======
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Simple Line Icons")])], 1)])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/company/list',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-calculator"
-  }), _vm._v(" Company\n                ")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/block/list',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-calculator"
-  }), _vm._v(" Block\n                ")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/label/list',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-calculator"
-  }), _vm._v(" Label\n                ")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/blockassociation/list',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-calculator"
-  }), _vm._v(" Block Association\n                ")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/charts',
-      "exact": ""
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-secondary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-success-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-warning-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-info-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-danger-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-<<<<<<< HEAD
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-=======
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Error 500")])], 1)])])], 1)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-2fb2b0d3", module.exports)
-  }
-}
-
-/***/ }),
-/* 565 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "app flex-row align-items-center"
-  }, [_c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "row justify-content-center"
-  }, [_c('div', {
-    staticClass: "col-md-8"
-  }, [_c('div', {
-    staticClass: "card-group mb-0"
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch outline alternative - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-default switch-pill switch-primary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-secondary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-success-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-warning-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-info-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-default switch-pill switch-danger-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-<<<<<<< HEAD
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-=======
-  }, [_vm._v("Register Now!")])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-33c378bf", module.exports)
-  }
-}
-
-/***/ }),
-/* 566 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-6"
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with text\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-text switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with text - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-text switch-pill switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with text outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-text switch-primary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-secondary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-success-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-<<<<<<< HEAD
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-warning-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-=======
-  }, [_vm._v("Next")])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3729285f", module.exports)
-  }
-}
-
-/***/ }),
-/* 567 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "wrapper"
-  }, [_c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-lg-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('button', {
-    staticClass: "btn btn-secondary",
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-info-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-danger-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with text outline - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-text switch-pill switch-primary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-secondary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-warning-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-info-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-danger-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with text outline alternative\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-text switch-primary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-secondary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-success-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-<<<<<<< HEAD
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-=======
-      "slot": "modal-header"
-    },
-    slot: "modal-header"
-  }, [_c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")])], 1)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-align-justify"
-  }), _vm._v(" Bootstrap Modals\n          ")])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3ab4dce0", module.exports)
-  }
-}
-
-/***/ }),
-/* 568 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "app flex-row align-items-center"
-  }, [_c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "row justify-content-center"
-  }, [_c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "clearfix"
-  }, [_c('h1', {
-    staticClass: "float-left display-3 mr-2"
-  }, [_vm._v("500")]), _vm._v(" "), _c('h4', {
-    staticClass: "pt-1"
-  }, [_vm._v("Houston, we have a problem!")]), _vm._v(" "), _c('p', {
-    staticClass: "text-muted"
-  }, [_vm._v("The page you are looking for is temporarily unavailable.")])]), _vm._v(" "), _c('div', {
-    staticClass: "input-prepend input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
-  }, [_c('i', {
-    staticClass: "fa fa-search"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-warning-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-<<<<<<< HEAD
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-info-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-danger-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-=======
-  }, [_vm._v("Search")])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3e037148", module.exports)
-  }
-}
-
-/***/ }),
-/* 569 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with text outline alternative - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-text switch-pill switch-primary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-secondary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-<<<<<<< HEAD
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-warning-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-info-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-=======
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchLabelnames(_vm.pagination.next_page_url)
-      }
-    }
-  }, [_vm._v("Next")])])])], 2)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("description")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-47e6f3e8", module.exports)
-  }
-}
-
-/***/ }),
-/* 570 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    class: ['modal', _vm.effect],
-    attrs: {
-      "role": "dialog"
-    },
-    on: {
-      "click": function($event) {
-        _vm.backdrop && _vm.action(false, 1)
-      },
-      "transitionend": function($event) {
-        _vm.transition = false
-      }
-    }
-  }, [_c('div', {
-    class: ['modal-dialog', {
-      'modal-lg': _vm.large,
-      'modal-sm': _vm.small
-    }],
-    style: ({
-      width: _vm.optionalWidth
-    }),
-    attrs: {
-      "role": "document"
-    },
-    on: {
-      "click": function($event) {
-        $event.stopPropagation();
-        _vm.action(null)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "modal-content"
-  }, [_vm._t("modal-header", [_c('div', {
-    staticClass: "modal-header"
-  }, [_c('button', {
-    staticClass: "close",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.action(false, 2)
-      }
-    }
-  }, [_c('span', [_vm._v("×")])]), _vm._v(" "), _c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._t("title", [_vm._v(_vm._s(_vm.title))])], 2)])]), _vm._v(" "), _vm._t("modal-body", [_c('div', {
-    staticClass: "modal-body"
-  }, [_vm._t("default")], 2)]), _vm._v(" "), _vm._t("modal-footer", [_c('div', {
-    staticClass: "modal-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.action(false, 3)
-      }
-    }
-  }, [_vm._v(_vm._s(_vm.cancelText))]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.action(true, 4)
-      }
-    }
-  }, [_vm._v(_vm._s(_vm.okText))])])])], 2)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-50d10591", module.exports)
-  }
-}
-
-/***/ }),
-/* 571 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Label")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'Company Form'
-      }
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-warning"
-  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
-    staticClass: "card-company"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._l((_vm.companies), function(company) {
-    return _c('table', {
-      key: company.id,
-      staticClass: "table"
-    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(company.account_id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.company_name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.is_customer))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.links))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.email))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.address))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.update_by))]), _vm._v(" "), _c('td', [_c('button', {
-      staticClass: "btn btn-warning mb-2"
-    }, [_c('router-link', {
-      attrs: {
-        "to": {
-          name: 'Company Form',
-          params: {
-            data: company
-          }
-        }
-      }
-    }, [_vm._v("Edit")])], 1)]), _vm._v(" "), _c('td', [_c('button', {
-      staticClass: "btn btn-danger",
-      on: {
-        "click": function($event) {
-          _vm.deletecompany(company.id)
-        }
-      }
-    }, [_vm._v("Delete")])])])])])
-  }), _vm._v(" "), _c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item",
-    class: [{
-      disabled: !_vm.pagination.prev_page_url
-    }]
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchcompanies(_vm.pagination.prev_page_url)
-      }
-    }
-  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item disabled"
-  }, [_c('a', {
-    staticClass: "page-link text-dark",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item",
-    class: [{
-      disabled: !_vm.pagination.next_page_url
-    }]
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchcompanies(_vm.pagination.next_page_url)
-      }
-    }
-  }, [_vm._v("Next")])])])], 2)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("Account Name")]), _vm._v(" "), _c('th', [_vm._v("Company Name")]), _vm._v(" "), _c('th', [_vm._v("Customer: Yes/ No")]), _vm._v(" "), _c('th', [_vm._v("Links")]), _vm._v(" "), _c('th', [_vm._v("Email")]), _vm._v(" "), _c('th', [_vm._v("Address")]), _vm._v(" "), _c('th', [_vm._v("Update By")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-52567ebf", module.exports)
-  }
-}
-
-/***/ }),
-/* 572 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('router-view')
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-57696f23", module.exports)
-  }
-}
-
-/***/ }),
-/* 573 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "mb-3",
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.addcompany($event)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Accounts")]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.account_id),
-      expression: "company.account_id"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.$set(_vm.company, "account_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
-      }
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": ""
-    }
-  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
-    return _c('option', {
-      key: account.id,
-      domProps: {
-        "value": account.id
-      }
-    }, [_vm._v(_vm._s(account.name))])
-  })], 2)]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Block")]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.company.account_id),
-      expression: "company.account_id"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.$set(_vm.company, "account_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
-      }
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": ""
-    }
-  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
-    return _c('option', {
-      key: account.id,
-      domProps: {
-        "value": account.id
-      }
-    }, [_vm._v(_vm._s(account.name))])
-  })], 2)])]), _vm._v(" "), _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'Company List'
-      }
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Cancel")])])], 1)])])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Block Association")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "multiple-select"
-    }
-  }, [_vm._v("Multiple select")]), _vm._v(" "), _c('select', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "multiple-select",
-      "name": "multiple-select",
-      "size": "5",
-      "multiple": ""
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": "1"
-    }
-  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "2"
-    }
-  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "3"
-    }
-  }, [_vm._v("Option #3")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "4"
-    }
-  }, [_vm._v("Option #4")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "5"
-    }
-  }, [_vm._v("Option #5")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "6"
-    }
-  }, [_vm._v("Option #6")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "7"
-    }
-  }, [_vm._v("Option #7")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "8"
-    }
-  }, [_vm._v("Option #8")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "9"
-    }
-  }, [_vm._v("Option #9")]), _vm._v(" "), _c('option', {
-    attrs: {
-      "value": "10"
-    }
-  }, [_vm._v("Option #10")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-621673e0", module.exports)
-  }
-}
-
-/***/ }),
-/* 574 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "card-columns cols-2"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('line-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('bar-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('doughnut-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(3), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('radar-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(4), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('pie-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(5), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('polar-area-example')], 1)])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Line Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Bar Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Doughnut Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Radar Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-danger-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-<<<<<<< HEAD
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-=======
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6d7a2f04", module.exports)
-  }
-}
-
-/***/ }),
-/* 575 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-12"
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with icon\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-icon switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with icon - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-icon switch-pill switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-secondary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-success"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-warning"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-info"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-danger"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with icon outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-icon switch-primary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-secondary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-success-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-warning-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-info-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-danger-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with icon outline - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-icon switch-pill switch-primary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-secondary-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-success-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-warning-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-info-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-danger-outline"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with icon outline alternative\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-icon switch-primary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-secondary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-success-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-warning-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-info-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-danger-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Switch with icon outline alternative - pills\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('label', {
-    staticClass: "switch switch-icon switch-pill switch-primary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-secondary-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-success-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-warning-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-info-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })]), _vm._v("\n             \n          "), _c('label', {
-    staticClass: "switch switch-icon switch-pill switch-danger-outline-alt"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "&#xf00c",
-      "data-off": "&#xf00d"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Sizes\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block p-0"
-  }, [_c('table', {
-    staticClass: "table table-hover table-striped table-align-middle mb-0"
-  }, [_c('thead', [_c('th', [_vm._v("Size")]), _vm._v(" "), _c('th', [_vm._v("Example")]), _vm._v(" "), _c('th', [_vm._v("CSS Class")])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("\n                  Large\n                ")]), _vm._v(" "), _c('td', [_c('label', {
-    staticClass: "switch switch-lg switch-3d switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-lg")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("\n                  Normal\n                ")]), _vm._v(" "), _c('td', [_c('label', {
-    staticClass: "switch switch-3d switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  -\n                ")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("\n                  Small\n                ")]), _vm._v(" "), _c('td', [_c('label', {
-    staticClass: "switch switch-sm switch-3d switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-sm")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("\n                  Extra small\n                ")]), _vm._v(" "), _c('td', [_c('label', {
-    staticClass: "switch switch-xs switch-3d switch-primary"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-sm")])])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-2c100452", module.exports)
-  }
-}
-
-/***/ }),
-/* 555 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    class: ['modal', _vm.effect],
-    attrs: {
-      "role": "dialog"
-    },
-    on: {
-      "click": function($event) {
-        _vm.backdrop && _vm.action(false, 1)
-      },
-      "transitionend": function($event) {
-        _vm.transition = false
-      }
-    }
-  }, [_c('div', {
-    class: ['modal-dialog', {
-      'modal-lg': _vm.large,
-      'modal-sm': _vm.small
-    }],
-    style: ({
-      width: _vm.optionalWidth
-    }),
-    attrs: {
-      "role": "document"
-    },
-    on: {
-      "click": function($event) {
-        $event.stopPropagation();
-        _vm.action(null)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "modal-content"
-  }, [_vm._t("modal-header", [_c('div', {
-    staticClass: "modal-header"
-  }, [_c('button', {
-    staticClass: "close",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.action(false, 2)
-      }
-    }
-  }, [_c('span', [_vm._v("×")])]), _vm._v(" "), _c('h4', {
-    staticClass: "modal-title"
-  }, [_vm._t("title", [_vm._v(_vm._s(_vm.title))])], 2)])]), _vm._v(" "), _vm._t("modal-body", [_c('div', {
-    staticClass: "modal-body"
-  }, [_vm._t("default")], 2)]), _vm._v(" "), _vm._t("modal-footer", [_c('div', {
-    staticClass: "modal-footer"
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.action(false, 3)
-      }
-    }
-  }, [_vm._v(_vm._s(_vm.cancelText))]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.action(true, 4)
-      }
-    }
-  }, [_vm._v(_vm._s(_vm.okText))])])])], 2)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-326865b6", module.exports)
-  }
-}
-
-/***/ }),
-/* 556 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "app"
-  }, [_c('AppHeader'), _vm._v(" "), _c('div', {
-    staticClass: "app-body"
-  }, [_c('Sidebar'), _vm._v(" "), _c('main', {
-    staticClass: "main"
-  }, [_c('breadcrumb', {
-    attrs: {
-      "list": _vm.list
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "container-fluid"
-  }, [_c('router-view')], 1)], 1), _vm._v(" "), _c('AppAside')], 1), _vm._v(" "), _c('AppFooter')], 1)
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-3c5c7e2e", module.exports)
-  }
-}
-
-/***/ }),
-/* 557 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('aside', {
-    staticClass: "aside-menu px-2"
-  }, [_c('div', {
-    staticClass: "aside-options"
-  }, [_c('div', {
-    staticClass: "clearfix mt-2"
-  }, [_c('small', [_c('b', [_vm._v("Option 1")])]), _vm._v(" "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore\n                magna aliqua.")])])]), _vm._v(" "), _c('div', {
-    staticClass: "aside-options"
-  }, [_c('div', {
-    staticClass: "clearfix mt-1"
-  }, [_c('small', [_c('b', [_vm._v("Option 2")])]), _vm._v(" "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('div', [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore\n                magna aliqua.")])])]), _vm._v(" "), _c('div', {
-    staticClass: "aside-options"
-  }, [_c('div', {
-    staticClass: "clearfix mt-1"
-  }, [_c('small', [_c('b', [_vm._v("Option 3")])]), _vm._v(" "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "aside-options"
-  }, [_c('div', {
-    staticClass: "clearfix mt-1"
-  }, [_c('small', [_c('b', [_vm._v("Option 4")])]), _vm._v(" "), _c('label', {
-    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox",
-      "checked": ""
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])])]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h6', [_vm._v("System Utilization")]), _vm._v(" "), _c('div', {
-    staticClass: "text-uppercase mb-q mt-2"
-  }, [_c('small', [_c('b', [_vm._v("CPU Usage")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-info",
-    staticStyle: {
-      "width": "25%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "25",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("348 Processes. 1/4 Cores.")]), _vm._v(" "), _c('div', {
-    staticClass: "text-uppercase mb-q mt-h"
-  }, [_c('small', [_c('b', [_vm._v("Memory Usage")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-warning",
-    staticStyle: {
-      "width": "70%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "70",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("11444GB/16384MB")]), _vm._v(" "), _c('div', {
-    staticClass: "text-uppercase mb-q mt-h"
-  }, [_c('small', [_c('b', [_vm._v("SSD 1 Usage")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-danger",
-    staticStyle: {
-      "width": "95%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "95",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("243GB/256GB")]), _vm._v(" "), _c('div', {
-    staticClass: "text-uppercase mb-q mt-h"
-  }, [_c('small', [_c('b', [_vm._v("SSD 2 Usage")])])]), _vm._v(" "), _c('div', {
-    staticClass: "progress progress-xs"
-  }, [_c('div', {
-    staticClass: "progress-bar bg-success",
-    staticStyle: {
-      "width": "10%"
-    },
-    attrs: {
-      "role": "progressbar",
-      "aria-valuenow": "10",
-      "aria-valuemin": "0",
-      "aria-valuemax": "100"
-    }
-  })]), _vm._v(" "), _c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("25GB/256GB")])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-46ff4f2a", module.exports)
-  }
-}
-
-/***/ }),
-/* 558 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "card-columns cols-2"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('line-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('bar-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('doughnut-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(3), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('radar-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(4), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('pie-example')], 1)])]), _vm._v(" "), _c('div', {
-    staticClass: "card"
-  }, [_vm._m(5), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "chart-wrapper"
-  }, [_c('polar-area-example')], 1)])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Line Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Bar Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Doughnut Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Radar Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Pie Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n        Polar Area Chart\n        "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://www.chartjs.org"
-    }
-  }, [_c('small', {
-    staticClass: "text-muted"
-  }, [_vm._v("docs")])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-4f118f29", module.exports)
-  }
-}
-
-/***/ }),
-/* 559 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "mb-3",
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.addBlock($event)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "customer"
-    }
-  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.block.name),
-      expression: "block.name"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "Enter Block Name"
-    },
-    domProps: {
-      "value": (_vm.block.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.block, "name", $event.target.value)
-      }
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'Block List'
-      }
-    }
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Cancel")])])], 1)])])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("block")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-4fc8893a", module.exports)
-  }
-}
-
-/***/ }),
-/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -115571,549 +108321,41 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-53d336c8", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-039f13f7", module.exports)
   }
 }
 
 /***/ }),
-/* 561 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "mb-3",
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.addAccount($event)
-      }
-    }
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "customer"
-    }
-  }, [_vm._v("Account")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.account.name),
-      expression: "account.name"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "JLE"
-    },
-    domProps: {
-      "value": (_vm.account.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.account, "name", $event.target.value)
-      }
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.account.email),
-      expression: "account.email"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "craig.brydon@jle.co.nz"
-    },
-    domProps: {
-      "value": (_vm.account.email)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.account, "email", $event.target.value)
-      }
-    }
-  })])]), _vm._v(" "), _vm._m(1)])]), _vm._v(" "), _c('nav', {
-    attrs: {
-      "aria-label": "Page navigation example"
-    }
-  }, [_c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item",
-    class: [{
-      disabled: !_vm.pagination.prev_page_url
-    }]
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchAccounts(_vm.pagination.prev_page_url)
-      }
-    }
-  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item disabled"
-  }, [_c('a', {
-    staticClass: "page-link text-dark",
-    attrs: {
-      "href": "#"
-    }
-  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item",
-    class: [{
-      disabled: !_vm.pagination.next_page_url
-    }]
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchAccounts(_vm.pagination.next_page_url)
-      }
-    }
-  }, [_vm._v("Next")])])])]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
-    return _c('div', {
-      key: account.id,
-      staticClass: "card card-body mb-2"
-    }, [_c('h3', [_vm._v(_vm._s(account.name))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(account.email))]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('button', {
-      staticClass: "btn btn-warning mb-2",
-      on: {
-        "click": function($event) {
-          _vm.editAccount(account)
-        }
-      }
-    }, [_vm._v("Edit")]), _vm._v(" "), _c('button', {
-      staticClass: "btn btn-danger",
-      on: {
-        "click": function($event) {
-          _vm.deleteAccount(account.id)
-        }
-      }
-    }, [_vm._v("Delete")])])
-  })], 2)]), _vm._v(" "), _c('div', {
-    staticClass: "tab-pane",
-    attrs: {
-      "id": "company",
-      "role": "tabpanel"
-    }
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Accounts")]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.selectedAccount),
-      expression: "selectedAccount"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.selectedAccount = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-      }
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": ""
-    }
-  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
-    return _c('option', {
-      key: account.id,
-      domProps: {
-        "value": account.id
-      }
-    }, [_vm._v(_vm._s(account.name))])
-  })], 2)]), _vm._v(" "), _vm._m(3)]), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6)])])]), _vm._v(" "), _c('div', {
-    staticClass: "tab-pane",
-    attrs: {
-      "id": "contact",
-      "role": "tabpanel"
-    }
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label",
-    attrs: {
-      "for": "select"
-    }
-  }, [_vm._v("Company")]), _vm._v(" "), _c('select', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.selectedAccount),
-      expression: "selectedAccount"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "id": "select",
-      "name": "select"
-    },
-    on: {
-      "change": function($event) {
-        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
-          return o.selected
-        }).map(function(o) {
-          var val = "_value" in o ? o._value : o.value;
-          return val
-        });
-        _vm.selectedAccount = $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-      }
-    }
-  }, [_c('option', {
-    attrs: {
-      "value": ""
-    }
-<<<<<<< HEAD
-  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
-    return _c('option', {
-      key: account.id,
-      domProps: {
-        "value": account.id
-=======
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label"
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-sm")])])])])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6d8539dc", module.exports)
-  }
-}
-
-/***/ }),
-/* 576 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('ol', {
-    staticClass: "breadcrumb"
-  }, _vm._l((_vm.list), function(item, index) {
-    return _c('li', {
-      staticClass: "breadcrumb-item"
-    }, [(_vm.isLast(index)) ? _c('span', {
-      staticClass: "active"
-    }, [_vm._v(_vm._s(_vm.showName(item)))]) : _c('router-link', {
-      attrs: {
-        "to": item.path
-      }
-    }, [_vm._v(_vm._s(_vm.showName(item)))])], 1)
-  }))
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6ee687dc", module.exports)
-  }
-}
-
-/***/ }),
-/* 577 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('form', {
-    staticClass: "mb-3",
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.addBlock($event)
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-      }
-    }, [_vm._v(_vm._s(account.name))])
-  })], 2)]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Contact")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.selectedAccount),
-      expression: "selectedAccount"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "contact",
-      "placeholder": "Paul Stevenson"
-    },
-    domProps: {
-      "value": (_vm.selectedAccount)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.selectedAccount = $event.target.value
-      }
-    }
-  })])]), _vm._v(" "), _vm._m(7), _vm._v(" "), _vm._m(8), _vm._v(" "), _vm._m(9)])])])
+  return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Account")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
+  return _c('footer', {
+    staticClass: "app-footer"
+  }, [_c('a', {
     attrs: {
-      "type": "submit"
+      "href": "http://jle.co.nz"
     }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-default",
+  }, [_vm._v("CoreUI")]), _vm._v(" © 2018 JLE.\n  "), _c('span', {
+    staticClass: "float-right"
+  }, [_vm._v("Powered by "), _c('a', {
     attrs: {
-      "type": "button"
+      "href": "http://jle.co.nz"
     }
-  }, [_vm._v("Cancel")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Company")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Company Name")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "company",
-      "placeholder": "Nestle Professional"
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "customer"
-    }
-  }, [_vm._v("Links")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "company_links",
-      "placeholder": "www.nestle.co.nz"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "company_email",
-      "placeholder": "tech.nestle@nestle.co.nz"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-4"
-  }, [_c('label', {
-    staticClass: "col-md-3 form-control-label"
-  }, [_vm._v("Customer?")]), _vm._v(" "), _c('div', {
-    staticClass: "checkbox"
-  }, [_c('label', {
-    attrs: {
-      "for": "checkbox1"
-    }
-  }, [_c('input', {
-    attrs: {
-      "type": "checkbox",
-      "id": "checkbox1",
-      "name": "checkbox1",
-      "value": "option1"
-    }
-  }), _vm._v(" No/Yes\n                                        ")])])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-group"
-  }, [_c('label', {
-    attrs: {
-      "for": "country"
-    }
-  }, [_vm._v("Address")]), _vm._v(" "), _c('textarea', {
-    staticClass: "form-control",
-    attrs: {
-      "id": "address",
-      "name": "textarea-input",
-      "rows": "9",
-      "placeholder": "Content.."
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Cancel")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "paul.stevenson@jle.co.nz"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Password")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "password",
-      "id": "password",
-      "placeholder": "Enter Password"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "postal-code"
-    }
-  }, [_vm._v("Phone")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "contact_email",
-      "placeholder": "02108535263"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "company"
-    }
-  }, [_vm._v("Links")]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "id": "contact_links",
-      "placeholder": "www.nestle.co.nz"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "form-actions"
-  }, [_c('button', {
-    staticClass: "btn btn-primary",
-    attrs: {
-      "type": "submit"
-    }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    }
-  }, [_vm._v("Cancel")])])
+  }, [_vm._v("JLE")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-55ab1272", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-07cdec18", module.exports)
   }
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 562 */
-=======
-/* 578 */
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -117028,12 +109270,12 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5b4b1e8b", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-09f67a10", module.exports)
   }
 }
 
 /***/ }),
-/* 563 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -117047,10 +109289,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card"
   }, [_c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Label")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+  }, [_c('strong', [_vm._v("LIST")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
     attrs: {
       "to": {
-        name: 'Label Form'
+        name: 'Block Form'
       }
     }
   }, [_c('button', {
@@ -117059,18 +109301,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card-block"
   }, [_c('div', {
     staticClass: "card"
-  }, [_vm._l((_vm.labelnames), function(labelname) {
+  }, [_vm._l((_vm.blocks), function(block) {
     return _c('table', {
-      key: labelname.id,
+      key: block.id,
       staticClass: "table"
-    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(labelname.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(labelname.description))]), _vm._v(" "), _c('td', [_c('button', {
+    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(block.name))]), _vm._v(" "), _c('td', [_c('button', {
       staticClass: "btn btn-warning mb-2"
     }, [_c('router-link', {
       attrs: {
         "to": {
-          name: 'Label Form',
+          name: 'Block Form',
           params: {
-            id: labelname
+            id: block
           }
         }
       }
@@ -117078,7 +109320,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "btn btn-danger",
       on: {
         "click": function($event) {
-          _vm.deleteLabelname(labelname.id)
+          _vm.deleteBlock(block.id)
         }
       }
     }, [_vm._v("Delete")])])])])])
@@ -117096,7 +109338,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "click": function($event) {
-        _vm.fetchLabelnames(_vm.pagination.prev_page_url)
+        _vm.fetchBlocks(_vm.pagination.prev_page_url)
       }
     }
   }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
@@ -117118,1749 +109360,134 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     },
     on: {
       "click": function($event) {
-        _vm.fetchLabelnames(_vm.pagination.next_page_url)
+        _vm.fetchBlocks(_vm.pagination.next_page_url)
       }
     }
   }, [_vm._v("Next")])])])], 2)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("description")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-5e508ce6", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-0a5e2b22", module.exports)
   }
 }
 
 /***/ }),
-/* 564 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('footer', {
-    staticClass: "app-footer"
-  }, [_c('a', {
-    attrs: {
-      "href": "http://jle.co.nz"
-    }
-  }, [_vm._v("CoreUI")]), _vm._v(" © 2018 JLE.\n  "), _c('span', {
-    staticClass: "float-right"
-  }, [_vm._v("Powered by "), _c('a', {
-    attrs: {
-      "href": "http://jle.co.nz"
-    }
-  }, [_vm._v("JLE")])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-62df4ace", module.exports)
-  }
-}
-
-/***/ }),
-/* 565 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "animated fadeIn"
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-12"
+    staticClass: "col-sm-12"
   }, [_c('div', {
     staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Usage ex.")]), _c('code', {
-    staticStyle: {
-      "text-transform": "lowercase"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addLabelname($event)
+      }
     }
-  }, [_vm._v("<button class=\"btn btn-facebook\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    staticClass: "btn-setting",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-settings"
-  })]), _vm._v(" "), _c('button', {
-    staticClass: "btn-minimize",
-    attrs: {
-      "type": "button",
-      "data-toggle": "collapse",
-      "data-target": "",
-      "aria-expanded": "false",
-      "aria-controls": "collapseExample"
-    }
-  }, [_c('i', {
-<<<<<<< HEAD
-=======
-    staticClass: "icon-briefcase icons font-2xl d-block mt-2"
-  }), _vm._v("icon-briefcase\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-book-open icons font-2xl d-block mt-2"
-  }), _vm._v("icon-book-open\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-basket-loaded icons font-2xl d-block mt-2"
-  }), _vm._v("icon-basket-loaded\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-basket icons font-2xl d-block mt-2"
-  }), _vm._v("icon-basket\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-action-undo icons font-2xl d-block mt-2"
-  }), _vm._v("icon-action-undo\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-action-redo icons font-2xl d-block mt-2"
-  }), _vm._v("icon-action-redo\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-wrench icons font-2xl d-block mt-2"
-  }), _vm._v("icon-wrench\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-umbrella icons font-2xl d-block mt-2"
-  }), _vm._v("icon-umbrella\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-trash icons font-2xl d-block mt-2"
-  }), _vm._v("icon-trash\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-tag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-tag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-support icons font-2xl d-block mt-2"
-  }), _vm._v("icon-support\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-frame icons font-2xl d-block mt-2"
-  }), _vm._v("icon-frame\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-size-fullscreen icons font-2xl d-block mt-2"
-  }), _vm._v("icon-size-fullscreen\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-size-actual icons font-2xl d-block mt-2"
-  }), _vm._v("icon-size-actual\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-shuffle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-shuffle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-share-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-share-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-share icons font-2xl d-block mt-2"
-  }), _vm._v("icon-share\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-rocket icons font-2xl d-block mt-2"
-  }), _vm._v("icon-rocket\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-question icons font-2xl d-block mt-2"
-  }), _vm._v("icon-question\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-pie-chart icons font-2xl d-block mt-2"
-  }), _vm._v("icon-pie-chart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-pencil icons font-2xl d-block mt-2"
-  }), _vm._v("icon-pencil\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-note icons font-2xl d-block mt-2"
-  }), _vm._v("icon-note\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-loop icons font-2xl d-block mt-2"
-  }), _vm._v("icon-loop\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-home icons font-2xl d-block mt-2"
-  }), _vm._v("icon-home\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-grid icons font-2xl d-block mt-2"
-  }), _vm._v("icon-grid\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-graph icons font-2xl d-block mt-2"
-  }), _vm._v("icon-graph\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-microphone icons font-2xl d-block mt-2"
-  }), _vm._v("icon-microphone\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-music-tone-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-music-tone-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-music-tone icons font-2xl d-block mt-2"
-  }), _vm._v("icon-music-tone\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-earphones-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-earphones-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-earphones icons font-2xl d-block mt-2"
-  }), _vm._v("icon-earphones\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-equalizer icons font-2xl d-block mt-2"
-  }), _vm._v("icon-equalizer\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-like icons font-2xl d-block mt-2"
-  }), _vm._v("icon-like\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-dislike icons font-2xl d-block mt-2"
-  }), _vm._v("icon-dislike\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-start icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-start\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-rewind icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-rewind\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-play icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-play\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-pause icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-pause\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-forward icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-forward\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-end icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-end\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-volume-1 icons font-2xl d-block mt-2"
-  }), _vm._v("icon-volume-1\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-volume-2 icons font-2xl d-block mt-2"
-  }), _vm._v("icon-volume-2\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-volume-off icons font-2xl d-block mt-2"
-  }), _vm._v("icon-volume-off\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-calendar icons font-2xl d-block mt-2"
-  }), _vm._v("icon-calendar\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bulb icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bulb\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-chart icons font-2xl d-block mt-2"
-  }), _vm._v("icon-chart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-ban icons font-2xl d-block mt-2"
-  }), _vm._v("icon-ban\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bubble icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bubble\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-camrecorder icons font-2xl d-block mt-2"
-  }), _vm._v("icon-camrecorder\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-camera icons font-2xl d-block mt-2"
-  }), _vm._v("icon-camera\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cloud-download icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cloud-download\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cloud-upload icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cloud-upload\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-envelope icons font-2xl d-block mt-2"
-  }), _vm._v("icon-envelope\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-eye icons font-2xl d-block mt-2"
-  }), _vm._v("icon-eye\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-flag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-flag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-heart icons font-2xl d-block mt-2"
-  }), _vm._v("icon-heart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-info icons font-2xl d-block mt-2"
-  }), _vm._v("icon-info\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-key icons font-2xl d-block mt-2"
-  }), _vm._v("icon-key\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-link icons font-2xl d-block mt-2"
-  }), _vm._v("icon-link\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-lock icons font-2xl d-block mt-2"
-  }), _vm._v("icon-lock\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-lock-open icons font-2xl d-block mt-2"
-  }), _vm._v("icon-lock-open\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnifier icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnifier\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnifier-add icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnifier-add\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnifier-remove icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnifier-remove\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-paper-clip icons font-2xl d-block mt-2"
-  }), _vm._v("icon-paper-clip\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-paper-plane icons font-2xl d-block mt-2"
-  }), _vm._v("icon-paper-plane\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-power icons font-2xl d-block mt-2"
-  }), _vm._v("icon-power\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-refresh icons font-2xl d-block mt-2"
-  }), _vm._v("icon-refresh\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-reload icons font-2xl d-block mt-2"
-  }), _vm._v("icon-reload\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-settings icons font-2xl d-block mt-2"
-  }), _vm._v("icon-settings\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-star icons font-2xl d-block mt-2"
-  }), _vm._v("icon-star\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-symbol-female icons font-2xl d-block mt-2"
-  }), _vm._v("icon-symbol-female\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-symbol-male icons font-2xl d-block mt-2"
-  }), _vm._v("icon-symbol-male\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-target icons font-2xl d-block mt-2"
-  }), _vm._v("icon-target\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-credit-card icons font-2xl d-block mt-2"
-  }), _vm._v("icon-credit-card\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-paypal icons font-2xl d-block mt-2"
-  }), _vm._v("icon-paypal\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-tumblr icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-tumblr\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-twitter icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-twitter\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-facebook icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-facebook\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-instagram icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-instagram\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-linkedin icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-linkedin\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-pinterest icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-pinterest\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-github icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-github\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-gplus icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-gplus\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-reddit icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-reddit\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-skype icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-skype\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-dribbble icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-dribbble\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-behance icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-behance\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-foursqare icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-foursqare\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-soundcloud icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-soundcloud\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-spotify icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-spotify\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-stumbleupon icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-stumbleupon\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-youtube icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-youtube\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-dropbox icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-dropbox\n        ")])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-784274a0", module.exports)
-  }
-}
-
-/***/ }),
-/* 579 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.labelname.name),
+      expression: "labelname.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Enter Block Name"
+    },
+    domProps: {
+      "value": (_vm.labelname.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.labelname, "name", $event.target.value)
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Description")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.labelname.description),
+      expression: "labelname.description"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Enter Block Name"
+    },
+    domProps: {
+      "value": (_vm.labelname.description)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.labelname, "description", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Label List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Usage ex.")]), _c('code', {
-    staticStyle: {
-      "text-transform": "lowercase"
-    }
-  }, [_vm._v("<button class=\"btn btn-facebook\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    staticClass: "btn-setting",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-settings"
-  })]), _vm._v(" "), _c('button', {
-    staticClass: "btn-minimize",
-    attrs: {
-      "type": "button",
-      "data-toggle": "collapse",
-      "data-target": "",
-      "aria-expanded": "false",
-      "aria-controls": "collapseExample"
-    }
-  }, [_c('i', {
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-    staticClass: "icon-arrow-up"
-  })]), _vm._v(" "), _c('a', {
-    staticClass: "btn-close",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-close"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('h6', [_vm._v("Size Small "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-sm")])])]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-sm btn-facebook",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-twitter",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-linkedin",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-flickr",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-tumblr",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-xing",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-github",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-html5",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-openid",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-stack-overflow",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-css3",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-youtube",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-dribbble",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-google-plus",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-instagram",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-pinterest",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vk",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-yahoo",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-behance",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-dropbox",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-reddit",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-spotify",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vine",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-foursquare",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vimeo",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Normal")]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-facebook",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-twitter",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-linkedin",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-flickr",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-tumblr",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-xing",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-github",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-html5",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-openid",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-stack-overflow",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-css3",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-youtube",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-dribbble",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-google-plus",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-instagram",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-pinterest",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vk",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-yahoo",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-behance",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-dropbox",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-reddit",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-spotify",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vine",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-foursquare",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vimeo",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Large "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-lg")])])]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-lg btn-facebook",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-twitter",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-linkedin",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-flickr",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-tumblr",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-xing",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-github",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-html5",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-openid",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-stack-overflow",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-css3",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-youtube",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-dribbble",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-google-plus",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-instagram",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-pinterest",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vk",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-yahoo",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-behance",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-dropbox",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-reddit",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-spotify",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vine",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-foursquare",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vimeo",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Only icons. Usage ex.")]), _vm._v(" "), _c('code', {
-    staticStyle: {
-      "text-transform": "lowercase"
-    }
-  }, [_vm._v("<button class=\"btn btn-facebook icon\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    staticClass: "btn-setting",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-settings"
-  })]), _vm._v(" "), _c('button', {
-    staticClass: "btn-minimize",
-    attrs: {
-      "type": "button",
-      "data-toggle": "collapse",
-      "data-target": "",
-      "aria-expanded": "false",
-      "aria-controls": "collapseExample"
-    }
-  }, [_c('i', {
-    staticClass: "icon-arrow-up"
-  })]), _vm._v(" "), _c('a', {
-    staticClass: "btn-close",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-close"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('h6', [_vm._v("Size Small "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-sm")])])]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-sm btn-facebook icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-twitter icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-linkedin icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-flickr icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-tumblr icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-xing icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-github icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-html5 icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-openid icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-stack-overflow icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-css3 icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-youtube icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-dribbble icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-google-plus icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-instagram icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-pinterest icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vk icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-yahoo icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-behance icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-dropbox icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-reddit icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-spotify icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vine icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-foursquare icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vimeo icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Normal")]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-facebook icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-twitter icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-linkedin icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-flickr icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-tumblr icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-xing icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-github icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-html5 icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-openid icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-stack-overflow icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-css3 icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-youtube icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-dribbble icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-google-plus icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-instagram icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-pinterest icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vk icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-yahoo icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-behance icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-dropbox icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-reddit icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-spotify icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vine icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-foursquare icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vimeo icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Large "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-lg")])])]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-lg btn-facebook icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-twitter icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-linkedin icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-flickr icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-tumblr icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-xing icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-github icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-html5 icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-openid icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-stack-overflow icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-css3 icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-youtube icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-dribbble icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-google-plus icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-instagram icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-pinterest icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vk icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-yahoo icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-behance icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-dropbox icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-reddit icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-spotify icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vine icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-foursquare icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vimeo icon",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Only text. Usage ex.")]), _vm._v(" "), _c('code', {
-    staticStyle: {
-      "text-transform": "lowercase"
-    }
-  }, [_vm._v("<button class=\"btn btn-facebook text\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
-    staticClass: "card-actions"
-  }, [_c('a', {
-    staticClass: "btn-setting",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-settings"
-  })]), _vm._v(" "), _c('button', {
-    staticClass: "btn-minimize",
-    attrs: {
-      "type": "button",
-      "data-toggle": "collapse",
-      "data-target": "",
-      "aria-expanded": "false",
-      "aria-controls": "collapseExample"
-    }
-  }, [_c('i', {
-    staticClass: "icon-arrow-up"
-  })]), _vm._v(" "), _c('a', {
-    staticClass: "btn-close",
-    attrs: {
-      "href": "#"
-    }
-  }, [_c('i', {
-    staticClass: "icon-close"
-  })])])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('h6', [_vm._v("Size Small "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-sm")])])]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-sm btn-facebook text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-twitter text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-linkedin text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-flickr text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-tumblr text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-xing text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-github text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-html5 text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-openid text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-stack-overflow text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-css3 text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-youtube text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-dribbble text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-google-plus text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-instagram text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-pinterest text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vk text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-yahoo text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-behance text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-dropbox text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-reddit text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-spotify text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vine text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-foursquare text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-sm btn-vimeo text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Normal")]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-facebook text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-twitter text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-linkedin text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-flickr text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-tumblr text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-xing text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-github text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-html5 text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-openid text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-stack-overflow text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-css3 text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-youtube text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-dribbble text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-google-plus text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-instagram text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-pinterest text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vk text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-yahoo text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-behance text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-dropbox text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-reddit text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-spotify text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vine text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-foursquare text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-vimeo text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Large "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-lg")])])]), _vm._v(" "), _c('p', [_c('button', {
-    staticClass: "btn btn-lg btn-facebook text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-twitter text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-linkedin text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-flickr text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-tumblr text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-xing text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-github text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-html5 text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-openid text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-stack-overflow text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-css3 text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-youtube text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-dribbble text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-google-plus text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-instagram text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-pinterest text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vk text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-yahoo text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-behance text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-dropbox text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-reddit text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-spotify text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vine text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-foursquare text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-lg btn-vimeo text",
-    attrs: {
-      "type": "button"
-    }
-  }, [_c('span', [_vm._v("Vimeo")])])])])])])])])
+  }, [_c('strong', [_vm._v("block")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-678970af", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-13edcd0e", module.exports)
   }
 }
 
 /***/ }),
-<<<<<<< HEAD
-/* 566 */
-=======
-/* 580 */
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
+/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -118901,7 +109528,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": "#"
     }
-<<<<<<< HEAD
   }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
     staticClass: "dropdown-item",
     attrs: {
@@ -118919,27 +109545,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })], 1)]), _vm._v(" "), _c('div', {
     staticClass: "col-sm-6 col-lg-3"
-=======
-  }, [_vm._v("Search")])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-a75f2bc2", module.exports)
-  }
-}
-
-/***/ }),
-/* 581 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   }, [_c('div', {
     staticClass: "card card-inverse card-info"
   }, [_c('div', {
@@ -120240,83 +110845,1054 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-67ef7ef0", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-19320d35", module.exports)
   }
 }
 
 /***/ }),
-/* 567 */
+/* 561 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('navbar', [_c('button', {
+    staticClass: "navbar-toggler mobile-sidebar-toggler hidden-lg-up",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": _vm.mobileSidebarToggle
+    }
+  }, [_vm._v("☰")]), _vm._v(" "), _c('a', {
+    staticClass: "navbar-brand",
+    attrs: {
+      "href": "#"
+    }
+  }), _vm._v(" "), _c('ul', {
+    staticClass: "nav navbar-nav hidden-md-down"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('a', {
+    staticClass: "nav-link navbar-toggler sidebar-toggler",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": _vm.sidebarToggle
+    }
+  }, [_vm._v("☰")])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item px-1"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Dashboard")])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item px-1"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Users")])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item px-1"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Settings")])])]), _vm._v(" "), _c('ul', {
+    staticClass: "nav navbar-nav ml-auto"
+  }, [_c('li', {
+    staticClass: "nav-item hidden-md-down"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-bell"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "badge badge-pill badge-danger"
+  }, [_vm._v("5")])])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item hidden-md-down"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-list"
+  })])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item hidden-md-down"
+  }, [_c('a', {
+    staticClass: "nav-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-location-pin"
+  })])]), _vm._v(" "), _c('dropdown', {
+    staticClass: "nav-item",
+    attrs: {
+      "size": "nav"
+    }
+  }, [_c('span', {
+    attrs: {
+      "slot": "button"
+    },
+    slot: "button"
+  }, [_c('img', {
+    staticClass: "img-avatar",
+    attrs: {
+      "src": "static/img/avatars/6.jpg",
+      "alt": "admin@bootstrapmaster.com"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "hidden-md-down"
+  }, [_vm._v("admin")])]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-menu dropdown-menu-right",
+    attrs: {
+      "slot": "dropdown-menu"
+    },
+    slot: "dropdown-menu"
+  }, [_c('div', {
+    staticClass: "dropdown-header text-center"
+  }, [_c('strong', [_vm._v("Account")])]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-bell-o"
+  }), _vm._v(" Updates\n                    "), _c('span', {
+    staticClass: "badge badge-info"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-envelope-o"
+  }), _vm._v(" Messages\n                    "), _c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-tasks"
+  }), _vm._v(" Tasks\n                    "), _c('span', {
+    staticClass: "badge badge-danger"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-comments"
+  }), _vm._v(" Comments\n                    "), _c('span', {
+    staticClass: "badge badge-warning"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-header text-center"
+  }, [_c('strong', [_vm._v("Settings")])]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-user"
+  }), _vm._v(" Profile")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-wrench"
+  }), _vm._v(" Settings")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-usd"
+  }), _vm._v(" Payments\n                    "), _c('span', {
+    staticClass: "badge badge-default"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-file"
+  }), _vm._v(" Projects\n                    "), _c('span', {
+    staticClass: "badge badge-primary"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('div', {
+    staticClass: "divider"
+  }), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-shield"
+  }), _vm._v(" Lock Account")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-lock"
+  }), _vm._v(" Logout")])])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item hidden-md-down"
+  }, [_c('a', {
+    staticClass: "nav-link navbar-toggler aside-menu-toggler",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": _vm.asideToggle
+    }
+  }, [_vm._v("☰")])])], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-1d4b6de6", module.exports)
+  }
+}
+
+/***/ }),
+/* 562 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addcompany($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "select"
+    }
+  }, [_vm._v("Accounts")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.account_id),
+      expression: "company.account_id"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "select",
+      "name": "select"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.company, "account_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
+    return _c('option', {
+      key: account.id,
+      domProps: {
+        "value": account.id
+      }
+    }, [_vm._v(_vm._s(account.name))])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "company"
+    }
+  }, [_vm._v("Company Name")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.name),
+      expression: "company.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Nestle Professional"
+    },
+    domProps: {
+      "value": (_vm.company.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.company, "name", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Links")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.links),
+      expression: "company.links"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "www.nestle.co.nz"
+    },
+    domProps: {
+      "value": (_vm.company.links)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.company, "links", $event.target.value)
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    attrs: {
+      "for": "postal-code"
+    }
+  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.email),
+      expression: "company.email"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "tech.nestle@nestle.co.nz"
+    },
+    domProps: {
+      "value": (_vm.company.email)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.company, "email", $event.target.value)
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label"
+  }, [_vm._v("Customer?")]), _vm._v(" "), _c('div', {
+    staticClass: "checkbox"
+  }, [_c('label', {
+    attrs: {
+      "for": "checkbox1"
+    }
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.is_customer),
+      expression: "company.is_customer"
+    }],
+    attrs: {
+      "type": "checkbox",
+      "id": "checkbox1",
+      "name": "checkbox1",
+      "value": "0"
+    },
+    domProps: {
+      "checked": Array.isArray(_vm.company.is_customer) ? _vm._i(_vm.company.is_customer, "0") > -1 : (_vm.company.is_customer)
+    },
+    on: {
+      "change": function($event) {
+        var $$a = _vm.company.is_customer,
+          $$el = $event.target,
+          $$c = $$el.checked ? (true) : (false);
+        if (Array.isArray($$a)) {
+          var $$v = "0",
+            $$i = _vm._i($$a, $$v);
+          if ($$el.checked) {
+            $$i < 0 && (_vm.$set(_vm.company, "is_customer", $$a.concat([$$v])))
+          } else {
+            $$i > -1 && (_vm.$set(_vm.company, "is_customer", $$a.slice(0, $$i).concat($$a.slice($$i + 1))))
+          }
+        } else {
+          _vm.$set(_vm.company, "is_customer", $$c)
+        }
+      }
+    }
+  }), _vm._v(" No/Yes\n                                    ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    attrs: {
+      "for": "country"
+    }
+  }, [_vm._v("Address")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.address),
+      expression: "company.address"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "address",
+      "name": "textarea-input",
+      "rows": "9",
+      "placeholder": "Content.."
+    },
+    domProps: {
+      "value": (_vm.company.address)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.company, "address", $event.target.value)
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Company List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Company")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-1e5d57e5", module.exports)
+  }
+}
+
+/***/ }),
+/* 563 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "app flex-row align-items-center"
+    staticClass: "animated fadeIn"
   }, [_c('div', {
-    staticClass: "container"
+    staticClass: "row"
   }, [_c('div', {
-    staticClass: "row justify-content-center"
+    staticClass: "col-sm-6 col-md-4"
   }, [_c('div', {
-    staticClass: "col-md-6"
+    staticClass: "card"
   }, [_c('div', {
-    staticClass: "clearfix"
-  }, [_c('h1', {
-    staticClass: "float-left display-3 mr-2"
-  }, [_vm._v("500")]), _vm._v(" "), _c('h4', {
-    staticClass: "pt-1"
-  }, [_vm._v("Houston, we have a problem!")]), _vm._v(" "), _c('p', {
-    staticClass: "text-muted"
-  }, [_vm._v("The page you are looking for is temporarily unavailable.")])]), _vm._v(" "), _c('div', {
-    staticClass: "input-prepend input-group"
-  }, [_c('span', {
-    staticClass: "input-group-addon"
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_vm._v("Card footer")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
   }, [_c('i', {
-    staticClass: "fa fa-search"
-  })]), _vm._v(" "), _c('input', {
-    staticClass: "form-control",
+    staticClass: "fa fa-check"
+  }), _vm._v("Card with icon\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with switch\n          "), _c('label', {
+    staticClass: "switch switch-sm switch-text switch-info float-right mb-0"
+  }, [_c('input', {
+    staticClass: "switch-input",
     attrs: {
-      "id": "prependedInput",
-      "size": "16",
-      "type": "text",
-      "placeholder": "What are you looking for?"
+      "type": "checkbox"
     }
   }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-info",
+    staticClass: "switch-label",
     attrs: {
-      "type": "button"
+      "data-on": "On",
+      "data-off": "Off"
     }
-  }, [_vm._v("Search")])])])])])])])
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with label\n          "), _c('span', {
+    staticClass: "badge badge-success float-right"
+  }, [_vm._v("Success")])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with label\n          "), _c('span', {
+    staticClass: "badge badge-pill badge-danger float-right"
+  }, [_vm._v("42")])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-outline-primary"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-outline-secondary"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-outline-success"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-outline-info"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-outline-warning"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-outline-danger"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-accent-primary"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-accent-secondary"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-accent-success"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-accent-info"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-accent-warning"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-accent-danger"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-primary text-center"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_c('blockquote', {
+    staticClass: "card-blockquote"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
+    attrs: {
+      "title": "Source Title"
+    }
+  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-success text-center"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_c('blockquote', {
+    staticClass: "card-blockquote"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
+    attrs: {
+      "title": "Source Title"
+    }
+  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-info text-center"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_c('blockquote', {
+    staticClass: "card-blockquote"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
+    attrs: {
+      "title": "Source Title"
+    }
+  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-warning text-center"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_c('blockquote', {
+    staticClass: "card-blockquote"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
+    attrs: {
+      "title": "Source Title"
+    }
+  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-danger text-center"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_c('blockquote', {
+    staticClass: "card-blockquote"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
+    attrs: {
+      "title": "Source Title"
+    }
+  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-primary text-center"
+  }, [_c('div', {
+    staticClass: "card-block"
+  }, [_c('blockquote', {
+    staticClass: "card-blockquote"
+  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
+    attrs: {
+      "title": "Source Title"
+    }
+  }, [_vm._v("Source Title")])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-primary"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-success"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-info"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-warning"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6 col-md-4"
+  }, [_c('div', {
+    staticClass: "card card-inverse card-danger"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-683338d2", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-204d7a59", module.exports)
   }
 }
 
 /***/ }),
-/* 568 */
+/* 564 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('header', {
-    staticClass: "app-header navbar"
-  }, [_vm._t("default")], 2)
+  return _c('div', {
+    staticClass: "sidebar"
+  }, [_c('nav', {
+    staticClass: "sidebar-nav"
+  }, [_c('ul', {
+    staticClass: "nav"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/dashboard'
+    }
+  }, [_c('i', {
+    staticClass: "icon-speedometer"
+  }), _vm._v(" Dashboard\n                    "), _c('span', {
+    staticClass: "badge badge-info"
+  }, [_vm._v("NEW")])])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-title"
+  }, [_vm._v("\n                UI Elements\n            ")]), _vm._v(" "), _c('router-link', {
+    staticClass: "nav-item nav-dropdown",
+    attrs: {
+      "tag": "li",
+      "to": {
+        path: '/components'
+      },
+      "disabled": ""
+    }
+  }, [_c('div', {
+    staticClass: "nav-link nav-dropdown-toggle",
+    on: {
+      "click": _vm.handleClick
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Components")]), _vm._v(" "), _c('ul', {
+    staticClass: "nav-dropdown-items"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/buttons',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Buttons")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/social-buttons',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Social Buttons")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/cards',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Cards")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/forms',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Forms")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/modals',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Modals")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/switches',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Switches")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/components/tables',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-puzzle"
+  }), _vm._v(" Tables")])], 1)])]), _vm._v(" "), _c('router-link', {
+    staticClass: "nav-item nav-dropdown",
+    attrs: {
+      "tag": "li",
+      "to": {
+        path: '/icons'
+      },
+      "disabled": ""
+    }
+  }, [_c('div', {
+    staticClass: "nav-link nav-dropdown-toggle",
+    on: {
+      "click": _vm.handleClick
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Icons")]), _vm._v(" "), _c('ul', {
+    staticClass: "nav-dropdown-items"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/icons/font-awesome',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Font Awesome")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/icons/simple-line-icons',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Simple Line Icons")])], 1)])]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/company/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-calculator"
+  }), _vm._v(" Company\n                ")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/block/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-calculator"
+  }), _vm._v(" Block\n                ")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/label/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-calculator"
+  }), _vm._v(" Label\n                ")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/blockassociation/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-calculator"
+  }), _vm._v(" Block Association\n                ")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/charts',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-pie-chart"
+  }), _vm._v(" Charts")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "divider"
+  }), _vm._v(" "), _c('li', {
+    staticClass: "nav-title"
+  }, [_vm._v("\n                Extras\n            ")]), _vm._v(" "), _c('li', {
+    staticClass: "nav-item nav-dropdown"
+  }, [_c('a', {
+    staticClass: "nav-link nav-dropdown-toggle",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": _vm.handleClick
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Pages")]), _vm._v(" "), _c('ul', {
+    staticClass: "nav-dropdown-items"
+  }, [_c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/pages/login',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Login")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/pages/register',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Register")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/pages/404',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Error 404")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/pages/500',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v(" Error 500")])], 1)])])], 1)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6d427e8e", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-2fb2b0d3", module.exports)
   }
 }
 
 /***/ }),
-/* 569 */
+/* 565 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -120396,12 +111972,5442 @@ module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6e29308c", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-33c378bf", module.exports)
+  }
+}
+
+/***/ }),
+/* 566 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-lg-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  }), _vm._v(" Simple Table\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table"
+  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Samppa Nori")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Estavan Lykos")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-danger"
+  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Chetan Mohamed")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-default"
+  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Derick Maximinus")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-warning"
+  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Friderik Dávid")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item active"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Next")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-lg-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  }), _vm._v(" Striped Table\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-striped"
+  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Yiorgos Avraamu")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Avram Tarasios")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-danger"
+  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Quintin Ed")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-default"
+  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Enéas Kwadwo")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-warning"
+  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Agapetus Tadeáš")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item active"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Next")])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-lg-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  }), _vm._v(" Condensed Table\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-condensed"
+  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Carwyn Fachtna")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Nehemiah Tatius")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-danger"
+  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Ebbe Gemariah")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-default"
+  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Eustorgios Amulius")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-warning"
+  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Leopold Gáspár")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item active"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Next")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-lg-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  }), _vm._v(" Bordered Table\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-bordered"
+  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Pompeius René")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Paĉjo Jadon")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-danger"
+  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Micheal Mercurius")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-default"
+  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Ganesha Dubhghall")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-warning"
+  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Hiroto Šimun")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item active"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Next")])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-lg-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  }), _vm._v(" Combined All Table\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-bordered table-striped table-condensed"
+  }, [_c('thead', [_c('tr', [_c('th', [_vm._v("Username")]), _vm._v(" "), _c('th', [_vm._v("Date registered")]), _vm._v(" "), _c('th', [_vm._v("Role")]), _vm._v(" "), _c('th', [_vm._v("Status")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("Vishnu Serghei")]), _vm._v(" "), _c('td', [_vm._v("2012/01/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Zbyněk Phoibos")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-danger"
+  }, [_vm._v("Banned")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Einar Randall")]), _vm._v(" "), _c('td', [_vm._v("2012/02/01")]), _vm._v(" "), _c('td', [_vm._v("Admin")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-default"
+  }, [_vm._v("Inactive")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Félix Troels")]), _vm._v(" "), _c('td', [_vm._v("2012/03/01")]), _vm._v(" "), _c('td', [_vm._v("Member")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-warning"
+  }, [_vm._v("Pending")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("Aulus Agmundr")]), _vm._v(" "), _c('td', [_vm._v("2012/01/21")]), _vm._v(" "), _c('td', [_vm._v("Staff")]), _vm._v(" "), _c('td', [_c('span', {
+    staticClass: "badge badge-success"
+  }, [_vm._v("Active")])])])])]), _vm._v(" "), _c('nav', [_c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Prev")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item active"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("1")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("2")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("3")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("4")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item"
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Next")])])])])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-3729285f", module.exports)
+  }
+}
+
+/***/ }),
+/* 567 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "wrapper"
+  }, [_c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-lg-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('button', {
+    staticClass: "btn btn-secondary",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.myModal = true
+      }
+    }
+  }, [_vm._v("Launch demo modal")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-secondary",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.largeModal = true
+      }
+    }
+  }, [_vm._v("Launch large modal")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-secondary",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.smallModal = true
+      }
+    }
+  }, [_vm._v("Launch small modal")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.primaryModal = true
+      }
+    }
+  }, [_vm._v("Launch primary modal")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-success",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.successModal = true
+      }
+    }
+  }, [_vm._v("Launch success modal")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-warning",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.warningModal = true
+      }
+    }
+  }, [_vm._v("Launch warning modal")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-danger",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.dangerModal = true
+      }
+    }
+  }, [_vm._v("Launch danger modal")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.infoModal = true
+      }
+    }
+  }, [_vm._v("Launch info modal")])])])])])]), _vm._v(" "), _c('modal', {
+    attrs: {
+      "title": "Modal title",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.myModal = false
+      }
+    },
+    model: {
+      value: (_vm.myModal),
+      callback: function($$v) {
+        _vm.myModal = $$v
+      },
+      expression: "myModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    attrs: {
+      "title": "Modal title",
+      "large": "",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.largeModal = false
+      }
+    },
+    model: {
+      value: (_vm.largeModal),
+      callback: function($$v) {
+        _vm.largeModal = $$v
+      },
+      expression: "largeModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    attrs: {
+      "title": "Modal title",
+      "small": "",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.smallModal = false
+      }
+    },
+    model: {
+      value: (_vm.smallModal),
+      callback: function($$v) {
+        _vm.smallModal = $$v
+      },
+      expression: "smallModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    staticClass: "modal-primary",
+    attrs: {
+      "title": "Modal title",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.primaryModal = false
+      }
+    },
+    model: {
+      value: (_vm.primaryModal),
+      callback: function($$v) {
+        _vm.primaryModal = $$v
+      },
+      expression: "primaryModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    staticClass: "modal-success",
+    attrs: {
+      "title": "Modal title",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.successModal = false
+      }
+    },
+    model: {
+      value: (_vm.successModal),
+      callback: function($$v) {
+        _vm.successModal = $$v
+      },
+      expression: "successModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    staticClass: "modal-warning",
+    attrs: {
+      "title": "Modal title",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.warningModal = false
+      }
+    },
+    model: {
+      value: (_vm.warningModal),
+      callback: function($$v) {
+        _vm.warningModal = $$v
+      },
+      expression: "warningModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    staticClass: "modal-danger",
+    attrs: {
+      "title": "Modal title",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.dangerModal = false
+      }
+    },
+    model: {
+      value: (_vm.dangerModal),
+      callback: function($$v) {
+        _vm.dangerModal = $$v
+      },
+      expression: "dangerModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")]), _vm._v(" "), _c('modal', {
+    staticClass: "modal-info",
+    attrs: {
+      "title": "Modal title",
+      "effect": "fade/zoom"
+    },
+    on: {
+      "ok": function($event) {
+        _vm.infoModal = false
+      }
+    },
+    model: {
+      value: (_vm.infoModal),
+      callback: function($$v) {
+        _vm.infoModal = $$v
+      },
+      expression: "infoModal"
+    }
+  }, [_c('div', {
+    staticClass: "modal-header",
+    attrs: {
+      "slot": "modal-header"
+    },
+    slot: "modal-header"
+  }, [_c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._v("Modal title")])]), _vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n  ")])], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-align-justify"
+  }), _vm._v(" Bootstrap Modals\n          ")])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-3ab4dce0", module.exports)
+  }
+}
+
+/***/ }),
+/* 568 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "app flex-row align-items-center"
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "row justify-content-center"
+  }, [_c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "clearfix"
+  }, [_c('h1', {
+    staticClass: "float-left display-3 mr-2"
+  }, [_vm._v("500")]), _vm._v(" "), _c('h4', {
+    staticClass: "pt-1"
+  }, [_vm._v("Houston, we have a problem!")]), _vm._v(" "), _c('p', {
+    staticClass: "text-muted"
+  }, [_vm._v("The page you are looking for is temporarily unavailable.")])]), _vm._v(" "), _c('div', {
+    staticClass: "input-prepend input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-search"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "prependedInput",
+      "size": "16",
+      "type": "text",
+      "placeholder": "What are you looking for?"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Search")])])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-3e037148", module.exports)
+  }
+}
+
+/***/ }),
+/* 569 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Label")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Label Form'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-warning"
+  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._l((_vm.labelnames), function(labelname) {
+    return _c('table', {
+      key: labelname.id,
+      staticClass: "table"
+    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(labelname.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(labelname.description))]), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-warning mb-2"
+    }, [_c('router-link', {
+      attrs: {
+        "to": {
+          name: 'Label Form',
+          params: {
+            id: labelname
+          }
+        }
+      }
+    }, [_vm._v("Edit")])], 1)]), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-danger",
+      on: {
+        "click": function($event) {
+          _vm.deleteLabelname(labelname.id)
+        }
+      }
+    }, [_vm._v("Delete")])])])])])
+  }), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.prev_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchLabelnames(_vm.pagination.prev_page_url)
+      }
+    }
+  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item disabled"
+  }, [_c('a', {
+    staticClass: "page-link text-dark",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.next_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchLabelnames(_vm.pagination.next_page_url)
+      }
+    }
+  }, [_vm._v("Next")])])])], 2)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("description")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-47e6f3e8", module.exports)
   }
 }
 
 /***/ }),
 /* 570 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    class: ['modal', _vm.effect],
+    attrs: {
+      "role": "dialog"
+    },
+    on: {
+      "click": function($event) {
+        _vm.backdrop && _vm.action(false, 1)
+      },
+      "transitionend": function($event) {
+        _vm.transition = false
+      }
+    }
+  }, [_c('div', {
+    class: ['modal-dialog', {
+      'modal-lg': _vm.large,
+      'modal-sm': _vm.small
+    }],
+    style: ({
+      width: _vm.optionalWidth
+    }),
+    attrs: {
+      "role": "document"
+    },
+    on: {
+      "click": function($event) {
+        $event.stopPropagation();
+        _vm.action(null)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "modal-content"
+  }, [_vm._t("modal-header", [_c('div', {
+    staticClass: "modal-header"
+  }, [_c('button', {
+    staticClass: "close",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.action(false, 2)
+      }
+    }
+  }, [_c('span', [_vm._v("×")])]), _vm._v(" "), _c('h4', {
+    staticClass: "modal-title"
+  }, [_vm._t("title", [_vm._v(_vm._s(_vm.title))])], 2)])]), _vm._v(" "), _vm._t("modal-body", [_c('div', {
+    staticClass: "modal-body"
+  }, [_vm._t("default")], 2)]), _vm._v(" "), _vm._t("modal-footer", [_c('div', {
+    staticClass: "modal-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.action(false, 3)
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.cancelText))]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    },
+    on: {
+      "click": function($event) {
+        _vm.action(true, 4)
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.okText))])])])], 2)])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-50d10591", module.exports)
+  }
+}
+
+/***/ }),
+/* 571 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Label")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Company Form'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-warning"
+  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-company"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._l((_vm.companies), function(company) {
+    return _c('table', {
+      key: company.id,
+      staticClass: "table"
+    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(company.account_id))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.is_customer))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.links))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.email))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.address))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(company.update_by))]), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-warning mb-2"
+    }, [_c('router-link', {
+      attrs: {
+        "to": {
+          name: 'Company Form',
+          params: {
+            data: company
+          }
+        }
+      }
+    }, [_vm._v("Edit")])], 1)]), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-danger",
+      on: {
+        "click": function($event) {
+          _vm.deletecompany(company.id)
+        }
+      }
+    }, [_vm._v("Delete")])])])])])
+  }), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.prev_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchcompanies(_vm.pagination.prev_page_url)
+      }
+    }
+  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item disabled"
+  }, [_c('a', {
+    staticClass: "page-link text-dark",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.next_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchcompanies(_vm.pagination.next_page_url)
+      }
+    }
+  }, [_vm._v("Next")])])])], 2)])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Account Name")]), _vm._v(" "), _c('th', [_vm._v("Company Name")]), _vm._v(" "), _c('th', [_vm._v("Customer: Yes/ No")]), _vm._v(" "), _c('th', [_vm._v("Links")]), _vm._v(" "), _c('th', [_vm._v("Email")]), _vm._v(" "), _c('th', [_vm._v("Address")]), _vm._v(" "), _c('th', [_vm._v("Update By")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-52567ebf", module.exports)
+  }
+}
+
+/***/ }),
+/* 572 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('router-view')
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-57696f23", module.exports)
+  }
+}
+
+/***/ }),
+/* 573 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addcompany($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "select"
+    }
+  }, [_vm._v("Accounts")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.account_id),
+      expression: "company.account_id"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "select",
+      "name": "select"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.company, "account_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
+    return _c('option', {
+      key: account.id,
+      domProps: {
+        "value": account.id
+      }
+    }, [_vm._v(_vm._s(account.name))])
+  })], 2)]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "select"
+    }
+  }, [_vm._v("Block")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.company.account_id),
+      expression: "company.account_id"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "select",
+      "name": "select"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.company, "account_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select a Account")]), _vm._v(" "), _vm._l((_vm.accounts), function(account) {
+    return _c('option', {
+      key: account.id,
+      domProps: {
+        "value": account.id
+      }
+    }, [_vm._v(_vm._s(account.name))])
+  })], 2)])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Company List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Block Association")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "multiple-select"
+    }
+  }, [_vm._v("Multiple select")]), _vm._v(" "), _c('select', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "multiple-select",
+      "name": "multiple-select",
+      "size": "5",
+      "multiple": ""
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": "1"
+    }
+  }, [_vm._v("Option #1")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "2"
+    }
+  }, [_vm._v("Option #2")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "3"
+    }
+  }, [_vm._v("Option #3")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "4"
+    }
+  }, [_vm._v("Option #4")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "5"
+    }
+  }, [_vm._v("Option #5")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "6"
+    }
+  }, [_vm._v("Option #6")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "7"
+    }
+  }, [_vm._v("Option #7")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "8"
+    }
+  }, [_vm._v("Option #8")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "9"
+    }
+  }, [_vm._v("Option #9")]), _vm._v(" "), _c('option', {
+    attrs: {
+      "value": "10"
+    }
+  }, [_vm._v("Option #10")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-621673e0", module.exports)
+  }
+}
+
+/***/ }),
+/* 574 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "card-columns cols-2"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "chart-wrapper"
+  }, [_c('line-example')], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "chart-wrapper"
+  }, [_c('bar-example')], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_vm._m(2), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "chart-wrapper"
+  }, [_c('doughnut-example')], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_vm._m(3), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "chart-wrapper"
+  }, [_c('radar-example')], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_vm._m(4), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "chart-wrapper"
+  }, [_c('pie-example')], 1)])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_vm._m(5), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "chart-wrapper"
+  }, [_c('polar-area-example')], 1)])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n        Line Chart\n        "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    attrs: {
+      "href": "http://www.chartjs.org"
+    }
+  }, [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("docs")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n        Bar Chart\n        "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    attrs: {
+      "href": "http://www.chartjs.org"
+    }
+  }, [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("docs")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n        Doughnut Chart\n        "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    attrs: {
+      "href": "http://www.chartjs.org"
+    }
+  }, [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("docs")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n        Radar Chart\n        "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    attrs: {
+      "href": "http://www.chartjs.org"
+    }
+  }, [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("docs")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n        Pie Chart\n        "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    attrs: {
+      "href": "http://www.chartjs.org"
+    }
+  }, [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("docs")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n        Polar Area Chart\n        "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    attrs: {
+      "href": "http://www.chartjs.org"
+    }
+  }, [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("docs")])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-6d7a2f04", module.exports)
+  }
+}
+
+/***/ }),
+/* 575 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          3d Switch\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-3d switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-3d switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-3d switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-3d switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-3d switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-3d switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch default\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-default switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch default - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-default switch-pill switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-default switch-primary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-secondary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-success-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-warning-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-info-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-danger-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch outline - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-default switch-pill switch-primary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-secondary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-success-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-warning-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-info-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-danger-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch outline alternative\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-default switch-primary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-secondary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-success-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-warning-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-info-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-danger-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch outline alternative - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-default switch-pill switch-primary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-secondary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-success-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-warning-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-info-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-default switch-pill switch-danger-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with text\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-text switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with text - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-text switch-pill switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with text outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-text switch-primary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-secondary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-success-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-warning-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-info-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-danger-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with text outline - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-text switch-pill switch-primary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-secondary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-warning-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-info-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-danger-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with text outline alternative\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-text switch-primary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-secondary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-success-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-warning-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-info-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-danger-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with text outline alternative - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-text switch-pill switch-primary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-secondary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-warning-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-info-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-danger-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with icon\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-icon switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with icon - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-icon switch-pill switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-secondary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-success"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-warning"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-info"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-danger"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with icon outline\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-icon switch-primary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-secondary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-success-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-warning-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-info-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-danger-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with icon outline - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-icon switch-pill switch-primary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-secondary-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-success-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-warning-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-info-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-danger-outline"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with icon outline alternative\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-icon switch-primary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-secondary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-success-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-warning-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-info-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-danger-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Switch with icon outline alternative - pills\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('label', {
+    staticClass: "switch switch-icon switch-pill switch-primary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-secondary-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-success-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-warning-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-info-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })]), _vm._v("\n             \n          "), _c('label', {
+    staticClass: "switch switch-icon switch-pill switch-danger-outline-alt"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "&#xf00c",
+      "data-off": "&#xf00d"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Sizes\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block p-0"
+  }, [_c('table', {
+    staticClass: "table table-hover table-striped table-align-middle mb-0"
+  }, [_c('thead', [_c('th', [_vm._v("Size")]), _vm._v(" "), _c('th', [_vm._v("Example")]), _vm._v(" "), _c('th', [_vm._v("CSS Class")])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("\n                  Large\n                ")]), _vm._v(" "), _c('td', [_c('label', {
+    staticClass: "switch switch-lg switch-3d switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-lg")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("\n                  Normal\n                ")]), _vm._v(" "), _c('td', [_c('label', {
+    staticClass: "switch switch-3d switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  -\n                ")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("\n                  Small\n                ")]), _vm._v(" "), _c('td', [_c('label', {
+    staticClass: "switch switch-sm switch-3d switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-sm")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("\n                  Extra small\n                ")]), _vm._v(" "), _c('td', [_c('label', {
+    staticClass: "switch switch-xs switch-3d switch-primary"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label"
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('td', [_vm._v("\n                  Add following class "), _c('code', [_vm._v(".switch-sm")])])])])])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-6d8539dc", module.exports)
+  }
+}
+
+/***/ }),
+/* 576 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ol', {
+    staticClass: "breadcrumb"
+  }, _vm._l((_vm.list), function(item, index) {
+    return _c('li', {
+      staticClass: "breadcrumb-item"
+    }, [(_vm.isLast(index)) ? _c('span', {
+      staticClass: "active"
+    }, [_vm._v(_vm._s(_vm.showName(item)))]) : _c('router-link', {
+      attrs: {
+        "to": item.path
+      }
+    }, [_vm._v(_vm._s(_vm.showName(item)))])], 1)
+  }))
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-6ee687dc", module.exports)
+  }
+}
+
+/***/ }),
+/* 577 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addBlock($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.block.name),
+      expression: "block.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Enter Block Name"
+    },
+    domProps: {
+      "value": (_vm.block.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.block, "name", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Block List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("block")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-725078d6", module.exports)
+  }
+}
+
+/***/ }),
+/* 578 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "card card-default"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-picture-o"
+  }), _vm._v(" Simple Line Icons\n    ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "row text-center"
+  }, [_c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-user icons font-2xl d-block mt-2"
+  }), _vm._v("icon-user\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-people icons font-2xl d-block mt-2"
+  }), _vm._v("icon-people\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-user-female icons font-2xl d-block mt-2"
+  }), _vm._v("icon-user-female\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-user-follow icons font-2xl d-block mt-2"
+  }), _vm._v("icon-user-follow\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-user-following icons font-2xl d-block mt-2"
+  }), _vm._v("icon-user-following\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-user-unfollow icons font-2xl d-block mt-2"
+  }), _vm._v("icon-user-unfollow\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-login icons font-2xl d-block mt-2"
+  }), _vm._v("icon-login\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-logout icons font-2xl d-block mt-2"
+  }), _vm._v("icon-logout\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-emotsmile icons font-2xl d-block mt-2"
+  }), _vm._v("icon-emotsmile\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-phone icons font-2xl d-block mt-2"
+  }), _vm._v("icon-phone\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-call-end icons font-2xl d-block mt-2"
+  }), _vm._v("icon-call-end\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-call-in icons font-2xl d-block mt-2"
+  }), _vm._v("icon-call-in\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-call-out icons font-2xl d-block mt-2"
+  }), _vm._v("icon-call-out\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-map icons font-2xl d-block mt-2"
+  }), _vm._v("icon-map\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-location-pin icons font-2xl d-block mt-2"
+  }), _vm._v("icon-location-pin\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-direction icons font-2xl d-block mt-2"
+  }), _vm._v("icon-direction\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-directions icons font-2xl d-block mt-2"
+  }), _vm._v("icon-directions\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-compass icons font-2xl d-block mt-2"
+  }), _vm._v("icon-compass\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-layers icons font-2xl d-block mt-2"
+  }), _vm._v("icon-layers\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-menu icons font-2xl d-block mt-2"
+  }), _vm._v("icon-menu\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-list icons font-2xl d-block mt-2"
+  }), _vm._v("icon-list\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-options-vertical icons font-2xl d-block mt-2"
+  }), _vm._v("icon-options-vertical\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-options icons font-2xl d-block mt-2"
+  }), _vm._v("icon-options\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-down icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-down\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-left icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-left\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-right icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-right\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-up icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-up\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-up-circle icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-up-circle\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-left-circle icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-left-circle\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-right-circle icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-right-circle\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-arrow-down-circle icons font-2xl d-block mt-2"
+  }), _vm._v("icon-arrow-down-circle\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-check icons font-2xl d-block mt-2"
+  }), _vm._v("icon-check\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-clock icons font-2xl d-block mt-2"
+  }), _vm._v("icon-clock\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-plus icons font-2xl d-block mt-2"
+  }), _vm._v("icon-plus\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-close icons font-2xl d-block mt-2"
+  }), _vm._v("icon-close\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-trophy icons font-2xl d-block mt-2"
+  }), _vm._v("icon-trophy\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-screen-smartphone icons font-2xl d-block mt-2"
+  }), _vm._v("icon-screen-smartphone\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-screen-desktop icons font-2xl d-block mt-2"
+  }), _vm._v("icon-screen-desktop\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-plane icons font-2xl d-block mt-2"
+  }), _vm._v("icon-plane\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-notebook icons font-2xl d-block mt-2"
+  }), _vm._v("icon-notebook\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-mustache icons font-2xl d-block mt-2"
+  }), _vm._v("icon-mustache\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-mouse icons font-2xl d-block mt-2"
+  }), _vm._v("icon-mouse\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-magnet icons font-2xl d-block mt-2"
+  }), _vm._v("icon-magnet\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-energy icons font-2xl d-block mt-2"
+  }), _vm._v("icon-energy\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-disc icons font-2xl d-block mt-2"
+  }), _vm._v("icon-disc\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-cursor icons font-2xl d-block mt-2"
+  }), _vm._v("icon-cursor\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-cursor-move icons font-2xl d-block mt-2"
+  }), _vm._v("icon-cursor-move\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-crop icons font-2xl d-block mt-2"
+  }), _vm._v("icon-crop\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-chemistry icons font-2xl d-block mt-2"
+  }), _vm._v("icon-chemistry\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-speedometer icons font-2xl d-block mt-2"
+  }), _vm._v("icon-speedometer\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-shield icons font-2xl d-block mt-2"
+  }), _vm._v("icon-shield\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-screen-tablet icons font-2xl d-block mt-2"
+  }), _vm._v("icon-screen-tablet\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-magic-wand icons font-2xl d-block mt-2"
+  }), _vm._v("icon-magic-wand\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-hourglass icons font-2xl d-block mt-2"
+  }), _vm._v("icon-hourglass\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-graduation icons font-2xl d-block mt-2"
+  }), _vm._v("icon-graduation\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-ghost icons font-2xl d-block mt-2"
+  }), _vm._v("icon-ghost\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-game-controller icons font-2xl d-block mt-2"
+  }), _vm._v("icon-game-controller\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-fire icons font-2xl d-block mt-2"
+  }), _vm._v("icon-fire\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-eyeglass icons font-2xl d-block mt-2"
+  }), _vm._v("icon-eyeglass\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-envelope-open icons font-2xl d-block mt-2"
+  }), _vm._v("icon-envelope-open\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-envelope-letter icons font-2xl d-block mt-2"
+  }), _vm._v("icon-envelope-letter\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-bell icons font-2xl d-block mt-2"
+  }), _vm._v("icon-bell\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-badge icons font-2xl d-block mt-2"
+  }), _vm._v("icon-badge\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-anchor icons font-2xl d-block mt-2"
+  }), _vm._v("icon-anchor\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-wallet icons font-2xl d-block mt-2"
+  }), _vm._v("icon-wallet\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-vector icons font-2xl d-block mt-2"
+  }), _vm._v("icon-vector\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-speech icons font-2xl d-block mt-2"
+  }), _vm._v("icon-speech\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-puzzle icons font-2xl d-block mt-2"
+  }), _vm._v("icon-puzzle\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-printer icons font-2xl d-block mt-2"
+  }), _vm._v("icon-printer\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-present icons font-2xl d-block mt-2"
+  }), _vm._v("icon-present\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-playlist icons font-2xl d-block mt-2"
+  }), _vm._v("icon-playlist\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-pin icons font-2xl d-block mt-2"
+  }), _vm._v("icon-pin\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-picture icons font-2xl d-block mt-2"
+  }), _vm._v("icon-picture\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-handbag icons font-2xl d-block mt-2"
+  }), _vm._v("icon-handbag\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-globe-alt icons font-2xl d-block mt-2"
+  }), _vm._v("icon-globe-alt\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-globe icons font-2xl d-block mt-2"
+  }), _vm._v("icon-globe\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-folder-alt icons font-2xl d-block mt-2"
+  }), _vm._v("icon-folder-alt\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-folder icons font-2xl d-block mt-2"
+  }), _vm._v("icon-folder\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-film icons font-2xl d-block mt-2"
+  }), _vm._v("icon-film\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-feed icons font-2xl d-block mt-2"
+  }), _vm._v("icon-feed\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-drop icons font-2xl d-block mt-2"
+  }), _vm._v("icon-drop\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-drawer icons font-2xl d-block mt-2"
+  }), _vm._v("icon-drawer\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-docs icons font-2xl d-block mt-2"
+  }), _vm._v("icon-docs\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-doc icons font-2xl d-block mt-2"
+  }), _vm._v("icon-doc\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-diamond icons font-2xl d-block mt-2"
+  }), _vm._v("icon-diamond\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-cup icons font-2xl d-block mt-2"
+  }), _vm._v("icon-cup\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-calculator icons font-2xl d-block mt-2"
+  }), _vm._v("icon-calculator\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-bubbles icons font-2xl d-block mt-2"
+  }), _vm._v("icon-bubbles\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-briefcase icons font-2xl d-block mt-2"
+  }), _vm._v("icon-briefcase\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-book-open icons font-2xl d-block mt-2"
+  }), _vm._v("icon-book-open\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-basket-loaded icons font-2xl d-block mt-2"
+  }), _vm._v("icon-basket-loaded\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-basket icons font-2xl d-block mt-2"
+  }), _vm._v("icon-basket\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-bag icons font-2xl d-block mt-2"
+  }), _vm._v("icon-bag\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-action-undo icons font-2xl d-block mt-2"
+  }), _vm._v("icon-action-undo\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-action-redo icons font-2xl d-block mt-2"
+  }), _vm._v("icon-action-redo\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-wrench icons font-2xl d-block mt-2"
+  }), _vm._v("icon-wrench\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-umbrella icons font-2xl d-block mt-2"
+  }), _vm._v("icon-umbrella\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-trash icons font-2xl d-block mt-2"
+  }), _vm._v("icon-trash\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-tag icons font-2xl d-block mt-2"
+  }), _vm._v("icon-tag\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-support icons font-2xl d-block mt-2"
+  }), _vm._v("icon-support\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-frame icons font-2xl d-block mt-2"
+  }), _vm._v("icon-frame\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-size-fullscreen icons font-2xl d-block mt-2"
+  }), _vm._v("icon-size-fullscreen\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-size-actual icons font-2xl d-block mt-2"
+  }), _vm._v("icon-size-actual\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-shuffle icons font-2xl d-block mt-2"
+  }), _vm._v("icon-shuffle\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-share-alt icons font-2xl d-block mt-2"
+  }), _vm._v("icon-share-alt\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-share icons font-2xl d-block mt-2"
+  }), _vm._v("icon-share\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-rocket icons font-2xl d-block mt-2"
+  }), _vm._v("icon-rocket\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-question icons font-2xl d-block mt-2"
+  }), _vm._v("icon-question\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-pie-chart icons font-2xl d-block mt-2"
+  }), _vm._v("icon-pie-chart\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-pencil icons font-2xl d-block mt-2"
+  }), _vm._v("icon-pencil\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-note icons font-2xl d-block mt-2"
+  }), _vm._v("icon-note\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-loop icons font-2xl d-block mt-2"
+  }), _vm._v("icon-loop\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-home icons font-2xl d-block mt-2"
+  }), _vm._v("icon-home\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-grid icons font-2xl d-block mt-2"
+  }), _vm._v("icon-grid\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-graph icons font-2xl d-block mt-2"
+  }), _vm._v("icon-graph\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-microphone icons font-2xl d-block mt-2"
+  }), _vm._v("icon-microphone\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-music-tone-alt icons font-2xl d-block mt-2"
+  }), _vm._v("icon-music-tone-alt\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-music-tone icons font-2xl d-block mt-2"
+  }), _vm._v("icon-music-tone\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-earphones-alt icons font-2xl d-block mt-2"
+  }), _vm._v("icon-earphones-alt\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-earphones icons font-2xl d-block mt-2"
+  }), _vm._v("icon-earphones\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-equalizer icons font-2xl d-block mt-2"
+  }), _vm._v("icon-equalizer\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-like icons font-2xl d-block mt-2"
+  }), _vm._v("icon-like\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-dislike icons font-2xl d-block mt-2"
+  }), _vm._v("icon-dislike\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-control-start icons font-2xl d-block mt-2"
+  }), _vm._v("icon-control-start\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-control-rewind icons font-2xl d-block mt-2"
+  }), _vm._v("icon-control-rewind\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-control-play icons font-2xl d-block mt-2"
+  }), _vm._v("icon-control-play\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-control-pause icons font-2xl d-block mt-2"
+  }), _vm._v("icon-control-pause\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-control-forward icons font-2xl d-block mt-2"
+  }), _vm._v("icon-control-forward\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-control-end icons font-2xl d-block mt-2"
+  }), _vm._v("icon-control-end\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-volume-1 icons font-2xl d-block mt-2"
+  }), _vm._v("icon-volume-1\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-volume-2 icons font-2xl d-block mt-2"
+  }), _vm._v("icon-volume-2\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-volume-off icons font-2xl d-block mt-2"
+  }), _vm._v("icon-volume-off\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-calendar icons font-2xl d-block mt-2"
+  }), _vm._v("icon-calendar\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-bulb icons font-2xl d-block mt-2"
+  }), _vm._v("icon-bulb\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-chart icons font-2xl d-block mt-2"
+  }), _vm._v("icon-chart\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-ban icons font-2xl d-block mt-2"
+  }), _vm._v("icon-ban\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-bubble icons font-2xl d-block mt-2"
+  }), _vm._v("icon-bubble\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-camrecorder icons font-2xl d-block mt-2"
+  }), _vm._v("icon-camrecorder\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-camera icons font-2xl d-block mt-2"
+  }), _vm._v("icon-camera\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-cloud-download icons font-2xl d-block mt-2"
+  }), _vm._v("icon-cloud-download\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-cloud-upload icons font-2xl d-block mt-2"
+  }), _vm._v("icon-cloud-upload\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-envelope icons font-2xl d-block mt-2"
+  }), _vm._v("icon-envelope\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-eye icons font-2xl d-block mt-2"
+  }), _vm._v("icon-eye\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-flag icons font-2xl d-block mt-2"
+  }), _vm._v("icon-flag\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-heart icons font-2xl d-block mt-2"
+  }), _vm._v("icon-heart\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-info icons font-2xl d-block mt-2"
+  }), _vm._v("icon-info\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-key icons font-2xl d-block mt-2"
+  }), _vm._v("icon-key\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-link icons font-2xl d-block mt-2"
+  }), _vm._v("icon-link\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-lock icons font-2xl d-block mt-2"
+  }), _vm._v("icon-lock\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-lock-open icons font-2xl d-block mt-2"
+  }), _vm._v("icon-lock-open\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-magnifier icons font-2xl d-block mt-2"
+  }), _vm._v("icon-magnifier\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-magnifier-add icons font-2xl d-block mt-2"
+  }), _vm._v("icon-magnifier-add\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-magnifier-remove icons font-2xl d-block mt-2"
+  }), _vm._v("icon-magnifier-remove\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-paper-clip icons font-2xl d-block mt-2"
+  }), _vm._v("icon-paper-clip\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-paper-plane icons font-2xl d-block mt-2"
+  }), _vm._v("icon-paper-plane\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-power icons font-2xl d-block mt-2"
+  }), _vm._v("icon-power\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-refresh icons font-2xl d-block mt-2"
+  }), _vm._v("icon-refresh\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-reload icons font-2xl d-block mt-2"
+  }), _vm._v("icon-reload\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-settings icons font-2xl d-block mt-2"
+  }), _vm._v("icon-settings\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-star icons font-2xl d-block mt-2"
+  }), _vm._v("icon-star\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-symbol-female icons font-2xl d-block mt-2"
+  }), _vm._v("icon-symbol-female\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-symbol-male icons font-2xl d-block mt-2"
+  }), _vm._v("icon-symbol-male\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-target icons font-2xl d-block mt-2"
+  }), _vm._v("icon-target\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-credit-card icons font-2xl d-block mt-2"
+  }), _vm._v("icon-credit-card\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-paypal icons font-2xl d-block mt-2"
+  }), _vm._v("icon-paypal\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-tumblr icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-tumblr\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-twitter icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-twitter\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-facebook icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-facebook\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-instagram icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-instagram\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-linkedin icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-linkedin\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-pinterest icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-pinterest\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-github icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-github\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-gplus icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-gplus\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-reddit icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-reddit\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-skype icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-skype\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-dribbble icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-dribbble\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-behance icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-behance\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-foursqare icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-foursqare\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-soundcloud icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-soundcloud\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-spotify icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-spotify\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-stumbleupon icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-stumbleupon\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-youtube icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-youtube\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "col-6 col-sm-4 col-md-3"
+  }, [_c('i', {
+    staticClass: "icon-social-dropbox icons font-2xl d-block mt-2"
+  }), _vm._v("icon-social-dropbox\n        ")])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-784274a0", module.exports)
+  }
+}
+
+/***/ }),
+/* 579 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Usage ex.")]), _c('code', {
+    staticStyle: {
+      "text-transform": "lowercase"
+    }
+  }, [_vm._v("<button class=\"btn btn-facebook\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    staticClass: "btn-setting",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-settings"
+  })]), _vm._v(" "), _c('button', {
+    staticClass: "btn-minimize",
+    attrs: {
+      "type": "button",
+      "data-toggle": "collapse",
+      "data-target": "",
+      "aria-expanded": "false",
+      "aria-controls": "collapseExample"
+    }
+  }, [_c('i', {
+    staticClass: "icon-arrow-up"
+  })]), _vm._v(" "), _c('a', {
+    staticClass: "btn-close",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-close"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('h6', [_vm._v("Size Small "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-sm")])])]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-sm btn-facebook",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-twitter",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-linkedin",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-flickr",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-tumblr",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-xing",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-github",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-html5",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-openid",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-stack-overflow",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-css3",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-youtube",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-dribbble",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-google-plus",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-instagram",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-pinterest",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vk",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-yahoo",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-behance",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-dropbox",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-reddit",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-spotify",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vine",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-foursquare",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vimeo",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Normal")]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-facebook",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-twitter",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-linkedin",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-flickr",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-tumblr",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-xing",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-github",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-html5",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-openid",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-stack-overflow",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-css3",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-youtube",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-dribbble",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-google-plus",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-instagram",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-pinterest",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vk",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-yahoo",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-behance",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-dropbox",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-reddit",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-spotify",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vine",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-foursquare",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vimeo",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Large "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-lg")])])]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-lg btn-facebook",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-twitter",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-linkedin",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-flickr",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-tumblr",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-xing",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-github",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-html5",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-openid",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-stack-overflow",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-css3",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-youtube",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-dribbble",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-google-plus",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-instagram",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-pinterest",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vk",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-yahoo",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-behance",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-dropbox",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-reddit",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-spotify",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vine",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-foursquare",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vimeo",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Only icons. Usage ex.")]), _vm._v(" "), _c('code', {
+    staticStyle: {
+      "text-transform": "lowercase"
+    }
+  }, [_vm._v("<button class=\"btn btn-facebook icon\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    staticClass: "btn-setting",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-settings"
+  })]), _vm._v(" "), _c('button', {
+    staticClass: "btn-minimize",
+    attrs: {
+      "type": "button",
+      "data-toggle": "collapse",
+      "data-target": "",
+      "aria-expanded": "false",
+      "aria-controls": "collapseExample"
+    }
+  }, [_c('i', {
+    staticClass: "icon-arrow-up"
+  })]), _vm._v(" "), _c('a', {
+    staticClass: "btn-close",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-close"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('h6', [_vm._v("Size Small "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-sm")])])]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-sm btn-facebook icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-twitter icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-linkedin icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-flickr icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-tumblr icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-xing icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-github icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-html5 icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-openid icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-stack-overflow icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-css3 icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-youtube icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-dribbble icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-google-plus icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-instagram icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-pinterest icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vk icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-yahoo icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-behance icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-dropbox icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-reddit icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-spotify icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vine icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-foursquare icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vimeo icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Normal")]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-facebook icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-twitter icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-linkedin icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-flickr icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-tumblr icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-xing icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-github icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-html5 icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-openid icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-stack-overflow icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-css3 icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-youtube icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-dribbble icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-google-plus icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-instagram icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-pinterest icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vk icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-yahoo icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-behance icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-dropbox icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-reddit icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-spotify icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vine icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-foursquare icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vimeo icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Large "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-lg")])])]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-lg btn-facebook icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-twitter icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-linkedin icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-flickr icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-tumblr icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-xing icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-github icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-html5 icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-openid icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-stack-overflow icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-css3 icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-youtube icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-dribbble icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-google-plus icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-instagram icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-pinterest icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vk icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-yahoo icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-behance icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-dropbox icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-reddit icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-spotify icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vine icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-foursquare icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vimeo icon",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Social Media Button")]), _vm._v(" "), _c('small', [_vm._v("Only text. Usage ex.")]), _vm._v(" "), _c('code', {
+    staticStyle: {
+      "text-transform": "lowercase"
+    }
+  }, [_vm._v("<button class=\"btn btn-facebook text\"><span>Facebook</span></button>")]), _vm._v(" "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    staticClass: "btn-setting",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-settings"
+  })]), _vm._v(" "), _c('button', {
+    staticClass: "btn-minimize",
+    attrs: {
+      "type": "button",
+      "data-toggle": "collapse",
+      "data-target": "",
+      "aria-expanded": "false",
+      "aria-controls": "collapseExample"
+    }
+  }, [_c('i', {
+    staticClass: "icon-arrow-up"
+  })]), _vm._v(" "), _c('a', {
+    staticClass: "btn-close",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-close"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('h6', [_vm._v("Size Small "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-sm")])])]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-sm btn-facebook text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-twitter text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-linkedin text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-flickr text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-tumblr text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-xing text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-github text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-html5 text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-openid text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-stack-overflow text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-css3 text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-youtube text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-dribbble text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-google-plus text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-instagram text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-pinterest text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vk text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-yahoo text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-behance text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-dropbox text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-reddit text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-spotify text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vine text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-foursquare text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-vimeo text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Normal")]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-facebook text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-twitter text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-linkedin text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-flickr text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-tumblr text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-xing text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-github text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-html5 text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-openid text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-stack-overflow text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-css3 text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-youtube text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-dribbble text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-google-plus text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-instagram text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-pinterest text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vk text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-yahoo text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-behance text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-dropbox text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-reddit text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-spotify text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vine text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-foursquare text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-vimeo text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])]), _vm._v(" "), _c('h6', [_vm._v("Size Large "), _c('small', [_vm._v("Add this class "), _c('code', [_vm._v(".btn-lg")])])]), _vm._v(" "), _c('p', [_c('button', {
+    staticClass: "btn btn-lg btn-facebook text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Facebook")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-twitter text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Twitter")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-linkedin text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("LinkedIn")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-flickr text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Flickr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-tumblr text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Tumblr")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-xing text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Xing")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-github text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Github")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-html5 text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("HTML5")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-openid text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("OpenID")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-stack-overflow text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("StackOverflow")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-css3 text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("CSS3")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-youtube text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("YouTube")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-dribbble text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dribbble")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-google-plus text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Google+")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-instagram text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Instagram")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-pinterest text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Pinterest")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vk text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("VK")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-yahoo text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Yahoo")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-behance text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Behance")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-dropbox text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Dropbox")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-reddit text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Reddit")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-spotify text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Spotify")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vine text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vine")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-foursquare text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Forsquare")])]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-lg btn-vimeo text",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('span', [_vm._v("Vimeo")])])])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7f69efca", module.exports)
+  }
+}
+
+/***/ }),
+/* 580 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "app flex-row align-items-center"
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('div', {
+    staticClass: "row justify-content-center"
+  }, [_c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "clearfix"
+  }, [_c('h1', {
+    staticClass: "float-left display-3 mr-2"
+  }, [_vm._v("404")]), _vm._v(" "), _c('h4', {
+    staticClass: "pt-1"
+  }, [_vm._v("Oops! You're lost.")]), _vm._v(" "), _c('p', {
+    staticClass: "text-muted"
+  }, [_vm._v("The page you are looking for was not found.")])]), _vm._v(" "), _c('div', {
+    staticClass: "input-prepend input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-search"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "prependedInput",
+      "size": "16",
+      "type": "text",
+      "placeholder": "What are you looking for?"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Search")])])])])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-a75f2bc2", module.exports)
+  }
+}
+
+/***/ }),
+/* 581 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -124007,8 +121013,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "fa fa-wikipedia-w fa-lg mt-2"
   }), _c('br'), _vm._v("wikipedia-w\n        ")]), _vm._v(" "), _c('div', {
     staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-<<<<<<< HEAD
-=======
   }, [_c('i', {
     staticClass: "fa fa-windows fa-lg mt-2"
   }), _c('br'), _vm._v("windows\n        ")]), _vm._v(" "), _c('div', {
@@ -124902,1610 +121906,1507 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "reset"
     }
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   }, [_c('i', {
-    staticClass: "fa fa-windows fa-lg mt-2"
-  }), _c('br'), _vm._v("windows\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-wordpress fa-lg mt-2"
-  }), _c('br'), _vm._v("wordpress\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-xing fa-lg mt-2"
-  }), _c('br'), _vm._v("xing\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-xing-square fa-lg mt-2"
-  }), _c('br'), _vm._v("xing-square\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-y-combinator fa-lg mt-2"
-  }), _c('br'), _vm._v("y-combinator\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-y-combinator-square fa-lg mt-2"
-  }), _c('br'), _vm._v("y-combinator-square "), _c('span', {
-    staticClass: "text-muted"
-  }, [_vm._v("(alias)")])]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-yahoo fa-lg mt-2"
-  }), _c('br'), _vm._v("yahoo\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-yc fa-lg mt-2"
-  }), _c('br'), _vm._v("yc "), _c('span', {
-    staticClass: "text-muted"
-  }, [_vm._v("(alias)")])]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-yc-square fa-lg mt-2"
-  }), _c('br'), _vm._v("yc-square "), _c('span', {
-    staticClass: "text-muted"
-  }, [_vm._v("(alias)")])]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-yelp fa-lg mt-2"
-  }), _c('br'), _vm._v("yelp\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-youtube fa-lg mt-2"
-  }), _c('br'), _vm._v("youtube\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-youtube-play fa-lg mt-2"
-  }), _c('br'), _vm._v("youtube-play\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-youtube-square fa-lg mt-2"
-  }), _c('br'), _vm._v("youtube-square\n        ")])]), _vm._v(" "), _c('div', {
-    staticClass: "alert alert-success mt-2"
-  }, [_c('ul', {
-    staticClass: "margin-bottom-none padding-left-lg"
-  }, [_c('li', [_vm._v("All brand icons are trademarks of their respective owners.")]), _vm._v(" "), _c('li', [_vm._v("The use of these trademarks does not indicate endorsement of the trademark holder by Font Awesome, nor vice versa.")]), _vm._v(" "), _c('li', [_vm._v("Brand icons should only be used to represent the company or product to which they refer.")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "card",
-    attrs: {
-      "id": "medical"
-    }
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("Medical Icons")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "row text-center"
-  }, [_c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-ambulance fa-lg mt-2"
-  }), _c('br'), _vm._v("ambulance\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-h-square fa-lg mt-2"
-  }), _c('br'), _vm._v("h-square\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-heart fa-lg mt-2"
-  }), _c('br'), _vm._v("heart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-heart-o fa-lg mt-2"
-  }), _c('br'), _vm._v("heart-o\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-heartbeat fa-lg mt-2"
-  }), _c('br'), _vm._v("heartbeat\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-hospital-o fa-lg mt-2"
-  }), _c('br'), _vm._v("hospital-o\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-medkit fa-lg mt-2"
-  }), _c('br'), _vm._v("medkit\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-plus-square fa-lg mt-2"
-  }), _c('br'), _vm._v("plus-square\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-stethoscope fa-lg mt-2"
-  }), _c('br'), _vm._v("stethoscope\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-user-md fa-lg mt-2"
-  }), _c('br'), _vm._v("user-md\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3 col-lg-2"
-  }, [_c('i', {
-    staticClass: "fa fa-wheelchair fa-lg mt-2"
-  }), _c('br'), _vm._v("wheelchair\n        ")])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6f79987b", module.exports)
-  }
-}
-
-/***/ }),
-/* 571 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-md-4"
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
   }, [_c('div', {
     staticClass: "card"
   }, [_c('div', {
     staticClass: "card-header"
-  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-footer"
-  }, [_vm._v("Card footer")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-check"
-  }), _vm._v("Card with icon\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with switch\n          "), _c('label', {
-    staticClass: "switch switch-sm switch-text switch-info float-right mb-0"
-  }, [_c('input', {
-    staticClass: "switch-input",
-    attrs: {
-      "type": "checkbox"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-label",
-    attrs: {
-      "data-on": "On",
-      "data-off": "Off"
-    }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "switch-handle"
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with label\n          "), _c('span', {
-    staticClass: "badge badge-success float-right"
-  }, [_vm._v("Success")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with label\n          "), _c('span', {
-    staticClass: "badge badge-pill badge-danger float-right"
-  }, [_vm._v("42")])]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-outline-primary"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-outline-secondary"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-outline-success"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-outline-info"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-outline-warning"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-outline-danger"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card outline\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-accent-primary"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-accent-secondary"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-accent-success"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-accent-info"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-accent-warning"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-accent-danger"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card with accent\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-primary text-center"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_c('blockquote', {
-    staticClass: "card-blockquote"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
-    attrs: {
-      "title": "Source Title"
-    }
-  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-success text-center"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_c('blockquote', {
-    staticClass: "card-blockquote"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
-    attrs: {
-      "title": "Source Title"
-    }
-  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-info text-center"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_c('blockquote', {
-    staticClass: "card-blockquote"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
-    attrs: {
-      "title": "Source Title"
-    }
-  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-warning text-center"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_c('blockquote', {
-    staticClass: "card-blockquote"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
-    attrs: {
-      "title": "Source Title"
-    }
-  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-danger text-center"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_c('blockquote', {
-    staticClass: "card-blockquote"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
-    attrs: {
-      "title": "Source Title"
-    }
-  }, [_vm._v("Source Title")])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-primary text-center"
-  }, [_c('div', {
-    staticClass: "card-block"
-  }, [_c('blockquote', {
-    staticClass: "card-blockquote"
-  }, [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.")]), _vm._v(" "), _c('footer', [_vm._v("Someone famous in\n              "), _c('cite', {
-    attrs: {
-      "title": "Source Title"
-    }
-  }, [_vm._v("Source Title")])])])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-primary"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-success"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-info"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-warning"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-6 col-md-4"
-  }, [_c('div', {
-    staticClass: "card card-inverse card-danger"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_vm._v("\n          Card title\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_vm._v("\n          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.\n        ")])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-793ab03e", module.exports)
-  }
-}
-
-/***/ }),
-/* 572 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "sidebar"
-  }, [_c('nav', {
-    staticClass: "sidebar-nav"
-  }, [_c('ul', {
-    staticClass: "nav"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/dashboard'
-    }
-  }, [_c('i', {
-    staticClass: "icon-speedometer"
-  }), _vm._v(" Dashboard\n                    "), _c('span', {
-    staticClass: "badge badge-info"
-  }, [_vm._v("NEW")])])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-title"
-  }, [_vm._v("\n                UI Elements\n            ")]), _vm._v(" "), _c('router-link', {
-    staticClass: "nav-item nav-dropdown",
-    attrs: {
-      "tag": "li",
-      "to": {
-        path: '/components'
-      },
-      "disabled": ""
-    }
-  }, [_c('div', {
-    staticClass: "nav-link nav-dropdown-toggle",
-    on: {
-      "click": _vm.handleClick
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Components")]), _vm._v(" "), _c('ul', {
-    staticClass: "nav-dropdown-items"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/buttons',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Buttons")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/social-buttons',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Social Buttons")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/cards',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Cards")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/forms',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Forms")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/modals',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Modals")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/switches',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Switches")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/components/tables',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-puzzle"
-  }), _vm._v(" Tables")])], 1)])]), _vm._v(" "), _c('router-link', {
-    staticClass: "nav-item nav-dropdown",
-    attrs: {
-      "tag": "li",
-      "to": {
-        path: '/icons'
-      },
-      "disabled": ""
-    }
-  }, [_c('div', {
-    staticClass: "nav-link nav-dropdown-toggle",
-    on: {
-      "click": _vm.handleClick
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Icons")]), _vm._v(" "), _c('ul', {
-    staticClass: "nav-dropdown-items"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/icons/font-awesome',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Font Awesome")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/icons/simple-line-icons',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Simple Line Icons")])], 1)])]), _vm._v(" "), _c('router-link', {
-    staticClass: "nav-item nav-dropdown",
-    attrs: {
-      "tag": "li",
-      "to": {
-        path: '/company'
-      },
-      "disabled": ""
-    }
-  }, [_c('div', {
-    staticClass: "nav-link nav-dropdown-toggle",
-    on: {
-      "click": _vm.handleClick
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Company")]), _vm._v(" "), _c('ul', {
-    staticClass: "nav-dropdown-items"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/company/company',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Company")])], 1)])]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/block/list',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-calculator"
-  }), _vm._v(" Blocks\n                ")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/label/list',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-calculator"
-  }), _vm._v(" Label\n                ")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/charts',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-pie-chart"
-  }), _vm._v(" Charts")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "divider"
-  }), _vm._v(" "), _c('li', {
-    staticClass: "nav-title"
-  }, [_vm._v("\n                Extras\n            ")]), _vm._v(" "), _c('li', {
-    staticClass: "nav-item nav-dropdown"
-  }, [_c('a', {
-    staticClass: "nav-link nav-dropdown-toggle",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": _vm.handleClick
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Pages")]), _vm._v(" "), _c('ul', {
-    staticClass: "nav-dropdown-items"
-  }, [_c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/pages/login',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Login")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/pages/register',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Register")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/pages/404',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Error 404")])], 1), _vm._v(" "), _c('li', {
-    staticClass: "nav-item"
-  }, [_c('router-link', {
-    staticClass: "nav-link",
-    attrs: {
-      "to": '/pages/500',
-      "exact": ""
-    }
-  }, [_c('i', {
-    staticClass: "icon-star"
-  }), _vm._v(" Error 500")])], 1)])])], 1)])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-a7b51664", module.exports)
-  }
-}
-
-/***/ }),
-/* 573 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "card card-default"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('i', {
-    staticClass: "fa fa-picture-o"
-  }), _vm._v(" Simple Line Icons\n    ")]), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "row text-center"
-  }, [_c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-user icons font-2xl d-block mt-2"
-  }), _vm._v("icon-user\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-people icons font-2xl d-block mt-2"
-  }), _vm._v("icon-people\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-user-female icons font-2xl d-block mt-2"
-  }), _vm._v("icon-user-female\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-user-follow icons font-2xl d-block mt-2"
-  }), _vm._v("icon-user-follow\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-user-following icons font-2xl d-block mt-2"
-  }), _vm._v("icon-user-following\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-user-unfollow icons font-2xl d-block mt-2"
-  }), _vm._v("icon-user-unfollow\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-login icons font-2xl d-block mt-2"
-  }), _vm._v("icon-login\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-logout icons font-2xl d-block mt-2"
-  }), _vm._v("icon-logout\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-emotsmile icons font-2xl d-block mt-2"
-  }), _vm._v("icon-emotsmile\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-phone icons font-2xl d-block mt-2"
-  }), _vm._v("icon-phone\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-call-end icons font-2xl d-block mt-2"
-  }), _vm._v("icon-call-end\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-call-in icons font-2xl d-block mt-2"
-  }), _vm._v("icon-call-in\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-call-out icons font-2xl d-block mt-2"
-  }), _vm._v("icon-call-out\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-map icons font-2xl d-block mt-2"
-  }), _vm._v("icon-map\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-location-pin icons font-2xl d-block mt-2"
-  }), _vm._v("icon-location-pin\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-direction icons font-2xl d-block mt-2"
-  }), _vm._v("icon-direction\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-directions icons font-2xl d-block mt-2"
-  }), _vm._v("icon-directions\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-compass icons font-2xl d-block mt-2"
-  }), _vm._v("icon-compass\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-layers icons font-2xl d-block mt-2"
-  }), _vm._v("icon-layers\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-menu icons font-2xl d-block mt-2"
-  }), _vm._v("icon-menu\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-list icons font-2xl d-block mt-2"
-  }), _vm._v("icon-list\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-options-vertical icons font-2xl d-block mt-2"
-  }), _vm._v("icon-options-vertical\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-options icons font-2xl d-block mt-2"
-  }), _vm._v("icon-options\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-down icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-down\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-left icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-left\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-right icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-right\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-up icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-up\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-up-circle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-up-circle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-left-circle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-left-circle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-right-circle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-right-circle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-arrow-down-circle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-arrow-down-circle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-check icons font-2xl d-block mt-2"
-  }), _vm._v("icon-check\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-clock icons font-2xl d-block mt-2"
-  }), _vm._v("icon-clock\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-plus icons font-2xl d-block mt-2"
-  }), _vm._v("icon-plus\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-close icons font-2xl d-block mt-2"
-  }), _vm._v("icon-close\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-trophy icons font-2xl d-block mt-2"
-  }), _vm._v("icon-trophy\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-screen-smartphone icons font-2xl d-block mt-2"
-  }), _vm._v("icon-screen-smartphone\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-screen-desktop icons font-2xl d-block mt-2"
-  }), _vm._v("icon-screen-desktop\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-plane icons font-2xl d-block mt-2"
-  }), _vm._v("icon-plane\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-notebook icons font-2xl d-block mt-2"
-  }), _vm._v("icon-notebook\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-mustache icons font-2xl d-block mt-2"
-  }), _vm._v("icon-mustache\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-mouse icons font-2xl d-block mt-2"
-  }), _vm._v("icon-mouse\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnet icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnet\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-energy icons font-2xl d-block mt-2"
-  }), _vm._v("icon-energy\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-disc icons font-2xl d-block mt-2"
-  }), _vm._v("icon-disc\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cursor icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cursor\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cursor-move icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cursor-move\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-crop icons font-2xl d-block mt-2"
-  }), _vm._v("icon-crop\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-chemistry icons font-2xl d-block mt-2"
-  }), _vm._v("icon-chemistry\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-speedometer icons font-2xl d-block mt-2"
-  }), _vm._v("icon-speedometer\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-shield icons font-2xl d-block mt-2"
-  }), _vm._v("icon-shield\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-screen-tablet icons font-2xl d-block mt-2"
-  }), _vm._v("icon-screen-tablet\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magic-wand icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magic-wand\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-hourglass icons font-2xl d-block mt-2"
-  }), _vm._v("icon-hourglass\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-graduation icons font-2xl d-block mt-2"
-  }), _vm._v("icon-graduation\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-ghost icons font-2xl d-block mt-2"
-  }), _vm._v("icon-ghost\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-game-controller icons font-2xl d-block mt-2"
-  }), _vm._v("icon-game-controller\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-fire icons font-2xl d-block mt-2"
-  }), _vm._v("icon-fire\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-eyeglass icons font-2xl d-block mt-2"
-  }), _vm._v("icon-eyeglass\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-envelope-open icons font-2xl d-block mt-2"
-  }), _vm._v("icon-envelope-open\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-envelope-letter icons font-2xl d-block mt-2"
-  }), _vm._v("icon-envelope-letter\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bell icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bell\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-badge icons font-2xl d-block mt-2"
-  }), _vm._v("icon-badge\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-anchor icons font-2xl d-block mt-2"
-  }), _vm._v("icon-anchor\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-wallet icons font-2xl d-block mt-2"
-  }), _vm._v("icon-wallet\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-vector icons font-2xl d-block mt-2"
-  }), _vm._v("icon-vector\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-speech icons font-2xl d-block mt-2"
-  }), _vm._v("icon-speech\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-puzzle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-puzzle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-printer icons font-2xl d-block mt-2"
-  }), _vm._v("icon-printer\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-present icons font-2xl d-block mt-2"
-  }), _vm._v("icon-present\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-playlist icons font-2xl d-block mt-2"
-  }), _vm._v("icon-playlist\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-pin icons font-2xl d-block mt-2"
-  }), _vm._v("icon-pin\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-picture icons font-2xl d-block mt-2"
-  }), _vm._v("icon-picture\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-handbag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-handbag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-globe-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-globe-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-globe icons font-2xl d-block mt-2"
-  }), _vm._v("icon-globe\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-folder-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-folder-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-folder icons font-2xl d-block mt-2"
-  }), _vm._v("icon-folder\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-film icons font-2xl d-block mt-2"
-  }), _vm._v("icon-film\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-feed icons font-2xl d-block mt-2"
-  }), _vm._v("icon-feed\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-drop icons font-2xl d-block mt-2"
-  }), _vm._v("icon-drop\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-drawer icons font-2xl d-block mt-2"
-  }), _vm._v("icon-drawer\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-docs icons font-2xl d-block mt-2"
-  }), _vm._v("icon-docs\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-doc icons font-2xl d-block mt-2"
-  }), _vm._v("icon-doc\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-diamond icons font-2xl d-block mt-2"
-  }), _vm._v("icon-diamond\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cup icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cup\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-calculator icons font-2xl d-block mt-2"
-  }), _vm._v("icon-calculator\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bubbles icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bubbles\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-briefcase icons font-2xl d-block mt-2"
-  }), _vm._v("icon-briefcase\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-book-open icons font-2xl d-block mt-2"
-  }), _vm._v("icon-book-open\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-basket-loaded icons font-2xl d-block mt-2"
-  }), _vm._v("icon-basket-loaded\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-basket icons font-2xl d-block mt-2"
-  }), _vm._v("icon-basket\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-action-undo icons font-2xl d-block mt-2"
-  }), _vm._v("icon-action-undo\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-action-redo icons font-2xl d-block mt-2"
-  }), _vm._v("icon-action-redo\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-wrench icons font-2xl d-block mt-2"
-  }), _vm._v("icon-wrench\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-umbrella icons font-2xl d-block mt-2"
-  }), _vm._v("icon-umbrella\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-trash icons font-2xl d-block mt-2"
-  }), _vm._v("icon-trash\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-tag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-tag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-support icons font-2xl d-block mt-2"
-  }), _vm._v("icon-support\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-frame icons font-2xl d-block mt-2"
-  }), _vm._v("icon-frame\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-size-fullscreen icons font-2xl d-block mt-2"
-  }), _vm._v("icon-size-fullscreen\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-size-actual icons font-2xl d-block mt-2"
-  }), _vm._v("icon-size-actual\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-shuffle icons font-2xl d-block mt-2"
-  }), _vm._v("icon-shuffle\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-share-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-share-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-share icons font-2xl d-block mt-2"
-  }), _vm._v("icon-share\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-rocket icons font-2xl d-block mt-2"
-  }), _vm._v("icon-rocket\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-question icons font-2xl d-block mt-2"
-  }), _vm._v("icon-question\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-pie-chart icons font-2xl d-block mt-2"
-  }), _vm._v("icon-pie-chart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-pencil icons font-2xl d-block mt-2"
-  }), _vm._v("icon-pencil\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-note icons font-2xl d-block mt-2"
-  }), _vm._v("icon-note\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-loop icons font-2xl d-block mt-2"
-  }), _vm._v("icon-loop\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-home icons font-2xl d-block mt-2"
-  }), _vm._v("icon-home\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-grid icons font-2xl d-block mt-2"
-  }), _vm._v("icon-grid\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-graph icons font-2xl d-block mt-2"
-  }), _vm._v("icon-graph\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-microphone icons font-2xl d-block mt-2"
-  }), _vm._v("icon-microphone\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-music-tone-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-music-tone-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-music-tone icons font-2xl d-block mt-2"
-  }), _vm._v("icon-music-tone\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-earphones-alt icons font-2xl d-block mt-2"
-  }), _vm._v("icon-earphones-alt\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-earphones icons font-2xl d-block mt-2"
-  }), _vm._v("icon-earphones\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-equalizer icons font-2xl d-block mt-2"
-  }), _vm._v("icon-equalizer\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-like icons font-2xl d-block mt-2"
-  }), _vm._v("icon-like\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-dislike icons font-2xl d-block mt-2"
-  }), _vm._v("icon-dislike\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-start icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-start\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-rewind icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-rewind\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-play icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-play\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-pause icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-pause\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-forward icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-forward\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-control-end icons font-2xl d-block mt-2"
-  }), _vm._v("icon-control-end\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-volume-1 icons font-2xl d-block mt-2"
-  }), _vm._v("icon-volume-1\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-volume-2 icons font-2xl d-block mt-2"
-  }), _vm._v("icon-volume-2\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-volume-off icons font-2xl d-block mt-2"
-  }), _vm._v("icon-volume-off\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-calendar icons font-2xl d-block mt-2"
-  }), _vm._v("icon-calendar\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bulb icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bulb\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-chart icons font-2xl d-block mt-2"
-  }), _vm._v("icon-chart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-ban icons font-2xl d-block mt-2"
-  }), _vm._v("icon-ban\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-bubble icons font-2xl d-block mt-2"
-  }), _vm._v("icon-bubble\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-camrecorder icons font-2xl d-block mt-2"
-  }), _vm._v("icon-camrecorder\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-camera icons font-2xl d-block mt-2"
-  }), _vm._v("icon-camera\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cloud-download icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cloud-download\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-cloud-upload icons font-2xl d-block mt-2"
-  }), _vm._v("icon-cloud-upload\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-envelope icons font-2xl d-block mt-2"
-  }), _vm._v("icon-envelope\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-eye icons font-2xl d-block mt-2"
-  }), _vm._v("icon-eye\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-flag icons font-2xl d-block mt-2"
-  }), _vm._v("icon-flag\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-heart icons font-2xl d-block mt-2"
-  }), _vm._v("icon-heart\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-info icons font-2xl d-block mt-2"
-  }), _vm._v("icon-info\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-key icons font-2xl d-block mt-2"
-  }), _vm._v("icon-key\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-link icons font-2xl d-block mt-2"
-  }), _vm._v("icon-link\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-lock icons font-2xl d-block mt-2"
-  }), _vm._v("icon-lock\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-lock-open icons font-2xl d-block mt-2"
-  }), _vm._v("icon-lock-open\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnifier icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnifier\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnifier-add icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnifier-add\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-magnifier-remove icons font-2xl d-block mt-2"
-  }), _vm._v("icon-magnifier-remove\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-paper-clip icons font-2xl d-block mt-2"
-  }), _vm._v("icon-paper-clip\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-paper-plane icons font-2xl d-block mt-2"
-  }), _vm._v("icon-paper-plane\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-power icons font-2xl d-block mt-2"
-  }), _vm._v("icon-power\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-refresh icons font-2xl d-block mt-2"
-  }), _vm._v("icon-refresh\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-reload icons font-2xl d-block mt-2"
-  }), _vm._v("icon-reload\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-settings icons font-2xl d-block mt-2"
-  }), _vm._v("icon-settings\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-star icons font-2xl d-block mt-2"
-  }), _vm._v("icon-star\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-symbol-female icons font-2xl d-block mt-2"
-  }), _vm._v("icon-symbol-female\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-symbol-male icons font-2xl d-block mt-2"
-  }), _vm._v("icon-symbol-male\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-target icons font-2xl d-block mt-2"
-  }), _vm._v("icon-target\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-credit-card icons font-2xl d-block mt-2"
-  }), _vm._v("icon-credit-card\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-paypal icons font-2xl d-block mt-2"
-  }), _vm._v("icon-paypal\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-tumblr icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-tumblr\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-twitter icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-twitter\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-facebook icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-facebook\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-instagram icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-instagram\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-linkedin icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-linkedin\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-pinterest icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-pinterest\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-github icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-github\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-gplus icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-gplus\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-reddit icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-reddit\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-skype icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-skype\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-dribbble icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-dribbble\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-behance icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-behance\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-foursqare icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-foursqare\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-soundcloud icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-soundcloud\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-spotify icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-spotify\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-stumbleupon icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-stumbleupon\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-youtube icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-youtube\n        ")]), _vm._v(" "), _c('div', {
-    staticClass: "col-6 col-sm-4 col-md-3"
-  }, [_c('i', {
-    staticClass: "icon-social-dropbox icons font-2xl d-block mt-2"
-  }), _vm._v("icon-social-dropbox\n        ")])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-b9d7b44a", module.exports)
-  }
-}
-
-/***/ }),
-/* 574 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('ol', {
-    staticClass: "breadcrumb"
-  }, _vm._l((_vm.list), function(item, index) {
-    return _c('li', {
-      staticClass: "breadcrumb-item"
-    }, [(_vm.isLast(index)) ? _c('span', {
-      staticClass: "active"
-    }, [_vm._v(_vm._s(_vm.showName(item)))]) : _c('router-link', {
-      attrs: {
-        "to": item.path
-      }
-    }, [_vm._v(_vm._s(_vm.showName(item)))])], 1)
-  }))
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c36a03fe", module.exports)
-  }
-}
-
-/***/ }),
-/* 575 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
+  }, [_c('strong', [_vm._v("Horizontal")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
     staticClass: "card-block"
   }, [_c('form', {
-    staticClass: "mb-3",
-    on: {
-      "submit": function($event) {
-        $event.preventDefault();
-        return _vm.addLabelname($event)
-      }
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
     }
   }, [_c('div', {
-    staticClass: "row"
+    staticClass: "form-group row"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "hf-email"
+    }
+  }, [_vm._v("Email")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-9"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "hf-email",
+      "name": "hf-email",
+      "placeholder": "Enter Email.."
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "help-block"
+  }, [_vm._v("Please enter your email")])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "hf-password"
+    }
+  }, [_vm._v("Password")]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-9"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "id": "hf-password",
+      "name": "hf-password",
+      "placeholder": "Enter Password.."
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "help-block"
+  }, [_vm._v("Please enter your password")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-dot-circle-o"
+  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
   }, [_c('div', {
-    staticClass: "form-group col-sm-6"
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Normal")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
   }, [_c('label', {
     attrs: {
-      "for": "customer"
+      "for": "nf-email"
     }
-  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.labelname.name),
-      expression: "labelname.name"
-    }],
+  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "nf-email",
+      "name": "nf-email",
+      "placeholder": "Enter Email.."
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "help-block"
+  }, [_vm._v("Please enter your email")])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    attrs: {
+      "for": "nf-password"
+    }
+  }, [_vm._v("Password")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "id": "nf-password",
+      "name": "nf-password",
+      "placeholder": "Enter Password.."
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "help-block"
+  }, [_vm._v("Please enter your password")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-dot-circle-o"
+  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Input "), _c('strong', [_vm._v("Grid")])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-3"
+  }, [_c('input', {
     staticClass: "form-control",
     attrs: {
       "type": "text",
-      "placeholder": "Enter Block Name"
-    },
-    domProps: {
-      "value": (_vm.labelname.name)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.labelname, "name", $event.target.value)
-      }
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
-  }, [_c('label', {
-    attrs: {
-      "for": "customer"
-    }
-  }, [_vm._v("Description")]), _vm._v(" "), _c('input', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.labelname.description),
-      expression: "labelname.description"
-    }],
-    staticClass: "form-control",
-    attrs: {
-      "type": "text",
-      "placeholder": "Enter Block Name"
-    },
-    domProps: {
-      "value": (_vm.labelname.description)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.labelname, "description", $event.target.value)
-      }
+      "placeholder": ".col-sm-3"
     }
   })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-4"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-5"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-5"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-6"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-6"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-7"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-7"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-8"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-8"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-9"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-9"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-10"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-10"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-11"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-11"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-sm-12"
+    }
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-user"
+  }), _vm._v(" Login")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])]), _vm._v(" "), _c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Input "), _c('strong', [_vm._v("Sizes")])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('label', {
+    staticClass: "col-sm-3 form-control-label",
+    attrs: {
+      "for": "input-small"
+    }
+  }, [_vm._v("Small Input")]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6"
+  }, [_c('input', {
+    staticClass: "form-control form-control-sm",
+    attrs: {
+      "type": "text",
+      "id": "input-small",
+      "name": "input-small",
+      "placeholder": ".form-control-sm"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('label', {
+    staticClass: "col-sm-3 form-control-label",
+    attrs: {
+      "for": "input-normal"
+    }
+  }, [_vm._v("Normal Input")]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input-normal",
+      "name": "input-normal",
+      "placeholder": "Normal"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('label', {
+    staticClass: "col-sm-3 form-control-label",
+    attrs: {
+      "for": "input-large"
+    }
+  }, [_vm._v("Large Input")]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6"
+  }, [_c('input', {
+    staticClass: "form-control form-control-lg",
+    attrs: {
+      "type": "text",
+      "id": "input-large",
+      "name": "input-large",
+      "placeholder": ".form-control-lg"
+    }
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-dot-circle-o"
+  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Validation states")]), _vm._v(" Form\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "form-group has-success"
+  }, [_c('label', {
+    staticClass: "form-form-control-label",
+    attrs: {
+      "for": "inputSuccess1"
+    }
+  }, [_vm._v("Input with success")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "inputSuccess1"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group has-warning"
+  }, [_c('label', {
+    staticClass: "form-form-control-label",
+    attrs: {
+      "for": "inputWarning1"
+    }
+  }, [_vm._v("Input with warning")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "inputWarning1"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group has-danger"
+  }, [_c('label', {
+    staticClass: "form-form-control-label",
+    attrs: {
+      "for": "inputError1"
+    }
+  }, [_vm._v("Input with error")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "inputError1"
+    }
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Validation states")]), _vm._v(" with optional icons\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('div', {
+    staticClass: "form-group has-success"
+  }, [_c('label', {
+    staticClass: "form-form-control-label",
+    attrs: {
+      "for": "inputSuccess2"
+    }
+  }, [_vm._v("Input with success")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control form-control-success",
+    attrs: {
+      "type": "text",
+      "id": "inputSuccess2"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group has-warning"
+  }, [_c('label', {
+    staticClass: "form-form-control-label",
+    attrs: {
+      "for": "inputWarning2"
+    }
+  }, [_vm._v("Input with warning")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control form-control-warning",
+    attrs: {
+      "type": "text",
+      "id": "inputWarning2"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group has-danger has-feedback"
+  }, [_c('label', {
+    staticClass: "form-form-control-label",
+    attrs: {
+      "for": "inputError2"
+    }
+  }, [_vm._v("Input with error")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control form-control-danger",
+    attrs: {
+      "type": "text",
+      "id": "inputError2"
+    }
+  })])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Icon/Text")]), _vm._v(" Groups\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-user"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input1-group1",
+      "name": "input1-group1",
+      "placeholder": "Username"
+    }
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "input2-group1",
+      "name": "input2-group1",
+      "placeholder": "Email"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-envelope-o"
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-euro"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input3-group1",
+      "name": "input3-group1",
+      "placeholder": ".."
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v(".00")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-success",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-dot-circle-o"
+  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Buttons")]), _vm._v(" Groups\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-search"
+  }), _vm._v(" Search")])]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input1-group2",
+      "name": "input1-group2",
+      "placeholder": "Username"
+    }
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "input2-group2",
+      "name": "input2-group2",
+      "placeholder": "Email"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Submit")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-facebook"
+  })])]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input3-group2",
+      "name": "input3-group2",
+      "placeholder": "Search"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-twitter"
+  })])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-success",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-dot-circle-o"
+  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Dropdowns")]), _vm._v(" Groups\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('div', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary dropdown-toggle",
+    attrs: {
+      "type": "button",
+      "data-toggle": "dropdown"
+    }
+  }, [_vm._v("Action "), _c('span', {
+    staticClass: "caret"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-menu"
+  }, [_c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-divider",
+    attrs: {
+      "role": "separator"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Separated link")])])]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input1-group3",
+      "name": "input1-group3",
+      "placeholder": "Username"
+    }
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "input2-group3",
+      "name": "input2-group3",
+      "placeholder": "Email"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary dropdown-toggle",
+    attrs: {
+      "type": "button",
+      "data-toggle": "dropdown"
+    }
+  }, [_vm._v("Action "), _c('span', {
+    staticClass: "caret"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-menu dropdown-menu-right"
+  }, [_c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-divider",
+    attrs: {
+      "role": "separator"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Separated link")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-12"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('div', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-primary dropdown-toggle dropdown-toggle-split",
+    attrs: {
+      "type": "button",
+      "data-toggle": "dropdown"
+    }
+  }, [_c('span', {
+    staticClass: "caret"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-menu"
+  }, [_c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-divider",
+    attrs: {
+      "role": "separator"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Separated link")])])]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "input3-group3",
+      "name": "input3-group3",
+      "placeholder": ".."
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-primary dropdown-toggle",
+    attrs: {
+      "type": "button",
+      "data-toggle": "dropdown"
+    }
+  }, [_c('span', {
+    staticClass: "caret"
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-menu dropdown-menu-right"
+  }, [_c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Another action")]), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Something else here")]), _vm._v(" "), _c('div', {
+    staticClass: "dropdown-divider",
+    attrs: {
+      "role": "separator"
+    }
+  }), _vm._v(" "), _c('a', {
+    staticClass: "dropdown-item",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Separated link")])])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-success",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-dot-circle-o"
+  }), _vm._v(" Submit")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "reset"
+    }
+  }, [_c('i', {
+    staticClass: "fa fa-ban"
+  }), _vm._v(" Reset")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Use the grid for big devices! "), _c('small', [_c('code', [_vm._v(".col-lg-*")]), _vm._v(" "), _c('code', [_vm._v(".col-md-*")]), _vm._v(" "), _c('code', [_vm._v(".col-sm-*")])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-8"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-8"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-4"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-7"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-7"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-5"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-5"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-6"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-6"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-6"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-5"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-5"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-7"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-7"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-md-4"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-4"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-md-8"
+    }
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-warning",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-success",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-6"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Input Grid for small devices! "), _c('small', [_c('code', [_vm._v(".col-*")])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal ",
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-4"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-4"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-8"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-8"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-5"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-5"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-7"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-7"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-6"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-6"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-6"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-6"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-7"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-5"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-5"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-5"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group row"
+  }, [_c('div', {
+    staticClass: "col-8"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-8"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-4"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": ".col-4"
+    }
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-danger",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-warning",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-info",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-sm btn-success",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Action")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Example Form\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("Username")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "username3",
+      "name": "username3"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-user"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "email3",
+      "name": "email3"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-envelope"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("Password")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "id": "password3",
+      "name": "password3"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-asterisk"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Submit")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Example Form\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "username2",
+      "name": "username2",
+      "placeholder": "Username"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-user"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "email2",
+      "name": "email2",
+      "placeholder": "Email"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-envelope"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "id": "password2",
+      "name": "password2",
+      "placeholder": "Password"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-asterisk"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-default",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Submit")])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-4"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_vm._v("\n          Example Form\n        ")]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    attrs: {
+      "action": "",
+      "method": "post"
+    }
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-user"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "id": "username",
+      "name": "username",
+      "placeholder": "Username"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-envelope"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "email",
+      "id": "email",
+      "name": "email",
+      "placeholder": "Email"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "fa fa-asterisk"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "id": "password",
+      "name": "password",
+      "placeholder": "Password"
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-sm btn-success",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Submit")])])])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-lg-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('i', {
+    staticClass: "fa fa-edit"
+  }), _vm._v("Form Elements\n          "), _c('div', {
+    staticClass: "card-actions"
+  }, [_c('a', {
+    staticClass: "btn-setting",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-settings"
+  })]), _vm._v(" "), _c('a', {
+    staticClass: "btn-minimize",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-arrow-up"
+  })]), _vm._v(" "), _c('a', {
+    staticClass: "btn-close",
+    attrs: {
+      "href": "#"
+    }
+  }, [_c('i', {
+    staticClass: "icon-close"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "form-horizontal"
+  }, [_c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "prependedInput"
+    }
+  }, [_vm._v("Prepended text")]), _vm._v(" "), _c('div', {
+    staticClass: "controls"
+  }, [_c('div', {
+    staticClass: "input-prepend input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("@")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "prependedInput",
+      "size": "16",
+      "type": "text"
+    }
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "help-block"
+  }, [_vm._v("Here's some help text")])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "appendedInput"
+    }
+  }, [_vm._v("Appended text")]), _vm._v(" "), _c('div', {
+    staticClass: "controls"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "appendedInput",
+      "size": "16",
+      "type": "text"
+    }
+  }), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v(".00")])]), _vm._v(" "), _c('span', {
+    staticClass: "help-block"
+  }, [_vm._v("Here's more help text")])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "appendedPrependedInput"
+    }
+  }, [_vm._v("Append and prepend")]), _vm._v(" "), _c('div', {
+    staticClass: "controls"
+  }, [_c('div', {
+    staticClass: "input-prepend input-group"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("$")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "appendedPrependedInput",
+      "size": "16",
+      "type": "text"
+    }
+  }), _c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v(".00")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "appendedInputButton"
+    }
+  }, [_vm._v("Append with button")]), _vm._v(" "), _c('div', {
+    staticClass: "controls"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "appendedInputButton",
+      "size": "16",
+      "type": "text"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Go!")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "form-group"
+  }, [_c('label', {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "appendedInputButtons"
+    }
+  }, [_vm._v("Two-button append")]), _vm._v(" "), _c('div', {
+    staticClass: "controls"
+  }, [_c('div', {
+    staticClass: "input-group"
+  }, [_c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "id": "appendedInputButtons",
+      "size": "16",
+      "type": "text"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "input-group-btn"
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Search")]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Options")])])])])]), _vm._v(" "), _c('div', {
     staticClass: "form-actions"
   }, [_c('button', {
     staticClass: "btn btn-primary",
     attrs: {
       "type": "submit"
     }
-  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'Label List'
-      }
-    }
-  }, [_c('button', {
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('button', {
     staticClass: "btn btn-default",
     attrs: {
       "type": "button"
     }
-  }, [_vm._v("Cancel")])])], 1)])])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("block")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+  }, [_vm._v("Cancel")])])])])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c642da9a", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-ca724db6", module.exports)
   }
 }
 
@@ -126524,10 +123425,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card"
   }, [_c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Label")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+  }, [_c('strong', [_vm._v("Block Association")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
     attrs: {
       "to": {
-        name: 'Company Form'
+        name: 'Block Association Form'
       }
     }
   }, [_c('button', {
@@ -126600,7 +123501,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Next")])])])], 2)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("Account Name")]), _vm._v(" "), _c('th', [_vm._v("Company Name")]), _vm._v(" "), _c('th', [_vm._v("Customer: Yes/ No")]), _vm._v(" "), _c('th', [_vm._v("Links")]), _vm._v(" "), _c('th', [_vm._v("Email")]), _vm._v(" "), _c('th', [_vm._v("Address")]), _vm._v(" "), _c('th', [_vm._v("Update By")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Account Name")]), _vm._v(" "), _c('th', [_vm._v("Block Name")]), _vm._v(" "), _c('th', [_vm._v("Block Status")]), _vm._v(" "), _c('th', [_vm._v("Update By")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -126615,8 +123516,6 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-<<<<<<< HEAD
-=======
   return _c('div', {
     staticClass: "app"
   }, [_c('AppHeader'), _vm._v(" "), _c('div', {
@@ -126644,7 +123543,6 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
@@ -126656,161 +123554,256 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "col-md-6"
   }, [_c('div', {
-    staticClass: "clearfix"
-  }, [_c('h1', {
-    staticClass: "float-left display-3 mr-2"
-  }, [_vm._v("404")]), _vm._v(" "), _c('h4', {
-    staticClass: "pt-1"
-  }, [_vm._v("Oops! You're lost.")]), _vm._v(" "), _c('p', {
+    staticClass: "card mx-2"
+  }, [_c('div', {
+    staticClass: "card-block p-2"
+  }, [_c('h1', [_vm._v("Register")]), _vm._v(" "), _c('p', {
     staticClass: "text-muted"
-  }, [_vm._v("The page you are looking for was not found.")])]), _vm._v(" "), _c('div', {
-    staticClass: "input-prepend input-group"
+  }, [_vm._v("Create An Admin Account")]), _vm._v(" "), _c('div', {
+    staticClass: "input-group mb-1"
   }, [_c('span', {
     staticClass: "input-group-addon"
   }, [_c('i', {
-    staticClass: "fa fa-search"
+    staticClass: "icon-user"
   })]), _vm._v(" "), _c('input', {
     staticClass: "form-control",
     attrs: {
-      "id": "prependedInput",
-      "size": "16",
       "type": "text",
-      "placeholder": "What are you looking for?"
+      "placeholder": "Username"
     }
-  }), _vm._v(" "), _c('span', {
-    staticClass: "input-group-btn"
-  }, [_c('button', {
-    staticClass: "btn btn-info",
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "input-group mb-1"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_vm._v("@")]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Email"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "input-group mb-1"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "icon-lock"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "placeholder": "Password"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "input-group mb-2"
+  }, [_c('span', {
+    staticClass: "input-group-addon"
+  }, [_c('i', {
+    staticClass: "icon-lock"
+  })]), _vm._v(" "), _c('input', {
+    staticClass: "form-control",
+    attrs: {
+      "type": "password",
+      "placeholder": "Repeat password"
+    }
+  })]), _vm._v(" "), _c('button', {
+    staticClass: "btn btn-block btn-success",
     attrs: {
       "type": "button"
     }
-  }, [_vm._v("Search")])])])])])])])
-}]}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-d18ef34c", module.exports)
-  }
-}
-
-/***/ }),
-<<<<<<< HEAD
-/* 577 */
-=======
-/* 587 */
->>>>>>> 3805612568756ebc53d00ea8a4b1fe241d452835
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "animated fadeIn"
+  }, [_vm._v("Create Account")])]), _vm._v(" "), _c('div', {
+    staticClass: "card-footer p-2"
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-sm-12"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_c('div', {
-    staticClass: "card-header"
-  }, [_c('strong', [_vm._v("LIST")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": {
-        name: 'Block Form'
-      }
-    }
+    staticClass: "col-6"
   }, [_c('button', {
-    staticClass: "btn btn-warning"
-  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
-    staticClass: "card-block"
-  }, [_c('div', {
-    staticClass: "card"
-  }, [_vm._l((_vm.blocks), function(block) {
-    return _c('table', {
-      key: block.id,
-      staticClass: "table"
-    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(block.name))]), _vm._v(" "), _c('td', [_c('button', {
-      staticClass: "btn btn-warning mb-2"
-    }, [_c('router-link', {
-      attrs: {
-        "to": {
-          name: 'Block Form',
-          params: {
-            id: block
-          }
-        }
-      }
-    }, [_vm._v("Edit")])], 1)]), _vm._v(" "), _c('td', [_c('button', {
-      staticClass: "btn btn-danger",
-      on: {
-        "click": function($event) {
-          _vm.deleteBlock(block.id)
-        }
-      }
-    }, [_vm._v("Delete")])])])])])
-  }), _vm._v(" "), _c('ul', {
-    staticClass: "pagination"
-  }, [_c('li', {
-    staticClass: "page-item",
-    class: [{
-      disabled: !_vm.pagination.prev_page_url
-    }]
-  }, [_c('a', {
-    staticClass: "page-link",
+    staticClass: "btn btn-block btn-facebook",
     attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchBlocks(_vm.pagination.prev_page_url)
-      }
+      "type": "button"
     }
-  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item disabled"
-  }, [_c('a', {
-    staticClass: "page-link text-dark",
+  }, [_c('span', [_vm._v("facebook")])])]), _vm._v(" "), _c('div', {
+    staticClass: "col-6"
+  }, [_c('button', {
+    staticClass: "btn btn-block btn-twitter",
     attrs: {
-      "href": "#"
+      "type": "button"
     }
-  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
-    staticClass: "page-item",
-    class: [{
-      disabled: !_vm.pagination.next_page_url
-    }]
-  }, [_c('a', {
-    staticClass: "page-link",
-    attrs: {
-      "href": "#"
-    },
-    on: {
-      "click": function($event) {
-        _vm.fetchBlocks(_vm.pagination.next_page_url)
-      }
-    }
-  }, [_vm._v("Next")])])])], 2)])])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+  }, [_c('span', [_vm._v("twitter")])])])])])])])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-f87c9fd8", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-f2dd1886", module.exports)
   }
 }
 
 /***/ }),
-/* 578 */
+/* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('router-view')
-},staticRenderFns: []}
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('aside', {
+    staticClass: "aside-menu px-2"
+  }, [_c('div', {
+    staticClass: "aside-options"
+  }, [_c('div', {
+    staticClass: "clearfix mt-2"
+  }, [_c('small', [_c('b', [_vm._v("Option 1")])]), _vm._v(" "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('div', [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore\n                magna aliqua.")])])]), _vm._v(" "), _c('div', {
+    staticClass: "aside-options"
+  }, [_c('div', {
+    staticClass: "clearfix mt-1"
+  }, [_c('small', [_c('b', [_vm._v("Option 2")])]), _vm._v(" "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])]), _vm._v(" "), _c('div', [_c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore\n                magna aliqua.")])])]), _vm._v(" "), _c('div', {
+    staticClass: "aside-options"
+  }, [_c('div', {
+    staticClass: "clearfix mt-1"
+  }, [_c('small', [_c('b', [_vm._v("Option 3")])]), _vm._v(" "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])]), _vm._v(" "), _c('div', {
+    staticClass: "aside-options"
+  }, [_c('div', {
+    staticClass: "clearfix mt-1"
+  }, [_c('small', [_c('b', [_vm._v("Option 4")])]), _vm._v(" "), _c('label', {
+    staticClass: "switch switch-text switch-pill switch-success switch-sm float-right"
+  }, [_c('input', {
+    staticClass: "switch-input",
+    attrs: {
+      "type": "checkbox",
+      "checked": ""
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-label",
+    attrs: {
+      "data-on": "On",
+      "data-off": "Off"
+    }
+  }), _vm._v(" "), _c('span', {
+    staticClass: "switch-handle"
+  })])])]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h6', [_vm._v("System Utilization")]), _vm._v(" "), _c('div', {
+    staticClass: "text-uppercase mb-q mt-2"
+  }, [_c('small', [_c('b', [_vm._v("CPU Usage")])])]), _vm._v(" "), _c('div', {
+    staticClass: "progress progress-xs"
+  }, [_c('div', {
+    staticClass: "progress-bar bg-info",
+    staticStyle: {
+      "width": "25%"
+    },
+    attrs: {
+      "role": "progressbar",
+      "aria-valuenow": "25",
+      "aria-valuemin": "0",
+      "aria-valuemax": "100"
+    }
+  })]), _vm._v(" "), _c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("348 Processes. 1/4 Cores.")]), _vm._v(" "), _c('div', {
+    staticClass: "text-uppercase mb-q mt-h"
+  }, [_c('small', [_c('b', [_vm._v("Memory Usage")])])]), _vm._v(" "), _c('div', {
+    staticClass: "progress progress-xs"
+  }, [_c('div', {
+    staticClass: "progress-bar bg-warning",
+    staticStyle: {
+      "width": "70%"
+    },
+    attrs: {
+      "role": "progressbar",
+      "aria-valuenow": "70",
+      "aria-valuemin": "0",
+      "aria-valuemax": "100"
+    }
+  })]), _vm._v(" "), _c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("11444GB/16384MB")]), _vm._v(" "), _c('div', {
+    staticClass: "text-uppercase mb-q mt-h"
+  }, [_c('small', [_c('b', [_vm._v("SSD 1 Usage")])])]), _vm._v(" "), _c('div', {
+    staticClass: "progress progress-xs"
+  }, [_c('div', {
+    staticClass: "progress-bar bg-danger",
+    staticStyle: {
+      "width": "95%"
+    },
+    attrs: {
+      "role": "progressbar",
+      "aria-valuenow": "95",
+      "aria-valuemin": "0",
+      "aria-valuemax": "100"
+    }
+  })]), _vm._v(" "), _c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("243GB/256GB")]), _vm._v(" "), _c('div', {
+    staticClass: "text-uppercase mb-q mt-h"
+  }, [_c('small', [_c('b', [_vm._v("SSD 2 Usage")])])]), _vm._v(" "), _c('div', {
+    staticClass: "progress progress-xs"
+  }, [_c('div', {
+    staticClass: "progress-bar bg-success",
+    staticStyle: {
+      "width": "10%"
+    },
+    attrs: {
+      "role": "progressbar",
+      "aria-valuenow": "10",
+      "aria-valuemin": "0",
+      "aria-valuemax": "100"
+    }
+  })]), _vm._v(" "), _c('small', {
+    staticClass: "text-muted"
+  }, [_vm._v("25GB/256GB")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-fd613d44", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-fb746f22", module.exports)
   }
 }
 
@@ -129622,13 +126615,13 @@ var content = __webpack_require__(363);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(45)("bd03ea84", content, false);
+var update = __webpack_require__(45)("6793e400", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-207a82ea\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Header.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-207a82ea\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Header.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-1d4b6de6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Header.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-1d4b6de6\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Header.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -129648,13 +126641,13 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(45)("d110abf0", content, false);
+var update = __webpack_require__(45)("1b14e96c", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-326865b6\",\"scoped\":false,\"hasInlineConfig\":true}!../../vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
-     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-326865b6\",\"scoped\":false,\"hasInlineConfig\":true}!../../vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2fb2b0d3\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sidebar.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-2fb2b0d3\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sidebar.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -129674,13 +126667,13 @@ var content = __webpack_require__(365);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(45)("7936ba5a", content, false);
+var update = __webpack_require__(45)("2ffcf452", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-678970af\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SocialButtons.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-678970af\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SocialButtons.vue");
+   module.hot.accept("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-50d10591\",\"scoped\":false,\"hasInlineConfig\":true}!../../vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue", function() {
+     var newContent = require("!!../../css-loader/index.js!../../vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-50d10591\",\"scoped\":false,\"hasInlineConfig\":true}!../../vue-loader/lib/selector.js?type=styles&index=0!./Modal.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -129700,13 +126693,13 @@ var content = __webpack_require__(366);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(45)("78ef58c2", content, false);
+var update = __webpack_require__(45)("1c0bd5e2", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-a7b51664\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sidebar.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-a7b51664\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sidebar.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-7f69efca\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SocialButtons.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-7f69efca\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SocialButtons.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });

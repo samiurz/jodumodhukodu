@@ -12,7 +12,7 @@ class Activity extends Resource
 
         return [
             'id' => $this->id,
-            'activity_name' => $this->activity_name,
+            'name' => $this->name,
             'update_by' => $this->update_by
         ];
     }

@@ -35,11 +35,11 @@ class SparesController extends Controller
         $spare->id = $request->input('id');
         $spare->account_id = $request->input('account_id');
         $spare->asset_id = $request->input('asset_id');
-        $spare->spare_serial = $request->input('spare_serial');
-        $spare->spare_type = $request->input('spare_type');
-        $spare->spare_image = $request->input('spare_image');
-        $spare->spare_description = $request->input('spare_description');
-        $spare->spare_manufacturar_id = $request->input('spare_manufacturar_id');
+        $spare->serial = $request->input('serial');
+        $spare->type = $request->input('type');
+        $spare->image = $request->input('image');
+        $spare->description = $request->input('description');
+        $spare->manufacturar_id = $request->input('manufacturar_id');
         $spare->minimum_stock = $request->input('minimum_stock');
         $spare->current_stock = $request->input('current_stock');
         $spare->update_by = $request->input('update_by');

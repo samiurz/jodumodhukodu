@@ -36,7 +36,7 @@ class CompanyController extends Controller
 
         $companies->id = $request->input('id');
         $companies->account_id = $request->input('account_id');
-        $companies->company_name = $request->input('company_name');
+        $companies->name = $request->input('name');
         $companies->is_customer = $request->input('is_customer');
         $companies->links = $request->input('links');
         $companies->email = $request->input('email');

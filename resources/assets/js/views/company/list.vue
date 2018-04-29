@@ -29,7 +29,7 @@
                                 <tbody>
                                     <tr>
                                         <td>{{ company.account_id }}</td>
-                                        <td>{{ company.company_name }}</td>
+                                        <td>{{ company.name }}</td>
                                         <td>{{ company.is_customer }}</td>
                                         <td>{{ company.links }}</td>
                                         <td>{{ company.email }}</td>
@@ -79,7 +79,7 @@
                 company: {
                     id: "",
                     account_id: "",
-                    company_name: "",
+                    name: "",
                     is_customer: "",
                     links: "",
                     email: "",

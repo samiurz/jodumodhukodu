@@ -12,7 +12,7 @@ class BlockStat extends Resource
 
         return [
             'id' => $this->id,
-            'block_stat_name' => $this->block_stat_name,
+            'name' => $this->name,
             'update_by' => $this->update_by
         ];
     }

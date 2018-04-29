@@ -15,9 +15,9 @@ class CreateDocumentationTypesTable extends Migration
     {
         Schema::create('documentation_types', function (Blueprint $table) {
             $table->increments('id')->unique();
-            $table->string('company_id');
+            $table->integer('company_id');
             $table->string('type');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

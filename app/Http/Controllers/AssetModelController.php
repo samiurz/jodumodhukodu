@@ -35,10 +35,10 @@ class AssetModelController extends Controller
 
         $assetmodels->id = $request->input('id');
         $assetmodels->company_id = $request->input('company_id');
-        $assetmodels->model_type = $request->input('model_type');
-        $assetmodels->model_image = $request->input('model_image');
-        $assetmodels->model_rent = $request->input('model_rent');
-        $assetmodels->model_rent_frequency = $request->input('model_rent_frequency');
+        $assetmodels->model_type_id = $request->input('model_type_id');
+        $assetmodels->image = $request->input('image');
+        $assetmodels->rent = $request->input('rent');
+        $assetmodels->frequency = $request->input('frequency');
         $assetmodels->minimum_stock = $request->input('minimum_stock');
         $assetmodels->current_stock = $request->input('current_stock');
         $assetmodels->update_by = $request->input('update_by');

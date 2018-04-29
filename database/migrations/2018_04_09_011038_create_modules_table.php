@@ -15,10 +15,10 @@ class CreateModulesTable extends Migration
     {
         Schema::create('modules', function (Blueprint $table) {
             $table->increments('id')->unique();
-            $table->string('block_id');
-            $table->string('module_name');
+            $table->integer('block_id');
+            $table->string('name');
             $table->string('comment');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

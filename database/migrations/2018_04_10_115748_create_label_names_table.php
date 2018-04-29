@@ -17,7 +17,7 @@ class CreateLabelNamesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

@@ -13,7 +13,7 @@ class Module extends Resource
         return [
             'id' => $this->id,
             'block_id' => $this->block_id,
-            'module_name' => $this->module_name,
+            'name' => $this->name,
             'comment' => $this->comment,
             'update_by' => $this->update_by
         ];

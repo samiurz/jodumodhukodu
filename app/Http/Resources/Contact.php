@@ -13,7 +13,7 @@ class Contact extends Resource
         return [
             'id' => $this->id,
             'company_id' => $this->company_id,
-            'contact_name' => $this->contact_name,
+            'name' => $this->name,
             'phone' => $this->phone,
             'email' => $this->email,
             'links' => $this->links,

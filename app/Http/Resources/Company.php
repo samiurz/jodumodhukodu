@@ -13,7 +13,7 @@ class Company extends Resource
         return [
             'id' => $this->id,
             'account' => $this->account,
-            'company_name' => $this->company_name,
+            'name' => $this->name,
             'is_customer' => $this->is_customer,
             'links' => $this->links,
             'email' => $this->email,

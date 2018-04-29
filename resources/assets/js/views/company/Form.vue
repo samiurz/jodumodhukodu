@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="company">Company Name</label>
-                                    <input type="text" class="form-control" v-model="company.company_name" placeholder="Nestle Professional">
+                                    <input type="text" class="form-control" v-model="company.name" placeholder="Nestle Professional">
                                 </div>
                             </div>
                             <div class="row">
@@ -69,7 +69,7 @@
                 company: {
                     id: "",
                     account_id: "",
-                    company_name: "",
+                    name: "",
                     is_customer: "",
                     links: "",
                     email: "",
@@ -127,7 +127,7 @@
                         .then(res => res.json())
                         .then(data => {
                             this.company.account_id = "";
-                            this.company.company_name = "";
+                            this.company.name = "";
                             this.company.is_customer = "";
                             this.company.links = "";
                             this.company.email = "";
@@ -159,7 +159,7 @@
                 this.edit = true;
                 this.company.id = company.id;
                 this.company.account_id = company.account_id;
-                this.company.company_name = company.company_name;
+                this.company.name = company.name;
                 this.company.is_customer = company.is_customer;
                 this.company.links = company.links;
                 this.company.email = company.email;

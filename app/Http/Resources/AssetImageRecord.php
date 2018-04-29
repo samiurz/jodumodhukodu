@@ -16,7 +16,6 @@ class AssetImageRecord extends Resource
             'asset_id' => $this->asset_id,
             'image' => $this->image,
             'description' => $this->description,
-            'update_by' => $this->update_by,
             'update_by' => $this->update_by
         ];
     }

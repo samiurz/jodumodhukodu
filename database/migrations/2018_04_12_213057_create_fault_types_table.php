@@ -15,10 +15,10 @@ class CreateFaultTypesTable extends Migration
     {
         Schema::create('fault_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('company_id');
-            $table->string('asset_id');
+            $table->integer('company_id');
+            $table->integer('asset_id');
             $table->string('type');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

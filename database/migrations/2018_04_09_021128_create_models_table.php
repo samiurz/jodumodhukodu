@@ -15,15 +15,15 @@ class CreateModelsTable extends Migration
     {
         Schema::create('models', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('company_id');
+            $table->integer('company_id');
             $table->string('model_types_id');
-            $table->string('model_name');
-            $table->string('model_image');
-            $table->string('model_rent');
-            $table->string('model_rent_frequency');
+            $table->string('name');
+            $table->string('image');
+            $table->string('rent');
+            $table->string('frequency');
             $table->string('minimum_stock');
             $table->string('current_stock');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

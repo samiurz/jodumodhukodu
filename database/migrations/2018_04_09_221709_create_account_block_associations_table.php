@@ -15,10 +15,10 @@ class CreateAccountBlockAssociationsTable extends Migration
     {
         Schema::create('account_block_associations', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('account_id');
-            $table->string('block_id');
-            $table->string('block_stat_id');
-            $table->string('update_by');
+            $table->integer('account_id');
+            $table->integer('block_id');
+            $table->integer('block_stat_id');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

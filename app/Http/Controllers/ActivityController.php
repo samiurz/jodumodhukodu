@@ -34,12 +34,11 @@ class ActivityController extends Controller
         $activities = $request->isMethod('put') ? Activity::findOrFail($request->id) : new Activity;
 
         $activities->id = $request->input('id');
-        $activities->activity_name = $request->input('activity_name');
+        $activities->name = $request->input('name');
         $activities->update_by = $request->input('update_by');
         if($activities->save()) {
             return new ActivityResource($activities);
         }
-        
     }
 
     /**

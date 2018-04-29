@@ -15,11 +15,11 @@ class CreateAssetImageRecordsTable extends Migration
     {
         Schema::create('asset_image_records', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('company_id');
-            $table->string('asset_id');
+            $table->integer('company_id');
+            $table->integer('asset_id');
             $table->string('image');
             $table->string('description');
-            $table->string('update_by');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

@@ -39,7 +39,7 @@
                 blocks: [],
                 block: {
                     id: "",
-                    blocks_name: "",
+                    name: "",
                     update_by: "1"
                 },
                 id: "",

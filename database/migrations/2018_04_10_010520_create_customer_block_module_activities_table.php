@@ -15,11 +15,11 @@ class CreateCustomerBlockModuleActivitiesTable extends Migration
     {
         Schema::create('customer_block_module_activities', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('contact_id');
-            $table->string('customer_block_id');
-            $table->string('module_id');
-            $table->string('activity_id');
-            $table->string('update_by');
+            $table->integer('contact_id');
+            $table->integer('customer_block_id');
+            $table->integer('module_id');
+            $table->integer('activity_id');
+            $table->integer('update_by');
             $table->timestamps();
         });
     }

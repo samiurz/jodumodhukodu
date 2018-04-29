@@ -36,13 +36,13 @@ class AssetController extends Controller
         $assets->id = $request->input('id');
         $assets->company_id = $request->input('company_id');
         $assets->model_id = $request->input('model_id');
-        $assets->asset_name = $request->input('asset_name');
+        $assets->name = $request->input('name');
         $assets->label_id = $request->input('label_id');
         $assets->label_value = $request->input('label_value');
-        $assets->asset_description = $request->input('asset_description');
-        $assets->asset_quality = $request->input('asset_quality');
-        $assets->asset_status = $request->input('asset_status');
-        $assets->asset_cost = $request->input('asset_cost');
+        $assets->description = $request->input('description');
+        $assets->quality = $request->input('quality');
+        $assets->status = $request->input('status');
+        $assets->cost = $request->input('cost');
         $assets->update_by = $request->input('update_by');
         if($assets->save()) {
             return new AssetResource($assets);
