@@ -10,15 +10,19 @@
                     <div class="card-block">
                         <form @submit.prevent="addBlock" class="mb-3">
                             <div class="row">
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-3">
                                     <label for="customer">Name</label>
                                     <input type="text" class="form-control" placeholder="Enter Block Name" v-model="block.name">
+                                </div>
+                                <div class="form-group col-sm-9">
+                                    <label for="customer">Comment</label>
+                                    <textarea id="textarea-input" name="textarea-input" v-model="block.comments" rows="9" class="form-control" placeholder="Content.."></textarea>
                                 </div>
                             </div>
                             <!--/.row-->
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Save changes</button>
-                                <router-link :to="{ name: 'Block List'}" >
+                                <router-link :to="{ name: 'Block List'}">
                                     <button type="button" class="btn btn-default">Cancel</button>
                                 </router-link>
                             </div>
@@ -40,6 +44,7 @@
                 block: {
                     id: "",
                     name: "",
+                    comments: "",
                     update_by: "1"
                 },
                 id: "",
@@ -49,7 +54,7 @@
         },
 
         created() {
-            if(this.$route.params.id != undefined)
+            if (this.$route.params.id != undefined)
                 this.editBlock(this.$route.params.id);
         },
 
@@ -102,6 +107,7 @@
                         .then(res => res.json())
                         .then(data => {
                             this.block.name = "";
+                            this.block.comments = "";
                             alert("block Added");
                             this.$router.push('/block/list');
                         })
@@ -128,6 +134,7 @@
                 this.edit = true;
                 this.block.id = block.id;
                 this.block.name = block.name;
+                this.block.comments = block.comments;
                 this.block.update_by = block.update_by;
             }
         }

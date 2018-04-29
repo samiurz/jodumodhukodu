@@ -18,6 +18,7 @@ class CreateFaultTypesTable extends Migration
             $table->integer('company_id');
             $table->integer('asset_id');
             $table->string('type');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

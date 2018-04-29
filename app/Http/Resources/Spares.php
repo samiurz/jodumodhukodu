@@ -21,6 +21,7 @@ class Spares extends Resource
             'manufacturar_id' => $this->manufacturar_id,
             'minimum_stock' => $this->minimum_stock,
             'current_stock' => $this->current_stock,
+            'comments' => $this->comments,
             'update_by' => $this->update_by   
         ];
     }

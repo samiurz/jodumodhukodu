@@ -24,6 +24,7 @@ class CreateSparesTable extends Migration
             $table->integer('manufacturar_id');
             $table->string('minimum_stock');
             $table->string('current_stock');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

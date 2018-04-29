@@ -19,6 +19,7 @@ class CreateCustomerBlockModuleActivitiesTable extends Migration
             $table->integer('customer_block_id');
             $table->integer('module_id');
             $table->integer('activity_id');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

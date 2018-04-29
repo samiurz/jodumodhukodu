@@ -17,7 +17,7 @@ class CreateModulesTable extends Migration
             $table->increments('id')->unique();
             $table->integer('block_id');
             $table->string('name');
-            $table->string('comment');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

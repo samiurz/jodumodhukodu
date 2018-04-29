@@ -16,6 +16,7 @@
                                     <thead>
                                         <tr>
                                             <th>name</th>
+                                            <th>comments</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
                                         </tr>
@@ -23,6 +24,7 @@
                                     <tbody>
                                         <tr>
                                             <td>{{ block.name }}</td>
+                                             <td>{{ block.comments }}</td>
                                             <td> 
                                                 <button  class="btn btn-warning mb-2">
                                                     <router-link :to="{ name: 'Block Form', params: { id: block }}">Edit</router-link>
@@ -64,7 +66,8 @@
                 blocks: [],
                 block: {
                     id: "",
-                    blocks_name: "",
+                    name: "",
+                    comments:"",
                     update_by: "1"
                 },
                 id: "",
@@ -112,47 +115,6 @@
                         })
                         .catch(err => console.log(err));
                 }
-            },
-            addBlock() {
-                if (this.edit === false) {
-                    // Add
-                    fetch("api/block", {
-                        method: "post",
-                        body: JSON.stringify(this.block),
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            this.block.name = "";
-                            alert("block Added");
-                            this.fetchBlocks();
-                        })
-                        .catch(err => console.log(err));
-                } else {
-                    // Update
-                    fetch("api/block", {
-                        method: "put",
-                        body: JSON.stringify(this.block),
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            this.block.name = "";
-                            alert("block Updated");
-                            this.fetchBlocks();
-                        })
-                        .catch(err => console.log(err));
-                }
-            },
-            editBlock(block) {
-                this.edit = true;
-                this.block.id = block.id;
-                this.block.name = block.name;
-                this.block.update_by = block.update_by;
             }
         }
     };

@@ -37,6 +37,7 @@ class ModelTypeController extends Controller
         $modeltypes->company_id = $request->input('company_id');
         $modeltypes->make = $request->input('make');
         $modeltypes->type = $request->input('type');
+        $modeltypes->comments = $request->input('comments');
         $modeltypes->update_by = $request->input('update_by');
         if($modeltypes->save()) {
             return new ModelTypeResource($modeltypes);

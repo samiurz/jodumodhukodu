@@ -35,7 +35,8 @@ class JobTypeController extends Controller
 
         $jobtypes->id = $request->input('id');
         $jobtypes->company_id = $request->input('company_id');
-        $jobtypes->job_type = $request->input('job_type');
+        $jobtypes->type = $request->input('type');
+        $jobtypes->comments = $request->input('comments');
         $jobtypes->update_by = $request->input('update_by');
         
         if($jobtypes->save()) {

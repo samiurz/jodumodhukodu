@@ -18,6 +18,7 @@ class CreateModelTypesTable extends Migration
             $table->integer('company_id');
             $table->string('make');
             $table->string('type');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

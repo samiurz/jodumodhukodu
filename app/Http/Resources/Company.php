@@ -18,6 +18,7 @@ class Company extends Resource
             'links' => $this->links,
             'email' => $this->email,
             'address' => $this->address,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

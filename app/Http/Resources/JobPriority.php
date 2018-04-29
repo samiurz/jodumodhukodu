@@ -14,6 +14,7 @@ class JobPriority extends Resource
             'id' => $this->id,
             'company_id' => $this->company_id,
             'job_priority' => $this->job_priority,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

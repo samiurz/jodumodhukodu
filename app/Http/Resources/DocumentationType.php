@@ -14,6 +14,7 @@ class DocumentationType extends Resource
             'id' => $this->id,
             'company_id' => $this->company_id,
             'type' => $this->type,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

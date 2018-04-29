@@ -14,6 +14,7 @@ class LabelName extends Resource
             'id' => $this->id,
             'name' => $this->name,
             'description' => $this->description,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

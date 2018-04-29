@@ -23,6 +23,7 @@ class CreateModelsTable extends Migration
             $table->string('frequency');
             $table->string('minimum_stock');
             $table->string('current_stock');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

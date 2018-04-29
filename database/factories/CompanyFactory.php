@@ -10,6 +10,7 @@ $factory->define(App\Company::class, function (Faker $faker) {
         'links' => $faker->text(30),
         'email' => $faker->unique(30)->safeEmail,
         'address' => $faker->text(30),
+        'comments' => $faker->text(30),
         'update_by'=> $faker->randomDigit
     ];
 });

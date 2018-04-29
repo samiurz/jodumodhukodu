@@ -47487,6 +47487,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "company",
@@ -47497,6 +47501,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             block: {
                 id: "",
                 name: "",
+                comments: "",
                 update_by: "1"
             },
             id: "",
@@ -47566,6 +47571,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     return res.json();
                 }).then(function (data) {
                     _this3.block.name = "";
+                    _this3.block.comments = "";
                     alert("block Added");
                     _this3.$router.push('/block/list');
                 }).catch(function (err) {
@@ -47594,6 +47600,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.edit = true;
             this.block.id = block.id;
             this.block.name = block.name;
+            this.block.comments = block.comments;
             this.block.update_by = block.update_by;
         }
     }
@@ -47662,6 +47669,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "company",
@@ -47671,7 +47680,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             blocks: [],
             block: {
                 id: "",
-                blocks_name: "",
+                name: "",
+                comments: "",
                 update_by: "1"
             },
             id: "",
@@ -47725,51 +47735,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     return console.log(err);
                 });
             }
-        },
-        addBlock: function addBlock() {
-            var _this3 = this;
-
-            if (this.edit === false) {
-                // Add
-                fetch("api/block", {
-                    method: "post",
-                    body: JSON.stringify(this.block),
-                    headers: {
-                        "content-type": "application/json"
-                    }
-                }).then(function (res) {
-                    return res.json();
-                }).then(function (data) {
-                    _this3.block.name = "";
-                    alert("block Added");
-                    _this3.fetchBlocks();
-                }).catch(function (err) {
-                    return console.log(err);
-                });
-            } else {
-                // Update
-                fetch("api/block", {
-                    method: "put",
-                    body: JSON.stringify(this.block),
-                    headers: {
-                        "content-type": "application/json"
-                    }
-                }).then(function (res) {
-                    return res.json();
-                }).then(function (data) {
-                    _this3.block.name = "";
-                    alert("block Updated");
-                    _this3.fetchBlocks();
-                }).catch(function (err) {
-                    return console.log(err);
-                });
-            }
-        },
-        editBlock: function editBlock(block) {
-            this.edit = true;
-            this.block.id = block.id;
-            this.block.name = block.name;
-            this.block.update_by = block.update_by;
         }
     }
 });
@@ -109305,7 +109270,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('table', {
       key: block.id,
       staticClass: "table"
-    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(block.name))]), _vm._v(" "), _c('td', [_c('button', {
+    }, [_vm._m(0, true), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v(_vm._s(block.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(block.comments))]), _vm._v(" "), _c('td', [_c('button', {
       staticClass: "btn btn-warning mb-2"
     }, [_c('router-link', {
       attrs: {
@@ -109365,7 +109330,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Next")])])])], 2)])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("name")]), _vm._v(" "), _c('th', [_vm._v("comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -115270,7 +115235,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "form-group col-sm-6"
+    staticClass: "form-group col-sm-3"
   }, [_c('label', {
     attrs: {
       "for": "customer"
@@ -115294,6 +115259,35 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "input": function($event) {
         if ($event.target.composing) { return; }
         _vm.$set(_vm.block, "name", $event.target.value)
+      }
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-9"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Comment")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.block.comments),
+      expression: "block.comments"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "textarea-input",
+      "name": "textarea-input",
+      "rows": "9",
+      "placeholder": "Content.."
+    },
+    domProps: {
+      "value": (_vm.block.comments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.block, "comments", $event.target.value)
       }
     }
   })])]), _vm._v(" "), _c('div', {

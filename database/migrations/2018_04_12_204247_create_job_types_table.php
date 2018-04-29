@@ -17,6 +17,7 @@ class CreateJobTypesTable extends Migration
             $table->increments('id')->unique();
             $table->integer('company_id');
             $table->string('type');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

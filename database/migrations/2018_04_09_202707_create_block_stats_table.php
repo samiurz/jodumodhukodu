@@ -16,6 +16,7 @@ class CreateBlockStatsTable extends Migration
         Schema::create('block_stats', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

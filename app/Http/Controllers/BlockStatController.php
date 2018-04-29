@@ -35,6 +35,7 @@ class BlockStatController extends Controller
 
         $blockstats->id = $request->input('id');
         $blockstats->name = $request->input('name');
+        $blockstats->comments = $request->input('comments');
         $blockstats->update_by = $request->input('update_by');
         if($blockstats->save()) {
             return new BlockStatResource($blockstats);

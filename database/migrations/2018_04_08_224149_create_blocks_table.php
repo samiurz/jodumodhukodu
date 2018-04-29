@@ -17,6 +17,7 @@ class CreateBlocksTable extends Migration
             $table->increments('id')->unique();
             $table->string('name');
             $table->string('update_by');
+            $table->string('comments');
             $table->timestamps();
         });
     }

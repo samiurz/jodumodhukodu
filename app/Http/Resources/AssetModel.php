@@ -14,11 +14,13 @@ class AssetModel extends Resource
             'id' => $this->id,
             'company_id' => $this->company_id,
             'model_type_id' => $this->model_type_id,
+            'name' => $this->name,
             'image' => $this->image,
             'rent' => $this->rent,
             'frequency' => $this->frequency,
             'minimum_stock' => $this->minimum_stock,
             'current_stock' => $this->current_stock,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

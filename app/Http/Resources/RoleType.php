@@ -19,6 +19,7 @@ class RoleType extends Resource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

@@ -21,6 +21,7 @@ class Asset extends Resource
             'quality' => $this->quality,
             'status' => $this->status,
             'cost' => $this->cost,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

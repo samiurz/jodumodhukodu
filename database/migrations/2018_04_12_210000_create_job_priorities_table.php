@@ -17,6 +17,7 @@ class CreateJobPrioritiesTable extends Migration
             $table->increments('id')->unique();
             $table->integer('company_id');
             $table->string('priority');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

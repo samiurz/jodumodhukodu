@@ -15,6 +15,7 @@ class FaultType extends Resource
             'company_id' => $this->company_id,
             'asset_id' => $this->asset_id,
             'type' => $this->type,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

@@ -17,6 +17,7 @@ class CreateAccountsTable extends Migration
             $table->increments('id')->unique();
             $table->string('name')->unique();
             $table->string('email')->unique();
+            $table->string('comments');
             $table->string('update_by');
             $table->timestamps();
         });

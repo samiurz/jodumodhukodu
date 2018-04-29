@@ -15,6 +15,7 @@ class ModelType extends Resource
             'account_id' => $this->company_id,
             'make' => $this->make,
             'type' => $this->type,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

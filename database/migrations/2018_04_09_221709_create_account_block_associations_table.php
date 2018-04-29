@@ -18,6 +18,7 @@ class CreateAccountBlockAssociationsTable extends Migration
             $table->integer('account_id');
             $table->integer('block_id');
             $table->integer('block_stat_id');
+            $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
         });

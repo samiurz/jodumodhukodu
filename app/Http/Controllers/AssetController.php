@@ -43,6 +43,7 @@ class AssetController extends Controller
         $assets->quality = $request->input('quality');
         $assets->status = $request->input('status');
         $assets->cost = $request->input('cost');
+        $assets->comments = $request->input('comments');
         $assets->update_by = $request->input('update_by');
         if($assets->save()) {
             return new AssetResource($assets);
