@@ -44,6 +44,10 @@ import LabelForm from '../views/label/form';
 import BlockAssociationList from '../views/blockassociation/list';
 import BlockAssociationForm from '../views/blockassociation/form';
 
+// Views - Activity
+import ActivityList from '../views/activity/list';
+import ActivityForm from '../views/activity/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -214,6 +218,26 @@ export default new Router({
                             path: 'list',
                             name: 'Block Association List',
                             component: BlockAssociationList
+                        }
+                    ]
+                },
+                {
+                    path: '/activity',
+                    redirect: '/activity/list',
+                    name: 'Activity',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Activity Form',
+                            component: ActivityForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Activity List',
+                            component: ActivityList
                         }
                     ]
                 }

@@ -10,62 +10,56 @@
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>
-                    <div class="card-company">
-                        <div class="card">
-                            <table class="table" v-for="company in companies" v-bind:key="company.id">
-                                <thead>
-                                    <tr>
-                                        <th>Account Name</th>
-                                        <th>Company Name</th>
-                                        <th>Customer: Yes/ No</th>
-                                        <th>Links</th>
-                                        <th>Email</th>
-                                        <th>Address</th>
-                                        <th>Update By</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>{{ company.account_id }}</td>
-                                        <td>{{ company.name }}</td>
-                                        <td>{{ company.is_customer }}</td>
-                                        <td>{{ company.links }}</td>
-                                        <td>{{ company.email }}</td>
-                                        <td>{{ company.address }}</td>
-                                        <td>{{ company.update_by }}</td>
-                                        <td>
-                                            <button class="btn btn-warning mb-2">
-                                                <router-link :to="{ name: 'Company Form', params: { data: company }}">Edit</router-link>
-                                            </button>
-                                        </td>
-                                        <td>
-                                            <button @click="deletecompany(company.id)" class="btn btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <ul class="pagination">
-                                <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                    <a class="page-link" href="#" @click="fetchcompanies(pagination.prev_page_url)">Previous</a>
-                                </li>
+                    <div class="card-block">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Account Name</th>
+                                    <th>Company Name</th>
+                                    <th>Customer</th>
+                                    <th>Links</th>
+                                    <th>Email</th>
+                                    <th>Address</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="company in companies" v-bind:key="company.id">
+                                    <td>{{ company.account.name }}</td>
+                                    <td>{{ company.name }}</td>
+                                    <td>{{ company.is_customer == 1 ? 'Yes':'No' }}</td>
+                                    <td>{{ company.links }}</td>
+                                    <td>{{ company.email }}</td>
+                                    <td>{{ company.address }}</td>
+                                    <td>                                        
+                                        <router-link :to="{ name: 'Company Form', params: { data: company }}">
+                                            <button class="btn btn-warning mb-2">Edit</button>
+                                        </router-link>
+                                    </td>
+                                    <td>
+                                        <button @click="deletecompany(company.id)" class="btn btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
+                                <a class="page-link" href="#" @click="fetchcompanies(pagination.prev_page_url)">Previous</a>
+                            </li>
 
-                                <li class="page-item disabled">
-                                    <a class="page-link text-dark" href="#">Page {{ pagination.current_page }} of {{ pagination.last_page }}</a>
-                                </li>
+                            <li class="page-item disabled">
+                                <a class="page-link text-dark" href="#">Page {{ pagination.current_page }} of {{ pagination.last_page }}</a>
+                            </li>
 
-                                <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                    <a class="page-link" href="#" @click="fetchcompanies(pagination.next_page_url)">Next</a>
-                                </li>
-                            </ul>
-                        </div>
+                            <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
+                                <a class="page-link" href="#" @click="fetchcompanies(pagination.next_page_url)">Next</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
     <!--/.col-->
 </template>

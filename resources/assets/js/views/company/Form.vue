@@ -12,7 +12,7 @@
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Accounts</label>
-                                    <select id="select" name="select" class="form-control" v-model="company.account_id">
+                                    <select id="select" name="select" class="form-control" v-model="selectedAccount">
                                         <option value="">Select a Account</option>
                                         <option v-for="account in accounts" v-bind:key="account.id" v-bind:value="account.id">{{account.name}}</option>
                                     </select>
@@ -69,11 +69,11 @@
         name: "company",
         data() {
             return {
-                selectedAccount: "",
+                selectedAccount: 1,
                 accounts: [],
                 company: {
                     id: "",
-                    account_id: "",
+                    account: [],
                     name: "",
                     is_customer: "",
                     links: "",
