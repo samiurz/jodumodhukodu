@@ -41,13 +41,36 @@ import LabelList from '../views/label/list';
 import LabelForm from '../views/label/form';
 
 // Views - Block
-import BlockAssociationList from '../views/blockassociation/list';
-import BlockAssociationForm from '../views/blockassociation/form';
+import AccountBlockAssociationList from '../views/accountBlockAssociation/list';
+import AccountBlockAssociationForm from '../views/accountBlockAssociation/form';
 
 // Views - Activity
 import ActivityList from '../views/activity/list';
 import ActivityForm from '../views/activity/form';
 
+// Views - Account
+import AccountList from '../views/account/list';
+import AccountForm from '../views/account/form';
+
+// Views - Document Type
+import DocumentationTypeList from '../views/documentationType/list';
+import DocumentationTypeForm from '../views/documentationType/form';
+
+// Views - Role Type
+import RoleTypeList from '../views/roletype/list';
+import RoleTypeForm from '../views/roletype/form';
+
+// Views - Role Type
+import CustomerBlockModuleActivityList from '../views/customerBlockModuleActivity/list';
+import CustomerBlockModuleActivityForm from '../views/customerBlockModuleActivity/form';
+
+// Views - Job Type
+import JobTypeList from '../views/jobType/list';
+import JobTypeForm from '../views/jobType/form';
+
+// Views - Model Type
+import ModelTypeList from '../views/modelType/list';
+import ModelTypeForm from '../views/modelType/form';
 Vue.use(Router);
 
 export default new Router({
@@ -202,22 +225,22 @@ export default new Router({
                     ]
                 },
                 {
-                    path: '/blockassociation',
-                    redirect: '/blockassociation/list',
-                    name: 'Block Association',
+                    path: '/accountBlockAssociation',
+                    redirect: '/accountBlockAssociation/list',
+                    name: 'Account Block Association',
                     component: {
                         render(c) { return c('router-view'); }
                     },
                     children: [
                         {
                             path: 'form',
-                            name: 'Block Association Form',
-                            component: BlockAssociationForm
+                            name: 'Account Block Association Form',
+                            component: AccountBlockAssociationForm
                         },
                         {
                             path: 'list',
-                            name: 'Block Association List',
-                            component: BlockAssociationList
+                            name: 'Account Block Association List',
+                            component: AccountBlockAssociationList
                         }
                     ]
                 },
@@ -238,6 +261,126 @@ export default new Router({
                             path: 'list',
                             name: 'Activity List',
                             component: ActivityList
+                        }
+                    ]
+                },
+                {
+                    path: '/account',
+                    redirect: '/account/list',
+                    name: 'Account',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Account Form',
+                            component: AccountForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Account List',
+                            component: AccountList
+                        }
+                    ]
+                },
+                {
+                    path: '/documentationType',
+                    redirect: '/documentationType/list',
+                    name: 'Documentation Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Documentation Type Form',
+                            component: DocumentationTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Documentation Type List',
+                            component: DocumentationTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/roletype',
+                    redirect: '/roletype/list',
+                    name: 'Role Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Role Type Form',
+                            component: RoleTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Role Type List',
+                            component: RoleTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/customerBlockModuleActivity',
+                    redirect: '/customerBlockModuleActivity/list',
+                    name: 'Customer Block Module Activity',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Customer Block Module Activity Form',
+                            component: CustomerBlockModuleActivityForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Customer Block Module Activity List',
+                            component: CustomerBlockModuleActivityList
+                        }
+                    ]
+                },
+                {
+                    path: '/jobType',
+                    redirect: '/jobType/list',
+                    name: 'Job Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Job Type Form',
+                            component: JobTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Job Type List',
+                            component: JobTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/modelType',
+                    redirect: '/modelType/list',
+                    name: 'Model Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Model Type Form',
+                            component: ModelTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Model Type List',
+                            component: ModelTypeList
                         }
                     ]
                 }

@@ -75,13 +75,43 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link :to="'/blockassociation/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Block Association
+                    <router-link :to="'/accountBlockAssociation/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i>Account Block Association
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/activity/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Activity
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/account/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Account
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/documentationType/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Document Type
                     </router-link>
                 </li>
                  <li class="nav-item">
-                    <router-link :to="'/activity/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Activity
+                    <router-link :to="'/roletype/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Role Type
+                    </router-link>
+                </li>
+                 <li class="nav-item">
+                    <router-link :to="'/customerBlockModuleActivity/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Customer Activity
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/jobType/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Job Type
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/modelType/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Model Type
                     </router-link>
                 </li>
                 <li class="nav-item">

@@ -13,7 +13,7 @@ class JobType extends Resource
         return [
             'id' => $this->id,
             'company_id' => $this->company_id,
-            'job_type' => $this->job_type,
+            'type' => $this->type,
             'comments' => $this->comments,
             'update_by' => $this->update_by
         ];

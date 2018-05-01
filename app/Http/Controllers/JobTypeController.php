@@ -15,11 +15,11 @@ class JobTypeController extends Controller
      */
     public function index()
     {
-        // Get jobtypes
-        $jobtypes = JobType::orderBy('created_at', 'desc')->paginate(15);
+        // Get jobTypes
+        $jobTypes = JobType::orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of jobtypes as a resource
-        return JobTypeResource::collection($jobtypes);
+        // Return collection of jobTypes as a resource
+        return JobTypeResource::collection($jobTypes);
     }
 
 
@@ -31,16 +31,16 @@ class JobTypeController extends Controller
      */
     public function store(Request $request)
     {
-        $jobtypes = $request->isMethod('put') ? JobType::findOrFail($request->id) : new JobType;
+        $jobTypes = $request->isMethod('put') ? JobType::findOrFail($request->id) : new JobType;
 
-        $jobtypes->id = $request->input('id');
-        $jobtypes->company_id = $request->input('company_id');
-        $jobtypes->type = $request->input('type');
-        $jobtypes->comments = $request->input('comments');
-        $jobtypes->update_by = $request->input('update_by');
+        $jobTypes->id = $request->input('id');
+        $jobTypes->company_id = $request->input('company_id');
+        $jobTypes->type = $request->input('type');
+        $jobTypes->comments = $request->input('comments');
+        $jobTypes->update_by = $request->input('update_by');
         
-        if($jobtypes->save()) {
-            return new JobTypeResource($jobtypes);
+        if($jobTypes->save()) {
+            return new JobTypeResource($jobTypes);
         }
         
     }
@@ -53,11 +53,11 @@ class JobTypeController extends Controller
      */
     public function show($id)
     {
-        // Get jobtypes
-        $jobtypes = JobType::findOrFail($id);
+        // Get jobTypes
+        $jobTypes = JobType::findOrFail($id);
 
-        // Return single jobtypes as a resource
-        return new JobTypeResource($jobtypes);
+        // Return single jobTypes as a resource
+        return new JobTypeResource($jobTypes);
     }
 
     /**
@@ -68,11 +68,11 @@ class JobTypeController extends Controller
      */
     public function destroy($id)
     {
-        // Get jobtypes
-        $jobtypes = JobType::findOrFail($id);
+        // Get jobTypes
+        $jobTypes = JobType::findOrFail($id);
 
-        if($jobtypes->delete()) {
-            return new JobTypeResource($jobtypes);
+        if($jobTypes->delete()) {
+            return new JobTypeResource($jobTypes);
         }    
     }
 }

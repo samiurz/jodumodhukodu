@@ -12,7 +12,7 @@ class ModelType extends Resource
 
         return [
             'id' => $this->id,
-            'account_id' => $this->company_id,
+            'company' => $this->company,
             'make' => $this->make,
             'type' => $this->type,
             'comments' => $this->comments,

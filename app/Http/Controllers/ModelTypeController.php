@@ -15,11 +15,11 @@ class ModelTypeController extends Controller
      */
     public function index()
     {
-        // Get modeltypes
-        $modeltypes = ModelType::orderBy('created_at', 'desc')->paginate(15);
+        // Get modelTypes
+        $modelTypes = ModelType::with('company')->orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of modeltypes as a resource
-        return ModelTypeResource::collection($modeltypes);
+        // Return collection of modelTypes as a resource
+        return ModelTypeResource::collection($modelTypes);
     }
 
 
@@ -31,16 +31,16 @@ class ModelTypeController extends Controller
      */
     public function store(Request $request)
     {
-        $modeltypes = $request->isMethod('put') ? ModelType::findOrFail($request->id) : new ModelType;
+        $modelTypes = $request->isMethod('put') ? ModelType::findOrFail($request->id) : new ModelType;
 
-        $modeltypes->id = $request->input('id');
-        $modeltypes->company_id = $request->input('company_id');
-        $modeltypes->make = $request->input('make');
-        $modeltypes->type = $request->input('type');
-        $modeltypes->comments = $request->input('comments');
-        $modeltypes->update_by = $request->input('update_by');
-        if($modeltypes->save()) {
-            return new ModelTypeResource($modeltypes);
+        $modelTypes->id = $request->input('id');
+        $modelTypes->company_id = $request->input('company_id');
+        $modelTypes->make = $request->input('make');
+        $modelTypes->type = $request->input('type');
+        $modelTypes->comments = $request->input('comments');
+        $modelTypes->update_by = $request->input('update_by');
+        if($modelTypes->save()) {
+            return new ModelTypeResource($modelTypes);
         }
         
     }
@@ -53,11 +53,11 @@ class ModelTypeController extends Controller
      */
     public function show($id)
     {
-        // Get modeltypes
-        $modeltypes = ModelType::findOrFail($id);
+        // Get modelTypes
+        $modelTypes = ModelType::findOrFail($id);
 
-        // Return single modeltypes as a resource
-        return new ModelTypeResource($modeltypes);
+        // Return single modelTypes as a resource
+        return new ModelTypeResource($modelTypes);
     }
 
     /**
@@ -68,11 +68,11 @@ class ModelTypeController extends Controller
      */
     public function destroy($id)
     {
-        // Get modeltypes
-        $modeltypes = ModelType::findOrFail($id);
+        // Get modelTypes
+        $modelTypes = ModelType::findOrFail($id);
 
-        if($modeltypes->delete()) {
-            return new ModelTypeResource($modeltypes);
+        if($modelTypes->delete()) {
+            return new ModelTypeResource($modelTypes);
         }    
     }
 }

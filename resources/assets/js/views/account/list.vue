@@ -6,7 +6,7 @@
                     <div class="card-header">
                         <strong>LIST</strong>
                         <small>Form</small>
-                        <router-link :to="{ name: 'Block Form'}">
+                        <router-link :to="{ name: 'Account Form'}">
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>
@@ -16,27 +16,29 @@
                                     <thead>
                                         <tr>
                                             <th>name</th>
+                                            <th>email</th>
                                             <th>comments</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="block in blocks" v-bind:key="block.id">
-                                            <td>{{ block.name }}</td>
-                                             <td>{{ block.comments }}</td>
+                                        <tr v-for="account in accounts" v-bind:key="account.id">
+                                            <td>{{ account.name }}</td>
+                                            <td>{{ account.email }}</td>
+                                            <td>{{ account.comments }}</td>
                                             <td> 
-                                                 <router-link :to="{ name: 'Block Form', params: { id: block }}">
+                                                 <router-link :to="{ name: 'Account Form', params: { id: account }}">
                                                     <button  class="btn btn-warning mb-2">Edit</button>
                                                 </router-link>
                                             </td>
-                                            <td> <button @click="deleteBlock(block.id)" class="btn btn-danger">Delete</button></td>
+                                            <td> <button @click="deleteaccount(account.id)" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <ul class="pagination">
                                     <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                        <a class="page-link" href="#" @click="fetchBlocks(pagination.prev_page_url)">Previous</a>
+                                        <a class="page-link" href="#" @click="fetchaccounts(pagination.prev_page_url)">Previous</a>
                                     </li>
             
                                     <li class="page-item disabled">
@@ -44,7 +46,7 @@
                                     </li>
             
                                     <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                        <a class="page-link" href="#" @click="fetchBlocks(pagination.next_page_url)">Next</a>
+                                        <a class="page-link" href="#" @click="fetchaccounts(pagination.next_page_url)">Next</a>
                                     </li>
                                 </ul>
                             </div>
@@ -59,14 +61,15 @@
 </template>
 <script>
     export default {
-        name: "company",
+        name: "account",
         data() {
             return {
-                selectedblock: "",
-                blocks: [],
-                block: {
+                selectedaccount: "",
+                accounts: [],
+                account: {
                     id: "",
                     name: "",
+                    email: "",
                     comments:"",
                     update_by: "1"
                 },
@@ -77,18 +80,18 @@
         },
 
         created() {
-            this.fetchBlocks();
+            this.fetchaccounts();
         },
 
         methods: {
-            fetchBlocks(page_url) {
+            fetchaccounts(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/blocks";
+                page_url = page_url || "/api/accounts";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.blocks = res.data;
-                        console.log(this.blocks);
+                        this.accounts = res.data;
+                        console.log(this.accounts);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -103,15 +106,15 @@
 
                 this.pagination = pagination;
             },
-            deleteBlock(id) {
+            deleteaccount(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/block/${id}`, {
+                    fetch(`api/account/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("block Removed");
-                            this.fetchBlocks();
+                            alert("account Removed");
+                            this.fetchaccounts();
                         })
                         .catch(err => console.log(err));
                 }

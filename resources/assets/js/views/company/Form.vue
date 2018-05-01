@@ -87,14 +87,12 @@
                 edit: false
             };
         },
-
         created() {
             console.log(this.$route.params.data);
             this.fetchAccounts();
             if (this.$route.params.data != undefined)
                 this.editcompany(this.$route.params.data);
         },
-
         methods: {
             fetchAccounts(page_url) {
                 let vm = this;

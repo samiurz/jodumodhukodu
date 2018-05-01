@@ -15,11 +15,11 @@ class DocumentationTypeController extends Controller
      */
     public function index()
     {
-        // Get documentationtypes
-        $documentationtypes = DocumentationType::orderBy('created_at', 'desc')->paginate(15);
+        // Get documentationTypes
+        $documentationTypes = DocumentationType::orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of documentationtypes as a resource
-        return DocumentationTypeResource::collection($documentationtypes);
+        // Return collection of documentationTypes as a resource
+        return DocumentationTypeResource::collection($documentationTypes);
     }
 
 
@@ -31,15 +31,15 @@ class DocumentationTypeController extends Controller
      */
     public function store(Request $request)
     {
-        $documentationtypes = $request->isMethod('put') ? DocumentationType::findOrFail($request->id) : new DocumentationType;
+        $documentationTypes = $request->isMethod('put') ? DocumentationType::findOrFail($request->id) : new DocumentationType;
 
-        $documentationtypes->id = $request->input('id');
-        $documentationtypes->company_id = $request->input('company_id');
-        $documentationtypes->type = $request->input('type');
-        $documentationtypes->comments = $request->input('comments');
-        $documentationtypes->update_by = $request->input('update_by');
-        if($documentationtypes->save()) {
-            return new DocumentationTypeResource($documentationtypes);
+        $documentationTypes->id = $request->input('id');
+        $documentationTypes->company_id = $request->input('company_id');
+        $documentationTypes->type = $request->input('type');
+        $documentationTypes->comments = $request->input('comments');
+        $documentationTypes->update_by = $request->input('update_by');
+        if($documentationTypes->save()) {
+            return new DocumentationTypeResource($documentationTypes);
         }
         
     }
@@ -52,11 +52,11 @@ class DocumentationTypeController extends Controller
      */
     public function show($id)
     {
-        // Get documentationtypes
-        $documentationtypes = DocumentationType::findOrFail($id);
+        // Get documentationTypes
+        $documentationTypes = DocumentationType::findOrFail($id);
 
-        // Return single documentationtypes as a resource
-        return new DocumentationTypeResource($documentationtypes);
+        // Return single documentationTypes as a resource
+        return new DocumentationTypeResource($documentationTypes);
     }
 
     /**
@@ -67,11 +67,11 @@ class DocumentationTypeController extends Controller
      */
     public function destroy($id)
     {
-        // Get documentationtypes
-        $documentationtypes = DocumentationType::findOrFail($id);
+        // Get documentationTypes
+        $documentationTypes = DocumentationType::findOrFail($id);
 
-        if($documentationtypes->delete()) {
-            return new DocumentationTypeResource($documentationtypes);
+        if($documentationTypes->delete()) {
+            return new DocumentationTypeResource($documentationTypes);
         }    
     }
 }

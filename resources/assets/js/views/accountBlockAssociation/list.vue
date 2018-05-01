@@ -4,9 +4,9 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Block Association</strong>
+                        <strong>Account Block Association</strong>
                         <small>Form</small>
-                        <router-link :to="{ name: 'Block Association Form'}">
+                        <router-link :to="{ name: 'Account Block Association Form'}">
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>

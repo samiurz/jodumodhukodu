@@ -14,6 +14,7 @@ class Account extends Resource
             'id' => $this->id,
             'name' => $this->name,
             'email' => $this->email,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
             
         ];

@@ -12,7 +12,7 @@
                     </div>
                     <div class="card-block">
                             <div class="card">
-                                <table class="table" v-for="labelname in labelnames" v-bind:key="labelname.id">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>name</th>
@@ -22,13 +22,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr v-for="labelname in labelnames" v-bind:key="labelname.id">
                                             <td>{{ labelname.name }}</td>
                                             <td>{{ labelname.description }}</td>
-                                            <td> 
-                                                <button  class="btn btn-warning mb-2">
-                                                    <router-link :to="{ name: 'Label Form', params: { id: labelname }}">Edit</router-link>
-                                                </button>
+                                            <td>
+                                                    <router-link :to="{ name: 'Label Form', params: { id: labelname }}">
+                                                        <button  class="btn btn-warning mb-2">Edit</button>
+                                                    </router-link>
                                             </td>
                                             <td> <button @click="deleteLabelname(labelname.id)" class="btn btn-danger">Delete</button></td>
                                         </tr>

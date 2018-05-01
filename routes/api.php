@@ -16,20 +16,20 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-// List roleType
-Route::get('roleTypes', 'roleTypeController@index');
+// List roletype
+Route::get('roletypes', 'roletypeController@index');
 
-// List single roleType
-Route::get('roleType/{id}', 'roleTypeController@show');
+// List single roletype
+Route::get('roletype/{id}', 'roletypeController@show');
 
-// Create new roleType
-Route::post('roleType', 'roleTypeController@store');
+// Create new roletype
+Route::post('roletype', 'roletypeController@store');
 
-// Update roleType
-Route::put('roleType', 'roleTypeController@store');
+// Update roletype
+Route::put('roletype', 'roletypeController@store');
 
-// Delete roleType
-Route::delete('roleType/{id}', 'roleTypeController@destroy');
+// Delete roletype
+Route::delete('roletype/{id}', 'roletypeController@destroy');
 
 #Account routes
 // List account
@@ -154,15 +154,15 @@ Route::delete('assetmodel/{id}', 'AssetModelController@destroy');
 
 # Model Type Routes
 // List Model Types
-Route::get('modeltypes', 'ModelTypeController@index');
+Route::get('modelTypes', 'modelTypeController@index');
 // List asset model 
-Route::get('modeltype/{id}', 'ModelTypeController@show');
+Route::get('modelType/{id}', 'modelTypeController@show');
 // Create new asset model
-Route::post('modeltype', 'ModelTypeController@store');
+Route::post('modelType', 'modelTypeController@store');
 // Update asset model
-Route::put('modeltype', 'ModelTypeController@store');
+Route::put('modelType', 'modelTypeController@store');
 // Delete asset model
-Route::delete('modeltype/{id}', 'ModelTypeController@destroy');
+Route::delete('modelType/{id}', 'modelTypeController@destroy');
 
 # Account Block Association Routes
 // List Account Block Associations Types
@@ -226,15 +226,15 @@ Route::delete('labelname/{id}', 'LabelNameController@destroy');
 
 # Job Type Routes
 // List job types
-Route::get('jobtypes', 'JobTypeController@index');
+Route::get('jobTypes', 'jobTypeController@index');
 //  get one job type
-Route::get('jobtype/{id}', 'JobTypeController@show');
+Route::get('jobType/{id}', 'jobTypeController@show');
 // Create new job type
-Route::post('jobtype', 'JobTypeController@store');
+Route::post('jobType', 'jobTypeController@store');
 // Update job type
-Route::put('jobtype', 'JobTypeController@store');
+Route::put('jobType', 'jobTypeController@store');
 // Delete job type
-Route::delete('jobtype/{id}', 'JobTypeController@destroy');
+Route::delete('jobType/{id}', 'jobTypeController@destroy');
 
 # Job Priority Routes
 // List job Priorities
@@ -250,15 +250,15 @@ Route::delete('jobpriority/{id}', 'JobPriorityController@destroy');
 
 # Documentation Type Routes
 // List Documentation Types
-Route::get('documentationtypes', 'DocumentationTypeController@index');
+Route::get('documentationTypes', 'documentationTypeController@index');
 //  get one Documentation Type
-Route::get('documentationtype/{id}', 'DocumentationTypeController@show');
+Route::get('documentationType/{id}', 'documentationTypeController@show');
 // Create new Documentation Type
-Route::post('documentationtype', 'DocumentationTypeController@store');
+Route::post('documentationType', 'documentationTypeController@store');
 // Update Documentation Type
-Route::put('documentationtype', 'DocumentationTypeController@store');
+Route::put('documentationType', 'documentationTypeController@store');
 // Delete Documentation Type
-Route::delete('documentationtype/{id}', 'DocumentationTypeController@destroy');
+Route::delete('documentationType/{id}', 'documentationTypeController@destroy');
 
 # Fault Type Routes
 // List Fault Types

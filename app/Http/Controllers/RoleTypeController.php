@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\RoleType;
-use App\Http\Resources\RoleType as RoleTypeResource;
+use App\roletype;
+use App\Http\Resources\roletype as roletypeResource;
 
-class RoleTypeController extends Controller
+class roletypeController extends Controller
 {
      /**
      * Display a listing of the resource.
@@ -15,11 +15,11 @@ class RoleTypeController extends Controller
      */
     public function index()
     {
-        // Get RoleTypes
-        $roleTypes = RoleType::orderBy('created_at', 'desc')->paginate(15);
+        // Get roletypes
+        $roletypes = roletype::orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of RoleTypes as a resource
-        return RoleTypeResource::collection($roleTypes);
+        // Return collection of roletypes as a resource
+        return roletypeResource::collection($roletypes);
     }
 
 
@@ -31,15 +31,15 @@ class RoleTypeController extends Controller
      */
     public function store(Request $request)
     {
-        $roleType = $request->isMethod('put') ? RoleType::findOrFail($request->id) : new RoleType;
+        $roletype = $request->isMethod('put') ? roletype::findOrFail($request->id) : new roletype;
 
-        $roleType->id = $request->input('id');
-        $roleType->name = $request->input('name');
-        $roleType->comments = $request->input('comments');
-        $roleType->update_by = $request->input('update_by');
+        $roletype->id = $request->input('id');
+        $roletype->name = $request->input('name');
+        $roletype->comments = $request->input('comments');
+        $roletype->update_by = $request->input('update_by');
 
-        if($roleType->save()) {
-            return new RoleTypeResource($roleType);
+        if($roletype->save()) {
+            return new roletypeResource($roletype);
         }
         
     }
@@ -52,11 +52,11 @@ class RoleTypeController extends Controller
      */
     public function show($id)
     {
-        // Get RoleType
-        $roleType = RoleType::findOrFail($id);
+        // Get roletype
+        $roletype = roletype::findOrFail($id);
 
-        // Return single RoleType as a resource
-        return new RoleTypeResource($roleType);
+        // Return single roletype as a resource
+        return new roletypeResource($roletype);
     }
 
     /**
@@ -67,11 +67,11 @@ class RoleTypeController extends Controller
      */
     public function destroy($id)
     {
-        // Get RoleType
-        $roleType = RoleType::findOrFail($id);
+        // Get roletype
+        $roletype = roletype::findOrFail($id);
 
-        if($RoleType->delete()) {
-            return new RoleTypeResource($roleType);
+        if($roletype->delete()) {
+            return new roletypeResource($roletype);
         }    
     }
 }
