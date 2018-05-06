@@ -15,11 +15,11 @@ class FaultTypeController extends Controller
      */
     public function index()
     {
-        // Get faulttypes
-        $faulttypes = FaultType::orderBy('created_at', 'desc')->paginate(15);
+        // Get faultTypes
+        $faultTypes = FaultType::with('company')->orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of faulttypes as a resource
-        return FaultTypeResource::collection($faulttypes);
+        // Return collection of faultTypes as a resource
+        return FaultTypeResource::collection($faultTypes);
     }
 
 
@@ -31,16 +31,16 @@ class FaultTypeController extends Controller
      */
     public function store(Request $request)
     {
-        $faulttypes = $request->isMethod('put') ? FaultType::findOrFail($request->id) : new FaultType;
+        $faultTypes = $request->isMethod('put') ? FaultType::findOrFail($request->id) : new FaultType;
 
-        $faulttypes->id = $request->input('id');
-        $faulttypes->company_id = $request->input('company_id');
-        $faulttypes->asset_id = $request->input('asset_id');
-        $faulttypes->type = $request->input('type');
-        $faulttypes->comments = $request->input('comments');
-        $faulttypes->update_by = $request->input('update_by');
-        if($faulttypes->save()) {
-            return new FaultTypeResource($faulttypes);
+        $faultTypes->id = $request->input('id');
+        $faultTypes->company_id = $request->input('company_id');
+        $faultTypes->asset_id = $request->input('asset_id');
+        $faultTypes->type = $request->input('type');
+        $faultTypes->comments = $request->input('comments');
+        $faultTypes->update_by = $request->input('update_by');
+        if($faultTypes->save()) {
+            return new FaultTypeResource($faultTypes);
         }
         
     }
@@ -53,11 +53,11 @@ class FaultTypeController extends Controller
      */
     public function show($id)
     {
-        // Get faulttypes
-        $faulttypes = FaultType::findOrFail($id);
+        // Get faultTypes
+        $faultTypes = FaultType::findOrFail($id);
 
-        // Return single faulttypes as a resource
-        return new FaultTypeResource($faulttypes);
+        // Return single faultTypes as a resource
+        return new FaultTypeResource($faultTypes);
     }
 
     /**
@@ -68,11 +68,11 @@ class FaultTypeController extends Controller
      */
     public function destroy($id)
     {
-        // Get faulttypes
-        $faulttypes = FaultType::findOrFail($id);
+        // Get faultTypes
+        $faultTypes = FaultType::findOrFail($id);
 
-        if($faulttypes->delete()) {
-            return new FaultTypeResource($faulttypes);
+        if($faultTypes->delete()) {
+            return new FaultTypeResource($faultTypes);
         }    
     }
 }

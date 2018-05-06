@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Spares;
-use App\Http\Resources\Spares as SparesResource;
-class SparesController extends Controller
+use App\Spare;
+use App\Http\Resources\Spare as SpareResource;
+class SpareController extends Controller
 {
      /**
      * Display a listing of the resource.
@@ -15,10 +15,10 @@ class SparesController extends Controller
     public function index()
     {
         // Get spare
-        $spare = Spares::orderBy('created_at', 'desc')->paginate(15);
+        $spare = Spare::orderBy('created_at', 'desc')->paginate(15);
 
         // Return collection of spare as a resource
-        return SparesResource::collection($spare);
+        return SpareResource::collection($spare);
     }
 
 
@@ -30,10 +30,10 @@ class SparesController extends Controller
      */
     public function store(Request $request)
     {
-        $spare = $request->isMethod('put') ? Spares::findOrFail($request->id) : new Spares;
+        $spare = $request->isMethod('put') ? Spare::findOrFail($request->id) : new Spare;
 
         $spare->id = $request->input('id');
-        $spare->account_id = $request->input('account_id');
+        $spare->company_id = $request->input('company_id');
         $spare->asset_id = $request->input('asset_id');
         $spare->serial = $request->input('serial');
         $spare->type = $request->input('type');
@@ -46,7 +46,7 @@ class SparesController extends Controller
         $spare->update_by = $request->input('update_by');
 
         if($spare->save()) {
-            return new SparesResource($spare);
+            return new SpareResource($spare);
         }
         
     }
@@ -60,10 +60,10 @@ class SparesController extends Controller
     public function show($id)
     {
         // Get spare
-        $spare = Spares::findOrFail($id);
+        $spare = Spare::findOrFail($id);
 
         // Return single spare as a resource
-        return new SparesResource($spare);
+        return new SpareResource($spare);
     }
 
     /**
@@ -75,10 +75,10 @@ class SparesController extends Controller
     public function destroy($id)
     {
         // Get spare
-        $spare = Spares::findOrFail($id);
+        $spare = Spare::findOrFail($id);
 
         if($spare->delete()) {
-            return new SparesResource($spare);
+            return new SpareResource($spare);
         }    
     }
 }

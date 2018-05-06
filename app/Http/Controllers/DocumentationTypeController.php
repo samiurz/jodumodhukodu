@@ -16,7 +16,7 @@ class DocumentationTypeController extends Controller
     public function index()
     {
         // Get documentationTypes
-        $documentationTypes = DocumentationType::orderBy('created_at', 'desc')->paginate(15);
+        $documentationTypes = DocumentationType::with('company')->orderBy('created_at', 'desc')->paginate(15);
 
         // Return collection of documentationTypes as a resource
         return DocumentationTypeResource::collection($documentationTypes);

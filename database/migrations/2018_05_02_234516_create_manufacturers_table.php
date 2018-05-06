@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSparesTable extends Migration
+class CreateManufacturersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,10 @@ class CreateSparesTable extends Migration
      */
     public function up()
     {
-        Schema::create('spares', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('manufacturers', function (Blueprint $table) {
+            $table->increments('id')->unique();
             $table->integer('company_id');
-            $table->integer('asset_id');
-            $table->string('serial');
-            $table->string('type');
-            $table->string('description');
-            $table->string('image');
-            $table->integer('manufacturer_id');
-            $table->string('minimum_stock');
-            $table->string('current_stock');
+            $table->string('name');
             $table->string('comments');
             $table->integer('update_by');
             $table->timestamps();
@@ -37,6 +30,6 @@ class CreateSparesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('spares');
+        Schema::dropIfExists('manufacturers');
     }
 }

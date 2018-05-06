@@ -71,6 +71,27 @@ import JobTypeForm from '../views/jobType/form';
 // Views - Model Type
 import ModelTypeList from '../views/modelType/list';
 import ModelTypeForm from '../views/modelType/form';
+
+// Views - Job Priority 
+import JobPriorityList from '../views/jobPriority/list';
+import JobPriorityForm from '../views/jobPriority/form';
+
+// Views - Fault Types 
+import FaultTypeList from '../views/faultType/list';
+import FaultTypeForm from '../views/faultType/form';
+
+// Views - Fault Types 
+import SpareTypeList from '../views/spareType/list';
+import SpareTypeForm from '../views/spareType/form';
+
+// Views - Fault Types 
+import ManufacturerList from '../views/manufacturer/list';
+import ManufacturerForm from '../views/manufacturer/form';
+
+// Views - Spare 
+import SpareList from '../views/spare/list';
+import SpareForm from '../views/spare/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -381,6 +402,106 @@ export default new Router({
                             path: 'list',
                             name: 'Model Type List',
                             component: ModelTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/jobPriority',
+                    redirect: '/jobPriority/list',
+                    name: 'Job Priority',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Job Priority Form',
+                            component: JobPriorityForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Job Priority List',
+                            component: JobPriorityList
+                        }
+                    ]
+                },
+                {
+                    path: '/faultType',
+                    redirect: '/faultType/list',
+                    name: 'Fault Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Fault Type Form',
+                            component: FaultTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Fault Type List',
+                            component: FaultTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/spareType',
+                    redirect: '/spareType/list',
+                    name: 'Spare Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Spare Type Form',
+                            component: SpareTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Spare Type List',
+                            component: SpareTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/manufacturer',
+                    redirect: '/manufacturer/list',
+                    name: 'Manufacturer',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Manufacturer Form',
+                            component: ManufacturerForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Manufacturer List',
+                            component: ManufacturerList
+                        }
+                    ]
+                },
+                {
+                    path: '/spare',
+                    redirect: '/spare/list',
+                    name: 'Spare',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Spare Form',
+                            component: SpareForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Spare List',
+                            component: SpareList
                         }
                     ]
                 }

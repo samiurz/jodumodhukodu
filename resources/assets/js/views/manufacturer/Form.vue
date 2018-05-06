@@ -4,33 +4,33 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Document Type</strong>
+                        <strong>Manufacturer</strong>
                         <small>Form</small>
                     </div>
                     <div class="card-block">
-                        <form @submit.prevent="addDocumentationType" class="mb-3">
+                        <form @submit.prevent="addManufacturer" class="mb-3">
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">companys</label>
-                                    <select id="select" type="select" class="form-control" v-model="documentationType.company_id">
+                                    <select id="select" type="select" class="form-control" v-model="manufacturer.company_id">
                                         <option value="">Select a company</option>
                                         <option v-for="company in companies" v-bind:key="company.id" v-bind:value="company.id">{{company.name}}</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label for="documentationType">Type</label>
-                                    <input type="text" class="form-control" v-model="documentationType.type" placeholder="pdf">
+                                    <label for="manufacturer">Manufacturer</label>
+                                    <input type="text" class="form-control" v-model="manufacturer.name" placeholder="Manufacturer">
                                 </div>
                             </div>
                             <div class="row">
                                   <div class="form-group col-sm-12">
                                     <label for="country">Comments</label>
-                                    <textarea id="comments" type="textarea-input" rows="9" class="form-control" v-model="documentationType.comments" placeholder="Comments.."></textarea>
+                                    <textarea id="comments" type="textarea-input" rows="9" class="form-control" v-model="manufacturer.comments" placeholder="Comments.."></textarea>
                                 </div>
                             </div>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Save changes</button>
-                                <router-link :to="{ type: 'Documentation Type List'}">
+                                <router-link :to="{ type: 'Manufacturer List'}">
                                     <button type="button" class="btn btn-default">Cancel</button>
                                 </router-link>
                             </div>
@@ -44,17 +44,15 @@
 </template>
 <script>
     export default {
-        type: "documenttype",
+        type: "manufacturer",
         data() {
             return {
                 selectedCompany: 1,
-                documentationTypes: [],
-                blocks:[],
                 companies: [],
-                documentationType: {
+                manufacturer: {
                     id: "",
                     company_id: "",
-                    type: "",
+                    name: "",
                     comments:"",
                     update_by: "1"
                 },
@@ -66,9 +64,8 @@
         created() {
             console.log(this.$route.params.data);
             this.fetchCompanies();
-            this.fetchBlocks();
             if (this.$route.params.data != undefined)
-                this.editdocumentationType(this.$route.params.data);
+                this.editManufacturer(this.$route.params.data);
         },
         methods: {
             fetchCompanies(page_url) {
@@ -92,74 +89,53 @@
                 };
                 this.pagination = pagination;
             },
-            fetchBlocks(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/blocks";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.blocks = res.data;
-                        console.log(this.blocks);
-                        vm.makePagination(res.meta, res.links);
-                    })
-                    .catch(err => console.log(err));
-            },
-            makePagination(meta, links) {
-                let pagination = {
-                    current_page: meta.current_page,
-                    last_page: meta.last_page,
-                    next_page_url: links.next,
-                    prev_page_url: links.prev
-                };
-                this.pagination = pagination;
-            },
-            addDocumentationType() {
+            addManufacturer() {
                 if (this.edit === false) {
                     // Add
-                    fetch("api/documentationType", {
+                    fetch("api/manufacturer", {
                         method: "post",
-                        body: JSON.stringify(this.documentationType),
+                        body: JSON.stringify(this.manufacturer),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.documentationType.id = "";
-                            this.documentationType.company_id = "";
-                            this.documentationType.type = "";
-                            this.documentationType.comments = "";
-                            this.documentationType.update_by = "";
-                            alert("documentation type Added");
-                            this.$router.push("/documentationType/list");
+                            this.manufacturer.id = "";
+                            this.manufacturer.company_id = "";
+                            this.manufacturer.name = "";
+                            this.manufacturer.comments = "";
+                            this.manufacturer.update_by = "";
+                            alert("Manufacturer Added");
+                            this.$router.push("/manufacturer/list");
                         })
                         .catch(err => console.log(err));
                 } else {
                     // Update
-                    fetch("api/documentationType", {
+                    fetch("api/manufacturer", {
                         method: "put",
-                        body: JSON.stringify(this.documentationType),
+                        body: JSON.stringify(this.manufacturer),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.documentationType.type = "";
-                            this.documentationType.comments = "";
-                            alert("documentation type Updated");
-                            this.$router.push("/documentationType/list");
+                            this.manufacturer.name = "";
+                            this.manufacturer.comments = "";
+                            alert("Manufacturer Updated");
+                            this.$router.push("/manufacturer/list");
                         })
                         .catch(err => console.log(err));
                 }
             },
-            editdocumentationType(documentationType) {
+            editManufacturer(manufacturer) {
                 this.edit = true;
-                this.documentationType.id = documentationType.id;
-                this.documentationType.company_id = documentationType.company_id;
-                this.documentationType.type = documentationType.type;
-                this.documentationType.comments = documentationType.comments;
-                this.documentationType.update_by = documentationType.update_by;
+                this.manufacturer.id = manufacturer.id;
+                this.manufacturer.company_id = manufacturer.company_id;
+                this.manufacturer.name = manufacturer.name;
+                this.manufacturer.comments = manufacturer.comments;
+                this.manufacturer.update_by = manufacturer.update_by;
             }
         }
     };

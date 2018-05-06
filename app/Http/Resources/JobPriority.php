@@ -12,8 +12,8 @@ class JobPriority extends Resource
 
         return [
             'id' => $this->id,
-            'company_id' => $this->company_id,
-            'job_priority' => $this->job_priority,
+            'company' => $this->company,
+            'priority' => $this->priority,
             'comments' => $this->comments,
             'update_by' => $this->update_by
         ];

@@ -12,7 +12,7 @@ class FaultType extends Resource
 
         return [
             'id' => $this->id,
-            'company_id' => $this->company_id,
+            'company' => $this->company,
             'asset_id' => $this->asset_id,
             'type' => $this->type,
             'comments' => $this->comments,

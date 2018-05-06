@@ -16,7 +16,7 @@ class JobTypeController extends Controller
     public function index()
     {
         // Get jobTypes
-        $jobTypes = JobType::orderBy('created_at', 'desc')->paginate(15);
+        $jobTypes = JobType::with('company')->orderBy('created_at', 'desc')->paginate(15);
 
         // Return collection of jobTypes as a resource
         return JobTypeResource::collection($jobTypes);

@@ -118,15 +118,15 @@ Route::delete('model/{id}', 'ModelController@destroy');
 
 #Spares Status Routes
 // List spares
-Route::get('spares', 'SparesController@index');
+Route::get('spares', 'SpareController@index');
 // List block status
-Route::get('spare/{id}', 'SparesController@show');
+Route::get('spare/{id}', 'SpareController@show');
 // Create new block status
-Route::post('spare', 'SparesController@store');
+Route::post('spare', 'SpareController@store');
 // Update block status
-Route::put('spare', 'SparesController@store');
+Route::put('spare', 'SpareController@store');
 // Delete block status
-Route::delete('spare/{id}', 'SparesController@destroy');
+Route::delete('spare/{id}', 'SpareController@destroy');
 
 #Asset Routes
 // List Assets
@@ -238,15 +238,15 @@ Route::delete('jobType/{id}', 'jobTypeController@destroy');
 
 # Job Priority Routes
 // List job Priorities
-Route::get('jobpriorities', 'JobPriorityController@index');
+Route::get('jobPriorities', 'jobPriorityController@index');
 //  get one job Priority
-Route::get('jobpriority/{id}', 'JobPriorityController@show');
+Route::get('jobPriority/{id}', 'jobPriorityController@show');
 // Create new job Priority
-Route::post('jobpriority', 'JobPriorityController@store');
+Route::post('jobPriority', 'jobPriorityController@store');
 // Update job Priority
-Route::put('jobpriority', 'JobPriorityController@store');
+Route::put('jobPriority', 'jobPriorityController@store');
 // Delete job Priority
-Route::delete('jobpriority/{id}', 'JobPriorityController@destroy');
+Route::delete('jobPriority/{id}', 'jobPriorityController@destroy');
 
 # Documentation Type Routes
 // List Documentation Types
@@ -262,15 +262,15 @@ Route::delete('documentationType/{id}', 'documentationTypeController@destroy');
 
 # Fault Type Routes
 // List Fault Types
-Route::get('faulttypes', 'FaultTypeController@index');
+Route::get('faultTypes', 'faultTypeController@index');
 //  get one Fault Type
-Route::get('faulttype/{id}', 'FaultTypeController@show');
+Route::get('faultType/{id}', 'faultTypeController@show');
 // Create new Fault Type
-Route::post('faulttype', 'FaultTypeController@store');
+Route::post('faultType', 'faultTypeController@store');
 // Update Fault Type
-Route::put('faulttype', 'FaultTypeController@store');
+Route::put('faultType', 'faultTypeController@store');
 // Delete Fault Type
-Route::delete('faulttype/{id}', 'FaultTypeController@destroy');
+Route::delete('faultType/{id}', 'faultTypeController@destroy');
 
 # Asset Image Record Routes
 // List Asset Image Records
@@ -283,3 +283,27 @@ Route::post('assetimagerecord', 'AssetImageRecordController@store');
 Route::put('assetimagerecord', 'AssetImageRecordController@store');
 // Delete Asset Image Record
 Route::delete('assetimagerecord/{id}', 'AssetImageRecordController@destroy');
+
+# Spare Types Routes
+// List spare types
+Route::get('spareTypes', 'SpareTypeController@index');
+//  get one spare type
+Route::get('spareType/{id}', 'SpareTypeController@show');
+// Create new job type
+Route::post('spareType', 'SpareTypeController@store');
+// Update spare type
+Route::put('spareType', 'SpareTypeController@store');
+// Delete spare type
+Route::delete('spareType/{id}', 'SpareTypeController@destroy');
+
+# Manufacturer Routes
+// List manufacturer types
+Route::get('manufacturers', 'ManufacturerController@index');
+//  get one manufacturer type
+Route::get('manufacturer/{id}', 'ManufacturerController@show');
+// Create new manufacturer type
+Route::post('manufacturer', 'ManufacturerController@store');
+// Update manufacturer
+Route::put('manufacturer', 'ManufacturerController@store');
+// Delete manufacturer
+Route::delete('manufacturer/{id}', 'ManufacturerController@destroy');

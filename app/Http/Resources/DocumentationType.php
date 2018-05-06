@@ -12,7 +12,7 @@ class DocumentationType extends Resource
 
         return [
             'id' => $this->id,
-            'company_id' => $this->company_id,
+            'company' => $this->company,
             'type' => $this->type,
             'comments' => $this->comments,
             'update_by' => $this->update_by

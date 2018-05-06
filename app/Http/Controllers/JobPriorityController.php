@@ -15,11 +15,11 @@ class JobPriorityController extends Controller
      */
     public function index()
     {
-        // Get jobpriorities
-        $jobpriorities = JobPriority::orderBy('created_at', 'desc')->paginate(15);
+        // Get jobPriorities
+        $jobPriorities = JobPriority::with('company')->orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of jobpriorities as a resource
-        return JobPriorityResource::collection($jobpriorities);
+        // Return collection of jobPriorities as a resource
+        return JobPriorityResource::collection($jobPriorities);
     }
 
 
@@ -31,15 +31,15 @@ class JobPriorityController extends Controller
      */
     public function store(Request $request)
     {
-        $jobpriorities = $request->isMethod('put') ? JobPriority::findOrFail($request->id) : new JobPriority;
+        $jobPriorities = $request->isMethod('put') ? JobPriority::findOrFail($request->id) : new JobPriority;
 
-        $jobpriorities->id = $request->input('id');
-        $jobpriorities->company_id = $request->input('company_id');
-        $jobpriorities->priority = $request->input('priority');
-        $jobpriorities->comments = $request->input('comments');
-        $jobpriorities->update_by = $request->input('update_by');
-        if($jobpriorities->save()) {
-            return new JobPriorityResource($jobpriorities);
+        $jobPriorities->id = $request->input('id');
+        $jobPriorities->company_id = $request->input('company_id');
+        $jobPriorities->priority = $request->input('priority');
+        $jobPriorities->comments = $request->input('comments');
+        $jobPriorities->update_by = $request->input('update_by');
+        if($jobPriorities->save()) {
+            return new JobPriorityResource($jobPriorities);
         }
         
     }
@@ -52,11 +52,11 @@ class JobPriorityController extends Controller
      */
     public function show($id)
     {
-        // Get jobpriorities
-        $jobpriorities = JobPriority::findOrFail($id);
+        // Get jobPriorities
+        $jobPriorities = JobPriority::findOrFail($id);
 
-        // Return single jobpriorities as a resource
-        return new JobPriorityResource($jobpriorities);
+        // Return single jobPriorities as a resource
+        return new JobPriorityResource($jobPriorities);
     }
 
     /**
@@ -67,11 +67,11 @@ class JobPriorityController extends Controller
      */
     public function destroy($id)
     {
-        // Get jobpriorities
-        $jobpriorities = JobPriority::findOrFail($id);
+        // Get jobPriorities
+        $jobPriorities = JobPriority::findOrFail($id);
 
-        if($jobpriorities->delete()) {
-            return new JobPriorityResource($jobpriorities);
+        if($jobPriorities->delete()) {
+            return new JobPriorityResource($jobPriorities);
         }    
     }
 }

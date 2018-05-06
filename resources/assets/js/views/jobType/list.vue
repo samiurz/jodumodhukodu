@@ -23,7 +23,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="jobType in jobTypes" v-bind:key="jobType.id">
-                                    <td>{{ jobType.company_id }}</td>
+                                    <td>{{ jobType.company.name }}</td>
                                     <td>{{ jobType.type }}</td>
                                     <td>{{ jobType.comments }}</td>
                                     <td>                                        

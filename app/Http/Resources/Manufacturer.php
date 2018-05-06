@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\Resource;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class JobType extends Resource
+class Manufacturer extends JsonResource
 {
     public function toArray($request)
     {
@@ -12,8 +12,8 @@ class JobType extends Resource
 
         return [
             'id' => $this->id,
-            'company' => $this->company,
-            'type' => $this->type,
+            'company_id' => $this->company_id,
+            'name' => $this->name,
             'comments' => $this->comments,
             'update_by' => $this->update_by
         ];

@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\Resource;
 
-class Spares extends Resource
+class Spare extends Resource
 {
     public function toArray($request)
     {
@@ -12,13 +12,13 @@ class Spares extends Resource
 
         return [
             'id' => $this->id,
-            'account_id' => $this->account_id,
-            'asset_id' => $this->asset_id,
+            'company' => $this->company,
+            'asset' => $this->asset,
             'serial' => $this->serial,
             'type' => $this->type,
             'image' => $this->image,
             'description' => $this->description,
-            'manufacturar_id' => $this->manufacturar_id,
+            'manufacturer' => $this->manufacturer,
             'minimum_stock' => $this->minimum_stock,
             'current_stock' => $this->current_stock,
             'comments' => $this->comments,

@@ -59,34 +59,36 @@
                         </li>
                     </ul>
                 </router-link>
+                 <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/account'}" disabled>
+                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
+                        <i class="icon-star"></i> Account</div>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <router-link :to="'/account/list'" class="nav-link" exact>
+                                <i class="icon-star"></i> Account</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/accountBlockAssociation/list'" class="nav-link" exact>
+                                <i class="icon-star"></i>Account Block Association</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/activity/list'" class="nav-link" exact>
+                                <i class="icon-star"></i>Activity</router-link>
+                        </li>
+                         <li class="nav-item">
+                            <router-link :to="'/block/list'" class="nav-link" exact>
+                                <i class="icon-star"></i>Block</router-link>
+                        </li>
+                    </ul>
+                </router-link>
                  <li class="nav-item">
                     <router-link :to="'/company/list'" class="nav-link" exact>
                         <i class="icon-calculator"></i> Company
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link :to="'/block/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Block
-                    </router-link>
-                </li>
-                <li class="nav-item">
                     <router-link :to="'/label/list'" class="nav-link" exact>
                         <i class="icon-calculator"></i> Label
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/accountBlockAssociation/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i>Account Block Association
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/activity/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Activity
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/account/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Account
                     </router-link>
                 </li>
                 <li class="nav-item">
@@ -112,6 +114,31 @@
                 <li class="nav-item">
                     <router-link :to="'/modelType/list'" class="nav-link" exact>
                         <i class="icon-calculator"></i> Model Type
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/jobPriority/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Job Priority
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/faultType/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Fault Type
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/spareType/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Spare Type
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/manufacturer/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Manufacturer
+                    </router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="'/spare/list'" class="nav-link" exact>
+                        <i class="icon-calculator"></i> Spare
                     </router-link>
                 </li>
                 <li class="nav-item">

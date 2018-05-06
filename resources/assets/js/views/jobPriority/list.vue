@@ -4,9 +4,9 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Document Type</strong>
+                        <strong>Job Priority</strong>
                         <small>Form</small>
-                        <router-link :to="{ name: 'Documentation Type Form'}">
+                        <router-link :to="{ name: 'Model Type Form'}">
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>
@@ -15,31 +15,31 @@
                             <thead>
                                 <tr>
                                     <th>Company Name</th>
-                                    <th>Type</th>
+                                    <th>Priority</th>
                                     <th>Comments</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="documentationType in documentationTypes" v-bind:key="documentationType.id">
-                                    <td>{{ documentationType.company.name }}</td>
-                                    <td>{{ documentationType.type }}</td>
-                                    <td>{{ documentationType.comments }}</td>
+                                <tr v-for="jobPriority in jobPriorities" v-bind:key="jobPriority.id">
+                                    <td>{{ jobPriority.company }}</td>
+                                    <td>{{ jobPriority.priority }}</td>
+                                    <td>{{ jobPriority.comments }}</td>
                                     <td>                                        
-                                        <router-link :to="{ name: 'Documentation Type Form', params: { data: documentationType }}">
+                                        <router-link :to="{ name: 'Job Priority Form', params: { data: jobPriority }}">
                                             <button class="btn btn-warning mb-2">Edit</button>
                                         </router-link>
                                     </td>
                                     <td>
-                                        <button @click="deleteDocumentationType(documentationType.id)" class="btn btn-danger">Delete</button>
+                                        <button @click="deleteJobPriority(jobPriority.id)" class="btn btn-danger">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <ul class="pagination">
                             <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchdocumentationTypes(pagination.prev_page_url)">Previous</a>
+                                <a class="page-link" href="#" @click="fetchjobPriorities(pagination.prev_page_url)">Previous</a>
                             </li>
 
                             <li class="page-item disabled">
@@ -47,7 +47,7 @@
                             </li>
 
                             <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchdocumentationTypes(pagination.next_page_url)">Next</a>
+                                <a class="page-link" href="#" @click="fetchjobPriorities(pagination.next_page_url)">Next</a>
                             </li>
                         </ul>
                     </div>
@@ -59,16 +59,16 @@
 </template>
 <script>
     export default {
-        name: "documentationType",
+        name: "jobPriority",
         data() {
             return {
                 selectedAccount: "",
-                documentationTypes: [],
                 companies:[],
-                documentationType: {
+                jobPriorities: [],
+                jobPriority: {
                     id: "",
                     company_id: "",
-                    type: "",
+                    priority:"",
                     comments: "",
                     update_by: "1"
                 },
@@ -79,31 +79,22 @@
         },
 
         created() {
-            this.fetchdocumentationTypes();
+            this.fetchjobPriorities();
             this.fetchCompanies();
         },
 
         methods: {
-            fetchdocumentationTypes(page_url) {
+            fetchjobPriorities(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/documentationTypes";
+                page_url = page_url || "/api/jobPriorities";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.documentationTypes = res.data;
-                        console.log(this.documentationTypes);
+                        this.jobPriorities = res.data;
+                        console.log(this.jobPriorities);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
-            },
-            makePagination(meta, links) {
-                let pagination = {
-                    current_page: meta.current_page,
-                    last_page: meta.last_page,
-                    next_page_url: links.next,
-                    prev_page_url: links.prev
-                };
-                this.pagination = pagination;
             },
             fetchCompanies(page_url) {
                 let vm = this;
@@ -117,15 +108,24 @@
                     })
                     .catch(err => console.log(err));
             },
-            deleteDocumentationType(id) {
+            makePagination(meta, links) {
+                let pagination = {
+                    current_page: meta.current_page,
+                    last_page: meta.last_page,
+                    next_page_url: links.next,
+                    prev_page_url: links.prev
+                };
+                this.pagination = pagination;
+            },
+            deleteJobPriority(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/documentationType/${id}`, {
+                    fetch(`api/jobPriority/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("Documentation Type Removed");
-                            this.fetchdocumentationTypes();
+                            alert("Job Priority Removed");
+                            this.fetchjobPriorities();
                         })
                         .catch(err => console.log(err));
                 }
