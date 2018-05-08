@@ -15,7 +15,7 @@ class Spare extends Resource
             'company' => $this->company,
             'asset' => $this->asset,
             'serial' => $this->serial,
-            'type' => $this->type,
+            'cost' => $this->cost,
             'image' => $this->image,
             'description' => $this->description,
             'manufacturer' => $this->manufacturer,

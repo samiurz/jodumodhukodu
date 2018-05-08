@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLabelNamesTable extends Migration
+class CreateDocumentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateLabelNamesTable extends Migration
      */
     public function up()
     {
-        Schema::create('label_names', function (Blueprint $table) {
+        Schema::create('documents', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('description');
-            $table->integer('update_by');
+            $table->integer('company_id');
+            $table->integer('documentation_type_id');
+            $table->string('file');
+            $table->string('url');
+            $table->string('comments');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateLabelNamesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('label_names');
+        Schema::dropIfExists('documents');
     }
 }

@@ -36,7 +36,7 @@ class SpareController extends Controller
         $spare->company_id = $request->input('company_id');
         $spare->asset_id = $request->input('asset_id');
         $spare->serial = $request->input('serial');
-        $spare->type = $request->input('type');
+        $spare->cost = $request->input('cost');
         $spare->image = $request->input('image');
         $spare->description = $request->input('description');
         $spare->manufacturar_id = $request->input('manufacturar_id');

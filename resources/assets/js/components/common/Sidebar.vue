@@ -8,10 +8,10 @@
                         <span class="badge badge-info">NEW</span>
                     </router-link>
                 </li>
-                <li class="nav-title">
+                <!-- <li class="nav-title">
                     UI Elements
-                </li>
-                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/components'}" disabled>
+                </li> -->
+                <!-- <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/components'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-puzzle"></i> Components</div>
                     <ul class="nav-dropdown-items">
@@ -44,8 +44,8 @@
                                 <i class="icon-puzzle"></i> Tables</router-link>
                         </li>
                     </ul>
-                </router-link>
-                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/icons'}" disabled>
+                </router-link> -->
+                <!-- <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/icons'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-star"></i> Icons</div>
                     <ul class="nav-dropdown-items">
@@ -58,14 +58,20 @@
                                 <i class="icon-star"></i> Simple Line Icons</router-link>
                         </li>
                     </ul>
-                </router-link>
-                 <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/account'}" disabled>
+                </router-link> -->
+
+                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/account'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-star"></i> Account</div>
                     <ul class="nav-dropdown-items">
                         <li class="nav-item">
                             <router-link :to="'/account/list'" class="nav-link" exact>
                                 <i class="icon-star"></i> Account</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/company/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Company
+                            </router-link>
                         </li>
                         <li class="nav-item">
                             <router-link :to="'/accountBlockAssociation/list'" class="nav-link" exact>
@@ -75,81 +81,120 @@
                             <router-link :to="'/activity/list'" class="nav-link" exact>
                                 <i class="icon-star"></i>Activity</router-link>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <router-link :to="'/block/list'" class="nav-link" exact>
                                 <i class="icon-star"></i>Block</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link :to="'/customerBlockModuleActivity/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Customer Activity
+                            </router-link>
+                        </li>
                     </ul>
                 </router-link>
-                 <li class="nav-item">
-                    <router-link :to="'/company/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Company
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/label/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Label
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/documentationType/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Document Type
-                    </router-link>
-                </li>
-                 <li class="nav-item">
-                    <router-link :to="'/roletype/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Role Type
-                    </router-link>
-                </li>
-                 <li class="nav-item">
-                    <router-link :to="'/customerBlockModuleActivity/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Customer Activity
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/jobType/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Job Type
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/modelType/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Model Type
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/jobPriority/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Job Priority
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/faultType/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Fault Type
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/spareType/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Spare Type
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/manufacturer/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Manufacturer
-                    </router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="'/spare/list'" class="nav-link" exact>
-                        <i class="icon-calculator"></i> Spare
-                    </router-link>
-                </li>
-                <li class="nav-item">
+                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/settings'}" disabled>
+                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
+                        <i class="icon-star"></i> Settings</div>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <router-link :to="'/label/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Label
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/documentationType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Document Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/document/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Document
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/roletype/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Role Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/jobType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Job Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/jobPriority/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Job Priority
+                            </router-link>
+                        </li>
+                    </ul>
+                </router-link>
+                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/products'}" disabled>
+                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
+                        <i class="icon-star"></i> Product Settings</div>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <router-link :to="'/manufacturer/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Manufacturer
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/modelType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Model Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/faultType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Fault Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/spareType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Spare Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/jobType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Job Type
+                            </router-link>
+                        </li>
+                    </ul>
+                </router-link>
+                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/Spares'}" disabled>
+                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
+                        <i class="icon-star"></i> Spare</div>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <router-link :to="'/spareType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Spare Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/spare/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Spare Lists
+                            </router-link>
+                        </li>
+                    </ul>
+                </router-link>
+                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/asset'}" disabled>
+                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
+                        <i class="icon-star"></i> Asset</div>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <router-link :to="'/asset/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Asset List
+                            </router-link>
+                        </li>
+                    </ul>
+                </router-link>
+                <!-- <li class="nav-item">
                     <router-link :to="'/charts'" class="nav-link" exact>
                         <i class="icon-pie-chart"></i> Charts</router-link>
-                </li>
+                </li> -->
                 <li class="divider"></li>
-                <li class="nav-title">
+                <!-- <li class="nav-title">
                     Extras
-                </li>
-                <li class="nav-item nav-dropdown">
+                </li> -->
+                <!-- <li class="nav-item nav-dropdown">
                     <a class="nav-link nav-dropdown-toggle" href="#" @click="handleClick">
                         <i class="icon-star"></i> Pages</a>
                     <ul class="nav-dropdown-items">
@@ -170,7 +215,7 @@
                                 <i class="icon-star"></i> Error 500</router-link>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </div>

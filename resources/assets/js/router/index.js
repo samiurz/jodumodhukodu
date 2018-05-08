@@ -92,6 +92,14 @@ import ManufacturerForm from '../views/manufacturer/form';
 import SpareList from '../views/spare/list';
 import SpareForm from '../views/spare/form';
 
+// Views - Document 
+import DocumentList from '../views/document/list';
+import DocumentForm from '../views/document/form';
+
+// Views - Asset 
+import AssetList from '../views/asset/list';
+import AssetForm from '../views/asset/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -502,6 +510,46 @@ export default new Router({
                             path: 'list',
                             name: 'Spare List',
                             component: SpareList
+                        }
+                    ]
+                },
+                {
+                    path: '/document',
+                    redirect: '/document/list',
+                    name: 'Document',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Document Form',
+                            component: DocumentForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Document List',
+                            component: DocumentList
+                        }
+                    ]
+                },
+                {
+                    path: '/asset',
+                    redirect: '/asset/list',
+                    name: 'Asset',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Asset Form',
+                            component: AssetForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Asset List',
+                            component: AssetList
                         }
                     ]
                 }

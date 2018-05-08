@@ -4,9 +4,9 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Job Priority</strong>
+                        <strong>Asset</strong>
                         <small>Form</small>
-                        <router-link :to="{ name: 'Job Priority Form'}">
+                        <router-link :to="{ name: 'Asset Form'}">
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>
@@ -15,31 +15,50 @@
                             <thead>
                                 <tr>
                                     <th>Company Name</th>
-                                    <th>Priority</th>
+                                    <th>Model Name</th>
+                                    <th>Asset Name</th>
+                                    <th>BMB No</th>
+                                    <th>Description</th>
+                                    <th>Quality</th>
+                                    <th>Cost</th>
+                                    <th>Status</th>
+                                    <th>Minimum Stock</th>
+                                    <th>Current Stock</th>
                                     <th>Comments</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="jobPriority in jobPriorities" v-bind:key="jobPriority.id">
-                                    <td>{{ jobPriority.company.name }}</td>
-                                    <td>{{ jobPriority.priority }}</td>
-                                    <td>{{ jobPriority.comments }}</td>
+                                <tr v-for="asset in assets" v-bind:key="asset.id">
+                                    <td>{{ asset.company.name }}</td>
+                                    <td>{{ asset.model.name }}</td>
+                                    <td>{{ asset.name }}</td>
+                                    <td>{{ asset.serial }}</td>
+                                    <td>{{ asset.type }}</td>
+                                    <td>{{ asset.label_value }}</td>
+                                    <td>{{ asset.description }}</td>
+                                    <td>{{ asset.quality }}</td>
+                                    <td>{{ asset.cost }}</td>
+                                    <td>{{ asset.image }}</td>
+                                    <td>{{ asset.status }}</td>
+                                    <td>{{ asset.minimum_stock }}</td>
+                                    <td>{{ asset.current_stock }}</td> 
+                                    <td>{{ asset.comments }}</td>
                                     <td>                                        
-                                        <router-link :to="{ name: 'Job Priority Form', params: { data: jobPriority }}">
+                                        <router-link :to="{ name: 'Asset Form', params: { data: asset }}">
                                             <button class="btn btn-warning mb-2">Edit</button>
                                         </router-link>
                                     </td>
                                     <td>
-                                        <button @click="deleteJobPriority(jobPriority.id)" class="btn btn-danger">Delete</button>
+                                        <button @click="deleteAsset(asset.id)" class="btn btn-danger">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <ul class="pagination">
                             <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchjobPriorities(pagination.prev_page_url)">Previous</a>
+                                <a class="page-link" href="#" @click="fetchAssets(pagination.prev_page_url)">Previous</a>
                             </li>
 
                             <li class="page-item disabled">
@@ -47,7 +66,7 @@
                             </li>
 
                             <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchjobPriorities(pagination.next_page_url)">Next</a>
+                                <a class="page-link" href="#" @click="fetchAssets(pagination.next_page_url)">Next</a>
                             </li>
                         </ul>
                     </div>
@@ -59,16 +78,27 @@
 </template>
 <script>
     export default {
-        name: "jobPriority",
+        name: "asset",
         data() {
             return {
                 selectedAccount: "",
-                companies:[],
-                jobPriorities: [],
-                jobPriority: {
+                assets: [],
+                asset: {
                     id: "",
                     company_id: "",
-                    priority:"",
+                    model_id: "",
+                    name: "",
+                    serial:"",
+                    type:"",
+                    label_id: "",
+                    label_value: "",
+                    description: "",
+                    quality: "",
+                    cost: "",
+                    image: "",
+                    status: "",
+                    minimum_stock: "",
+                    current_stock: "",
                     comments: "",
                     update_by: "1"
                 },
@@ -77,33 +107,18 @@
                 edit: false
             };
         },
-
         created() {
-            this.fetchjobPriorities();
-            this.fetchCompanies();
+            this.fetchAssets();
         },
-
         methods: {
-            fetchjobPriorities(page_url) {
+            fetchAssets(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/jobPriorities";
+                page_url = page_url || "/api/assets";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.jobPriorities = res.data;
-                        console.log(this.jobPriorities);
-                        vm.makePagination(res.meta, res.links);
-                    })
-                    .catch(err => console.log(err));
-            },
-            fetchCompanies(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/companies";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.companies = res.data;
-                        console.log(this.companies);
+                        this.assets = res.data;
+                        console.log(this.assets);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -117,15 +132,15 @@
                 };
                 this.pagination = pagination;
             },
-            deleteJobPriority(id) {
+            deleteAsset(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/jobPriority/${id}`, {
+                    fetch(`api/asset/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("Job Priority Removed");
-                            this.fetchjobPriorities();
+                            alert("Asset Removed");
+                            this.fetchAssets();
                         })
                         .catch(err => console.log(err));
                 }

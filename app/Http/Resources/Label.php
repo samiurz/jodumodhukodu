@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\Resource;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class LabelName extends Resource
+class Label extends JsonResource
 {
     public function toArray($request)
     {
@@ -12,8 +12,8 @@ class LabelName extends Resource
 
         return [
             'id' => $this->id,
+            'company' => $this->company,
             'name' => $this->name,
-            'description' => $this->description,
             'comments' => $this->comments,
             'update_by' => $this->update_by
         ];

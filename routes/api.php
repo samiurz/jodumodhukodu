@@ -214,15 +214,15 @@ Route::delete('activity/{id}', 'ActivityController@destroy');
 
 # Label Routes
 // List Labels
-Route::get('labelnames', 'LabelNameController@index');
+Route::get('labels', 'LabelController@index');
 //  Activity
-Route::get('labelname/{id}', 'LabelNameController@show');
+Route::get('label/{id}', 'LabelController@show');
 // Create new Activity
-Route::post('labelname', 'LabelNameController@store');
+Route::post('label', 'LabelController@store');
 // Update Activity
-Route::put('labelname', 'LabelNameController@store');
+Route::put('label', 'LabelController@store');
 // Delete Activity
-Route::delete('labelname/{id}', 'LabelNameController@destroy');
+Route::delete('label/{id}', 'LabelController@destroy');
 
 # Job Type Routes
 // List job types
@@ -259,6 +259,18 @@ Route::post('documentationType', 'documentationTypeController@store');
 Route::put('documentationType', 'documentationTypeController@store');
 // Delete Documentation Type
 Route::delete('documentationType/{id}', 'documentationTypeController@destroy');
+
+# Document Routes
+// List documents
+Route::get('documents', 'DocumentController@index');
+//  get one manufacturer type
+Route::get('document/{id}', 'DocumentController@show');
+// Create new manufacturer type
+Route::post('document', 'DocumentController@store');
+// Update manufacturer
+Route::put('document', 'DocumentController@store');
+// Delete manufacturer
+Route::delete('document/{id}', 'DocumentController@destroy');
 
 # Fault Type Routes
 // List Fault Types

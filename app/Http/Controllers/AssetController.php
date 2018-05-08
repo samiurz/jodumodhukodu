@@ -16,7 +16,7 @@ class AssetController extends Controller
     public function index()
     {
         // Get assets
-        $assets = Asset::orderBy('created_at', 'desc')->paginate(15);
+        $assets = Asset::orderBy('created_at','desc')->paginate(15);
 
         // Return collection of assets as a resource
         return AssetResource::collection($assets);
@@ -37,20 +37,23 @@ class AssetController extends Controller
         $assets->company_id = $request->input('company_id');
         $assets->model_id = $request->input('model_id');
         $assets->name = $request->input('name');
+        $assets->serial = $request->input('serial');
+        $assets->type = $request->input('type');
         $assets->label_id = $request->input('label_id');
         $assets->label_value = $request->input('label_value');
         $assets->description = $request->input('description');
         $assets->quality = $request->input('quality');
-        $assets->status = $request->input('status');
         $assets->cost = $request->input('cost');
+        $assets->status = $request->input('status');
+        $assets->image = $request->input('image');
+        $assets->current_stock = $request->input('current_stock');
+        $assets->minimum_stock = $request->input('minimum_stock');
         $assets->comments = $request->input('comments');
         $assets->update_by = $request->input('update_by');
         if($assets->save()) {
             return new AssetResource($assets);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -65,7 +68,6 @@ class AssetController extends Controller
         // Return single assets as a resource
         return new AssetResource($assets);
     }
-
     /**
      * Remove the specified resource from storage.
      *

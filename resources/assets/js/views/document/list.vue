@@ -4,9 +4,9 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Job Priority</strong>
+                        <strong>Document</strong>
                         <small>Form</small>
-                        <router-link :to="{ name: 'Job Priority Form'}">
+                        <router-link :to="{ name: 'Document Form'}">
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>
@@ -15,31 +15,35 @@
                             <thead>
                                 <tr>
                                     <th>Company Name</th>
-                                    <th>Priority</th>
+                                    <th>Document Type</th>
+                                    <th>URL</th>
+                                    <th>File</th>
                                     <th>Comments</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="jobPriority in jobPriorities" v-bind:key="jobPriority.id">
-                                    <td>{{ jobPriority.company.name }}</td>
-                                    <td>{{ jobPriority.priority }}</td>
-                                    <td>{{ jobPriority.comments }}</td>
+                                <tr v-for="document in documents" v-bind:key="document.id">
+                                    <td>{{ document.company.name }}</td>
+                                    <td>{{ document.documentationType.name }}</td>
+                                    <td>{{ document.url }}</td>
+                                    <td>{{ document.file }}</td>
+                                    <td>{{ document.comments }}</td>
                                     <td>                                        
-                                        <router-link :to="{ name: 'Job Priority Form', params: { data: jobPriority }}">
+                                        <router-link :to="{ name: 'Document Form', params: { data: document }}">
                                             <button class="btn btn-warning mb-2">Edit</button>
                                         </router-link>
                                     </td>
                                     <td>
-                                        <button @click="deleteJobPriority(jobPriority.id)" class="btn btn-danger">Delete</button>
+                                        <button @click="fetchDocuments(document.id)" class="btn btn-danger">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <ul class="pagination">
                             <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchjobPriorities(pagination.prev_page_url)">Previous</a>
+                                <a class="page-link" href="#" @click="fetchDocuments(pagination.prev_page_url)">Previous</a>
                             </li>
 
                             <li class="page-item disabled">
@@ -47,7 +51,7 @@
                             </li>
 
                             <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchjobPriorities(pagination.next_page_url)">Next</a>
+                                <a class="page-link" href="#" @click="fetchDocuments(pagination.next_page_url)">Next</a>
                             </li>
                         </ul>
                     </div>
@@ -59,16 +63,18 @@
 </template>
 <script>
     export default {
-        name: "jobPriority",
+        name: "document",
         data() {
             return {
                 selectedAccount: "",
-                companies:[],
-                jobPriorities: [],
-                jobPriority: {
+                documents: [],
+                document: {
                     id: "",
                     company_id: "",
-                    priority:"",
+                    asset_id: "",
+                    documentation_types_id: "",
+                    url: "",
+                    file: "",
                     comments: "",
                     update_by: "1"
                 },
@@ -79,31 +85,17 @@
         },
 
         created() {
-            this.fetchjobPriorities();
-            this.fetchCompanies();
+            this.fetchDocuments();
         },
-
         methods: {
-            fetchjobPriorities(page_url) {
+            fetchDocuments(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/jobPriorities";
+                page_url = page_url || "/api/documents";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.jobPriorities = res.data;
-                        console.log(this.jobPriorities);
-                        vm.makePagination(res.meta, res.links);
-                    })
-                    .catch(err => console.log(err));
-            },
-            fetchCompanies(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/companies";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.companies = res.data;
-                        console.log(this.companies);
+                        this.documents = res.data;
+                        console.log(this.documents);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -117,15 +109,15 @@
                 };
                 this.pagination = pagination;
             },
-            deleteJobPriority(id) {
+            fetchDocuments(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/jobPriority/${id}`, {
+                    fetch(`api/document/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("Job Priority Removed");
-                            this.fetchjobPriorities();
+                            alert("document Removed");
+                            this.fetchDocuments();
                         })
                         .catch(err => console.log(err));
                 }

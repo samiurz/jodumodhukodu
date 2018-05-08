@@ -4,19 +4,28 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>block</strong>
+                        <strong>Label</strong>
                         <small>Form</small>
                     </div>
                     <div class="card-block">
-                        <form @submit.prevent="addLabelname" class="mb-3">
+                        <form @submit.prevent="addLabel" class="mb-3">
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <label for="customer">Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter Block Name" v-model="labelname.name">
+                                    <label class="col-md-3 form-control-label" for="select">companys</label>
+                                    <select id="select" type="select" class="form-control" v-model="label.company_id">
+                                        <option value="">Select a company</option>
+                                        <option v-for="company in companies" v-bind:key="company.id" v-bind:value="company.id">{{company.name}}</option>
+                                    </select>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label for="customer">Description</label>
-                                    <input type="text" class="form-control" placeholder="Enter Block Name" v-model="labelname.description">
+                                    <label for="customer">Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Label Name" v-model="label.name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="customer">Comments</label>
+                                    <input type="text" class="form-control" placeholder="Enter Comments" v-model="label.comments">
                                 </div>
                             </div>
                             <!--/.row-->
@@ -36,15 +45,16 @@
 </template>
 <script>
     export default {
-        name: "labelname",
+        name: "label",
         data() {
             return {
                 selectedblock: "",
-                labelnames: [],
-                labelname: {
+                companies: [],
+                labels: [],
+                label: {
                     id: "",
                     name: "",
-                    description: "",
+                    comments: "",
                     update_by: "1"
                 },
                 id: "",
@@ -54,19 +64,32 @@
         },
 
         created() {
+            this.fetchCompanies();
             if (this.$route.params.id != undefined)
-                this.editLabelname(this.$route.params.id);
+                this.editLabel(this.$route.params.id);
         },
 
         methods: {
-            fetchLabelnames(page_url) {
+            fetchCompanies(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/labelnames";
+                page_url = page_url || "/api/companies";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.labelnames = res.data;
-                        console.log(this.labelnames);
+                        this.companies = res.data;
+                        console.log(this.companies);
+                        vm.makePagination(res.meta, res.links);
+                    })
+                    .catch(err => console.log(err));
+            },
+            fetchlabels(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/labels";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.labels = res.data;
+                        console.log(this.labels);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -81,61 +104,65 @@
 
                 this.pagination = pagination;
             },
-            deleteLabelname(id) {
+            deletelabel(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/labelname/${id}`, {
+                    fetch(`api/label/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
                             alert("Label Removed");
-                            this.fetchLabelnames();
+                            this.fetchlabels();
                         })
                         .catch(err => console.log(err));
                 }
             },
-            addLabelname() {
+            addLabel() {
                 if (this.edit === false) {
                     // Add
-                    fetch("api/labelname", {
+                    fetch("api/label", {
                         method: "post",
-                        body: JSON.stringify(this.labelname),
+                        body: JSON.stringify(this.label),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.labelname.name = "";
-                            this.labelname.description = "";
+                            this.label.company_id = "";
+                            this.label.name = "";
+                            this.label.comments = "";
                             alert("Label Added");
                             this.$router.push('/label/list');
                         })
                         .catch(err => console.log(err));
                 } else {
                     // Update
-                    fetch("api/labelname", {
+                    fetch("api/label", {
                         method: "put",
-                        body: JSON.stringify(this.labelname),
+                        body: JSON.stringify(this.label),
                         headers: {
                             "content-type": "application/json"
                         }
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.labelname.name = "";
+                            this.label.company_id = "";
+                            this.label.name = "";
+                            this.label.comments = "";
                             alert("Label Updated");
                             this.$router.push('/label/list');
                         })
                         .catch(err => console.log(err));
                 }
             },
-            editLabelname(labelname) {
+            editLabel(label) {
                 this.edit = true;
-                this.labelname.id = labelname.id;
-                this.labelname.name = labelname.name;
-                this.labelname.description = labelname.description;
-                this.labelname.update_by = labelname.update_by;
+                this.label.id = label.id;
+                this.label.company_id = label.company_id;
+                this.label.name = label.name;
+                this.label.comments = label.comments;
+                this.label.update_by = label.update_by;
             }
         }
     };

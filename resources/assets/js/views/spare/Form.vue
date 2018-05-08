@@ -4,56 +4,58 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Activity</strong>
+                        <strong>Spare</strong>
                         <small>Form</small>
                     </div>
                     <div class="card-block">
                         <form @submit.prevent="addSpare" class="mb-3">
                             <div class="row">
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Company</label>
                                     <select id="select" type="select" class="form-control" v-model="spare.company_id">
                                         <option value="">Select Company</option>
                                         <option v-for="company in companies" v-bind:key="company.id" v-bind:value="company.id">{{company.name}}</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Asset</label>
                                     <select id="select" type="select" class="form-control" v-model="spare.asset_id">
                                         <option value="">Select Asset</option>
                                         <option v-for="asset in assets" v-bind:key="asset.id" v-bind:value="asset.id">{{asset.name}}</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">Type</label>
-                                    <input type="text" class="form-control" placeholder="Enter Type" v-model="spare.type">
-                                </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Manufacturer</label>
                                     <select id="select" type="select" class="form-control" v-model="spare.manufacturar_id">
                                         <option value="">Select Manufacturer</option>
                                         <option v-for="manufacturer in manufacturers" v-bind:key="manufacturer.id" v-bind:value="manufacturer.id">{{manufacturer.name}}</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-6">
                                     <label for="customer">Serial</label>
                                     <input type="text" class="form-control" placeholder="Enter Serial" v-model="spare.serial">
                                 </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="customer">Description</label>
-                                    <textarea id="textarea-input" name="textarea-input" v-model="spare.description" rows="9" class="form-control" placeholder="Description.."></textarea>
-                                </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-4">
+                                    <label for="customer">Cost</label>
+                                    <input type="text" class="form-control" placeholder="Enter Cost" v-model="spare.cost">
+                                </div>
+                                <div class="form-group col-sm-4">
                                     <label for="customer">Minimum Stock</label>
                                     <input type="text" class="form-control" placeholder="Minimum Stock" v-model="spare.minimum_stock">
                                 </div>
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-4">
                                     <label for="customer">Current Stock</label>
                                     <input type="text" class="form-control" placeholder="Current Stock" v-model="spare.current_stock">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="customer">Description</label>
+                                    <textarea id="textarea-input" name="textarea-input" v-model="spare.description" rows="9" class="form-control" placeholder="Description.."></textarea>
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="customer">Comments</label>
@@ -63,9 +65,9 @@
                             <div class="row">
                                 <label class="col-md-3 form-control-label" for="file-input">File input</label>
                                 <div class="col-md-9">
-                                  <input type="file" id="file-input" name="file-input">
+                                    <input type="file" id="file-input" name="file-input">
                                 </div>
-                              </div>
+                            </div>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Save changes</button>
                                 <router-link :to="{ type: 'Spare List'}">
@@ -93,13 +95,13 @@
                     company_id: "",
                     asset_id: "",
                     serial: "",
-                    type: "",
+                    cost: "",
                     description: "",
-                    image:"",
-                    manufacturar_id:"",
-                    minimum_stock:"",
-                    current_stock:"",
-                    comments:"",
+                    image: "",
+                    manufacturar_id: "",
+                    minimum_stock: "",
+                    current_stock: "",
+                    comments: "",
                     update_by: "1"
                 },
                 id: "",
@@ -164,7 +166,7 @@
                             this.spare.company_id = "";
                             this.spare.asset_id = "";
                             this.spare.serial = "";
-                            this.spare.type = "";
+                            this.spare.cost = "";
                             this.spare.description = "";
                             this.spare.image = "";
                             this.spare.manufacturar_id = "";
@@ -191,14 +193,14 @@
                             this.spare.company_id = "";
                             this.spare.asset_id = "";
                             this.spare.serial = "";
-                            this.spare.type = "";
+                            this.spare.cost = "";
                             this.spare.description = "";
                             this.spare.image = "";
                             this.spare.manufacturar_id = "";
                             this.spare.minimum_stock = "";
                             this.spare.current_stock = "";
                             this.spare.comments = "";
-                            alert("documentation type Updated");
+                            alert("Spare Updated");
                             this.$router.push("/spare/list");
                         })
                         .catch(err => console.log(err));
@@ -210,7 +212,7 @@
                 this.spare.company_id = spare.company_id;
                 this.spare.asset_id = spare.asset_id;
                 this.spare.serial = spare.serial;
-                this.spare.type = spare.type;
+                this.spare.cost = spare.cost;
                 this.spare.description = spare.description;
                 this.spare.image = spare.image;
                 this.spare.manufacturar_id = spare.manufacturar_id;

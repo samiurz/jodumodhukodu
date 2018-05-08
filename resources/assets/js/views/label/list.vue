@@ -15,28 +15,28 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>name</th>
-                                            <th>description</th>
+                                            <th>Name</th>
+                                            <th>Comments</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="labelname in labelnames" v-bind:key="labelname.id">
-                                            <td>{{ labelname.name }}</td>
-                                            <td>{{ labelname.description }}</td>
+                                        <tr v-for="label in labels" v-bind:key="label.id">
+                                            <td>{{ label.name }}</td>
+                                            <td>{{ label.comments }}</td>
                                             <td>
-                                                    <router-link :to="{ name: 'Label Form', params: { id: labelname }}">
+                                                    <router-link :to="{ name: 'Label Form', params: { id: label }}">
                                                         <button  class="btn btn-warning mb-2">Edit</button>
                                                     </router-link>
                                             </td>
-                                            <td> <button @click="deleteLabelname(labelname.id)" class="btn btn-danger">Delete</button></td>
+                                            <td> <button @click="deleteLabel(label.id)" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <ul class="pagination">
                                     <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                        <a class="page-link" href="#" @click="fetchLabelnames(pagination.prev_page_url)">Previous</a>
+                                        <a class="page-link" href="#" @click="fetchLabels(pagination.prev_page_url)">Previous</a>
                                     </li>
             
                                     <li class="page-item disabled">
@@ -44,16 +44,14 @@
                                     </li>
             
                                     <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                        <a class="page-link" href="#" @click="fetchLabelnames(pagination.next_page_url)">Next</a>
+                                        <a class="page-link" href="#" @click="fetchLabels(pagination.next_page_url)">Next</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        
         </div>
     <!--/.col-->
 </template>
@@ -62,12 +60,11 @@
         name: "label",
         data() {
             return {
-                selectedblock: "",
-                labelnames: [],
-                labelname: {
+                labels: [],
+                label: {
                     id: "",
                     name: "",
-                    description: "",
+                    comments: "",
                     update_by: "1"
                 },
                 id: "",
@@ -75,20 +72,18 @@
                 edit: false
             };
         },
-
         created() {
-            this.fetchLabelnames();
+            this.fetchLabels();
         },
-
         methods: {
-            fetchLabelnames(page_url) {
+            fetchLabels(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/labelnames";
+                page_url = page_url || "/api/labels";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.labelnames = res.data;
-                        console.log(this.labelnames);
+                        this.labels = res.data;
+                        console.log(this.labels);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -103,60 +98,18 @@
 
                 this.pagination = pagination;
             },
-            deleteLabelname(id) {
+            deleteLabel(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/labelname/${id}`, {
+                    fetch(`api/label/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
                             alert("Label Removed");
-                            this.fetchLabelnames();
+                            this.fetchLabels();
                         })
                         .catch(err => console.log(err));
                 }
-            },
-            addLabelname() {
-                if (this.edit === false) {
-                    // Add
-                    fetch("api/labelname", {
-                        method: "post",
-                        body: JSON.stringify(this.labelname),
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            this.block.name = "";
-                            alert("Label Added");
-                            this.$router.push('/labelname/list');
-                        })
-                        .catch(err => console.log(err));
-                } else {
-                    // Update
-                    fetch("api/labelname", {
-                        method: "put",
-                        body: JSON.stringify(this.labelname),
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            this.block.name = "";
-                            alert("Label Updated");
-                            this.$router.push('/labelname/list');
-                        })
-                        .catch(err => console.log(err));
-                }
-            },
-            editLabelname(labelname) {
-                this.edit = true;
-                this.labelname.id = labelname.id;
-                this.labelname.name = labelname.name;
-                this.labelname.description = labelname.description;
-                this.labelname.update_by = labelname.update_by;
             }
         }
     };

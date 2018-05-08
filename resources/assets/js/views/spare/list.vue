@@ -33,7 +33,7 @@
                                     <td>{{ spare.company.name }}</td>
                                     <td>{{ spare.asset.name }}</td>
                                     <td>{{ spare.serial }}</td>
-                                    <td>{{ spare.type }}</td>
+                                    <td>{{ spare.cost }}</td>
                                     <td>{{ spare.description }}</td>
                                     <td>{{ spare.image }}</td>
                                     <td>{{ spare.manufacturer.name }}</td>
