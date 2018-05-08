@@ -18,10 +18,10 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label class="col-md-3 form-control-label" for="select">Select Asset</label>
+                                    <label class="col-md-3 form-control-label" for="select">Select Model</label>
                                     <select id="select" type="select" class="form-control" v-model="asset.asset_id">
                                         <option value="">Select Model</option>
-                                        <option v-for="asset in assets" v-bind:key="asset.id" v-bind:value="asset.id">{{asset.name}}</option>
+                                        <option v-for="assetmodel in assetmodels" v-bind:key="assetmodel.id" v-bind:value="assetmodel.id">{{assetmodel.name}}</option>
                                     </select>
                                 </div>
                             </div>
@@ -39,15 +39,15 @@
                                     <input type="text" class="form-control" placeholder="Enter BMB No" v-model="asset.label_value">
                                 </div>
                                 <div class="form-group col-sm-3">
-                                    <label for="customer">type</label>
-                                    <input type="text" class="form-control" placeholder="Enter Type" v-model="asset.type">
+                                    <label for="customer">Cost</label>
+                                     <input type="text" class="form-control" placeholder="Enter Cost" v-model="asset.cost">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-3">
-                                    <label class="col-md-3 form-control-label" for="select">Quality</label>
+                                <div class="form-group col-sm-6">
+                                    <label class="col-md-3 form-control-label" for="select">Manufacturer</label>
                                     <select id="select" type="select" class="form-control" v-model="asset.manufacturar_id">
-                                        <option value="">Select Quality</option>
+                                        <option value="">Select Manufacturer</option>
                                         <option v-for="manufacturer in manufacturers" v-bind:key="manufacturer.id" v-bind:value="manufacturer.id">{{manufacturer.name}}</option>
                                     </select>
                                 </div>
@@ -55,19 +55,25 @@
                                     <label for="customer">Status</label>
                                     <input type="text" class="form-control" placeholder="Enter status" v-model="asset.status">
                                 </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="customer">Cost</label>
-                                     <input type="text" class="form-control" placeholder="Enter Cost" v-model="asset.cost">
+                                <div class="form-group col-sm-3">
+                                    <label for="customer">Quality</label>
+                                    <input type="text" class="form-control" placeholder="Enter Quality" v-model="asset.quality">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-6">
                                     <label for="customer">Minimum Stock</label>
                                     <input type="text" class="form-control" placeholder="Minimum Stock" v-model="asset.minimum_stock">
                                 </div>
-                                <div class="form-group col-sm-3">
+                                <div class="form-group col-sm-6">
                                     <label for="customer">Current Stock</label>
                                     <input type="text" class="form-control" placeholder="Current Stock" v-model="asset.current_stock">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="customer">Description</label>
+                                    <textarea id="textarea-input" name="textarea-input" v-model="asset.description" rows="9" class="form-control" placeholder="Description.."></textarea>
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="customer">Comments</label>
@@ -100,17 +106,21 @@
         data() {
             return {
                 companies: [],
-                assets: [],
                 manufacturers: [],
                 asset: {
                     id: "",
                     company_id: "",
-                    asset_id: "",
+                    assets_model_id: "",
+                    name:"",
                     serial: "",
-                    type: "",
+                    label_id:"",
+                    label_value:"",
                     description: "",
+                    manufacturer_id:"",
+                    quality:"",
+                    cost:"",
+                    status:"",
                     image:"",
-                    manufacturar_id:"",
                     minimum_stock:"",
                     current_stock:"",
                     comments:"",
@@ -148,17 +158,6 @@
                     .then(res => {
                         this.manufacturers = res.data;
                         console.log(this.manufacturers);
-                    })
-                    .catch(err => console.log(err));
-            },
-            fetchAssets(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/assets";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.assets = res.data;
-                        console.log(this.assets);
                     })
                     .catch(err => console.log(err));
             },

@@ -12,4 +12,7 @@ class Asset extends Model
     public function assetModel(){
         return $this->belongsTo(AssetModel::class);
     }
+    public function manufacturer(){
+        return $this->belongsTo(Manufacturer::class);
+    }
 }

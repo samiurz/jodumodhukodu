@@ -12,11 +12,11 @@ class Asset extends Resource
 
         return [
             'id' => $this->id,
-            'company_id' => $this->company_id,
-            'model' => $this->model,
+            'company' => $this->company,
+            'assetModel' => $this->assetModel,
             'name' => $this->name,
             'name' => $this->serial,
-            'type' => $this->type,
+            'manufacturer' => $this->manufacturer,
             'label_id' => $this->label_id,
             'label_value' => $this->label_value,
             'description' => $this->description,

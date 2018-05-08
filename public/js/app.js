@@ -48570,23 +48570,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     type: "asset",
     data: function data() {
         return {
             companies: [],
-            assets: [],
             manufacturers: [],
             asset: {
                 id: "",
                 company_id: "",
-                asset_id: "",
+                assets_model_id: "",
+                name: "",
                 serial: "",
-                type: "",
+                label_id: "",
+                label_value: "",
                 description: "",
+                manufacturer_id: "",
+                quality: "",
+                cost: "",
+                status: "",
                 image: "",
-                manufacturar_id: "",
                 minimum_stock: "",
                 current_stock: "",
                 comments: "",
@@ -48633,22 +48643,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 return console.log(err);
             });
         },
-        fetchAssets: function fetchAssets(page_url) {
-            var _this3 = this;
-
-            var vm = this;
-            page_url = page_url || "/api/assets";
-            fetch(page_url).then(function (res) {
-                return res.json();
-            }).then(function (res) {
-                _this3.assets = res.data;
-                console.log(_this3.assets);
-            }).catch(function (err) {
-                return console.log(err);
-            });
-        },
         addasset: function addasset() {
-            var _this4 = this;
+            var _this3 = this;
 
             if (this.edit === false) {
                 // Add
@@ -48661,20 +48657,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (res) {
                     return res.json();
                 }).then(function (data) {
-                    _this4.asset.id = "";
-                    _this4.asset.company_id = "";
-                    _this4.asset.asset_id = "";
-                    _this4.asset.serial = "";
-                    _this4.asset.type = "";
-                    _this4.asset.description = "";
-                    _this4.asset.image = "";
-                    _this4.asset.manufacturar_id = "";
-                    _this4.asset.minimum_stock = "";
-                    _this4.asset.current_stock = "";
-                    _this4.asset.comments = "";
-                    _this4.asset.update_by = "";
+                    _this3.asset.id = "";
+                    _this3.asset.company_id = "";
+                    _this3.asset.asset_id = "";
+                    _this3.asset.serial = "";
+                    _this3.asset.type = "";
+                    _this3.asset.description = "";
+                    _this3.asset.image = "";
+                    _this3.asset.manufacturar_id = "";
+                    _this3.asset.minimum_stock = "";
+                    _this3.asset.current_stock = "";
+                    _this3.asset.comments = "";
+                    _this3.asset.update_by = "";
                     alert("asset Added");
-                    _this4.$router.push("/asset/list");
+                    _this3.$router.push("/asset/list");
                 }).catch(function (err) {
                     return console.log(err);
                 });
@@ -48689,19 +48685,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (res) {
                     return res.json();
                 }).then(function (data) {
-                    _this4.asset.id = "";
-                    _this4.asset.company_id = "";
-                    _this4.asset.asset_id = "";
-                    _this4.asset.serial = "";
-                    _this4.asset.type = "";
-                    _this4.asset.description = "";
-                    _this4.asset.image = "";
-                    _this4.asset.manufacturar_id = "";
-                    _this4.asset.minimum_stock = "";
-                    _this4.asset.current_stock = "";
-                    _this4.asset.comments = "";
+                    _this3.asset.id = "";
+                    _this3.asset.company_id = "";
+                    _this3.asset.asset_id = "";
+                    _this3.asset.serial = "";
+                    _this3.asset.type = "";
+                    _this3.asset.description = "";
+                    _this3.asset.image = "";
+                    _this3.asset.manufacturar_id = "";
+                    _this3.asset.minimum_stock = "";
+                    _this3.asset.current_stock = "";
+                    _this3.asset.comments = "";
                     alert("documentation type Updated");
-                    _this4.$router.push("/asset/list");
+                    _this3.$router.push("/asset/list");
                 }).catch(function (err) {
                     return console.log(err);
                 });
@@ -48731,6 +48727,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
 //
 //
 //
@@ -48811,81 +48812,79 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "asset",
-    data: function data() {
-        return {
-            selectedAccount: "",
-            assets: [],
-            asset: {
-                id: "",
-                company_id: "",
-                model_id: "",
-                name: "",
-                serial: "",
-                type: "",
-                label_id: "",
-                label_value: "",
-                description: "",
-                quality: "",
-                cost: "",
-                image: "",
-                status: "",
-                minimum_stock: "",
-                current_stock: "",
-                comments: "",
-                update_by: "1"
-            },
-            id: "",
-            pagination: {},
-            edit: false
-        };
-    },
-    created: function created() {
-        this.fetchAssets();
-    },
+	name: "asset",
+	data: function data() {
+		var _asset;
 
-    methods: {
-        fetchAssets: function fetchAssets(page_url) {
-            var _this = this;
+		return {
+			selectedAccount: "",
+			assets: [],
+			asset: (_asset = {
+				id: "",
+				company_id: "",
+				assets_model_id: "",
+				name: "",
+				serial: "",
+				manufacturer_id: "",
+				label_id: "",
+				label_value: "",
+				description: "",
+				image: "",
+				quality: "",
+				cost: "",
+				status: ""
+			}, _defineProperty(_asset, "image", ""), _defineProperty(_asset, "minimum_stock", ""), _defineProperty(_asset, "current_stock", ""), _defineProperty(_asset, "comments", ""), _defineProperty(_asset, "update_by", "1"), _asset),
+			id: "",
+			pagination: {},
+			edit: false
+		};
+	},
+	created: function created() {
+		this.fetchAssets();
+	},
 
-            var vm = this;
-            page_url = page_url || "/api/assets";
-            fetch(page_url).then(function (res) {
-                return res.json();
-            }).then(function (res) {
-                _this.assets = res.data;
-                console.log(_this.assets);
-                vm.makePagination(res.meta, res.links);
-            }).catch(function (err) {
-                return console.log(err);
-            });
-        },
-        makePagination: function makePagination(meta, links) {
-            var pagination = {
-                current_page: meta.current_page,
-                last_page: meta.last_page,
-                next_page_url: links.next,
-                prev_page_url: links.prev
-            };
-            this.pagination = pagination;
-        },
-        deleteAsset: function deleteAsset(id) {
-            var _this2 = this;
+	methods: {
+		fetchAssets: function fetchAssets(page_url) {
+			var _this = this;
 
-            if (confirm("Are You Sure?")) {
-                fetch("api/asset/" + id, {
-                    method: "delete"
-                }).then(function (res) {
-                    return res.json();
-                }).then(function (data) {
-                    alert("Asset Removed");
-                    _this2.fetchAssets();
-                }).catch(function (err) {
-                    return console.log(err);
-                });
-            }
-        }
-    }
+			var vm = this;
+			page_url = page_url || "/api/assets";
+			fetch(page_url).then(function (res) {
+				return res.json();
+			}).then(function (res) {
+				_this.assets = res.data;
+				console.log(_this.assets);
+				vm.makePagination(res.meta, res.links);
+			}).catch(function (err) {
+				return console.log(err);
+			});
+		},
+		makePagination: function makePagination(meta, links) {
+			var pagination = {
+				current_page: meta.current_page,
+				last_page: meta.last_page,
+				next_page_url: links.next,
+				prev_page_url: links.prev
+			};
+			this.pagination = pagination;
+		},
+		deleteAsset: function deleteAsset(id) {
+			var _this2 = this;
+
+			if (confirm("Are You Sure?")) {
+				fetch("api/asset/" + id, {
+					method: "delete"
+				}).then(function (res) {
+					return res.json();
+				}).then(function (data) {
+					alert("Asset Removed");
+					_this2.fetchAssets();
+				}).catch(function (err) {
+					return console.log(err);
+				});
+			}
+		}
+	}
 });
 
 /***/ }),
@@ -120810,7 +120809,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "for": "select"
     }
-  }, [_vm._v("Select Asset")]), _vm._v(" "), _c('select', {
+  }, [_vm._v("Select Model")]), _vm._v(" "), _c('select', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -120837,13 +120836,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "value": ""
     }
-  }, [_vm._v("Select Model")]), _vm._v(" "), _vm._l((_vm.assets), function(asset) {
+  }, [_vm._v("Select Model")]), _vm._v(" "), _vm._l((_vm.assetmodels), function(assetmodel) {
     return _c('option', {
-      key: asset.id,
+      key: assetmodel.id,
       domProps: {
-        "value": asset.id
+        "value": assetmodel.id
       }
-    }, [_vm._v(_vm._s(asset.name))])
+    }, [_vm._v(_vm._s(assetmodel.name))])
   })], 2)])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
@@ -120933,37 +120932,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "for": "customer"
     }
-  }, [_vm._v("type")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Cost")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.type),
-      expression: "asset.type"
+      value: (_vm.asset.cost),
+      expression: "asset.cost"
     }],
     staticClass: "form-control",
     attrs: {
       "type": "text",
-      "placeholder": "Enter Type"
+      "placeholder": "Enter Cost"
     },
     domProps: {
-      "value": (_vm.asset.type)
+      "value": (_vm.asset.cost)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.$set(_vm.asset, "type", $event.target.value)
+        _vm.$set(_vm.asset, "cost", $event.target.value)
       }
     }
   })])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "form-group col-sm-3"
+    staticClass: "form-group col-sm-6"
   }, [_c('label', {
     staticClass: "col-md-3 form-control-label",
     attrs: {
       "for": "select"
     }
-  }, [_vm._v("Quality")]), _vm._v(" "), _c('select', {
+  }, [_vm._v("Manufacturer")]), _vm._v(" "), _c('select', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -120990,7 +120989,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "value": ""
     }
-  }, [_vm._v("Select Quality")]), _vm._v(" "), _vm._l((_vm.manufacturers), function(manufacturer) {
+  }, [_vm._v("Select Manufacturer")]), _vm._v(" "), _vm._l((_vm.manufacturers), function(manufacturer) {
     return _c('option', {
       key: manufacturer.id,
       domProps: {
@@ -121025,36 +121024,36 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-6"
+    staticClass: "form-group col-sm-3"
   }, [_c('label', {
     attrs: {
       "for": "customer"
     }
-  }, [_vm._v("Cost")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Quality")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.cost),
-      expression: "asset.cost"
+      value: (_vm.asset.quality),
+      expression: "asset.quality"
     }],
     staticClass: "form-control",
     attrs: {
       "type": "text",
-      "placeholder": "Enter Cost"
+      "placeholder": "Enter Quality"
     },
     domProps: {
-      "value": (_vm.asset.cost)
+      "value": (_vm.asset.quality)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.$set(_vm.asset, "cost", $event.target.value)
+        _vm.$set(_vm.asset, "quality", $event.target.value)
       }
     }
   })])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "form-group col-sm-3"
+    staticClass: "form-group col-sm-6"
   }, [_c('label', {
     attrs: {
       "for": "customer"
@@ -121081,7 +121080,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-3"
+    staticClass: "form-group col-sm-6"
   }, [_c('label', {
     attrs: {
       "for": "customer"
@@ -121105,6 +121104,37 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "input": function($event) {
         if ($event.target.composing) { return; }
         _vm.$set(_vm.asset, "current_stock", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "customer"
+    }
+  }, [_vm._v("Description")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.asset.description),
+      expression: "asset.description"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "textarea-input",
+      "name": "textarea-input",
+      "rows": "9",
+      "placeholder": "Description.."
+    },
+    domProps: {
+      "value": (_vm.asset.description)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.asset, "description", $event.target.value)
       }
     }
   })]), _vm._v(" "), _c('div', {
@@ -125936,7 +125966,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.assets), function(asset) {
     return _c('tr', {
       key: asset.id
-    }, [_c('td', [_vm._v(_vm._s(asset.company.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.model.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.serial))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.type))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.label_value))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.description))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.quality))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.cost))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.image))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.status))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.minimum_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.current_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
+    }, [_c('td', [_vm._v(_vm._s(asset.company.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.assetModel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.label_value))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.serial))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.manufacturer.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.description))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.image))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.quality))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.cost))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.status))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.minimum_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.current_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
       attrs: {
         "to": {
           name: 'Asset Form',
@@ -125996,7 +126026,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Next")])])])])])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('thead', [_c('tr', [_c('th', [_vm._v("Company Name")]), _vm._v(" "), _c('th', [_vm._v("Model Name")]), _vm._v(" "), _c('th', [_vm._v("Asset Name")]), _vm._v(" "), _c('th', [_vm._v("BMB No")]), _vm._v(" "), _c('th', [_vm._v("Description")]), _vm._v(" "), _c('th', [_vm._v("Quality")]), _vm._v(" "), _c('th', [_vm._v("Cost")]), _vm._v(" "), _c('th', [_vm._v("Status")]), _vm._v(" "), _c('th', [_vm._v("Minimum Stock")]), _vm._v(" "), _c('th', [_vm._v("Current Stock")]), _vm._v(" "), _c('th', [_vm._v("Comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Company Name")]), _vm._v(" "), _c('th', [_vm._v("Model Name")]), _vm._v(" "), _c('th', [_vm._v("Asset Name")]), _vm._v(" "), _c('th', [_vm._v("BMB No")]), _vm._v(" "), _c('th', [_vm._v("Serial No")]), _vm._v(" "), _c('th', [_vm._v("Manufacturer")]), _vm._v(" "), _c('th', [_vm._v("Description")]), _vm._v(" "), _c('th', [_vm._v("Image")]), _vm._v(" "), _c('th', [_vm._v("Quality")]), _vm._v(" "), _c('th', [_vm._v("Cost")]), _vm._v(" "), _c('th', [_vm._v("Status")]), _vm._v(" "), _c('th', [_vm._v("Minimum Stock")]), _vm._v(" "), _c('th', [_vm._v("Current Stock")]), _vm._v(" "), _c('th', [_vm._v("Comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

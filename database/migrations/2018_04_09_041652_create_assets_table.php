@@ -16,14 +16,14 @@ class CreateAssetsTable extends Migration
         Schema::create('assets', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('company_id');
-            $table->integer('assets_model_id');
+            $table->integer('asset_model_id');
             $table->string('name');
             $table->string('serial');
-            $table->string('type');
             $table->integer('label_id');
             $table->string('label_value');
             $table->string('description');
-            $table->string('quality');
+            $table->integer('manufacturer_id');
+            $table->integer('quality');
             $table->string('cost');
             $table->string('status');
             $table->string('image');
