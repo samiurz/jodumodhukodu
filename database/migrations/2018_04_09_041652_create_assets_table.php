@@ -23,9 +23,9 @@ class CreateAssetsTable extends Migration
             $table->string('label_value');
             $table->string('description');
             $table->integer('manufacturer_id');
-            $table->integer('quality');
+            $table->integer('quality_id');
             $table->string('cost');
-            $table->string('status');
+            $table->integer('asset_location_id');
             $table->string('image');
             $table->string('minimum_stock');
             $table->string('current_stock');

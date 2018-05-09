@@ -108,6 +108,11 @@
                             </router-link>
                         </li>
                         <li class="nav-item">
+                            <router-link :to="'/assetLocation/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Asset Location
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
                             <router-link :to="'/documentationType/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Document Type
                             </router-link>

@@ -33,16 +33,17 @@ class AssetController extends Controller
 
         $assets->id = $request->input('id');
         $assets->company_id = $request->input('company_id');
-        $assets->model_id = $request->input('model_id');
+        $assets->asset_model_id = $request->input('asset_model_id');
         $assets->name = $request->input('name');
         $assets->serial = $request->input('serial');
         $assets->type = $request->input('type');
         $assets->label_id = $request->input('label_id');
         $assets->label_value = $request->input('label_value');
         $assets->description = $request->input('description');
-        $assets->quality = $request->input('quality');
+        $assets->quality_id = $request->input('quality_id');
+        $assets->manufacturer_id = $request->input('manufacturer_id');
         $assets->cost = $request->input('cost');
-        $assets->status = $request->input('status');
+        $assets->asset_location_id = $request->input('asset_location_id');
         $assets->image = $request->input('image');
         $assets->current_stock = $request->input('current_stock');
         $assets->minimum_stock = $request->input('minimum_stock');

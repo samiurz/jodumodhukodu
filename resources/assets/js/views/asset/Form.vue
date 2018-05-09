@@ -8,7 +8,7 @@
                         <small>Form</small>
                     </div>
                     <div class="card-block">
-                        <form @submit.prevent="addasset" class="mb-3">
+                        <form @submit.prevent="addAsset" class="mb-3">
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Company</label>
@@ -44,20 +44,26 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-4">
                                     <label class="col-md-3 form-control-label" for="select">Manufacturer</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.manufacturar_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.manufacturer_id">
                                         <option value="">Select Manufacturer</option>
                                         <option v-for="manufacturer in manufacturers" v-bind:key="manufacturer.id" v-bind:value="manufacturer.id">{{manufacturer.name}}</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">Status</label>
-                                    <input type="text" class="form-control" placeholder="Enter status" v-model="asset.status">
+                                <div class="form-group col-sm-4">
+                                     <label class="col-md-3 form-control-label" for="select">Status</label>
+                                    <select id="select" type="select" class="form-control" v-model="asset.asset_location_id">
+                                        <option value="">Select Location Status</option>
+                                        <option v-for="assetLocation in assetLocations" v-bind:key="assetLocation.id" v-bind:value="assetLocation.id">{{assetLocation.location}}</option>
+                                    </select>
                                 </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">Quality</label>
-                                    <input type="text" class="form-control" placeholder="Enter Quality" v-model="asset.quality">
+                                <div class="form-group col-sm-4">
+                                     <label class="col-md-3 form-control-label" for="select">Quality</label>
+                                    <select id="select" type="select" class="form-control" v-model="asset.quality_id">
+                                        <option value="">Select Quality</option>
+                                        <option v-for="quality in qualities" v-bind:key="quality.id" v-bind:value="quality.id">{{quality.name}}</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="row">
@@ -88,7 +94,7 @@
                               </div>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-primary">Save changes</button>
-                                <router-link :to="{ type: 'asset List'}">
+                                <router-link :to="{ type: 'Asset List'}">
                                     <button type="button" class="btn btn-default">Cancel</button>
                                 </router-link>
                             </div>
@@ -107,6 +113,9 @@
             return {
                 companies: [],
                 manufacturers: [],
+                qualities: [],
+                assetmodels:[],
+                assetLocations:[],
                 asset: {
                     id: "",
                     company_id: "",
@@ -117,9 +126,9 @@
                     label_value:"",
                     description: "",
                     manufacturer_id:"",
-                    quality:"",
+                    quality_id:"",
                     cost:"",
-                    status:"",
+                    asset_location_id:"",
                     image:"",
                     minimum_stock:"",
                     current_stock:"",
@@ -133,10 +142,12 @@
         created() {
             console.log(this.$route.params.data);
             this.fetchCompanies();
-            this.fetchAssets();
             this.fetchManufacturar();
+            this.fetchAssetModel();
+            this.fetchQuality();
+            this.fetchAssetLocation();
             if (this.$route.params.data != undefined)
-                this.editasset(this.$route.params.data);
+                this.editAsset(this.$route.params.data);
         },
         methods: {
             fetchCompanies(page_url) {
@@ -161,7 +172,40 @@
                     })
                     .catch(err => console.log(err));
             },
-            addasset() {
+            fetchAssetLocation(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/assetLocations";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.assetLocations = res.data;
+                        console.log(this.assetLocations);
+                    })
+                    .catch(err => console.log(err));
+            },
+            fetchQuality(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/qualities";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.qualities = res.data;
+                        console.log(this.qualities);
+                    })
+                    .catch(err => console.log(err));
+            },
+            fetchAssetModel(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/assetmodels";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.assetmodels = res.data;
+                        console.log(this.assetmodels);
+                    })
+                    .catch(err => console.log(err));
+            },
+            addAsset() {
                 if (this.edit === false) {
                     // Add
                     fetch("api/asset", {
@@ -180,12 +224,14 @@
                             this.asset.type = "";
                             this.asset.description = "";
                             this.asset.image = "";
-                            this.asset.manufacturar_id = "";
+                            this.asset.manufacturer_id = "";
+                            this.asset.quality_id = "";
+                            this.asset.asset_location_id = "";
                             this.asset.minimum_stock = "";
                             this.asset.current_stock = "";
                             this.asset.comments = "";
                             this.asset.update_by = "";
-                            alert("asset Added");
+                            alert("Asset Added");
                             this.$router.push("/asset/list");
                         })
                         .catch(err => console.log(err));
@@ -207,17 +253,20 @@
                             this.asset.type = "";
                             this.asset.description = "";
                             this.asset.image = "";
-                            this.asset.manufacturar_id = "";
+                            this.asset.manufacturer_id = "";
+                            this.asset.quality_id = "";
+                            this.asset.asset_location_id = "";
                             this.asset.minimum_stock = "";
                             this.asset.current_stock = "";
                             this.asset.comments = "";
+                            this.asset.update_by = "";
                             alert("documentation type Updated");
                             this.$router.push("/asset/list");
                         })
                         .catch(err => console.log(err));
                 }
             },
-            editasset(asset) {
+            editAsset(asset) {
                 this.edit = true;
                 this.asset.id = asset.id;
                 this.asset.company_id = asset.company_id;
@@ -226,7 +275,9 @@
                 this.asset.type = asset.type;
                 this.asset.description = asset.description;
                 this.asset.image = asset.image;
-                this.asset.manufacturar_id = asset.manufacturar_id;
+                this.asset.manufacturer_id = asset.manufacturer_id;
+                this.asset.quality_id = asset.quality_id;
+                this.asset.asset_location_id = asset.asset_location_id;
                 this.asset.minimum_stock = asset.minimum_stock;
                 this.asset.current_stock = asset.current_stock;
                 this.asset.comments = asset.comments;

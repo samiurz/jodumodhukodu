@@ -331,3 +331,15 @@ Route::post('quality', 'QualityController@store');
 Route::put('quality', 'QualityController@store');
 // Delete Quality
 Route::delete('quality/{id}', 'QualityController@destroy');
+
+# Quality Routes
+// List qualities
+Route::get('assetLocations', 'AssetLocationController@index');
+//  Quality
+Route::get('assetLocation/{id}', 'AssetLocationController@show');
+// Create new Quality
+Route::post('assetLocation', 'AssetLocationController@store');
+// Update Quality
+Route::put('assetLocation', 'AssetLocationController@store');
+// Delete Quality
+Route::delete('assetLocation/{id}', 'AssetLocationController@destroy');
