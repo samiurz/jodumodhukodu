@@ -100,6 +100,10 @@ import DocumentForm from '../views/document/form';
 import AssetList from '../views/asset/list';
 import AssetForm from '../views/asset/form';
 
+// Views - Quality 
+import QualityList from '../views/quality/list';
+import QualityForm from '../views/quality/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -550,6 +554,26 @@ export default new Router({
                             path: 'list',
                             name: 'Asset List',
                             component: AssetList
+                        }
+                    ]
+                },
+                {
+                    path: '/quality',
+                    redirect: '/quality/list',
+                    name: 'Quality',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Quality Form',
+                            component: QualityForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Quality List',
+                            component: QualityList
                         }
                     ]
                 }

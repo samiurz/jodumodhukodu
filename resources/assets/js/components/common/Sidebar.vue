@@ -92,6 +92,7 @@
                         </li>
                     </ul>
                 </router-link>
+                <li class="divider"></li>
                 <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/settings'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-star"></i> Settings</div>
@@ -99,6 +100,11 @@
                         <li class="nav-item">
                             <router-link :to="'/label/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Label
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/quality/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Quality
                             </router-link>
                         </li>
                         <li class="nav-item">
@@ -128,6 +134,7 @@
                         </li>
                     </ul>
                 </router-link>
+                <li class="divider"></li>
                 <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/products'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-star"></i> Product Settings</div>
@@ -159,6 +166,7 @@
                         </li>
                     </ul>
                 </router-link>
+                <li class="divider"></li>
                 <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/Spares'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-star"></i> Spare</div>
@@ -175,6 +183,7 @@
                         </li>
                     </ul>
                 </router-link>
+                <li class="divider"></li>
                 <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/asset'}" disabled>
                     <div class="nav-link nav-dropdown-toggle" @click="handleClick">
                         <i class="icon-star"></i> Asset</div>

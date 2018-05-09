@@ -319,3 +319,15 @@ Route::post('manufacturer', 'ManufacturerController@store');
 Route::put('manufacturer', 'ManufacturerController@store');
 // Delete manufacturer
 Route::delete('manufacturer/{id}', 'ManufacturerController@destroy');
+
+# Quality Routes
+// List qualities
+Route::get('qualities', 'QualityController@index');
+//  Quality
+Route::get('quality/{id}', 'QualityController@show');
+// Create new Quality
+Route::post('quality', 'QualityController@store');
+// Update Quality
+Route::put('quality', 'QualityController@store');
+// Delete Quality
+Route::delete('quality/{id}', 'QualityController@destroy');
