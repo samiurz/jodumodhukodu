@@ -21,8 +21,6 @@ class AssetController extends Controller
         // Return collection of assets as a resource
         return AssetResource::collection($assets);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *

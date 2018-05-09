@@ -21,8 +21,6 @@ class SpareTypeController extends Controller
         // Return collection of spareTypes as a resource
         return SpareTypeResource::collection($spareTypes);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +42,6 @@ class SpareTypeController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -59,7 +56,6 @@ class SpareTypeController extends Controller
         // Return single spareTypes as a resource
         return new SpareTypeResource($spareTypes);
     }
-
     /**
      * Remove the specified resource from storage.
      *

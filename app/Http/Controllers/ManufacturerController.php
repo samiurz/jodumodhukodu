@@ -21,8 +21,6 @@ class ManufacturerController extends Controller
         // Return collection of manufacturers as a resource
         return ManufacturerResource::collection($manufacturers);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *

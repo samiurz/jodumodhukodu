@@ -21,8 +21,6 @@ class BlockController extends Controller
         // Return collection of blocks as a resource
         return BlockResource::collection($blocks);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -40,9 +38,7 @@ class BlockController extends Controller
         if($blocks->save()) {
             return new BlockResource($blocks);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -57,7 +53,6 @@ class BlockController extends Controller
         // Return single blocks as a resource
         return new BlockResource($blocks);
     }
-
     /**
      * Remove the specified resource from storage.
      *

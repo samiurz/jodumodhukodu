@@ -21,8 +21,6 @@ class LabelController extends Controller
         // Return collection of labels as a resource
         return LabelResource::collection($labels);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +42,6 @@ class LabelController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -59,7 +56,6 @@ class LabelController extends Controller
         // Return single labels as a resource
         return new LabelResource($labels);
     }
-
     /**
      * Remove the specified resource from storage.
      *

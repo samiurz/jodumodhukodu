@@ -21,8 +21,6 @@ class FaultTypeController extends Controller
         // Return collection of faultTypes as a resource
         return FaultTypeResource::collection($faultTypes);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +42,6 @@ class FaultTypeController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -59,7 +56,6 @@ class FaultTypeController extends Controller
         // Return single faultTypes as a resource
         return new FaultTypeResource($faultTypes);
     }
-
     /**
      * Remove the specified resource from storage.
      *

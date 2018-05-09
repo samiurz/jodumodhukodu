@@ -21,8 +21,6 @@ class ModuleController extends Controller
         // Return collection of modules as a resource
         return ModuleResource::collection($modules);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -45,7 +43,6 @@ class ModuleController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -59,9 +56,7 @@ class ModuleController extends Controller
 
         // Return single modules as a resource
         return new ModuleResource($modules);
-    }
-
-    /**
+    }    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id

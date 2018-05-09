@@ -21,8 +21,6 @@ class AccountBlockAssociationController extends Controller
         // Return collection of accountblockassociations as a resource
         return AccountBlockAssociationResource::collection($accountblockassociations);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -40,9 +38,7 @@ class AccountBlockAssociationController extends Controller
         if($accountblockassociations->save()) {
             return new AccountBlockAssociationResource($accountblockassociations);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -57,7 +53,6 @@ class AccountBlockAssociationController extends Controller
         // Return single accountblockassociations as a resource
         return new AccountBlockAssociationResource($accountblockassociations);
     }
-
     /**
      * Remove the specified resource from storage.
      *

@@ -21,8 +21,6 @@ class ModelTypeController extends Controller
         // Return collection of modelTypes as a resource
         return ModelTypeResource::collection($modelTypes);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +42,6 @@ class ModelTypeController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -59,7 +56,6 @@ class ModelTypeController extends Controller
         // Return single modelTypes as a resource
         return new ModelTypeResource($modelTypes);
     }
-
     /**
      * Remove the specified resource from storage.
      *

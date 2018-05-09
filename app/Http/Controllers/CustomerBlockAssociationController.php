@@ -21,8 +21,6 @@ class CustomerBlockAssociationController extends Controller
         // Return collection of customerblockassociations as a resource
         return CustomerBlockAssociationResource::collection($customerblockassociations);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -41,9 +39,7 @@ class CustomerBlockAssociationController extends Controller
         if($customerblockassociations->save()) {
             return new CustomerBlockAssociationResource($customerblockassociations);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -58,7 +54,6 @@ class CustomerBlockAssociationController extends Controller
         // Return single customerblockassociations as a resource
         return new CustomerBlockAssociationResource($customerblockassociations);
     }
-
     /**
      * Remove the specified resource from storage.
      *

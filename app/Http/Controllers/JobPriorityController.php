@@ -21,8 +21,6 @@ class JobPriorityController extends Controller
         // Return collection of jobPriorities as a resource
         return JobPriorityResource::collection($jobPriorities);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -43,7 +41,6 @@ class JobPriorityController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -58,7 +55,6 @@ class JobPriorityController extends Controller
         // Return single jobPriorities as a resource
         return new JobPriorityResource($jobPriorities);
     }
-
     /**
      * Remove the specified resource from storage.
      *

@@ -22,8 +22,6 @@ class CompanyController extends Controller
         // Return collection of companies as a resource
         return CompanyResource::collection($companies);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -48,7 +46,6 @@ class CompanyController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -63,7 +60,6 @@ class CompanyController extends Controller
         // Return single companies as a resource
         return new CompanyResource($companies);
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -79,7 +75,6 @@ class CompanyController extends Controller
             return new CompanyResource($companies);
         }    
     }
-
     /**
      * Load companies.
      *$
@@ -94,7 +89,6 @@ class CompanyController extends Controller
         // Return single companies as a resource
         return response()->json(['companies' => $companies]);
     }
-
      /**
      * Show the application getSubjectContents.
      *

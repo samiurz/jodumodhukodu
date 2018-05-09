@@ -21,8 +21,6 @@ class AssetImageRecordController extends Controller
         // Return collection of assetimagerecords as a resource
         return AssetImageRecordResource::collection($assetimagerecords);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -43,9 +41,7 @@ class AssetImageRecordController extends Controller
         if($assetimagerecords->save()) {
             return new AssetImageRecordResource($assetimagerecords);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -60,7 +56,6 @@ class AssetImageRecordController extends Controller
         // Return single assetimagerecords as a resource
         return new AssetImageRecordResource($assetimagerecords);
     }
-
     /**
      * Remove the specified resource from storage.
      *

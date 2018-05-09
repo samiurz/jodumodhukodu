@@ -20,8 +20,6 @@ class SpareController extends Controller
         // Return collection of spare as a resource
         return SpareResource::collection($spare);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -48,9 +46,7 @@ class SpareController extends Controller
         if($spare->save()) {
             return new SpareResource($spare);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -65,7 +61,6 @@ class SpareController extends Controller
         // Return single spare as a resource
         return new SpareResource($spare);
     }
-
     /**
      * Remove the specified resource from storage.
      *

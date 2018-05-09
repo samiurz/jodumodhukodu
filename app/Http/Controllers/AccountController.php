@@ -21,8 +21,6 @@ class AccountController extends Controller
         // Return collection of Accounts as a resource
         return AccountResource::collection($accounts);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -41,9 +39,7 @@ class AccountController extends Controller
         if($accounts->save()) {
             return new AccountResource($accounts);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -58,7 +54,6 @@ class AccountController extends Controller
         // Return single accounts as a resource
         return new AccountResource($accounts);
     }
-
     /**
      * Remove the specified resource from storage.
      *

@@ -21,8 +21,6 @@ class BlockStatController extends Controller
         // Return collection of blockstats as a resource
         return BlockStatResource::collection($blockstats);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -40,9 +38,7 @@ class BlockStatController extends Controller
         if($blockstats->save()) {
             return new BlockStatResource($blockstats);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -57,7 +53,6 @@ class BlockStatController extends Controller
         // Return single blockstats as a resource
         return new BlockStatResource($blockstats);
     }
-
     /**
      * Remove the specified resource from storage.
      *

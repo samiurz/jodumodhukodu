@@ -21,8 +21,6 @@ class ActivityController extends Controller
         // Return collection of activities as a resource
         return ActivityResource::collection($activities);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -41,7 +39,6 @@ class ActivityController extends Controller
             return new ActivityResource($activities);
         }
     }
-
     /**
      * Display the specified resource.
      *$
@@ -56,7 +53,6 @@ class ActivityController extends Controller
         // Return single activities as a resource
         return new ActivityResource($activities);
     }
-
     /**
      * Remove the specified resource from storage.
      *

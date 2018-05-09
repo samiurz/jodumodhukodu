@@ -21,8 +21,6 @@ class JobTypeController extends Controller
         // Return collection of jobTypes as a resource
         return JobTypeResource::collection($jobTypes);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -44,7 +42,6 @@ class JobTypeController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -59,7 +56,6 @@ class JobTypeController extends Controller
         // Return single jobTypes as a resource
         return new JobTypeResource($jobTypes);
     }
-
     /**
      * Remove the specified resource from storage.
      *

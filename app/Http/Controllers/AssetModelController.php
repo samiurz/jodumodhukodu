@@ -21,8 +21,6 @@ class AssetModelController extends Controller
         // Return collection of assetmodels as a resource
         return AssetModelResource::collection($assetmodels);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -47,9 +45,7 @@ class AssetModelController extends Controller
         if($assetmodels->save()) {
             return new AssetModelResource($assetmodels);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -64,7 +60,6 @@ class AssetModelController extends Controller
         // Return single assetmodels as a resource
         return new AssetModelResource($assetmodels);
     }
-
     /**
      * Remove the specified resource from storage.
      *

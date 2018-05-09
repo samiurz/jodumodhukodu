@@ -21,8 +21,6 @@ class DocumentationTypeController extends Controller
         // Return collection of documentationTypes as a resource
         return DocumentationTypeResource::collection($documentationTypes);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -40,10 +38,8 @@ class DocumentationTypeController extends Controller
         $documentationTypes->update_by = $request->input('update_by');
         if($documentationTypes->save()) {
             return new DocumentationTypeResource($documentationTypes);
-        }
-        
+        } 
     }
-
     /**
      * Display the specified resource.
      *$
@@ -58,7 +54,6 @@ class DocumentationTypeController extends Controller
         // Return single documentationTypes as a resource
         return new DocumentationTypeResource($documentationTypes);
     }
-
     /**
      * Remove the specified resource from storage.
      *

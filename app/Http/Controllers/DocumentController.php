@@ -21,8 +21,6 @@ class DocumentController extends Controller
         // Return collection of documents as a resource
         return DocumentResource::collection($documents);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *

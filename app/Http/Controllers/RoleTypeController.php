@@ -21,8 +21,6 @@ class roletypeController extends Controller
         // Return collection of roletypes as a resource
         return roletypeResource::collection($roletypes);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -41,9 +39,7 @@ class roletypeController extends Controller
         if($roletype->save()) {
             return new roletypeResource($roletype);
         }
-        
     }
-
     /**
      * Display the specified resource.
      *$
@@ -58,7 +54,6 @@ class roletypeController extends Controller
         // Return single roletype as a resource
         return new roletypeResource($roletype);
     }
-
     /**
      * Remove the specified resource from storage.
      *

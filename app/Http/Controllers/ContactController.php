@@ -21,8 +21,6 @@ class ContactController extends Controller
         // Return collection of contacts as a resource
         return ContactResource::collection($contacts);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -44,10 +42,8 @@ class ContactController extends Controller
 
         if($contacts->save()) {
             return new ContactResource($contacts);
-        }
-        
+        }       
     }
-
     /**
      * Display the specified resource.
      *$
@@ -62,7 +58,6 @@ class ContactController extends Controller
         // Return single contacts as a resource
         return new ContactResource($contacts);
     }
-
     /**
      * Remove the specified resource from storage.
      *

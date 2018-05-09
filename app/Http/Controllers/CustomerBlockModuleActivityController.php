@@ -21,8 +21,6 @@ class CustomerBlockModuleActivityController extends Controller
         // Return collection of customerblockmoduleactivity as a resource
         return CustomerBlockModuleActivityResource::collection($customerblockmoduleactivity);
     }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -45,7 +43,6 @@ class CustomerBlockModuleActivityController extends Controller
         }
         
     }
-
     /**
      * Display the specified resource.
      *$
@@ -60,7 +57,6 @@ class CustomerBlockModuleActivityController extends Controller
         // Return single customerblockmoduleactivity as a resource
         return new CustomerBlockModuleActivityResource($customerblockmoduleactivity);
     }
-
     /**
      * Remove the specified resource from storage.
      *
