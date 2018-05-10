@@ -45958,6 +45958,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "sidebar",
@@ -62764,6 +62768,10 @@ window.axios.defaults.headers.common = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__views_module_list___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_59__views_module_list__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__views_module_form__ = __webpack_require__(609);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__views_module_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_60__views_module_form__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__views_blockStat_list__ = __webpack_require__(704);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__views_blockStat_list___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_61__views_blockStat_list__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__views_blockStat_form__ = __webpack_require__(703);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__views_blockStat_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_62__views_blockStat_form__);
 
 
 
@@ -62871,6 +62879,10 @@ window.axios.defaults.headers.common = {
 
 
 // Views - Asset Location 
+
+
+
+// Views - Module
 
 
 
@@ -63336,6 +63348,24 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
                 path: 'list',
                 name: 'Module List',
                 component: __WEBPACK_IMPORTED_MODULE_59__views_module_list___default.a
+            }]
+        }, {
+            path: '/blockStat',
+            redirect: '/blockStat/list',
+            name: 'Block Status',
+            component: {
+                render: function render(c) {
+                    return c('router-view');
+                }
+            },
+            children: [{
+                path: 'form',
+                name: 'Block Status Form',
+                component: __WEBPACK_IMPORTED_MODULE_62__views_blockStat_form___default.a
+            }, {
+                path: 'list',
+                name: 'Block Status List',
+                component: __WEBPACK_IMPORTED_MODULE_61__views_blockStat_list___default.a
             }]
         }]
     }, {
@@ -121024,6 +121054,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('router-link', {
     staticClass: "nav-link",
     attrs: {
+      "to": '/blockStat/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v("Block Status")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
       "to": '/module/list',
       "exact": ""
     }
@@ -139002,6 +139042,538 @@ module.exports = function listToStyles (parentId, list) {
 __webpack_require__(248);
 module.exports = __webpack_require__(249);
 
+
+/***/ }),
+/* 698 */,
+/* 699 */,
+/* 700 */,
+/* 701 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    type: "blockStat",
+    data: function data() {
+        return {
+            blockStat: {
+                id: "",
+                name: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        if (this.$route.params.data != undefined) this.editBlockStat(this.$route.params.data);
+    },
+
+    methods: {
+        addBlockStat: function addBlockStat() {
+            var _this = this;
+
+            if (this.edit === false) {
+                // Add
+                fetch("api/blockStat", {
+                    method: "post",
+                    body: JSON.stringify(this.blockStat),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this.blockStat.id = "";
+                    _this.blockStat.name = "";
+                    _this.blockStat.comments = "";
+                    _this.blockStat.update_by = "";
+                    alert("Block Status Added");
+                    _this.$router.push("/blockStat/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            } else {
+                // Update
+                fetch("api/blockStat", {
+                    method: "put",
+                    body: JSON.stringify(this.blockStat),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this.blockStat.name = "";
+                    _this.blockStat.comments = "";
+                    alert("Block Status Updated");
+                    _this.$router.push("/blockStat/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        },
+        editBlockStat: function editBlockStat(blockStat) {
+            this.edit = true;
+            this.blockStat.id = blockStat.id;
+            this.blockStat.name = blockStat.name;
+            this.blockStat.comments = blockStat.comments;
+            this.blockStat.update_by = blockStat.update_by;
+        }
+    }
+});
+
+/***/ }),
+/* 702 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "blockStat",
+    data: function data() {
+        return {
+            blockStats: [],
+            blockStat: {
+                id: "",
+                name: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        this.fetchBlockStats();
+    },
+
+
+    methods: {
+        fetchBlockStats: function fetchBlockStats(page_url) {
+            var _this = this;
+
+            var vm = this;
+            page_url = page_url || "/api/blockStats";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this.blockStats = res.data;
+                console.log(_this.blockStats);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        makePagination: function makePagination(meta, links) {
+            var pagination = {
+                current_page: meta.current_page,
+                last_page: meta.last_page,
+                next_page_url: links.next,
+                prev_page_url: links.prev
+            };
+            this.pagination = pagination;
+        },
+        deleteBlockStat: function deleteBlockStat(id) {
+            var _this2 = this;
+
+            if (confirm("Are You Sure?")) {
+                fetch("api/blockStat/" + id, {
+                    method: "delete"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    alert("Model Type Removed");
+                    _this2.fetchBlockStats();
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 703 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(701),
+  /* template */
+  __webpack_require__(705),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\blockStat\\form.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5b7336a1", Component.options)
+  } else {
+    hotAPI.reload("data-v-5b7336a1", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 704 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(702),
+  /* template */
+  __webpack_require__(706),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.8-0\\apache2\\htdocs\\webcore\\resources\\assets\\js\\views\\blockStat\\list.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e127450a", Component.options)
+  } else {
+    hotAPI.reload("data-v-e127450a", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 705 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addBlockStat($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-12"
+  }, [_c('label', {
+    attrs: {
+      "for": "blockStat"
+    }
+  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.blockStat.name),
+      expression: "blockStat.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Block Status"
+    },
+    domProps: {
+      "value": (_vm.blockStat.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.blockStat, "name", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-12"
+  }, [_c('label', {
+    attrs: {
+      "for": "country"
+    }
+  }, [_vm._v("Comments")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.blockStat.comments),
+      expression: "blockStat.comments"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "comments",
+      "type": "textarea-input",
+      "rows": "9",
+      "placeholder": "Comments.."
+    },
+    domProps: {
+      "value": (_vm.blockStat.comments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.blockStat, "comments", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        type: 'Block Status List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Block Status")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-5b7336a1", module.exports)
+  }
+}
+
+/***/ }),
+/* 706 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Block Status")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Block Status Form'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-warning"
+  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-striped"
+  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.blockStats), function(blockStat) {
+    return _c('tr', {
+      key: blockStat.id
+    }, [_c('td', [_vm._v(_vm._s(blockStat.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(blockStat.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
+      attrs: {
+        "to": {
+          name: 'Block Status Form',
+          params: {
+            data: blockStat
+          }
+        }
+      }
+    }, [_c('button', {
+      staticClass: "btn btn-warning mb-2"
+    }, [_vm._v("Edit")])])], 1), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-danger",
+      on: {
+        "click": function($event) {
+          _vm.deleteBlockStat(blockStat.id)
+        }
+      }
+    }, [_vm._v("Delete")])])])
+  }))]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.prev_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchBlockStats(_vm.pagination.prev_page_url)
+      }
+    }
+  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item disabled"
+  }, [_c('a', {
+    staticClass: "page-link text-dark",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.next_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchBlockStats(_vm.pagination.next_page_url)
+      }
+    }
+  }, [_vm._v("Next")])])])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Name")]), _vm._v(" "), _c('th', [_vm._v("Comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-e127450a", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

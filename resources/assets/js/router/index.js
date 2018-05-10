@@ -112,6 +112,10 @@ import AssetLocationForm from '../views/assetLocation/form';
 import ModuleList from '../views/module/list';
 import ModuleForm from '../views/module/form';
 
+// Views - Module
+import BlockStatList from '../views/blockStat/list';
+import BlockStatForm from '../views/blockStat/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -622,6 +626,26 @@ export default new Router({
                             path: 'list',
                             name: 'Module List',
                             component: ModuleList
+                        }
+                    ]
+                },
+                {
+                    path: '/blockStat',
+                    redirect: '/blockStat/list',
+                    name: 'Block Status',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Block Status Form',
+                            component: BlockStatForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Block Status List',
+                            component: BlockStatList
                         }
                     ]
                 }
