@@ -86,6 +86,10 @@
                                 <i class="icon-star"></i>Block</router-link>
                         </li>
                         <li class="nav-item">
+                            <router-link :to="'/module/list'" class="nav-link" exact>
+                                <i class="icon-star"></i>Module</router-link>
+                        </li>
+                        <li class="nav-item">
                             <router-link :to="'/customerBlockModuleActivity/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Customer Activity
                             </router-link>

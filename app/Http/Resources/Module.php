@@ -12,9 +12,9 @@ class Module extends Resource
 
         return [
             'id' => $this->id,
-            'block_id' => $this->block_id,
+            'block' => $this->block,
             'name' => $this->name,
-            'comment' => $this->comment,
+            'comments' => $this->comments,
             'update_by' => $this->update_by
         ];
     }

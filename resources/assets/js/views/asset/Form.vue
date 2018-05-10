@@ -2,7 +2,7 @@
     <div class="animated fadeIn">
         <div class="row">
             <div class="col-sm-12">
-                <div class="card">
+                <div class="card card-inverse card-info">
                     <div class="card-header">
                         <strong>Asset</strong>
                         <small>Form</small>
@@ -93,7 +93,7 @@
                                 </div>
                               </div>
                             <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="submit" class="btn btn-default">Save changes</button>
                                 <router-link :to="{ type: 'Asset List'}">
                                     <button type="button" class="btn btn-default">Cancel</button>
                                 </router-link>

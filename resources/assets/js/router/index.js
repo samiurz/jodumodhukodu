@@ -108,6 +108,10 @@ import QualityForm from '../views/quality/form';
 import AssetLocationList from '../views/assetLocation/list';
 import AssetLocationForm from '../views/assetLocation/form';
 
+// Views - Module
+import ModuleList from '../views/module/list';
+import ModuleForm from '../views/module/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -598,6 +602,26 @@ export default new Router({
                             path: 'list',
                             name: 'Asset Location List',
                             component: AssetLocationList
+                        }
+                    ]
+                },
+                {
+                    path: '/module',
+                    redirect: '/module/list',
+                    name: 'Module',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Module Form',
+                            component: ModuleForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Module List',
+                            component: ModuleList
                         }
                     ]
                 }
