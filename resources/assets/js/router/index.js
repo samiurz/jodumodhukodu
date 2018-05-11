@@ -104,6 +104,18 @@ import AssetForm from '../views/asset/form';
 import QualityList from '../views/quality/list';
 import QualityForm from '../views/quality/form';
 
+// Views - Asset Location 
+import AssetLocationList from '../views/assetLocation/list';
+import AssetLocationForm from '../views/assetLocation/form';
+
+// Views - Module
+import ModuleList from '../views/module/list';
+import ModuleForm from '../views/module/form';
+
+// Views - Module
+import BlockStatList from '../views/blockStat/list';
+import BlockStatForm from '../views/blockStat/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -574,6 +586,66 @@ export default new Router({
                             path: 'list',
                             name: 'Quality List',
                             component: QualityList
+                        }
+                    ]
+                },
+                {
+                    path: '/assetLocation',
+                    redirect: '/assetLocation/list',
+                    name: 'Asset Location',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Asset Location Form',
+                            component: AssetLocationForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Asset Location List',
+                            component: AssetLocationList
+                        }
+                    ]
+                },
+                {
+                    path: '/module',
+                    redirect: '/module/list',
+                    name: 'Module',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Module Form',
+                            component: ModuleForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Module List',
+                            component: ModuleList
+                        }
+                    ]
+                },
+                {
+                    path: '/blockStat',
+                    redirect: '/blockStat/list',
+                    name: 'Block Status',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Block Status Form',
+                            component: BlockStatForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Block Status List',
+                            component: BlockStatList
                         }
                     ]
                 }

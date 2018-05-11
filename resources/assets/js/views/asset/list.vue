@@ -42,9 +42,9 @@
 									<td>{{ asset.manufacturer.name }}</td>
 									<td>{{ asset.description }}</td>
 									<td>{{ asset.image }}</td>
-									<td>{{ asset.quality }}</td>
+									<td>{{ asset.quality.name }}</td>
 									<td>{{ asset.cost }}</td>
-									<td>{{ asset.status }}</td>
+									<td>{{ asset.assetLocation.location }}</td>
 									<td>{{ asset.minimum_stock }}</td>
 									<td>{{ asset.current_stock }}</td>
 									<td>{{ asset.comments }}</td>
@@ -99,7 +99,7 @@
 					image: "",
 					quality: "",
 					cost: "",
-					status: "",
+					assetLocation_id: "",
 					image: "",
 					minimum_stock: "",
 					current_stock: "",

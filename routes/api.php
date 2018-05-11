@@ -82,15 +82,15 @@ Route::delete('block/{id}', 'BlockController@destroy');
 
 #Block Status Routes
 // List block status
-Route::get('blockstats', 'BlockStatController@index');
+Route::get('blockStats', 'BlockStatController@index');
 // List block status
-Route::get('blockstat/{id}', 'BlockStatController@show');
+Route::get('blockStat/{id}', 'BlockStatController@show');
 // Create new block status
-Route::post('blockstat', 'BlockStatController@store');
+Route::post('blockStat', 'BlockStatController@store');
 // Update block status
-Route::put('blockstat', 'BlockStatController@store');
+Route::put('blockStat', 'BlockStatController@store');
 // Delete block status
-Route::delete('blockstat/{id}', 'BlockStatController@destroy');
+Route::delete('blockStat/{id}', 'BlockStatController@destroy');
 
 #Module Status Routes
 // List block status
@@ -335,3 +335,15 @@ Route::post('quality', 'QualityController@store');
 Route::put('quality', 'QualityController@store');
 // Delete Quality
 Route::delete('quality/{id}', 'QualityController@destroy');
+
+# Quality Routes
+// List qualities
+Route::get('assetLocations', 'AssetLocationController@index');
+//  Quality
+Route::get('assetLocation/{id}', 'AssetLocationController@show');
+// Create new Quality
+Route::post('assetLocation', 'AssetLocationController@store');
+// Update Quality
+Route::put('assetLocation', 'AssetLocationController@store');
+// Delete Quality
+Route::delete('assetLocation/{id}', 'AssetLocationController@destroy');

@@ -15,11 +15,11 @@ class BlockStatController extends Controller
      */
     public function index()
     {
-        // Get blockstats
-        $blockstats = BlockStat::orderBy('created_at', 'desc')->paginate(15);
+        // Get blockStats
+        $blockStats = BlockStat::orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of blockstats as a resource
-        return BlockStatResource::collection($blockstats);
+        // Return collection of blockStats as a resource
+        return BlockStatResource::collection($blockStats);
     }
     /**
      * Store a newly created resource in storage.
@@ -29,14 +29,14 @@ class BlockStatController extends Controller
      */
     public function store(Request $request)
     {
-        $blockstats = $request->isMethod('put') ? BlockStat::findOrFail($request->id) : new BlockStat;
+        $blockStats = $request->isMethod('put') ? BlockStat::findOrFail($request->id) : new BlockStat;
 
-        $blockstats->id = $request->input('id');
-        $blockstats->name = $request->input('name');
-        $blockstats->comments = $request->input('comments');
-        $blockstats->update_by = $request->input('update_by');
-        if($blockstats->save()) {
-            return new BlockStatResource($blockstats);
+        $blockStats->id = $request->input('id');
+        $blockStats->name = $request->input('name');
+        $blockStats->comments = $request->input('comments');
+        $blockStats->update_by = $request->input('update_by');
+        if($blockStats->save()) {
+            return new BlockStatResource($blockStats);
         }
     }
     /**
@@ -47,11 +47,11 @@ class BlockStatController extends Controller
      */
     public function show($id)
     {
-        // Get blockstats
-        $blockstats = BlockStat::findOrFail($id);
+        // Get blockStats
+        $blockStats = BlockStat::findOrFail($id);
 
-        // Return single blockstats as a resource
-        return new BlockStatResource($blockstats);
+        // Return single blockStats as a resource
+        return new BlockStatResource($blockStats);
     }
     /**
      * Remove the specified resource from storage.
@@ -61,11 +61,11 @@ class BlockStatController extends Controller
      */
     public function destroy($id)
     {
-        // Get blockstats
-        $blockstats = BlockStat::findOrFail($id);
+        // Get blockStats
+        $blockStats = BlockStat::findOrFail($id);
 
-        if($blockstats->delete()) {
-            return new BlockStatResource($blockstats);
+        if($blockStats->delete()) {
+            return new BlockStatResource($blockStats);
         }    
     }
 }

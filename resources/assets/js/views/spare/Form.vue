@@ -2,7 +2,7 @@
     <div class="animated fadeIn">
         <div class="row">
             <div class="col-sm-12">
-                <div class="card">
+                <div class="card ">
                     <div class="card-header">
                         <strong>Spare</strong>
                         <small>Form</small>
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-    <!--/.col-->
+<!--/.col-->
 </template>
 <script>
     export default {

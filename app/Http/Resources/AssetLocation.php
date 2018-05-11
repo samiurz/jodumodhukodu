@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\Resource;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class Module extends Resource
+class AssetLocation extends JsonResource
 {
     public function toArray($request)
     {
@@ -12,8 +12,8 @@ class Module extends Resource
 
         return [
             'id' => $this->id,
-            'block' => $this->block,
-            'name' => $this->name,
+            'company' => $this->company,
+            'location' => $this->location,
             'comments' => $this->comments,
             'update_by' => $this->update_by
         ];

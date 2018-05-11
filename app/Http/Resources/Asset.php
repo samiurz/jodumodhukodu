@@ -22,7 +22,7 @@ class Asset extends Resource
             'description' => $this->description,
             'quality' => $this->quality,
             'cost' => $this->cost,
-            'status' => $this->status,
+            'assetLocation' => $this->assetLocation,
             'image' => $this->image,
             'current_stock' => $this->current_stock,
             'minimum_stock' => $this->minimum_stock,

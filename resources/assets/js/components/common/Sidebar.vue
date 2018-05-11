@@ -86,6 +86,14 @@
                                 <i class="icon-star"></i>Block</router-link>
                         </li>
                         <li class="nav-item">
+                            <router-link :to="'/blockStat/list'" class="nav-link" exact>
+                                <i class="icon-star"></i>Block Status</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/module/list'" class="nav-link" exact>
+                                <i class="icon-star"></i>Module</router-link>
+                        </li>
+                        <li class="nav-item">
                             <router-link :to="'/customerBlockModuleActivity/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Customer Activity
                             </router-link>
@@ -105,6 +113,11 @@
                         <li class="nav-item">
                             <router-link :to="'/quality/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Quality
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="'/assetLocation/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Asset Location
                             </router-link>
                         </li>
                         <li class="nav-item">

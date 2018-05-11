@@ -45949,6 +45949,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "sidebar",
@@ -48609,6 +48622,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     type: "asset",
@@ -48616,7 +48635,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         return {
             companies: [],
             manufacturers: [],
-            assetModels: [],
+            qualities: [],
+            assetmodels: [],
+            assetLocations: [],
             asset: {
                 id: "",
                 company_id: "",
@@ -48627,9 +48648,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 label_value: "",
                 description: "",
                 manufacturer_id: "",
-                quality: "",
+                quality_id: "",
                 cost: "",
-                status: "",
+                asset_location_id: "",
                 image: "",
                 minimum_stock: "",
                 current_stock: "",
@@ -48649,6 +48670,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         console.log(this.$route.params.data);
         this.fetchCompanies();
         this.fetchManufacturar();
+        this.fetchAssetModel();
+        this.fetchQuality();
+        this.fetchAssetLocation();
         if (this.$route.params.data != undefined) this.editasset(this.$route.params.data);
 
         this.start();
@@ -48688,66 +48712,114 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return console.log(err);
             });
         },
-        addasset: function addasset() {
-            this.submit();
-            // if (this.edit === false) {
-            //     // Add
-            //     fetch("api/asset", {
-            //         method: "post",
-            //         body: JSON.stringify(this.asset),
-            //         headers: {
-            //             "content-type": "application/json"
-            //         }
-            //     })
-            //     .then(res => res.json())
-            //     .then(data => {
-            //         this.asset.id = "";
-            //         this.asset.company_id = "";
-            //         this.asset.asset_id = "";
-            //         this.asset.serial = "";
-            //         this.asset.type = "";
-            //         this.asset.description = "";
-            //         this.asset.image = "";
-            //         this.asset.manufacturar_id = "";
-            //         this.asset.minimum_stock = "";
-            //         this.asset.current_stock = "";
-            //         this.asset.comments = "";
-            //         this.asset.update_by = "";
-            //         alert("asset Added");
-            //         this.$router.push("/asset/list");
-            //     })
-            //     .catch(err => console.log(err));
+        fetchAssetLocation: function fetchAssetLocation(page_url) {
+            var _this3 = this;
 
-            // } else {
-            //     // Update
-            //     fetch("api/asset", {
-            //         method: "put",
-            //         body: JSON.stringify(this.asset),
-            //         headers: {
-            //             "content-type": "application/json"
-            //         }
-            //     })
-            //     .then(res => res.json())
-            //     .then(data => {
-            //         this.asset.id = "";
-            //         this.asset.company_id = "";
-            //         this.asset.asset_id = "";
-            //         this.asset.serial = "";
-            //         this.asset.type = "";
-            //         this.asset.description = "";
-            //         this.asset.image = "";
-            //         this.asset.manufacturar_id = "";
-            //         this.asset.minimum_stock = "";
-            //         this.asset.current_stock = "";
-            //         this.asset.comments = "";
-            //         alert("documentation type Updated");
-            //         this.$router.push("/asset/list");
-            //     })
-            //     .catch(err => console.log(err));
-            // }
-
+            var vm = this;
+            page_url = page_url || "/api/assetLocations";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this3.assetLocations = res.data;
+                console.log(_this3.assetLocations);
+            }).catch(function (err) {
+                return console.log(err);
+            });
         },
-        editasset: function editasset(asset) {
+        fetchQuality: function fetchQuality(page_url) {
+            var _this4 = this;
+
+            var vm = this;
+            page_url = page_url || "/api/qualities";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this4.qualities = res.data;
+                console.log(_this4.qualities);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        fetchAssetModel: function fetchAssetModel(page_url) {
+            var _this5 = this;
+
+            var vm = this;
+            page_url = page_url || "/api/assetmodels";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this5.assetmodels = res.data;
+                console.log(_this5.assetmodels);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        addAsset: function addAsset() {
+            var _this6 = this;
+
+            if (this.edit === false) {
+                // Add
+                fetch("api/asset", {
+                    method: "post",
+                    body: JSON.stringify(this.asset),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this6.asset.id = "";
+                    _this6.asset.company_id = "";
+                    _this6.asset.asset_id = "";
+                    _this6.asset.serial = "";
+                    _this6.asset.type = "";
+                    _this6.asset.description = "";
+                    _this6.asset.image = "";
+                    _this6.asset.manufacturer_id = "";
+                    _this6.asset.quality_id = "";
+                    _this6.asset.asset_location_id = "";
+                    _this6.asset.minimum_stock = "";
+                    _this6.asset.current_stock = "";
+                    _this6.asset.comments = "";
+                    _this6.asset.update_by = "";
+                    alert("Asset Added");
+                    _this6.$router.push("/asset/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            } else {
+                // Update
+                fetch("api/asset", {
+                    method: "put",
+                    body: JSON.stringify(this.asset),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this6.asset.id = "";
+                    _this6.asset.company_id = "";
+                    _this6.asset.asset_id = "";
+                    _this6.asset.serial = "";
+                    _this6.asset.type = "";
+                    _this6.asset.description = "";
+                    _this6.asset.image = "";
+                    _this6.asset.manufacturer_id = "";
+                    _this6.asset.quality_id = "";
+                    _this6.asset.asset_location_id = "";
+                    _this6.asset.minimum_stock = "";
+                    _this6.asset.current_stock = "";
+                    _this6.asset.comments = "";
+                    _this6.asset.update_by = "";
+                    alert("documentation type Updated");
+                    _this6.$router.push("/asset/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        },
+        editAsset: function editAsset(asset) {
             this.edit = true;
             this.asset.id = asset.id;
             this.asset.company_id = asset.company_id;
@@ -48756,7 +48828,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             this.asset.type = asset.type;
             this.asset.description = asset.description;
             this.asset.image = asset.image;
-            this.asset.manufacturar_id = asset.manufacturar_id;
+            this.asset.manufacturer_id = asset.manufacturer_id;
+            this.asset.quality_id = asset.quality_id;
+            this.asset.asset_location_id = asset.asset_location_id;
             this.asset.minimum_stock = asset.minimum_stock;
             this.asset.current_stock = asset.current_stock;
             this.asset.comments = asset.comments;
@@ -48775,11 +48849,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             return true;
         },
         getAttachmentSize: function getAttachmentSize() {
-            var _this3 = this;
+            var _this7 = this;
 
             this.upload_size = 0; // Reset to beginningƒ
             this.attachments.map(function (item) {
-                _this3.upload_size += parseInt(item.size);
+                _this7.upload_size += parseInt(item.size);
             });
             this.upload_size = Number(this.upload_size.toFixed(1));
             this.$forceUpdate();
@@ -48911,12 +48985,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             });
         }
     }, _defineProperty(_methods, "getAttachmentSize", function getAttachmentSize() {
-        var _this4 = this;
+        var _this8 = this;
 
         this.upload_size = 0; // Reset to beginningƒ
 
         this.attachments.map(function (item) {
-            _this4.upload_size += parseInt(item.size);
+            _this8.upload_size += parseInt(item.size);
         });
 
         this.upload_size = Number(this.upload_size.toFixed(1));
@@ -49046,7 +49120,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 				image: "",
 				quality: "",
 				cost: "",
-				status: ""
+				assetLocation_id: ""
 			}, _defineProperty(_asset, "image", ""), _defineProperty(_asset, "minimum_stock", ""), _defineProperty(_asset, "current_stock", ""), _defineProperty(_asset, "comments", ""), _defineProperty(_asset, "update_by", "1"), _asset),
 			id: "",
 			pagination: {},
@@ -50117,7 +50191,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -62298,6 +62371,18 @@ window.axios.defaults.headers.common = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__views_quality_list___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_55__views_quality_list__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__views_quality_form__ = __webpack_require__(607);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__views_quality_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_56__views_quality_form__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__views_assetLocation_list__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__views_assetLocation_list___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_57__views_assetLocation_list__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__views_assetLocation_form__ = __webpack_require__(694);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__views_assetLocation_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_58__views_assetLocation_form__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__views_module_list__ = __webpack_require__(699);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__views_module_list___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_59__views_module_list__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__views_module_form__ = __webpack_require__(698);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__views_module_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_60__views_module_form__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__views_blockStat_list__ = __webpack_require__(697);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__views_blockStat_list___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_61__views_blockStat_list__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__views_blockStat_form__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__views_blockStat_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_62__views_blockStat_form__);
 
 
 
@@ -62401,6 +62486,18 @@ window.axios.defaults.headers.common = {
 
 
 // Views - Quality 
+
+
+
+// Views - Asset Location 
+
+
+
+// Views - Module
+
+
+
+// Views - Module
 
 
 
@@ -62826,6 +62923,60 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
                 path: 'list',
                 name: 'Quality List',
                 component: __WEBPACK_IMPORTED_MODULE_55__views_quality_list___default.a
+            }]
+        }, {
+            path: '/assetLocation',
+            redirect: '/assetLocation/list',
+            name: 'Asset Location',
+            component: {
+                render: function render(c) {
+                    return c('router-view');
+                }
+            },
+            children: [{
+                path: 'form',
+                name: 'Asset Location Form',
+                component: __WEBPACK_IMPORTED_MODULE_58__views_assetLocation_form___default.a
+            }, {
+                path: 'list',
+                name: 'Asset Location List',
+                component: __WEBPACK_IMPORTED_MODULE_57__views_assetLocation_list___default.a
+            }]
+        }, {
+            path: '/module',
+            redirect: '/module/list',
+            name: 'Module',
+            component: {
+                render: function render(c) {
+                    return c('router-view');
+                }
+            },
+            children: [{
+                path: 'form',
+                name: 'Module Form',
+                component: __WEBPACK_IMPORTED_MODULE_60__views_module_form___default.a
+            }, {
+                path: 'list',
+                name: 'Module List',
+                component: __WEBPACK_IMPORTED_MODULE_59__views_module_list___default.a
+            }]
+        }, {
+            path: '/blockStat',
+            redirect: '/blockStat/list',
+            name: 'Block Status',
+            component: {
+                render: function render(c) {
+                    return c('router-view');
+                }
+            },
+            children: [{
+                path: 'form',
+                name: 'Block Status Form',
+                component: __WEBPACK_IMPORTED_MODULE_62__views_blockStat_form___default.a
+            }, {
+                path: 'list',
+                name: 'Block Status List',
+                component: __WEBPACK_IMPORTED_MODULE_61__views_blockStat_list___default.a
             }]
         }]
     }, {
@@ -114566,7 +114717,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.assets), function(asset) {
     return _c('tr', {
       key: asset.id
-    }, [_c('td', [_vm._v(_vm._s(asset.company.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.assetModel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.label_value))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.serial))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.manufacturer.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.description))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.image))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.quality))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.cost))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.status))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.minimum_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.current_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
+    }, [_c('td', [_vm._v(_vm._s(asset.company.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.assetModel.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.label_value))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.serial))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.manufacturer.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.description))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.image))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.quality.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.cost))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.assetLocation.location))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.minimum_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.current_stock))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(asset.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
       attrs: {
         "to": {
           name: 'Asset Form',
@@ -122745,7 +122896,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "col-sm-12"
   }, [_c('div', {
-    staticClass: "card"
+    staticClass: "card card-inverse card-info"
   }, [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "card-block"
   }, [_c('form', {
@@ -122753,7 +122904,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        return _vm.addasset($event)
+        return _vm.addAsset($event)
       }
     }
   }, [_c('div', {
@@ -122953,7 +123104,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "form-group col-sm-6"
+    staticClass: "form-group col-sm-4"
   }, [_c('label', {
     staticClass: "col-md-3 form-control-label",
     attrs: {
@@ -122963,8 +123114,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.manufacturar_id),
-      expression: "asset.manufacturar_id"
+      value: (_vm.asset.manufacturer_id),
+      expression: "asset.manufacturer_id"
     }],
     staticClass: "form-control",
     attrs: {
@@ -122979,7 +123130,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.$set(_vm.asset, "manufacturar_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+        _vm.$set(_vm.asset, "manufacturer_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
   }, [_c('option', {
@@ -122994,60 +123145,88 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_vm._v(_vm._s(manufacturer.name))])
   })], 2)]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-3"
+    staticClass: "form-group col-sm-4"
   }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
     attrs: {
-      "for": "customer"
+      "for": "select"
     }
-  }, [_vm._v("Status")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Status")]), _vm._v(" "), _c('select', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.status),
-      expression: "asset.status"
+      value: (_vm.asset.asset_location_id),
+      expression: "asset.asset_location_id"
     }],
     staticClass: "form-control",
     attrs: {
-      "type": "text",
-      "placeholder": "Enter status"
-    },
-    domProps: {
-      "value": (_vm.asset.status)
+      "id": "select",
+      "type": "select"
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.asset, "status", $event.target.value)
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.asset, "asset_location_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "form-group col-sm-3"
-  }, [_c('label', {
+  }, [_c('option', {
     attrs: {
-      "for": "customer"
+      "value": ""
     }
-  }, [_vm._v("Quality")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Select Location Status")]), _vm._v(" "), _vm._l((_vm.assetLocations), function(assetLocation) {
+    return _c('option', {
+      key: assetLocation.id,
+      domProps: {
+        "value": assetLocation.id
+      }
+    }, [_vm._v(_vm._s(assetLocation.location))])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-4"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "select"
+    }
+  }, [_vm._v("Quality")]), _vm._v(" "), _c('select', {
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.quality),
-      expression: "asset.quality"
+      value: (_vm.asset.quality_id),
+      expression: "asset.quality_id"
     }],
     staticClass: "form-control",
     attrs: {
-      "type": "text",
-      "placeholder": "Enter Quality"
-    },
-    domProps: {
-      "value": (_vm.asset.quality)
+      "id": "select",
+      "type": "select"
     },
     on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.$set(_vm.asset, "quality", $event.target.value)
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.asset, "quality_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
-  })])]), _vm._v(" "), _c('div', {
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select Quality")]), _vm._v(" "), _vm._l((_vm.qualities), function(quality) {
+    return _c('option', {
+      key: quality.id,
+      domProps: {
+        "value": quality.id
+      }
+    }, [_vm._v(_vm._s(quality.name))])
+  })], 2)])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
     staticClass: "form-group col-sm-6"
@@ -123233,14 +123412,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }))])]), _vm._v(" "), _c('div', {
     staticClass: "form-actions"
   }, [_c('button', {
-    staticClass: "btn btn-primary",
+    staticClass: "btn btn-default",
     attrs: {
       "type": "submit"
     }
   }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
     attrs: {
       "to": {
-        type: 'asset List'
+        type: 'Asset List'
       }
     }
   }, [_c('button', {
@@ -132557,6 +132736,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('router-link', {
     staticClass: "nav-link",
     attrs: {
+      "to": '/blockStat/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v("Block Status")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/module/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-star"
+  }), _vm._v("Module")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
       "to": '/customerBlockModuleActivity/list',
       "exact": ""
     }
@@ -132603,6 +132802,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('i', {
     staticClass: "icon-calculator"
   }), _vm._v(" Quality\n                        ")])], 1), _vm._v(" "), _c('li', {
+    staticClass: "nav-item"
+  }, [_c('router-link', {
+    staticClass: "nav-link",
+    attrs: {
+      "to": '/assetLocation/list',
+      "exact": ""
+    }
+  }, [_c('i', {
+    staticClass: "icon-calculator"
+  }), _vm._v(" Asset Location\n                        ")])], 1), _vm._v(" "), _c('li', {
     staticClass: "nav-item"
   }, [_c('router-link', {
     staticClass: "nav-link",
@@ -133604,7 +133813,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "col-sm-12"
   }, [_c('div', {
-    staticClass: "card"
+    staticClass: "card "
   }, [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "card-block"
   }, [_c('form', {
@@ -137846,6 +138055,1780 @@ module.exports = function listToStyles (parentId, list) {
 __webpack_require__(248);
 module.exports = __webpack_require__(249);
 
+
+/***/ }),
+/* 686 */,
+/* 687 */,
+/* 688 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    type: "assetLocation",
+    data: function data() {
+        return {
+            companies: [],
+            assetLocation: {
+                id: "",
+                company_id: "",
+                location: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        console.log(this.$route.params.data);
+        this.fetchCompanies();
+        if (this.$route.params.data != undefined) this.editAssetLocation(this.$route.params.data);
+    },
+
+    methods: {
+        fetchCompanies: function fetchCompanies(page_url) {
+            var _this = this;
+
+            var vm = this;
+            page_url = page_url || "/api/companies";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this.companies = res.data;
+                console.log(_this.companies);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        addAssetLocation: function addAssetLocation() {
+            var _this2 = this;
+
+            if (this.edit === false) {
+                // Add
+                fetch("api/assetLocation", {
+                    method: "post",
+                    body: JSON.stringify(this.assetLocation),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this2.assetLocation.id = "";
+                    _this2.assetLocation.company_id = "";
+                    _this2.assetLocation.location = "";
+                    _this2.assetLocation.comments = "";
+                    _this2.assetLocation.update_by = "";
+                    alert("Asset Location Status Added");
+                    _this2.$router.push("/assetLocation/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            } else {
+                // Update
+                fetch("api/assetLocation", {
+                    method: "put",
+                    body: JSON.stringify(this.assetLocation),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this2.assetLocation.location = "";
+                    _this2.assetLocation.comments = "";
+                    alert("Asset Location Status Updated");
+                    _this2.$router.push("/assetLocation/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        },
+        editAssetLocation: function editAssetLocation(assetLocation) {
+            this.edit = true;
+            this.assetLocation.id = assetLocation.id;
+            this.assetLocation.company_id = assetLocation.company_id;
+            this.assetLocation.location = assetLocation.location;
+            this.assetLocation.comments = assetLocation.comments;
+            this.assetLocation.update_by = assetLocation.update_by;
+        }
+    }
+});
+
+/***/ }),
+/* 689 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "assetLocation",
+    data: function data() {
+        return {
+            companies: [],
+            assetLocations: [],
+            assetLocation: {
+                id: "",
+                company_id: "",
+                location: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        this.fetchAssetLocations();
+        this.fetchCompanies();
+    },
+
+    methods: {
+        fetchAssetLocations: function fetchAssetLocations(page_url) {
+            var _this = this;
+
+            var vm = this;
+            page_url = page_url || "/api/assetLocations";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this.assetLocations = res.data;
+                console.log(_this.assetLocations);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        fetchCompanies: function fetchCompanies(page_url) {
+            var _this2 = this;
+
+            var vm = this;
+            page_url = page_url || "/api/companies";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this2.companies = res.data;
+                console.log(_this2.companies);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        makePagination: function makePagination(meta, links) {
+            var pagination = {
+                current_page: meta.current_page,
+                last_page: meta.last_page,
+                next_page_url: links.next,
+                prev_page_url: links.prev
+            };
+            this.pagination = pagination;
+        },
+        deleteAssetLocation: function deleteAssetLocation(id) {
+            var _this3 = this;
+
+            if (confirm("Are You Sure?")) {
+                fetch("api/assetLocation/" + id, {
+                    method: "delete"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    alert("Asset Location Removed");
+                    _this3.fetchAssetLocations();
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 690 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    type: "blockStat",
+    data: function data() {
+        return {
+            blockStat: {
+                id: "",
+                name: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        if (this.$route.params.data != undefined) this.editBlockStat(this.$route.params.data);
+    },
+
+    methods: {
+        addBlockStat: function addBlockStat() {
+            var _this = this;
+
+            if (this.edit === false) {
+                // Add
+                fetch("api/blockStat", {
+                    method: "post",
+                    body: JSON.stringify(this.blockStat),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this.blockStat.id = "";
+                    _this.blockStat.name = "";
+                    _this.blockStat.comments = "";
+                    _this.blockStat.update_by = "";
+                    alert("Block Status Added");
+                    _this.$router.push("/blockStat/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            } else {
+                // Update
+                fetch("api/blockStat", {
+                    method: "put",
+                    body: JSON.stringify(this.blockStat),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this.blockStat.name = "";
+                    _this.blockStat.comments = "";
+                    alert("Block Status Updated");
+                    _this.$router.push("/blockStat/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        },
+        editBlockStat: function editBlockStat(blockStat) {
+            this.edit = true;
+            this.blockStat.id = blockStat.id;
+            this.blockStat.name = blockStat.name;
+            this.blockStat.comments = blockStat.comments;
+            this.blockStat.update_by = blockStat.update_by;
+        }
+    }
+});
+
+/***/ }),
+/* 691 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "blockStat",
+    data: function data() {
+        return {
+            blockStats: [],
+            blockStat: {
+                id: "",
+                name: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        this.fetchBlockStats();
+    },
+
+
+    methods: {
+        fetchBlockStats: function fetchBlockStats(page_url) {
+            var _this = this;
+
+            var vm = this;
+            page_url = page_url || "/api/blockStats";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this.blockStats = res.data;
+                console.log(_this.blockStats);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        makePagination: function makePagination(meta, links) {
+            var pagination = {
+                current_page: meta.current_page,
+                last_page: meta.last_page,
+                next_page_url: links.next,
+                prev_page_url: links.prev
+            };
+            this.pagination = pagination;
+        },
+        deleteBlockStat: function deleteBlockStat(id) {
+            var _this2 = this;
+
+            if (confirm("Are You Sure?")) {
+                fetch("api/blockStat/" + id, {
+                    method: "delete"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    alert("Model Type Removed");
+                    _this2.fetchBlockStats();
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 692 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    type: "module",
+    data: function data() {
+        return {
+            blocks: [],
+            module: {
+                id: "",
+                block_id: "",
+                name: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        console.log(this.$route.params.data);
+        this.fetchBlocks();
+        if (this.$route.params.data != undefined) this.editmodule(this.$route.params.data);
+    },
+
+    methods: {
+        fetchBlocks: function fetchBlocks(page_url) {
+            var _this = this;
+
+            var vm = this;
+            page_url = page_url || "/api/blocks";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this.blocks = res.data;
+                console.log(_this.blocks);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        makePagination: function makePagination(meta, links) {
+            var pagination = {
+                current_page: meta.current_page,
+                last_page: meta.last_page,
+                next_page_url: links.next,
+                prev_page_url: links.prev
+            };
+            this.pagination = pagination;
+        },
+        addModule: function addModule() {
+            var _this2 = this;
+
+            if (this.edit === false) {
+                // Add
+                fetch("api/module", {
+                    method: "post",
+                    body: JSON.stringify(this.module),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this2.module.id = "";
+                    _this2.module.block_id = "";
+                    _this2.module.name = "";
+                    _this2.module.comments = "";
+                    _this2.module.update_by = "";
+                    alert("module Added");
+                    _this2.$router.push("/module/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            } else {
+                // Update
+                fetch("api/module", {
+                    method: "put",
+                    body: JSON.stringify(this.module),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    _this2.module.name = "";
+                    _this2.module.comments = "";
+                    alert("module Updated");
+                    _this2.$router.push("/module/list");
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        },
+        editmodule: function editmodule(module) {
+            this.edit = true;
+            this.module.id = module.id;
+            this.module.block_id = module.block_id;
+            this.module.name = module.name;
+            this.module.comments = module.comments;
+            this.module.update_by = module.update_by;
+        }
+    }
+});
+
+/***/ }),
+/* 693 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "module",
+    data: function data() {
+        return {
+            selectedAccount: "",
+            blocks: [],
+            modules: [],
+            module: {
+                id: "",
+                block_id: "",
+                name: "",
+                comments: "",
+                update_by: "1"
+            },
+            id: "",
+            pagination: {},
+            edit: false
+        };
+    },
+    created: function created() {
+        this.fetchModules();
+    },
+
+
+    methods: {
+        fetchModules: function fetchModules(page_url) {
+            var _this = this;
+
+            var vm = this;
+            page_url = page_url || "/api/modules";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this.modules = res.data;
+                console.log(_this.modules);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        fetchBlocks: function fetchBlocks(page_url) {
+            var _this2 = this;
+
+            var vm = this;
+            page_url = page_url || "/api/blocks";
+            fetch(page_url).then(function (res) {
+                return res.json();
+            }).then(function (res) {
+                _this2.blocks = res.data;
+                console.log(_this2.blocks);
+                vm.makePagination(res.meta, res.links);
+            }).catch(function (err) {
+                return console.log(err);
+            });
+        },
+        makePagination: function makePagination(meta, links) {
+            var pagination = {
+                current_page: meta.current_page,
+                last_page: meta.last_page,
+                next_page_url: links.next,
+                prev_page_url: links.prev
+            };
+            this.pagination = pagination;
+        },
+        deleteModule: function deleteModule(id) {
+            var _this3 = this;
+
+            if (confirm("Are You Sure?")) {
+                fetch("api/module/" + id, {
+                    method: "delete"
+                }).then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    alert("Module Removed");
+                    _this3.fetchModules();
+                }).catch(function (err) {
+                    return console.log(err);
+                });
+            }
+        }
+    }
+});
+
+/***/ }),
+/* 694 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(688),
+  /* template */
+  __webpack_require__(702),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\assetLocation\\form.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6fb0f202", Component.options)
+  } else {
+    hotAPI.reload("data-v-6fb0f202", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 695 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(689),
+  /* template */
+  __webpack_require__(705),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\assetLocation\\list.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-b8abce48", Component.options)
+  } else {
+    hotAPI.reload("data-v-b8abce48", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 696 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(690),
+  /* template */
+  __webpack_require__(701),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\blockStat\\form.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-64e2bc74", Component.options)
+  } else {
+    hotAPI.reload("data-v-64e2bc74", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 697 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(691),
+  /* template */
+  __webpack_require__(700),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\blockStat\\list.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0187c8a0", Component.options)
+  } else {
+    hotAPI.reload("data-v-0187c8a0", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 698 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(692),
+  /* template */
+  __webpack_require__(703),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\module\\form.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7e1ca483", Component.options)
+  } else {
+    hotAPI.reload("data-v-7e1ca483", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 699 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(693),
+  /* template */
+  __webpack_require__(704),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\module\\list.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-9bd46946", Component.options)
+  } else {
+    hotAPI.reload("data-v-9bd46946", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 700 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Block Status")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Block Status Form'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-warning"
+  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-striped"
+  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.blockStats), function(blockStat) {
+    return _c('tr', {
+      key: blockStat.id
+    }, [_c('td', [_vm._v(_vm._s(blockStat.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(blockStat.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
+      attrs: {
+        "to": {
+          name: 'Block Status Form',
+          params: {
+            data: blockStat
+          }
+        }
+      }
+    }, [_c('button', {
+      staticClass: "btn btn-warning mb-2"
+    }, [_vm._v("Edit")])])], 1), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-danger",
+      on: {
+        "click": function($event) {
+          _vm.deleteBlockStat(blockStat.id)
+        }
+      }
+    }, [_vm._v("Delete")])])])
+  }))]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.prev_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchBlockStats(_vm.pagination.prev_page_url)
+      }
+    }
+  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item disabled"
+  }, [_c('a', {
+    staticClass: "page-link text-dark",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.next_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchBlockStats(_vm.pagination.next_page_url)
+      }
+    }
+  }, [_vm._v("Next")])])])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Name")]), _vm._v(" "), _c('th', [_vm._v("Comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-0187c8a0", module.exports)
+  }
+}
+
+/***/ }),
+/* 701 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addBlockStat($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-12"
+  }, [_c('label', {
+    attrs: {
+      "for": "blockStat"
+    }
+  }, [_vm._v("Name")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.blockStat.name),
+      expression: "blockStat.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "Block Status"
+    },
+    domProps: {
+      "value": (_vm.blockStat.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.blockStat, "name", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-12"
+  }, [_c('label', {
+    attrs: {
+      "for": "country"
+    }
+  }, [_vm._v("Comments")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.blockStat.comments),
+      expression: "blockStat.comments"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "comments",
+      "type": "textarea-input",
+      "rows": "9",
+      "placeholder": "Comments.."
+    },
+    domProps: {
+      "value": (_vm.blockStat.comments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.blockStat, "comments", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        type: 'Block Status List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Block Status")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-64e2bc74", module.exports)
+  }
+}
+
+/***/ }),
+/* 702 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addAssetLocation($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "select"
+    }
+  }, [_vm._v("companys")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.assetLocation.company_id),
+      expression: "assetLocation.company_id"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "select",
+      "type": "select"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.assetLocation, "company_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select a company")]), _vm._v(" "), _vm._l((_vm.companies), function(company) {
+    return _c('option', {
+      key: company.id,
+      domProps: {
+        "value": company.id
+      }
+    }, [_vm._v(_vm._s(company.name))])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": ""
+    }
+  }, [_vm._v("Location")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.assetLocation.location),
+      expression: "assetLocation.location"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "In Warehouse"
+    },
+    domProps: {
+      "value": (_vm.assetLocation.location)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.assetLocation, "location", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-12"
+  }, [_c('label', {
+    attrs: {
+      "for": "country"
+    }
+  }, [_vm._v("Comments")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.assetLocation.comments),
+      expression: "assetLocation.comments"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "comments",
+      "type": "textarea-input",
+      "rows": "9",
+      "placeholder": "Comments.."
+    },
+    domProps: {
+      "value": (_vm.assetLocation.comments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.assetLocation, "comments", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        type: 'Asset Location List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Asset Location Status")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-6fb0f202", module.exports)
+  }
+}
+
+/***/ }),
+/* 703 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('form', {
+    staticClass: "mb-3",
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        return _vm.addModule($event)
+      }
+    }
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    staticClass: "col-md-3 form-control-label",
+    attrs: {
+      "for": "select"
+    }
+  }, [_vm._v("Blocks")]), _vm._v(" "), _c('select', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.module.block_id),
+      expression: "module.block_id"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "select",
+      "type": "select"
+    },
+    on: {
+      "change": function($event) {
+        var $$selectedVal = Array.prototype.filter.call($event.target.options, function(o) {
+          return o.selected
+        }).map(function(o) {
+          var val = "_value" in o ? o._value : o.value;
+          return val
+        });
+        _vm.$set(_vm.module, "block_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+      }
+    }
+  }, [_c('option', {
+    attrs: {
+      "value": ""
+    }
+  }, [_vm._v("Select Block")]), _vm._v(" "), _vm._l((_vm.blocks), function(block) {
+    return _c('option', {
+      key: block.id,
+      domProps: {
+        "value": block.id
+      }
+    }, [_vm._v(_vm._s(block.name))])
+  })], 2)]), _vm._v(" "), _c('div', {
+    staticClass: "form-group col-sm-6"
+  }, [_c('label', {
+    attrs: {
+      "for": "module"
+    }
+  }, [_vm._v("module")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.module.name),
+      expression: "module.name"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "type": "text",
+      "placeholder": "module"
+    },
+    domProps: {
+      "value": (_vm.module.name)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.module, "name", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "form-group col-sm-12"
+  }, [_c('label', {
+    attrs: {
+      "for": "country"
+    }
+  }, [_vm._v("Comments")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.module.comments),
+      expression: "module.comments"
+    }],
+    staticClass: "form-control",
+    attrs: {
+      "id": "comments",
+      "type": "textarea-input",
+      "rows": "9",
+      "placeholder": "Comments.."
+    },
+    domProps: {
+      "value": (_vm.module.comments)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.$set(_vm.module, "comments", $event.target.value)
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "form-actions"
+  }, [_c('button', {
+    staticClass: "btn btn-primary",
+    attrs: {
+      "type": "submit"
+    }
+  }, [_vm._v("Save changes")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        type: 'module List'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-default",
+    attrs: {
+      "type": "button"
+    }
+  }, [_vm._v("Cancel")])])], 1)])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("module")]), _vm._v(" "), _c('small', [_vm._v("Form")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-7e1ca483", module.exports)
+  }
+}
+
+/***/ }),
+/* 704 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Module")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Module Form'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-warning"
+  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-striped"
+  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.modules), function(module) {
+    return _c('tr', {
+      key: module.id
+    }, [_c('td', [_vm._v(_vm._s(module.block.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(module.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(module.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
+      attrs: {
+        "to": {
+          name: 'Module Form',
+          params: {
+            data: module
+          }
+        }
+      }
+    }, [_c('button', {
+      staticClass: "btn btn-warning mb-2"
+    }, [_vm._v("Edit")])])], 1), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-danger",
+      on: {
+        "click": function($event) {
+          _vm.deleteModule(module.id)
+        }
+      }
+    }, [_vm._v("Delete")])])])
+  }))]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.prev_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchModules(_vm.pagination.prev_page_url)
+      }
+    }
+  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item disabled"
+  }, [_c('a', {
+    staticClass: "page-link text-dark",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.next_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchModules(_vm.pagination.next_page_url)
+      }
+    }
+  }, [_vm._v("Next")])])])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Block Name")]), _vm._v(" "), _c('th', [_vm._v("Module Name")]), _vm._v(" "), _c('th', [_vm._v("Comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-9bd46946", module.exports)
+  }
+}
+
+/***/ }),
+/* 705 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "animated fadeIn"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-12"
+  }, [_c('div', {
+    staticClass: "card"
+  }, [_c('div', {
+    staticClass: "card-header"
+  }, [_c('strong', [_vm._v("Asset Location")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": {
+        name: 'Asset Location Form'
+      }
+    }
+  }, [_c('button', {
+    staticClass: "btn btn-warning"
+  }, [_vm._v("Add")])])], 1), _vm._v(" "), _c('div', {
+    staticClass: "card-block"
+  }, [_c('table', {
+    staticClass: "table table-striped"
+  }, [_vm._m(0), _vm._v(" "), _c('tbody', _vm._l((_vm.assetLocations), function(assetLocation) {
+    return _c('tr', {
+      key: assetLocation.id
+    }, [_c('td', [_vm._v(_vm._s(assetLocation.company.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(assetLocation.location))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(assetLocation.comments))]), _vm._v(" "), _c('td', [_c('router-link', {
+      attrs: {
+        "to": {
+          name: 'Asset Location Form',
+          params: {
+            data: assetLocation
+          }
+        }
+      }
+    }, [_c('button', {
+      staticClass: "btn btn-warning mb-2"
+    }, [_vm._v("Edit")])])], 1), _vm._v(" "), _c('td', [_c('button', {
+      staticClass: "btn btn-danger",
+      on: {
+        "click": function($event) {
+          _vm.deleteAssetLocation(assetLocation.id)
+        }
+      }
+    }, [_vm._v("Delete")])])])
+  }))]), _vm._v(" "), _c('ul', {
+    staticClass: "pagination"
+  }, [_c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.prev_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchAssetLocations(_vm.pagination.prev_page_url)
+      }
+    }
+  }, [_vm._v("Previous")])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item disabled"
+  }, [_c('a', {
+    staticClass: "page-link text-dark",
+    attrs: {
+      "href": "#"
+    }
+  }, [_vm._v("Page " + _vm._s(_vm.pagination.current_page) + " of " + _vm._s(_vm.pagination.last_page))])]), _vm._v(" "), _c('li', {
+    staticClass: "page-item",
+    class: [{
+      disabled: !_vm.pagination.next_page_url
+    }]
+  }, [_c('a', {
+    staticClass: "page-link",
+    attrs: {
+      "href": "#"
+    },
+    on: {
+      "click": function($event) {
+        _vm.fetchAssetLocations(_vm.pagination.next_page_url)
+      }
+    }
+  }, [_vm._v("Next")])])])])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Company Name")]), _vm._v(" "), _c('th', [_vm._v("Location")]), _vm._v(" "), _c('th', [_vm._v("Comments")]), _vm._v(" "), _c('th', [_vm._v("Edit")]), _vm._v(" "), _c('th', [_vm._v("Delete")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-b8abce48", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
