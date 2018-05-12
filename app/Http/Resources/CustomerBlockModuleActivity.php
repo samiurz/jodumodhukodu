@@ -13,7 +13,7 @@ class CustomerBlockModuleActivity extends Resource
         return [
             'id' => $this->id,
             'contact_id' => $this->contact_id,
-            'customer_block_id' => $this->customer_block_id,
+            'customer_block_id' => $this->block_id,
             'module_id' => $this->module_id,
             'activity_id' => $this->activity_id,
             'comments' => $this->comments,

@@ -15,11 +15,11 @@ class AccountBlockAssociationController extends Controller
      */
     public function index()
     {
-        // Get accountblockassociations
-        $accountblockassociations = AccountBlockAssociation::orderBy('created_at', 'desc')->paginate(15);
+        // Get accountBlockAssociations
+        $accountBlockAssociations = AccountBlockAssociation::orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of accountblockassociations as a resource
-        return AccountBlockAssociationResource::collection($accountblockassociations);
+        // Return collection of accountBlockAssociations as a resource
+        return AccountBlockAssociationResource::collection($accountBlockAssociations);
     }
     /**
      * Store a newly created resource in storage.
@@ -29,14 +29,15 @@ class AccountBlockAssociationController extends Controller
      */
     public function store(Request $request)
     {
-        $accountblockassociations = $request->isMethod('put') ? AccountBlockAssociation::findOrFail($request->id) : new AccountBlockAssociation;
-        $accountblockassociations->id = $request->input('id');
-        $accountblockassociations->account_id = $request->input('account_id');
-        $accountblockassociations->block_id = $request->input('block_id');
-        $accountblockassociations->block_stat_id = $request->input('block_stat_id');
-        $accountblockassociations->update_by = $request->input('update_by');
-        if($accountblockassociations->save()) {
-            return new AccountBlockAssociationResource($accountblockassociations);
+        $accountBlockAssociations = $request->isMethod('put') ? AccountBlockAssociation::findOrFail($request->id) : new AccountBlockAssociation;
+        $accountBlockAssociations->id = $request->input('id');
+        $accountBlockAssociations->account_id = $request->input('account_id');
+        $accountBlockAssociations->block_id = $request->input('block_id');
+        $accountBlockAssociations->block_stat_id = $request->input('block_stat_id');
+        $accountBlockAssociations->comments = $request->input('comments');
+        $accountBlockAssociations->update_by = $request->input('update_by');
+        if($accountBlockAssociations->save()) {
+            return new AccountBlockAssociationResource($accountBlockAssociations);
         }
     }
     /**
@@ -47,11 +48,11 @@ class AccountBlockAssociationController extends Controller
      */
     public function show($id)
     {
-        // Get accountblockassociations
-        $accountblockassociations = AccountBlockAssociation::findOrFail($id);
+        // Get accountBlockAssociations
+        $accountBlockAssociations = AccountBlockAssociation::findOrFail($id);
 
-        // Return single accountblockassociations as a resource
-        return new AccountBlockAssociationResource($accountblockassociations);
+        // Return single accountBlockAssociations as a resource
+        return new AccountBlockAssociationResource($accountBlockAssociations);
     }
     /**
      * Remove the specified resource from storage.
@@ -61,11 +62,11 @@ class AccountBlockAssociationController extends Controller
      */
     public function destroy($id)
     {
-        // Get accountblockassociations
-        $accountblockassociations = AccountBlockAssociation::findOrFail($id);
+        // Get accountBlockAssociations
+        $accountBlockAssociations = AccountBlockAssociation::findOrFail($id);
 
-        if($accountblockassociations->delete()) {
-            return new AccountBlockAssociationResource($accountblockassociations);
+        if($accountBlockAssociations->delete()) {
+            return new AccountBlockAssociationResource($accountBlockAssociations);
         }    
     }
 }

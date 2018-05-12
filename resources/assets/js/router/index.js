@@ -60,9 +60,9 @@ import DocumentationTypeForm from '../views/documentationType/form';
 import RoleTypeList from '../views/roletype/list';
 import RoleTypeForm from '../views/roletype/form';
 
-// Views - Role Type
-import CustomerBlockModuleActivityList from '../views/customerBlockModuleActivity/list';
-import CustomerBlockModuleActivityForm from '../views/customerBlockModuleActivity/form';
+// Views - Customer Block Module Action
+import CustomerBlockModuleActionList from '../views/customerBlockModuleAction/list';
+import CustomerBlockModuleActionForm from '../views/customerBlockModuleAction/form';
 
 // Views - Job Type
 import JobTypeList from '../views/jobType/list';
@@ -370,22 +370,22 @@ export default new Router({
                     ]
                 },
                 {
-                    path: '/customerBlockModuleActivity',
-                    redirect: '/customerBlockModuleActivity/list',
-                    name: 'Customer Block Module Activity',
+                    path: '/customerBlockModuleAction',
+                    redirect: '/customerBlockModuleAction/list',
+                    name: 'Customer Block Module Action',
                     component: {
                         render(c) { return c('router-view'); }
                     },
                     children: [
                         {
                             path: 'form',
-                            name: 'Customer Block Module Activity Form',
-                            component: CustomerBlockModuleActivityForm
+                            name: 'Customer Block Module Action Form',
+                            component: CustomerBlockModuleActionForm
                         },
                         {
                             path: 'list',
-                            name: 'Customer Block Module Activity List',
-                            component: CustomerBlockModuleActivityList
+                            name: 'Customer Block Module Action List',
+                            component: CustomerBlockModuleActionList
                         }
                     ]
                 },

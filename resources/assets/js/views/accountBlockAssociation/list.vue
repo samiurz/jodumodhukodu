@@ -10,42 +10,37 @@
                             <button class="btn btn-warning">Add</button>
                         </router-link>
                     </div>
-                    <div class="card-company">
+                    <div class="card-block">
                         <div class="card">
-                            <table class="table" v-for="company in companies" v-bind:key="company.id">
+                            <table class="table" v-for="accountBlockAssociation in accountBlockAssociations" v-bind:key="accountBlockAssociation.id">
                                 <thead>
                                     <tr>
                                         <th>Account Name</th>
                                         <th>Block Name</th>
                                         <th>Block Status</th>
-                                        <th>Update By</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>{{ company.account_id }}</td>
-                                        <td>{{ company.company_name }}</td>
-                                        <td>{{ company.is_customer }}</td>
-                                        <td>{{ company.links }}</td>
-                                        <td>{{ company.email }}</td>
-                                        <td>{{ company.address }}</td>
-                                        <td>{{ company.update_by }}</td>
+                                        <td>{{ accountBlockAssociation.account.name }}</td>
+                                        <td>{{ accountBlockAssociation.block.name }}</td>
+                                        <td>{{ accountBlockAssociation.blockStat.name }}</td>
                                         <td>
                                             <button class="btn btn-warning mb-2">
-                                                <router-link :to="{ name: 'Company Form', params: { data: company }}">Edit</router-link>
+                                                <router-link :to="{ name: 'Account Block Association Form', params: { data: accountBlockAssociation }}">Edit</router-link>
                                             </button>
                                         </td>
                                         <td>
-                                            <button @click="deletecompany(company.id)" class="btn btn-danger">Delete</button>
+                                            <button @click="deleteAccountBlockAssociation(accountBlockAssociation.id)" class="btn btn-danger">Delete</button>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <ul class="pagination">
                                 <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                    <a class="page-link" href="#" @click="fetchcompanies(pagination.prev_page_url)">Previous</a>
+                                    <a class="page-link" href="#" @click="fetchAccountBlockAssociations(pagination.prev_page_url)">Previous</a>
                                 </li>
 
                                 <li class="page-item disabled">
@@ -53,7 +48,7 @@
                                 </li>
 
                                 <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                    <a class="page-link" href="#" @click="fetchcompanies(pagination.next_page_url)">Next</a>
+                                    <a class="page-link" href="#" @click="fetchAccountBlockAssociations(pagination.next_page_url)">Next</a>
                                 </li>
                             </ul>
                         </div>
@@ -66,19 +61,18 @@
 </template>
 <script>
     export default {
-        name: "blockassociation",
+        name: "accountBlockAssociation",
         data() {
             return {
-                selectedAccount: "",
-                companies: [],
-                company: {
+                accountBlockAssociations:[],
+                accounts: [],
+                blocks:[],
+                accountBlockAssociation: {
                     id: "",
                     account_id: "",
-                    company_name: "",
-                    is_customer: "",
-                    links: "",
-                    email: "",
-                    address: "",
+                    block_id: "",
+                    block_stat_id: "",
+                    comments: "",
                     update_by: "1"
                 },
                 id: "",
@@ -88,19 +82,52 @@
         },
 
         created() {
-            this.fetchcompanies();
+            this.fetchAccountBlockAssociations();
+            this.fetchBlockStats();
+            this.fetchBlocks();
+            this.fetchAccounts();
         },
 
         methods: {
-            fetchcompanies(page_url) {
+            fetchAccountBlockAssociations(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/companies";
+                page_url = page_url || "/api/accountBlockAssociations";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.companies = res.data;
-                        console.log(this.companies);
+                        this.accountBlockAssociations = res.data;
+                        console.log(this.accountBlockAssociations);
                         vm.makePagination(res.meta, res.links);
+                    })
+                    .catch(err => console.log(err));
+            },
+            fetchBlockStats(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/blockStats";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.blockStats = res.data;
+                    })
+                    .catch(err => console.log(err));
+            },
+            fetchBlocks(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/blocks";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.blocks = res.data;
+                    })
+                    .catch(err => console.log(err));
+            },
+            fetchAccounts(page_url) {
+                let vm = this;
+                page_url = page_url || "/api/accounts";
+                fetch(page_url)
+                    .then(res => res.json())
+                    .then(res => {
+                        this.accounts = res.data;
                     })
                     .catch(err => console.log(err));
             },
@@ -114,15 +141,15 @@
 
                 this.pagination = pagination;
             },
-            deletecompany(id) {
+            deleteAccountBlockAssociation(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/company/${id}`, {
+                    fetch(`api/accountBlockAssociation/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
-                            alert("Company Removed");
-                            this.fetchcompanies();
+                            alert("Account BlockAssociation Removed");
+                            this.fetchAccountBlockAssociations();
                         })
                         .catch(err => console.log(err));
                 }

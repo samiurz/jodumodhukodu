@@ -166,15 +166,15 @@ Route::delete('modelType/{id}', 'modelTypeController@destroy');
 
 # Account Block Association Routes
 // List Account Block Associations Types
-Route::get('accountblockassociations', 'AccountBlockAssociationController@index');
+Route::get('accountBlockAssociations', 'AccountBlockAssociationController@index');
 // List Account Block Association 
-Route::get('accountblockassociation/{id}', 'AccountBlockAssociationController@show');
+Route::get('accountBlockAssociation/{id}', 'AccountBlockAssociationController@show');
 // Create new Account Block Association
-Route::post('accountblockassociation', 'AccountBlockAssociationController@store');
+Route::post('accountBlockAssociation', 'AccountBlockAssociationController@store');
 // Update Account Block Association
-Route::put('accountblockassociation', 'AccountBlockAssociationController@store');
+Route::put('accountBlockAssociation', 'AccountBlockAssociationController@store');
 // Delete Account Block Association
-Route::delete('accountblockassociation/{id}', 'AccountBlockAssociationController@destroy');
+Route::delete('accountBlockAssociation/{id}', 'AccountBlockAssociationController@destroy');
 
 # Customer Block Association Routes
 // List Customer Block Associations

@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\Resource;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class AccountBlockAssociation extends Resource
+class CustomerBlockModuleAction extends JsonResource
 {
     public function toArray($request)
     {
@@ -12,9 +12,10 @@ class AccountBlockAssociation extends Resource
 
         return [
             'id' => $this->id,
-            'account' => $this->account,
+            'contact' => $this->contact,
             'block' => $this->block,
-            'blockStat' => $this->blockStat,
+            'module' => $this->module,
+            'activity' => $this->activity,
             'comments' => $this->comments,
             'update_by' => $this->update_by
         ];

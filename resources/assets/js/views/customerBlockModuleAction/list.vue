@@ -14,32 +14,35 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Company Name</th>
-                                    <th>Type</th>
-                                    <th>Comments</th>
+                                    <th>Contact Name</th>
+                                    <th>Block Name</th>
+                                    <th>Module Name</th>
+                                    <th>Activity Name</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="documentationType in documentationTypes" v-bind:key="documentationType.id">
-                                    <td>{{ documentationType.company_id }}</td>
-                                    <td>{{ documentationType.type }}</td>
-                                    <td>{{ documentationType.comments }}</td>
+                                <tr v-for="customerBlockModuleActivity in customerBlockModuleActivities" v-bind:key="customerBlockModuleActivity.id">
+                                    <td>{{ customerBlockModuleActivity.contact_id }}</td>
+                                    <td>{{ customerBlockModuleActivity.block_id }}</td>
+                                    <td>{{ customerBlockModuleActivity.module_id }}</td>
+                                    <td>{{ customerBlockModuleActivity.activity_id }}</td>
+                                    <td>{{ customerBlockModuleActivity.comments }}</td>
                                     <td>                                        
-                                        <router-link :to="{ name: 'Documentation Type Form', params: { data: documentationType }}">
+                                        <router-link :to="{ name: 'Customer Block Module Activity Form', params: { data: customerBlockModuleActivity }}">
                                             <button class="btn btn-warning mb-2">Edit</button>
                                         </router-link>
                                     </td>
                                     <td>
-                                        <button @click="deleteDocumentationType(documentationType.id)" class="btn btn-danger">Delete</button>
+                                        <button @click="deletecustomerBlockModuleActivity(customerBlockModuleActivity.id)" class="btn btn-danger">Delete</button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <ul class="pagination">
                             <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchdocumentationTypes(pagination.prev_page_url)">Previous</a>
+                                <a class="page-link" href="#" @click="fetchcustomerBlockModuleActivitys(pagination.prev_page_url)">Previous</a>
                             </li>
 
                             <li class="page-item disabled">
@@ -47,7 +50,7 @@
                             </li>
 
                             <li v-bind:class="[{disabled: !pagination.next_page_url}]" class="page-item">
-                                <a class="page-link" href="#" @click="fetchdocumentationTypes(pagination.next_page_url)">Next</a>
+                                <a class="page-link" href="#" @click="fetchcustomerBlockModuleActivitys(pagination.next_page_url)">Next</a>
                             </li>
                         </ul>
                     </div>
@@ -59,16 +62,18 @@
 </template>
 <script>
     export default {
-        name: "documentationType",
+        name: "customerBlockModuleActivity",
         data() {
             return {
                 selectedAccount: "",
-                documentationTypes: [],
-                documentationType: {
+                customerBlockModuleActivitys: [],
+                customerBlockModuleActivity: {
                     id: "",
-                    company_id: "",
-                    type: "",
-                    comments: "",
+                    contact_id: "",
+                    block_id: "",
+                    module_id: "",
+                    activity_id: "",
+                    comments:"",
                     update_by: "1"
                 },
                 id: "",
@@ -78,18 +83,18 @@
         },
 
         created() {
-            this.fetchdocumentationTypes();
+            this.fetchcustomerBlockModuleActivitys();
         },
 
         methods: {
-            fetchdocumentationTypes(page_url) {
+            fetchcustomerBlockModuleActivitys(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/documentationTypes";
+                page_url = page_url || "/api/customerBlockModuleActivitys";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.documentationTypes = res.data;
-                        console.log(this.documentationTypes);
+                        this.customerBlockModuleActivitys = res.data;
+                        console.log(this.customerBlockModuleActivitys);
                         vm.makePagination(res.meta, res.links);
                     })
                     .catch(err => console.log(err));
@@ -103,15 +108,15 @@
                 };
                 this.pagination = pagination;
             },
-            deleteDocumentationType(id) {
+            deletecustomerBlockModuleActivity(id) {
                 if (confirm("Are You Sure?")) {
-                    fetch(`api/documentationType/${id}`, {
+                    fetch(`api/customerBlockModuleActivity/${id}`, {
                         method: "delete"
                     })
                         .then(res => res.json())
                         .then(data => {
                             alert("Documentation Type Removed");
-                            this.fetchdocumentationTypes();
+                            this.fetchcustomerBlockModuleActivitys();
                         })
                         .catch(err => console.log(err));
                 }
