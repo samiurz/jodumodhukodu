@@ -140,6 +140,10 @@ Route::put('asset', 'AssetController@store');
 // Delete asset status
 Route::delete('asset/{id}', 'AssetController@destroy');
 
+Route::post('/attachments/store', 'AssetController@storeAttachments')->name('store-attachments');
+Route::post('/attachments', 'AssetController@pullAttachments')->name('pull-attachments');
+Route::delete('/attachments/', 'AssetController@deleteAttachment')->name('delete-attachment');
+
 #Asset Model Routes
 // List Asset Models
 Route::get('assetmodels', 'AssetModelController@index');
