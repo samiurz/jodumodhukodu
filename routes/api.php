@@ -143,7 +143,7 @@ Route::put('asset', 'AssetController@store');
 Route::delete('asset/{id}', 'AssetController@destroy');
 
 Route::post('/attachments/store', 'AssetController@storeAttachments')->name('store-attachments');
-Route::post('/attachments', 'AssetController@pullAttachments')->name('pull-attachments');
+Route::get('asset/attachments/{ids}', 'AssetController@pullAttachments')->name('pull-attachments');
 Route::delete('/attachments/', 'AssetController@deleteAttachment')->name('delete-attachment');
 
 #Asset Model Routes

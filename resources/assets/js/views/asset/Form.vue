@@ -12,14 +12,14 @@
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Company</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.company_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.company.id">
                                         <option value="">Select Company</option>
                                         <option v-for="company in companies" v-bind:key="company.id" v-bind:value="company.id">{{company.name}}</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Model</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.asset_model_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.asset_model.id">
                                         <option value="">Select Model</option>
                                         <option v-for="assetmodel in assetmodels" v-bind:key="assetmodel.id" v-bind:value="assetmodel.id">{{assetmodel.name}}</option>
                                     </select>
@@ -46,21 +46,21 @@
                             <div class="row">
                                 <div class="form-group col-sm-4">
                                     <label class="col-md-3 form-control-label" for="select">Manufacturer</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.manufacturer_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.manufacturer.id">
                                         <option value="">Select Manufacturer</option>
                                         <option v-for="manufacturer in manufacturers" v-bind:key="manufacturer.id" v-bind:value="manufacturer.id">{{manufacturer.name}}</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-4">
                                      <label class="col-md-3 form-control-label" for="select">Status</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.asset_location_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.asset_location.id">
                                         <option value="">Select Location Status</option>
                                         <option v-for="assetLocation in assetLocations" v-bind:key="assetLocation.id" v-bind:value="assetLocation.id">{{assetLocation.location}}</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-4">
                                      <label class="col-md-3 form-control-label" for="select">Quality</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.quality_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.quality.id">
                                         <option value="">Select Quality</option>
                                         <option v-for="quality in qualities" v-bind:key="quality.id" v-bind:value="quality.id">{{quality.name}}</option>
                                     </select>
@@ -138,25 +138,23 @@
                 assetLocations:[],
                 asset: {
                     id: "",
-                    company_id: "",
-                    asset_model_id: "",
-                    name:"",
-                    serial: "",
-                    label_id:"1",
-                    label_value:"",
-                    description: "",
-                    quality_id: "",
-                    manufacturer_id:"",
-                    asset_status_id:"1",
-                    cost:"",
-                    asset_location_id:"",
-                    image:"",
-                    minimum_stock:"",
-                    current_stock:"",
-                    comments:"",
-                    is_enabled: "1",
-                    created_by: "1",
-                    update_by: "1",
+					company: {},
+					asset_model: {},
+					name: "",
+					serial: "",
+					manufacturer: {},
+					label_id: "",
+					label_value: "",
+					description: "",
+					image: "",
+					quality: {},
+					cost: "",
+					assetLocation: {},
+					image: "",
+					minimum_stock: "",
+					current_stock: "",
+					comments: "",
+					update_by: "1"
                 },
                 id: "",
                 edit: false,
@@ -174,15 +172,12 @@
             this.fetchAssetModel();
             this.fetchQuality();
             this.fetchAssetLocation();
-            if (this.$route.params.data != undefined)
-                this.editasset(this.$route.params.data);
 
-            this.start();
-
-            // window.Event.listen('reload_files', function() {
-            //     console.log('Received Reload Files Event!');
-            //     this.pullAttachments(); // Pull attachments again
-            // }.bind(this));
+            // For Edit
+            if (this.$route.params.data != undefined) {
+                this.editAsset(this.$route.params.data);
+                this.pullAttachments(this.$route.params.data);
+            }
         },
         methods: {
             fetchCompanies(page_url) {
@@ -319,19 +314,19 @@
             editAsset(asset) {
                 this.edit = true;
                 this.asset.id = asset.id;
-                this.asset.company_id = asset.company_id;
-                this.asset.asset_id = asset.asset_id;
-                this.asset.serial = asset.serial;
-                this.asset.type = asset.type;
-                this.asset.description = asset.description;
-                this.asset.image = asset.image;
-                this.asset.manufacturer_id = asset.manufacturer_id;
-                this.asset.quality_id = asset.quality_id;
-                this.asset.asset_location_id = asset.asset_location_id;
-                this.asset.minimum_stock = asset.minimum_stock;
-                this.asset.current_stock = asset.current_stock;
-                this.asset.comments = asset.comments;
-                this.asset.update_by = asset.update_by;
+                // this.asset.company_id = asset.company_id;
+                // this.asset.asset_id = asset.asset_id;
+                // this.asset.serial = asset.serial;
+                // this.asset.type = asset.type;
+                // this.asset.description = asset.description;
+                // this.asset.image = asset.image;
+                // this.asset.manufacturer_id = asset.manufacturer_id;
+                // this.asset.quality_id = asset.quality_id;
+                // this.asset.asset_location_id = asset.asset_location_id;
+                // this.asset.minimum_stock = asset.minimum_stock;
+                // this.asset.current_stock = asset.current_stock;
+                // this.asset.comments = asset.comments;
+                // this.asset.update_by = asset.update_by;
             },
             selectCategory(attachment, category_id) {
                 attachment.category_id = category_id;
@@ -439,7 +434,6 @@
             },
 
             removeServerAttachment(attachment_id){
-
                 window.Event.fire('loading_on');
                 let data = {
                     params: 
@@ -468,12 +462,10 @@
                 
             },
 
-            pullAttachments() {
-
-                //window.Event.fire('loading_on');
-
+            pullAttachments(asset) {
+                console.log(asset);
                 // Make HTTP request to store announcement
-                axios.post('/api/attachments').then(function (response) {
+                axios.get(`api/asset/attachments/${asset.image}`).then(function (response) {
                     console.log(response);
                     if (response.data.success) {
                         this.attachments = response.data.data;
@@ -494,30 +486,21 @@
             },
 
             getAttachmentSize() {
-
                 this.upload_size = 0; // Reset to beginningƒ
-
                 this.attachments.map((item) => { this.upload_size += parseInt(item.size); });
-                
                 this.upload_size = Number((this.upload_size).toFixed(1));
-
                 this.$forceUpdate();
-
             },
 
             removeAttachments(attachment) {
-
                 this.removeServerAttachment(attachment.id);
-
                 this.attachments.splice(this.attachments.indexOf(attachment), 1);
-                
                 this.getAttachmentSize();
-
             },
 
             start() {
                 console.log('Starting Attachment List Component');
-                this.pullAttachments();
+                
             },
         }
     };

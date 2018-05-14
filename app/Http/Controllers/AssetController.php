@@ -149,7 +149,7 @@ class AssetController extends Controller
      * @param  Request $request 
      * @return Response           
      */
-    public function pullAttachments(Request $request)
+    public function pullAttachments($ids)
     {   
         try {
 
@@ -158,8 +158,9 @@ class AssetController extends Controller
             // }
 
             // $user_id = Auth::user()->id;
+            //dd($ids); die();
 
-            $attachments = $this->attachmentRepo->orderBy('created_at', 'DESC')->all();
+            $attachments = $this->attachmentRepo->whereIn('id', explode(',', $ids))->orderBy('created_at', 'DESC')->all();
 
             return response()->json(array(
                 'success' => true,
@@ -193,7 +194,8 @@ class AssetController extends Controller
             if (count($attachments) > 0) {
                 $insertedIds = $this->attachmentRepo->saveInBulk($attachments);
                 //dd(serialize($ids)); die();
-                $data = serialize($insertedIds);
+                //$data = serialize($insertedIds);
+                $data = implode(',', $insertedIds);
             }
 
     		return response()->json(array(
