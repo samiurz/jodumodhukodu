@@ -139,20 +139,22 @@
                 asset: {
                     id: "",
                     company_id: "",
-                    assets_model_id: "",
+                    asset_model_id: "",
                     name:"",
                     serial: "",
                     label_id:"",
                     label_value:"",
                     description: "",
+                    quality_id: "",
                     manufacturer_id:"",
-                    quality_id:"",
                     cost:"",
                     asset_location_id:"",
                     image:"",
                     minimum_stock:"",
                     current_stock:"",
                     comments:"",
+                    is_enabled: "1",
+                    created_by: "1",
                     update_by: "1",
                 },
                 id: "",
@@ -238,68 +240,73 @@
                     .catch(err => console.log(err));
             },
             addAsset() {
-                this.submit()
-                
-                // if (this.edit === false) {
-                //     // Add
-                //     fetch("api/asset", {
-                //         method: "post",
-                //         body: JSON.stringify(this.asset),
-                //         headers: {
-                //             "content-type": "application/json"
-                //         }
-                //     })
-                //         .then(res => res.json())
-                //         .then(data => {
-                //             this.asset.id = "";
-                //             this.asset.company_id = "";
-                //             this.asset.asset_id = "";
+                //this.submit()
 
-                //             this.asset.serial = "";
-                //             this.asset.type = "";
-                //             this.asset.description = "";
-                //             this.asset.image = "";
-                //             this.asset.manufacturer_id = "";
-                //             this.asset.quality_id = "";
-                //             this.asset.asset_location_id = "";
-                //             this.asset.minimum_stock = "";
-                //             this.asset.current_stock = "";
-                //             this.asset.comments = "";
-                //             this.asset.update_by = "";
-                //             alert("Asset Added");
-                //             this.$router.push("/asset/list");
-                //         })
-                //         .catch(err => console.log(err));
-                // } else {
-                //     // Update
-                //     fetch("api/asset", {
-                //         method: "put",
-                //         body: JSON.stringify(this.asset),
-                //         headers: {
-                //             "content-type": "application/json"
-                //         }
-                //     })
-                //         .then(res => res.json())
-                //         .then(data => {
-                //             this.asset.id = "";
-                //             this.asset.company_id = "";
-                //             this.asset.asset_id = "";
-                //             this.asset.serial = "";
-                //             this.asset.type = "";
-                //             this.asset.description = "";
-                //             this.asset.image = "";
-                //             this.asset.manufacturer_id = "";
-                //             this.asset.quality_id = "";
-                //             this.asset.asset_location_id = "";
-                //             this.asset.minimum_stock = "";
-                //             this.asset.current_stock = "";
-                //             this.asset.comments = "";
-                //             this.asset.update_by = "";
-                //             alert("documentation type Updated");
-                //             this.$router.push("/asset/list");
-                //         })
-                //         .catch(err => console.log(err));
-                // }
+                if(this.asset.image)
+                {
+                    if (this.edit === false) {
+                        // Add
+                        fetch("api/asset", {
+                            method: "post",
+                            body: JSON.stringify(this.asset),
+                            headers: {
+                                "content-type": "application/json"
+                            }
+                        })
+                        .then(res => res.json())
+                        .then(data => {
+                            this.asset.id = "";
+                            this.asset.company_id = "";
+                            this.asset.asset_id = "";
+
+                            this.asset.serial = "";
+                            this.asset.type = "";
+                            this.asset.description = "";
+                            this.asset.image = "";
+                            this.asset.manufacturer_id = "";
+                            this.asset.quality_id = "";
+                            this.asset.asset_location_id = "";
+                            this.asset.minimum_stock = "";
+                            this.asset.current_stock = "";
+                            this.asset.comments = "";
+                            this.asset.update_by = "";
+                            alert("Asset Added");
+                            this.$router.push("/asset/list");
+                        })
+                        .catch(err => console.log(err));
+                    } 
+                    
+                    else {
+                        // Update
+                        fetch("api/asset", {
+                            method: "put",
+                            body: JSON.stringify(this.asset),
+                            headers: {
+                                "content-type": "application/json"
+                            }
+                        })
+                        .then(res => res.json())
+                        .then(data => {
+                            this.asset.id = "";
+                            this.asset.company_id = "";
+                            this.asset.asset_id = "";
+                            this.asset.serial = "";
+                            this.asset.type = "";
+                            this.asset.description = "";
+                            this.asset.image = "";
+                            this.asset.manufacturer_id = "";
+                            this.asset.quality_id = "";
+                            this.asset.asset_location_id = "";
+                            this.asset.minimum_stock = "";
+                            this.asset.current_stock = "";
+                            this.asset.comments = "";
+                            this.asset.update_by = "";
+                            alert("documentation type Updated");
+                            this.$router.push("/asset/list");
+                        })
+                        .catch(err => console.log(err));
+                    }
+                }
             },
             editAsset(asset) {
                 this.edit = true;

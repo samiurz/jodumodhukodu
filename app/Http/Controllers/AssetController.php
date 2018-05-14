@@ -41,7 +41,7 @@ class AssetController extends Controller
         $assets->asset_model_id = $request->input('asset_model_id');
         $assets->name = $request->input('name');
         $assets->serial = $request->input('serial');
-        $assets->type = $request->input('type');
+        //$assets->type = $request->input('type');
         $assets->label_id = $request->input('label_id');
         $assets->label_value = $request->input('label_value');
         $assets->description = $request->input('description');
