@@ -7,6 +7,8 @@ $factory->define(App\Account::class, function (Faker $faker) {
         'name' => $faker->text(30),
         'email' => $faker->unique(30)->safeEmail,
         'comments' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=> $faker->randomDigit
     ];
 });

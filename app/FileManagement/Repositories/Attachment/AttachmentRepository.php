@@ -64,7 +64,8 @@ class AttachmentRepository extends BaseRepository
 			$temp['type'] = $attachment->getMimeType();
 			//$temp['category_id'] = $attachment->category_id;
 			$temp['size'] = $attachment->getClientSize();
-			//$temp['user_id'] = Auth::user()->id;
+			$temp['created_by'] = 55;
+			$temp['update_by'] = 56;
 			array_push($return, $temp);
 		}
 		
@@ -97,7 +98,7 @@ class AttachmentRepository extends BaseRepository
 
 		foreach ($attachments as $key => $attachment) {
 			$id = $this->saveOrUpdate($attachment);
-			array_push($ids, $id);
+			array_push($ids, $id->id);
 		}
 
 		return $ids;

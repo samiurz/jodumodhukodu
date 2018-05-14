@@ -7,6 +7,8 @@ $factory->define(App\JobPriority::class, function (Faker $faker) {
         'company_id' => $faker->randomDigit,
         'priority' => $faker->text(30),
         'comments' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=>  $faker->randomDigit
     ];
 });

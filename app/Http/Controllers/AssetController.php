@@ -188,14 +188,16 @@ class AssetController extends Controller
     	try {
 
             $attachments = $this->processAttachments($request);
-            
+            $data = null;
             if (count($attachments) > 0) {
-                $this->attachmentRepo->saveInBulk($attachments);
+                $insertedIds = $this->attachmentRepo->saveInBulk($attachments);
+                //dd(serialize($ids)); die();
+                $data = serialize($insertedIds);
             }
 
     		return response()->json(array(
                 'success' => true,
-                'data' => [],
+                'data' => $data,
                 'errors' => []
             ), 200);
 

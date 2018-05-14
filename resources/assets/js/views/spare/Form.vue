@@ -94,6 +94,7 @@
                     id: "",
                     company_id: "",
                     asset_id: "",
+                    name:"",
                     serial: "",
                     cost: "",
                     description: "",
@@ -102,6 +103,8 @@
                     minimum_stock: "",
                     current_stock: "",
                     comments: "",
+                    is_enabled:"0",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -165,6 +168,7 @@
                             this.spare.id = "";
                             this.spare.company_id = "";
                             this.spare.asset_id = "";
+                            this.spare.name = "";
                             this.spare.serial = "";
                             this.spare.cost = "";
                             this.spare.description = "";
@@ -173,6 +177,8 @@
                             this.spare.minimum_stock = "";
                             this.spare.current_stock = "";
                             this.spare.comments = "";
+                            this.spare.is_enabled = "";
+                            this.spare.created_by = "";
                             this.spare.update_by = "";
                             alert("Spare Added");
                             this.$router.push("/spare/list");
@@ -189,9 +195,9 @@
                     })
                         .then(res => res.json())
                         .then(data => {
-                            this.spare.id = "";
                             this.spare.company_id = "";
                             this.spare.asset_id = "";
+                            this.spare.name = "";
                             this.spare.serial = "";
                             this.spare.cost = "";
                             this.spare.description = "";
@@ -200,6 +206,9 @@
                             this.spare.minimum_stock = "";
                             this.spare.current_stock = "";
                             this.spare.comments = "";
+                             this.spare.is_enabled = "";
+                            this.spare.created_by = "";
+                            this.spare.update_by = "";
                             alert("Spare Updated");
                             this.$router.push("/spare/list");
                         })
@@ -211,6 +220,7 @@
                 this.spare.id = spare.id;
                 this.spare.company_id = spare.company_id;
                 this.spare.asset_id = spare.asset_id;
+                this.spare.name = spare.name;
                 this.spare.serial = spare.serial;
                 this.spare.cost = spare.cost;
                 this.spare.description = spare.description;
@@ -219,6 +229,8 @@
                 this.spare.minimum_stock = spare.minimum_stock;
                 this.spare.current_stock = spare.current_stock;
                 this.spare.comments = spare.comments;
+                this.spare.is_enabled = spare.is_enabled;
+                this.spare.created_by = spare.created_by;
                 this.spare.update_by = spare.update_by;
             }
         }

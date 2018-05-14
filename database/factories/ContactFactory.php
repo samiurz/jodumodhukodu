@@ -10,6 +10,8 @@ $factory->define(App\Contact::class, function (Faker $faker) {
         'links' => $faker->text(30),
         'email' => $faker->unique(30)->safeEmail,
         'password' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=> $faker->randomDigit
     ];
 });

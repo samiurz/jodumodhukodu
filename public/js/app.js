@@ -49125,6 +49125,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         },
         addAsset: function addAsset() {
             this.submit();
+
             // if (this.edit === false) {
             //     // Add
             //     fetch("api/asset", {
@@ -49139,6 +49140,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             //             this.asset.id = "";
             //             this.asset.company_id = "";
             //             this.asset.asset_id = "";
+
             //             this.asset.serial = "";
             //             this.asset.type = "";
             //             this.asset.description = "";
@@ -49255,7 +49257,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             document.getElementById("attachments").value = [];
             console.log(attachments);
         },
-        submit: function submit() {
+        addAttachment: function addAttachment() {
             this.prepareFields();
             if (!this.validate()) {
                 return false;
@@ -49277,18 +49279,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 console.log(response);
                 if (response.data.success) {
                     console.log('Successfull upload');
-                    //toastr.success('Documents uploaded!', 'Success');
+                    this.asset.image = response.data.data;
+                    this.addAsset();
                     this.resetData();
-                    window.Event.fire('reload_files'); // Tell AttachmentList component to refresh its list
+
+                    // Tell AttachmentList component to refresh its list
                 } else {
                     //toastr.error('Somethind went wrong', 'Error');
                     console.log('Unsuccessful Upload');
                 }
-                window.Event.fire('loading_off');
             }.bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
             .catch(function (error) {
                 console.log(error);
-                window.Event.fire('loading_off');
             });
 
             console.log(attachments);
@@ -49320,11 +49322,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                     console.log(response.data.errors);
                     toastr.error('Something went wront', 'Error');
                 }
-                window.Event.fire('loading_off');
             }.bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
             .catch(function (error) {
                 console.log(error);
-                window.Event.fire('loading_off');
             });
         },
         pullAttachments: function pullAttachments() {
@@ -49343,11 +49343,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                     console.log(response.data.errors);
                     toastr.warning('Cannot pull attachments. User has to be logged in', 'Background Task: Warning');
                 }
-                window.Event.fire('loading_off');
             }.bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
             .catch(function (error) {
                 console.log(error);
-                window.Event.fire('loading_off');
             });
         }
     }, _defineProperty(_methods, "getAttachmentSize", function getAttachmentSize() {
@@ -63917,6 +63915,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 company_id: "",
                 asset_id: "",
+                name: "",
                 serial: "",
                 cost: "",
                 description: "",
@@ -63925,6 +63924,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 minimum_stock: "",
                 current_stock: "",
                 comments: "",
+                is_enabled: "0",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -63999,6 +64000,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.spare.id = "";
                     _this4.spare.company_id = "";
                     _this4.spare.asset_id = "";
+                    _this4.spare.name = "";
                     _this4.spare.serial = "";
                     _this4.spare.cost = "";
                     _this4.spare.description = "";
@@ -64007,6 +64009,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.spare.minimum_stock = "";
                     _this4.spare.current_stock = "";
                     _this4.spare.comments = "";
+                    _this4.spare.is_enabled = "";
+                    _this4.spare.created_by = "";
                     _this4.spare.update_by = "";
                     alert("Spare Added");
                     _this4.$router.push("/spare/list");
@@ -64024,9 +64028,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (res) {
                     return res.json();
                 }).then(function (data) {
-                    _this4.spare.id = "";
                     _this4.spare.company_id = "";
                     _this4.spare.asset_id = "";
+                    _this4.spare.name = "";
                     _this4.spare.serial = "";
                     _this4.spare.cost = "";
                     _this4.spare.description = "";
@@ -64035,6 +64039,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.spare.minimum_stock = "";
                     _this4.spare.current_stock = "";
                     _this4.spare.comments = "";
+                    _this4.spare.is_enabled = "";
+                    _this4.spare.created_by = "";
+                    _this4.spare.update_by = "";
                     alert("Spare Updated");
                     _this4.$router.push("/spare/list");
                 }).catch(function (err) {
@@ -64047,6 +64054,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.spare.id = spare.id;
             this.spare.company_id = spare.company_id;
             this.spare.asset_id = spare.asset_id;
+            this.spare.name = spare.name;
             this.spare.serial = spare.serial;
             this.spare.cost = spare.cost;
             this.spare.description = spare.description;
@@ -64055,6 +64063,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.spare.minimum_stock = spare.minimum_stock;
             this.spare.current_stock = spare.current_stock;
             this.spare.comments = spare.comments;
+            this.spare.is_enabled = spare.is_enabled;
+            this.spare.created_by = spare.created_by;
             this.spare.update_by = spare.update_by;
         }
     }
@@ -124640,7 +124650,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "submit": function($event) {
         $event.preventDefault();
-        return _vm.addAsset($event)
+        return _vm.addAttachment($event)
       }
     }
   }, [_c('div', {

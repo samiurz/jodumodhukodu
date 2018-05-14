@@ -8,7 +8,7 @@
                         <small>Form</small>
                     </div>
                     <div class="card-block">
-                        <form @submit.prevent="addAsset" class="mb-3">
+                        <form @submit.prevent="addAttachment" class="mb-3">
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Company</label>
@@ -153,7 +153,7 @@
                     minimum_stock:"",
                     current_stock:"",
                     comments:"",
-                    update_by: "1"
+                    update_by: "1",
                 },
                 id: "",
                 edit: false,
@@ -239,6 +239,7 @@
             },
             addAsset() {
                 this.submit()
+                
                 // if (this.edit === false) {
                 //     // Add
                 //     fetch("api/asset", {
@@ -253,6 +254,7 @@
                 //             this.asset.id = "";
                 //             this.asset.company_id = "";
                 //             this.asset.asset_id = "";
+
                 //             this.asset.serial = "";
                 //             this.asset.type = "";
                 //             this.asset.description = "";
@@ -371,7 +373,7 @@
                 console.log(attachments);
             },
 
-            submit() {
+            addAttachment() {
                 this.prepareFields();
                 if (!this.validate()) {
                     return false;
@@ -394,23 +396,24 @@
                     console.log(response);
                     if (response.data.success) {
                         console.log('Successfull upload');
-                        //toastr.success('Documents uploaded!', 'Success');
-                        this.resetData();
-                        window.Event.fire('reload_files'); // Tell AttachmentList component to refresh its list
+                        this.asset.image = response.data.data
+                        this.addAsset()
+                        this.resetData()
+                        
+                        // Tell AttachmentList component to refresh its list
                     } else {
                         //toastr.error('Somethind went wrong', 'Error');
                         console.log('Unsuccessful Upload');
                     }
-                    window.Event.fire('loading_off');
+                   
                 }
                 .bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
                 .catch(function (error) {
                     console.log(error);
-                    window.Event.fire('loading_off');
+                    
                 });
 
                 console.log(attachments)
-
             },
 
             // We want to clear the FormData object on every upload so we can re-calculate new files again.
@@ -441,11 +444,11 @@
                         console.log(response.data.errors);
                         toastr.error('Something went wront', 'Error');
                     }
-                    window.Event.fire('loading_off');
+                    
                 }.bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
                 .catch(function (error) {
                     console.log(error);
-                    window.Event.fire('loading_off');
+                    
                 });
                 
             },
@@ -466,11 +469,11 @@
                         console.log(response.data.errors);
                         toastr.warning('Cannot pull attachments. User has to be logged in', 'Background Task: Warning');
                     }
-                    window.Event.fire('loading_off');
+                    
                 }.bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
                 .catch(function (error) {
                     console.log(error);
-                    window.Event.fire('loading_off');
+                    
                 });
 
             },

@@ -27,6 +27,7 @@ class CreateAssetsTable extends Migration
             $table->string('cost');
             $table->integer('asset_location_id');
             $table->string('image');
+            $table->integer('asset_status_id');
             $table->integer('minimum_stock');
             $table->integer('current_stock');
             $table->string('comments');

@@ -7,6 +7,8 @@ $factory->define(App\Module::class, function (Faker $faker) {
         'block_id' => $faker->randomDigit,
         'name' => $faker->text(30),
         'comments' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=>  $faker->randomDigit
     ];
 });

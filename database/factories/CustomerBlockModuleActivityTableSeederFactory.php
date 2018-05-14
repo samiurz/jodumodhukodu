@@ -9,6 +9,8 @@ $factory->define(App\CustomerBlockModuleActivity::class, function (Faker $faker)
         'module_id' => $faker->randomDigit,
         'activity_id' => $faker->randomDigit,
         'comments' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=> $faker->randomDigit
     ];
 });

@@ -11,6 +11,8 @@ $factory->define(App\Company::class, function (Faker $faker) {
         'email' => $faker->unique(30)->safeEmail,
         'address' => $faker->text(30),
         'comments' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=> $faker->randomDigit
     ];
 });

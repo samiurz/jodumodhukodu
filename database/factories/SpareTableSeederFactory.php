@@ -14,6 +14,8 @@ $factory->define(App\Spares::class, function (Faker $faker) {
         'minimum_stock' => $faker->randomDigit,
         'current_stock' => $faker->randomDigit,
         'comments' => $faker->text(30),
+        'is_enabled'=> $faker->randomDigit,
+        'created_by'=> $faker->randomDigit,
         'update_by'=>  $faker->randomDigit
     ];
 });
