@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Model</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.assets_model_id">
+                                    <select id="select" type="select" class="form-control" v-model="asset.asset_model_id">
                                         <option value="">Select Model</option>
                                         <option v-for="assetmodel in assetmodels" v-bind:key="assetmodel.id" v-bind:value="assetmodel.id">{{assetmodel.name}}</option>
                                     </select>
@@ -142,11 +142,12 @@
                     asset_model_id: "",
                     name:"",
                     serial: "",
-                    label_id:"",
+                    label_id:"1",
                     label_value:"",
                     description: "",
                     quality_id: "",
                     manufacturer_id:"",
+                    asset_status_id:"1",
                     cost:"",
                     asset_location_id:"",
                     image:"",
@@ -257,10 +258,12 @@
                         .then(data => {
                             this.asset.id = "";
                             this.asset.company_id = "";
-                            this.asset.asset_id = "";
-
+                            this.asset.asset_model_id = "";
+                            this.asset.name = "";
                             this.asset.serial = "";
-                            this.asset.type = "";
+                            this.asset.label_id = "";
+                            this.asset.label_value = "";
+                            this.asset.asset_status_id = "";
                             this.asset.description = "";
                             this.asset.image = "";
                             this.asset.manufacturer_id = "";
@@ -269,6 +272,7 @@
                             this.asset.minimum_stock = "";
                             this.asset.current_stock = "";
                             this.asset.comments = "";
+                            this.asset.created_by = "";
                             this.asset.update_by = "";
                             alert("Asset Added");
                             this.$router.push("/asset/list");
@@ -289,9 +293,12 @@
                         .then(data => {
                             this.asset.id = "";
                             this.asset.company_id = "";
-                            this.asset.asset_id = "";
+                            this.asset.asset_model_id = "";
+                            this.asset.name = "";
                             this.asset.serial = "";
-                            this.asset.type = "";
+                            this.asset.label_id = "";
+                            this.asset.label_value = "";
+                            this.asset.asset_status_id = "";
                             this.asset.description = "";
                             this.asset.image = "";
                             this.asset.manufacturer_id = "";
@@ -300,6 +307,7 @@
                             this.asset.minimum_stock = "";
                             this.asset.current_stock = "";
                             this.asset.comments = "";
+                            this.asset.created_by = "";
                             this.asset.update_by = "";
                             alert("documentation type Updated");
                             this.$router.push("/asset/list");

@@ -49,6 +49,7 @@ class AssetController extends Controller
         $assets->manufacturer_id = $request->input('manufacturer_id');
         $assets->cost = $request->input('cost');
         $assets->asset_location_id = $request->input('asset_location_id');
+        $assets->asset_status_id = $request->input('asset_status_id');
         $assets->image = $request->input('image');
         $assets->current_stock = $request->input('current_stock');
         $assets->minimum_stock = $request->input('minimum_stock');
