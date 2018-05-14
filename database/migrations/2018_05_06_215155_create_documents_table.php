@@ -20,6 +20,8 @@ class CreateDocumentsTable extends Migration
             $table->string('file');
             $table->string('url');
             $table->string('comments');
+            $table->integer('created_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

@@ -36,6 +36,8 @@ class FaultTypeController extends Controller
         $faultTypes->asset_id = $request->input('asset_id');
         $faultTypes->type = $request->input('type');
         $faultTypes->comments = $request->input('comments');
+        $faultTypes->is_enabled = $request->input('is_enabled');
+        $faultTypes->created_by = $request->input('created_by');
         $faultTypes->update_by = $request->input('update_by');
         if($faultTypes->save()) {
             return new FaultTypeResource($faultTypes);

@@ -35,6 +35,8 @@ class DocumentationTypeController extends Controller
         $documentationTypes->company_id = $request->input('company_id');
         $documentationTypes->type = $request->input('type');
         $documentationTypes->comments = $request->input('comments');
+        $documentationTypes->is_enabled = $request->input('is_enabled');
+        $documentationTypes->created_by = $request->input('created_by');
         $documentationTypes->update_by = $request->input('update_by');
         if($documentationTypes->save()) {
             return new DocumentationTypeResource($documentationTypes);

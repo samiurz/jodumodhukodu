@@ -36,6 +36,8 @@ class ModelTypeController extends Controller
         $modelTypes->make = $request->input('make');
         $modelTypes->type = $request->input('type');
         $modelTypes->comments = $request->input('comments');
+        $modelTypes->is_enabled = $request->input('is_enabled');
+        $modelTypes->created_by = $request->input('created_by');
         $modelTypes->update_by = $request->input('update_by');
         if($modelTypes->save()) {
             return new ModelTypeResource($modelTypes);

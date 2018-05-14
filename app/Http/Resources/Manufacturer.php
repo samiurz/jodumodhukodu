@@ -15,6 +15,8 @@ class Manufacturer extends JsonResource
             'company_id' => $this->company_id,
             'name' => $this->name,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

@@ -40,6 +40,8 @@ class CompanyController extends Controller
         $companies->email = $request->input('email');
         $companies->address = $request->input('address');
         $companies->comments = $request->input('comments');
+        $companies->is_enabled = $request->input('is_enabled');
+        $companies->created_by = $request->input('created_by');
         $companies->update_by = $request->input('update_by');
         if($companies->save()) {
             return new CompanyResource($companies);

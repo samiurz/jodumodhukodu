@@ -34,6 +34,8 @@ class ActivityController extends Controller
         $activities->id = $request->input('id');
         $activities->name = $request->input('name');
         $activities->comments = $request->input('comments');
+        $activities->is_enabled = $request->input('is_enabled');
+        $activities->created_by = $request->input('created_by');
         $activities->update_by = $request->input('update_by');
         if($activities->save()) {
             return new ActivityResource($activities);

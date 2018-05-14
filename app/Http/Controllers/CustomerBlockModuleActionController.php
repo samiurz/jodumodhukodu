@@ -37,6 +37,8 @@ class CustomerBlockModuleActionController extends Controller
         $CustomerBlockModuleActions->module_id = $request->input('module_id');
         $CustomerBlockModuleActions->activity_id = $request->input('activity_id');
         $CustomerBlockModuleActions->comments = $request->input('comments');
+        $customerBlockModuleActions->is_enabled = $request->input('is_enabled');
+        $customerBlockModuleActions->created_by = $request->input('created_by');
         $CustomerBlockModuleActions->update_by = $request->input('update_by');
         if($CustomerBlockModuleActions->save()) {
             return new CustomerBlockModuleActionResource($CustomerBlockModuleAction);

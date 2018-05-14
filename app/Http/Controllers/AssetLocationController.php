@@ -35,6 +35,8 @@ class AssetLocationController extends Controller
         $assetLocations->company_id = $request->input('company_id');
         $assetLocations->location = $request->input('location');
         $assetLocations->comments = $request->input('comments');
+        $assetLocations->is_enabled = $request->input('is_enabled');
+        $assetLocations->created_by = $request->input('created_by');
         $assetLocations->update_by = $request->input('update_by');
         
         if($assetLocations->save()) {

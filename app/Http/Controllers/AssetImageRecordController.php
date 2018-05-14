@@ -36,6 +36,8 @@ class AssetImageRecordController extends Controller
         $assetimagerecords->asset_id = $request->input('asset_id');
         $assetimagerecords->image = $request->input('image');
         $assetimagerecords->description = $request->input('description');
+        $assetimagerecords->is_enabled = $request->input('is_enabled');
+        $assetimagerecords->created_by = $request->input('created_by');
         $assetimagerecords->update_by = $request->input('update_by');
 
         if($assetimagerecords->save()) {

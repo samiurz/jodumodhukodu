@@ -16,6 +16,8 @@ class AssetImageRecord extends Resource
             'asset_id' => $this->asset_id,
             'image' => $this->image,
             'description' => $this->description,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

@@ -36,6 +36,8 @@ class DocumentController extends Controller
         $documents->documentation_types_id = $request->input('documentation_types_id');
         $documents->file = $request->input('file');
         $documents->url = $request->input('url');
+        $documents->is_enabled = $request->input('is_enabled');
+        $documents->created_by = $request->input('created_by');
         $documents->update_by = $request->input('update_by');
         if($documents->save()) {
             return new DocumentResource($documents);

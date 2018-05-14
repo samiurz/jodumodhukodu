@@ -16,6 +16,8 @@ class AccountBlockAssociation extends Resource
             'block' => $this->block,
             'blockStat' => $this->blockStat,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

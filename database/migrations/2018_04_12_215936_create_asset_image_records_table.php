@@ -19,7 +19,9 @@ class CreateAssetImageRecordsTable extends Migration
             $table->integer('asset_id');
             $table->string('image');
             $table->string('description');
+            $table->integer('created_by');
             $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

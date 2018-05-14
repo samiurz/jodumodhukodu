@@ -18,7 +18,9 @@ class CreateAssetLocationsTable extends Migration
             $table->integer('company_id');
             $table->string('location');
             $table->string('comments');
+            $table->integer('created_by');
             $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

@@ -41,6 +41,8 @@ class AssetModelController extends Controller
         $assetmodels->minimum_stock = $request->input('minimum_stock');
         $assetmodels->current_stock = $request->input('current_stock');
         $assetmodels->comments = $request->input('comments');
+        $assetmodels->is_enabled = $request->input('is_enabled');
+        $assetmodels->created_by = $request->input('created_by');
         $assetmodels->update_by = $request->input('update_by');
         if($assetmodels->save()) {
             return new AssetModelResource($assetmodels);

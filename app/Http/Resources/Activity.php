@@ -14,6 +14,8 @@ class Activity extends Resource
             'id' => $this->id,
             'name' => $this->name,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

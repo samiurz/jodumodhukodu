@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateQualitiesTable extends Migration
+class CreateRepairTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateQualitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('qualities', function (Blueprint $table) {
+        Schema::create('repair_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->integer('company_id');
+            $table->string('type');
             $table->string('comments');
             $table->integer('created_by');
             $table->integer('update_by');
@@ -31,6 +32,6 @@ class CreateQualitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('qualities');
+        Schema::dropIfExists('repair_types');
     }
 }

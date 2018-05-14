@@ -35,6 +35,8 @@ class JobPriorityController extends Controller
         $jobPriorities->company_id = $request->input('company_id');
         $jobPriorities->priority = $request->input('priority');
         $jobPriorities->comments = $request->input('comments');
+        $jobPriorities->is_enabled = $request->input('is_enabled');
+        $jobPriorities->created_by = $request->input('created_by');
         $jobPriorities->update_by = $request->input('update_by');
         if($jobPriorities->save()) {
             return new JobPriorityResource($jobPriorities);

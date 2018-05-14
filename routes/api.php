@@ -67,6 +67,8 @@ Route::post('contact', 'ContactController@store');
 Route::put('contact', 'ContactController@store');
 // Delete Contact
 Route::delete('contact/{id}', 'ContactController@destroy');
+// List Contacts By Company id
+Route::get('contacts/company/{id}', 'ContactController@contactsByCompanyId');
 
 #Block Routes
 // List Blocks
@@ -336,14 +338,26 @@ Route::put('quality', 'QualityController@store');
 // Delete Quality
 Route::delete('quality/{id}', 'QualityController@destroy');
 
-# Quality Routes
-// List qualities
+# Asset Locations Routes
+// List Locations
 Route::get('assetLocations', 'AssetLocationController@index');
-//  Quality
+//  get individual location
 Route::get('assetLocation/{id}', 'AssetLocationController@show');
-// Create new Quality
+// Create new location
 Route::post('assetLocation', 'AssetLocationController@store');
-// Update Quality
+// Update location
 Route::put('assetLocation', 'AssetLocationController@store');
-// Delete Quality
+// Delete location
 Route::delete('assetLocation/{id}', 'AssetLocationController@destroy');
+
+# repair type Routes
+// List types
+Route::get('repairTypes', 'RepairTypeController@index');
+//  get individual type
+Route::get('repairType/{id}', 'RepairTypeController@show');
+// Create new type
+Route::post('repairType', 'RepairTypeController@store');
+// Update type
+Route::put('repairType', 'RepairTypeController@store');
+// Delete type
+Route::delete('repairType/{id}', 'RepairTypeController@destroy');

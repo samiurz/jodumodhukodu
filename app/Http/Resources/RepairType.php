@@ -2,9 +2,9 @@
 
 namespace App\Http\Resources;
 
-use Illuminate\Http\Resources\Json\Resource;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class ModelType extends Resource
+class RepairType extends JsonResource
 {
     public function toArray($request)
     {
@@ -13,7 +13,6 @@ class ModelType extends Resource
         return [
             'id' => $this->id,
             'company' => $this->company,
-            'make' => $this->make,
             'type' => $this->type,
             'comments' => $this->comments,
             'is_enabled'=>$this->is_enabled,

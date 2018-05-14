@@ -15,7 +15,7 @@ class Asset extends Resource
             'company' => $this->company,
             'assetModel' => $this->assetModel,
             'name' => $this->name,
-            'name' => $this->serial,
+            'serial' => $this->serial,
             'manufacturer' => $this->manufacturer,
             'label_id' => $this->label_id,
             'label_value' => $this->label_value,
@@ -27,6 +27,8 @@ class Asset extends Resource
             'current_stock' => $this->current_stock,
             'minimum_stock' => $this->minimum_stock,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

@@ -35,6 +35,8 @@ class JobTypeController extends Controller
         $jobTypes->company_id = $request->input('company_id');
         $jobTypes->type = $request->input('type');
         $jobTypes->comments = $request->input('comments');
+        $jobTypes->is_enabled = $request->input('is_enabled');
+        $jobTypes->created_by = $request->input('created_by');
         $jobTypes->update_by = $request->input('update_by');
         
         if($jobTypes->save()) {

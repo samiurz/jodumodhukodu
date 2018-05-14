@@ -19,9 +19,11 @@ class CreateContactsTable extends Migration
             $table->string('name');
             $table->string('phone');
             $table->string('links');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('password');
+            $table->integer('created_by');
             $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

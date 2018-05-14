@@ -16,15 +16,17 @@ class CreateModelsTable extends Migration
         Schema::create('models', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('company_id');
-            $table->string('model_types_id');
+            $table->integer('model_types_id');
             $table->string('name');
             $table->string('image');
-            $table->string('rent');
-            $table->string('frequency');
-            $table->string('minimum_stock');
-            $table->string('current_stock');
+            $table->double('rent');
+            $table->integer('frequency');
+            $table->integer('minimum_stock');
+            $table->integer('current_stock');
             $table->string('comments');
+            $table->integer('created_by');
             $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

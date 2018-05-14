@@ -20,17 +20,19 @@ class CreateAssetsTable extends Migration
             $table->string('name');
             $table->string('serial');
             $table->integer('label_id');
-            $table->string('label_value');
+            $table->integer('label_value');
             $table->string('description');
             $table->integer('manufacturer_id');
             $table->integer('quality_id');
             $table->string('cost');
             $table->integer('asset_location_id');
             $table->string('image');
-            $table->string('minimum_stock');
-            $table->string('current_stock');
+            $table->integer('minimum_stock');
+            $table->integer('current_stock');
             $table->string('comments');
+            $table->integer('created_by');
             $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

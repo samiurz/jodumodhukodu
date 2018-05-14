@@ -168,6 +168,11 @@
                             </router-link>
                         </li>
                         <li class="nav-item">
+                            <router-link :to="'/repairType/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Repair Type
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
                             <router-link :to="'/spareType/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Spare Type
                             </router-link>
@@ -204,6 +209,18 @@
                         <li class="nav-item">
                             <router-link :to="'/asset/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Asset List
+                            </router-link>
+                        </li>
+                    </ul>
+                </router-link>
+                <li class="divider"></li>
+                <router-link tag="li" class="nav-item nav-dropdown" :to="{ path: '/job'}" disabled>
+                    <div class="nav-link nav-dropdown-toggle" @click="handleClick">
+                        <i class="icon-star"></i> Job</div>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <router-link :to="'/job/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Job List
                             </router-link>
                         </li>
                     </ul>

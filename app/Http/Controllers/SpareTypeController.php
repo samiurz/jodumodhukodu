@@ -35,6 +35,8 @@ class SpareTypeController extends Controller
         $spareTypes->company_id = $request->input('company_id');
         $spareTypes->type = $request->input('type');
         $spareTypes->comments = $request->input('comments');
+        $spareTypes->is_enabled = $request->input('is_enabled');
+        $spareTypes->created_by = $request->input('created_by');
         $spareTypes->update_by = $request->input('update_by');
         
         if($spareTypes->save()) {

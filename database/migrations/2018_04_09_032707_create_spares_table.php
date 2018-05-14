@@ -17,15 +17,18 @@ class CreateSparesTable extends Migration
             $table->increments('id');
             $table->integer('company_id');
             $table->integer('asset_id');
+            $table->string('name');
             $table->string('serial');
-            $table->string('cost');
+            $table->double('cost');
             $table->string('description');
             $table->string('image');
             $table->integer('manufacturer_id');
-            $table->string('minimum_stock');
-            $table->string('current_stock');
+            $table->integer('minimum_stock');
+            $table->integer('current_stock');
             $table->string('comments');
+            $table->integer('created_by');
             $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

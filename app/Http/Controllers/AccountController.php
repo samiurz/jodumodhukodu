@@ -35,6 +35,8 @@ class AccountController extends Controller
         $accounts->name = $request->input('name');
         $accounts->email = $request->input('email');
         $accounts->comments = $request->input('comments');
+        $accounts->is_enabled = $request->input('is_enabled');
+        $accounts->created_by = $request->input('created_by');
         $accounts->update_by = $request->input('update_by');
         if($accounts->save()) {
             return new AccountResource($accounts);

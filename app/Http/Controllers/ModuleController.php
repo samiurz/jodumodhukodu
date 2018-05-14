@@ -35,6 +35,8 @@ class ModuleController extends Controller
         $modules->block_id = $request->input('block_id');
         $modules->name = $request->input('name');
         $modules->comments = $request->input('comments');
+        $modules->is_enabled = $request->input('is_enabled');
+        $modules->created_by = $request->input('created_by');
         $modules->update_by = $request->input('update_by');
         
 

@@ -16,6 +16,8 @@ class FaultType extends Resource
             'asset_id' => $this->asset_id,
             'type' => $this->type,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

@@ -18,6 +18,8 @@ class Contact extends Resource
             'email' => $this->email,
             'links' => $this->links,
             'password' => $this->password,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

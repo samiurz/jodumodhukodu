@@ -33,6 +33,7 @@ class SpareController extends Controller
         $spare->id = $request->input('id');
         $spare->company_id = $request->input('company_id');
         $spare->asset_id = $request->input('asset_id');
+        $spare->name = $request->input('name');
         $spare->serial = $request->input('serial');
         $spare->cost = $request->input('cost');
         $spare->image = $request->input('image');
@@ -41,6 +42,8 @@ class SpareController extends Controller
         $spare->minimum_stock = $request->input('minimum_stock');
         $spare->current_stock = $request->input('current_stock');
         $spare->comments = $request->input('comments');
+        $spare->is_enabled = $request->input('is_enabled');
+        $spare->created_by = $request->input('created_by');
         $spare->update_by = $request->input('update_by');
 
         if($spare->save()) {

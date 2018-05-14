@@ -15,6 +15,8 @@ class CustomerBlockAssociation extends Resource
             'company_id' => $this->company_id,
             'block_id' => $this->block_id,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by
         ];
     }

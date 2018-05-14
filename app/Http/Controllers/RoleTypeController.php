@@ -34,6 +34,8 @@ class roletypeController extends Controller
         $roletype->id = $request->input('id');
         $roletype->name = $request->input('name');
         $roletype->comments = $request->input('comments');
+        $roletype->is_enabled = $request->input('is_enabled');
+        $roletype->created_by = $request->input('created_by');
         $roletype->update_by = $request->input('update_by');
 
         if($roletype->save()) {

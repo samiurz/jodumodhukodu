@@ -35,6 +35,8 @@ class AccountBlockAssociationController extends Controller
         $accountBlockAssociations->block_id = $request->input('block_id');
         $accountBlockAssociations->block_stat_id = $request->input('block_stat_id');
         $accountBlockAssociations->comments = $request->input('comments');
+        $accountBlockAssociations->is_enabled = $request->input('is_enabled');
+        $accountBlockAssociations->created_by = $request->input('created_by');
         $accountBlockAssociations->update_by = $request->input('update_by');
         if($accountBlockAssociations->save()) {
             return new AccountBlockAssociationResource($accountBlockAssociations);

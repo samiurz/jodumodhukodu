@@ -38,12 +38,15 @@ class ContactController extends Controller
         $contacts->links = $request->input('links');
         $contacts->email = $request->input('email');
         $contacts->password = $request->input('password');
+        $contacts->is_enabled = $request->input('is_enabled');
+        $contacts->created_by = $request->input('created_by');
         $contacts->update_by = $request->input('update_by');
 
         if($contacts->save()) {
             return new ContactResource($contacts);
         }       
     }
+
     /**
      * Display the specified resource.
      *$
@@ -72,5 +75,20 @@ class ContactController extends Controller
         if($contacts->delete()) {
             return new ContactResource($contacts);
         }    
+    }
+    
+    /**
+     * Display the specified resource.
+     *$
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function contactsByCompanyId($id)
+    {
+        // Get contacts by company id
+        $contactsByCompany = Contact::where('company_id', $id)->get();
+
+        // Return collection of contacts as a resource
+        return ContactResource::collection($contactsByCompany);
     }
 }

@@ -35,6 +35,8 @@ class LabelController extends Controller
         $labels->company_id = $request->input('company_id');
         $labels->name = $request->input('name');
         $labels->comments = $request->input('comments');
+        $labels->is_enabled = $request->input('is_enabled');
+        $labels->created_by = $request->input('created_by');
         $labels->update_by = $request->input('update_by');
         
         if($labels->save()) {

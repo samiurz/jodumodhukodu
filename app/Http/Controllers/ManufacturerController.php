@@ -35,6 +35,8 @@ class ManufacturerController extends Controller
         $manufacturers->company_id = $request->input('company_id');
         $manufacturers->name = $request->input('name');
         $manufacturers->comments = $request->input('comments');
+        $manufacturers->is_enabled = $request->input('is_enabled');
+        $manufacturers->created_by = $request->input('created_by');
         $manufacturers->update_by = $request->input('update_by');
         
         if($manufacturers->save()) {

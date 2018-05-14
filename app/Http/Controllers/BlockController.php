@@ -34,6 +34,8 @@ class BlockController extends Controller
         $blocks->id = $request->input('id');
         $blocks->name = $request->input('name');
         $blocks->comments = $request->input('comments');
+        $blocks->is_enabled = $request->input('is_enabled');
+        $blocks->created_by = $request->input('created_by');
         $blocks->update_by = $request->input('update_by');
         if($blocks->save()) {
             return new BlockResource($blocks);

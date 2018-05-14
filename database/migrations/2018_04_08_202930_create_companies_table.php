@@ -17,12 +17,14 @@ class CreateCompaniesTable extends Migration
             $table->increments('id')->unique();
             $table->integer('account_id');
             $table->string('name');
-            $table->string('is_customer');
+            $table->integer('is_customer');
             $table->string('links');
             $table->string('email');
             $table->string('address');
             $table->string('comments');
-            $table->string('update_by');
+            $table->integer('created_by');
+            $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

@@ -14,6 +14,7 @@ class Spare extends Resource
             'id' => $this->id,
             'company' => $this->company,
             'asset' => $this->asset,
+            'name' => $this->name,
             'serial' => $this->serial,
             'cost' => $this->cost,
             'image' => $this->image,
@@ -22,6 +23,8 @@ class Spare extends Resource
             'minimum_stock' => $this->minimum_stock,
             'current_stock' => $this->current_stock,
             'comments' => $this->comments,
+            'is_enabled'=>$this->is_enabled,
+            'created_by' => $this->created_by,
             'update_by' => $this->update_by   
         ];
     }

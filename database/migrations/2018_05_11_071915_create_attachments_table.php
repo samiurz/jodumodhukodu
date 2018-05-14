@@ -19,6 +19,9 @@ class CreateAttachmentsTable extends Migration
             $table->string('name')->nullable();
             $table->string('type')->nullable();
             $table->integer('size')->nullable();
+            $table->integer('created_by');
+            $table->integer('update_by');
+            $table->tinyInteger('is_enabled')->default(0);
             $table->timestamps();
         });
     }

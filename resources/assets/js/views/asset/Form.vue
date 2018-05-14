@@ -21,7 +21,7 @@
                                     <label class="col-md-3 form-control-label" for="select">Select Model</label>
                                     <select id="select" type="select" class="form-control" v-model="asset.assets_model_id">
                                         <option value="">Select Model</option>
-                                        <option v-for="assetModel in assetModels" v-bind:key="assetModel.id" v-bind:value="assetModel.id">{{assetModel.name}}</option>
+                                        <option v-for="assetmodel in assetmodels" v-bind:key="assetmodel.id" v-bind:value="assetmodel.id">{{assetmodel.name}}</option>
                                     </select>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <div class="form-group files">
                                             <div class="attachment-holder animated fadeIn" v-cloak v-for="(attachment, index) in attachments"> 
                                                 <div class="form-group">
@@ -98,7 +98,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <!-- <input type="file" id="file-input" name="file-input"> -->
                                     <input type="file" multiple="multiple" id="attachments" @change="uploadFieldChange">
                                     <hr>
@@ -238,65 +238,66 @@
                     .catch(err => console.log(err));
             },
             addAsset() {
-                if (this.edit === false) {
-                    // Add
-                    fetch("api/asset", {
-                        method: "post",
-                        body: JSON.stringify(this.asset),
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            this.asset.id = "";
-                            this.asset.company_id = "";
-                            this.asset.asset_id = "";
-                            this.asset.serial = "";
-                            this.asset.type = "";
-                            this.asset.description = "";
-                            this.asset.image = "";
-                            this.asset.manufacturer_id = "";
-                            this.asset.quality_id = "";
-                            this.asset.asset_location_id = "";
-                            this.asset.minimum_stock = "";
-                            this.asset.current_stock = "";
-                            this.asset.comments = "";
-                            this.asset.update_by = "";
-                            alert("Asset Added");
-                            this.$router.push("/asset/list");
-                        })
-                        .catch(err => console.log(err));
-                } else {
-                    // Update
-                    fetch("api/asset", {
-                        method: "put",
-                        body: JSON.stringify(this.asset),
-                        headers: {
-                            "content-type": "application/json"
-                        }
-                    })
-                        .then(res => res.json())
-                        .then(data => {
-                            this.asset.id = "";
-                            this.asset.company_id = "";
-                            this.asset.asset_id = "";
-                            this.asset.serial = "";
-                            this.asset.type = "";
-                            this.asset.description = "";
-                            this.asset.image = "";
-                            this.asset.manufacturer_id = "";
-                            this.asset.quality_id = "";
-                            this.asset.asset_location_id = "";
-                            this.asset.minimum_stock = "";
-                            this.asset.current_stock = "";
-                            this.asset.comments = "";
-                            this.asset.update_by = "";
-                            alert("documentation type Updated");
-                            this.$router.push("/asset/list");
-                        })
-                        .catch(err => console.log(err));
-                }
+                this.submit()
+                // if (this.edit === false) {
+                //     // Add
+                //     fetch("api/asset", {
+                //         method: "post",
+                //         body: JSON.stringify(this.asset),
+                //         headers: {
+                //             "content-type": "application/json"
+                //         }
+                //     })
+                //         .then(res => res.json())
+                //         .then(data => {
+                //             this.asset.id = "";
+                //             this.asset.company_id = "";
+                //             this.asset.asset_id = "";
+                //             this.asset.serial = "";
+                //             this.asset.type = "";
+                //             this.asset.description = "";
+                //             this.asset.image = "";
+                //             this.asset.manufacturer_id = "";
+                //             this.asset.quality_id = "";
+                //             this.asset.asset_location_id = "";
+                //             this.asset.minimum_stock = "";
+                //             this.asset.current_stock = "";
+                //             this.asset.comments = "";
+                //             this.asset.update_by = "";
+                //             alert("Asset Added");
+                //             this.$router.push("/asset/list");
+                //         })
+                //         .catch(err => console.log(err));
+                // } else {
+                //     // Update
+                //     fetch("api/asset", {
+                //         method: "put",
+                //         body: JSON.stringify(this.asset),
+                //         headers: {
+                //             "content-type": "application/json"
+                //         }
+                //     })
+                //         .then(res => res.json())
+                //         .then(data => {
+                //             this.asset.id = "";
+                //             this.asset.company_id = "";
+                //             this.asset.asset_id = "";
+                //             this.asset.serial = "";
+                //             this.asset.type = "";
+                //             this.asset.description = "";
+                //             this.asset.image = "";
+                //             this.asset.manufacturer_id = "";
+                //             this.asset.quality_id = "";
+                //             this.asset.asset_location_id = "";
+                //             this.asset.minimum_stock = "";
+                //             this.asset.current_stock = "";
+                //             this.asset.comments = "";
+                //             this.asset.update_by = "";
+                //             alert("documentation type Updated");
+                //             this.$router.push("/asset/list");
+                //         })
+                //         .catch(err => console.log(err));
+                // }
             },
             editAsset(asset) {
                 this.edit = true;

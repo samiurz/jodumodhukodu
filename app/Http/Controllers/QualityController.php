@@ -34,6 +34,8 @@ class QualityController extends Controller
         $qualities->id = $request->input('id');
         $qualities->name = $request->input('name');
         $qualities->comments = $request->input('comments');
+        $qualities->is_enabled = $request->input('is_enabled');
+        $qualities->created_by = $request->input('created_by');
         $qualities->update_by = $request->input('update_by');
         
         if($qualities->save()) {

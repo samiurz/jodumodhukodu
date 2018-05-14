@@ -116,6 +116,14 @@ import ModuleForm from '../views/module/form';
 import BlockStatList from '../views/blockStat/list';
 import BlockStatForm from '../views/blockStat/form';
 
+// Views - job
+import JobList from '../views/job/list';
+import JobForm from '../views/job/form';
+
+// Views - repairType
+import RepairTypeList from '../views/repairType/list';
+import RepairTypeForm from '../views/repairType/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -646,6 +654,46 @@ export default new Router({
                             path: 'list',
                             name: 'Block Status List',
                             component: BlockStatList
+                        }
+                    ]
+                },
+                {
+                    path: '/job',
+                    redirect: '/job/list',
+                    name: 'Job',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Job Form',
+                            component: JobForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Job List',
+                            component: JobList
+                        }
+                    ]
+                },
+                {
+                    path: '/repairType',
+                    redirect: '/repairType/list',
+                    name: 'Repair Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Repair Type Form',
+                            component: RepairTypeForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Repair Type List',
+                            component: RepairTypeList
                         }
                     ]
                 }
