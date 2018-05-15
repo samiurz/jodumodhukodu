@@ -34391,7 +34391,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\App.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\App.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -49011,19 +49011,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             assetLocations: [],
             asset: (_asset = {
                 id: "",
-                company: {},
-                asset_model: {},
+                company_id: "",
+                asset_model_id: "",
                 name: "",
                 serial: "",
-                manufacturer: {},
-                label_id: "",
+                manufacturer_id: "",
+                label_id: "1",
                 label_value: "",
                 description: "",
                 image: "",
-                quality: {},
+                quality_id: "",
                 cost: "",
-                assetLocation: {}
-            }, _defineProperty(_asset, "image", ""), _defineProperty(_asset, "minimum_stock", ""), _defineProperty(_asset, "current_stock", ""), _defineProperty(_asset, "comments", ""), _defineProperty(_asset, "update_by", "1"), _asset),
+                asset_location_id: ""
+            }, _defineProperty(_asset, "image", ""), _defineProperty(_asset, "asset_status_id", "1"), _defineProperty(_asset, "minimum_stock", ""), _defineProperty(_asset, "current_stock", ""), _defineProperty(_asset, "comments", ""), _defineProperty(_asset, "created_by", "1"), _defineProperty(_asset, "update_by", "1"), _defineProperty(_asset, "is_enabled", "1"), _asset),
             id: "",
             edit: false,
             attachments: [],
@@ -49034,7 +49034,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         };
     },
     created: function created() {
-        console.log(this.$route.params.data);
         this.fetchCompanies();
         this.fetchManufacturar();
         this.fetchAssetModel();
@@ -49043,6 +49042,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
         // For Edit
         if (this.$route.params.data != undefined) {
+            console.log('params', this.$route.params.data);
             this.editAsset(this.$route.params.data);
             this.pullAttachments(this.$route.params.data);
         }
@@ -49058,7 +49058,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this.companies = res.data;
-                console.log(_this.companies);
+                console.log('Companies', _this.companies);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49072,7 +49072,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this2.manufacturers = res.data;
-                console.log(_this2.manufacturers);
+                console.log('Manufacturers', _this2.manufacturers);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49086,7 +49086,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this3.assetLocations = res.data;
-                console.log(_this3.assetLocations);
+                console.log('Asset Locations', _this3.assetLocations);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49100,7 +49100,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this4.qualities = res.data;
-                console.log(_this4.qualities);
+                console.log('Qualities', _this4.qualities);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49114,7 +49114,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this5.assetmodels = res.data;
-                console.log(_this5.assetmodels);
+                console.log('Asset Models', _this5.assetmodels);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49199,19 +49199,21 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         editAsset: function editAsset(asset) {
             this.edit = true;
             this.asset.id = asset.id;
-            // this.asset.company_id = asset.company_id;
-            // this.asset.asset_id = asset.asset_id;
-            // this.asset.serial = asset.serial;
-            // this.asset.type = asset.type;
-            // this.asset.description = asset.description;
-            // this.asset.image = asset.image;
-            // this.asset.manufacturer_id = asset.manufacturer_id;
-            // this.asset.quality_id = asset.quality_id;
-            // this.asset.asset_location_id = asset.asset_location_id;
-            // this.asset.minimum_stock = asset.minimum_stock;
-            // this.asset.current_stock = asset.current_stock;
-            // this.asset.comments = asset.comments;
-            // this.asset.update_by = asset.update_by;
+            this.asset.name = asset.name;
+            this.asset.company_id = asset.company.id;
+            this.asset.asset_model_id = asset.assetModel.id;
+            this.asset.serial = asset.serial;
+            this.asset.type = asset.type;
+            this.asset.description = asset.description;
+            this.asset.image = asset.image;
+            this.asset.cost = asset.cost;
+            this.asset.manufacturer_id = asset.manufacturer.id;
+            this.asset.quality_id = asset.quality.id;
+            this.asset.asset_location_id = asset.assetLocation.id;
+            this.asset.minimum_stock = asset.minimum_stock;
+            this.asset.current_stock = asset.current_stock;
+            this.asset.comments = asset.comments;
+            this.asset.update_by = asset.update_by;
         },
         selectCategory: function selectCategory(attachment, category_id) {
             attachment.category_id = category_id;
@@ -49336,7 +49338,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             });
         },
         pullAttachments: function pullAttachments(asset) {
-            console.log(asset);
             // Make HTTP request to store announcement
             axios.get("api/asset/attachments/" + asset.image).then(function (response) {
                 console.log(response);
@@ -49364,7 +49365,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.upload_size = Number(this.upload_size.toFixed(1));
         this.$forceUpdate();
     }), _defineProperty(_methods, "removeAttachments", function removeAttachments(attachment) {
-        this.removeServerAttachment(attachment.id);
+        //this.removeServerAttachment(attachment.id);
         this.attachments.splice(this.attachments.indexOf(attachment), 1);
         this.getAttachmentSize();
     }), _defineProperty(_methods, "start", function start() {
@@ -113939,7 +113940,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\node_modules\\vue-strap\\src\\Modal.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\node_modules\\vue-strap\\src\\Modal.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -113973,7 +113974,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Aside.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Aside.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Aside.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114007,7 +114008,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Breadcrumb.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Breadcrumb.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Breadcrumb.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114041,7 +114042,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Footer.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Footer.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Footer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114079,7 +114080,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Header.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Header.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Header.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114113,7 +114114,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Navbar.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Navbar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Navbar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114151,7 +114152,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Sidebar.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\components\\common\\Sidebar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Sidebar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114185,7 +114186,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\containers\\Full.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\containers\\Full.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Full.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114219,7 +114220,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Charts.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Charts.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Charts.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114253,7 +114254,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Dashboard.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Dashboard.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Dashboard.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114287,7 +114288,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Widgets.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\Widgets.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Widgets.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114321,7 +114322,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\accountBlockAssociation\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\accountBlockAssociation\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114355,7 +114356,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\accountBlockAssociation\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\accountBlockAssociation\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114389,7 +114390,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\account\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\account\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114423,7 +114424,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\account\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\account\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114457,7 +114458,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\activity\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\activity\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114491,7 +114492,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\activity\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\activity\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114525,7 +114526,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\assetLocation\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\assetLocation\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114559,7 +114560,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\assetLocation\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\assetLocation\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114593,7 +114594,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\asset\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\asset\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114627,7 +114628,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\asset\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\asset\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114661,7 +114662,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\blockStat\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\blockStat\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114695,7 +114696,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\blockStat\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\blockStat\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114729,7 +114730,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\block\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\block\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114763,7 +114764,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\block\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\block\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -114797,7 +114798,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\BarExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\BarExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -114830,7 +114831,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\DoughnutExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\DoughnutExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -114863,7 +114864,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\LineExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\LineExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -114896,7 +114897,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\PieExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\PieExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -114929,7 +114930,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\PolarAreaExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\PolarAreaExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -114962,7 +114963,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\RadarExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\charts\\RadarExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -114995,7 +114996,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\company\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\company\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115029,7 +115030,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\company\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\company\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115063,7 +115064,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Buttons.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Buttons.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Buttons.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115097,7 +115098,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Cards.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Cards.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Cards.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115131,7 +115132,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Forms.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Forms.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Forms.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115165,7 +115166,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Modals.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Modals.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Modals.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115203,7 +115204,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\SocialButtons.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\SocialButtons.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] SocialButtons.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115237,7 +115238,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Switches.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Switches.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Switches.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115271,7 +115272,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Tables.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\components\\Tables.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Tables.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115305,7 +115306,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\customerBlockModuleAction\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\customerBlockModuleAction\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115339,7 +115340,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\customerBlockModuleAction\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\customerBlockModuleAction\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115373,7 +115374,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardBarChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardBarChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -115406,7 +115407,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine1ChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine1ChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -115439,7 +115440,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine2ChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine2ChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -115472,7 +115473,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine3ChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\CardLine3ChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -115505,7 +115506,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\MainChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\MainChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -115538,7 +115539,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\SocialBoxChartExample.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\dashboard\\SocialBoxChartExample.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -115571,7 +115572,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\document\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\document\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115605,7 +115606,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\document\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\document\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115639,7 +115640,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\documentationType\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\documentationType\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115673,7 +115674,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\documentationType\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\documentationType\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115707,7 +115708,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\faultType\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\faultType\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115741,7 +115742,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\faultType\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\faultType\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115775,7 +115776,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\icons\\FontAwesome.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\icons\\FontAwesome.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] FontAwesome.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115809,7 +115810,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\icons\\SimpleLineIcons.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\icons\\SimpleLineIcons.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] SimpleLineIcons.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115843,7 +115844,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobPriority\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobPriority\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115877,7 +115878,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobPriority\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobPriority\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115911,7 +115912,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobType\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobType\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115945,7 +115946,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobType\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\jobType\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -115979,7 +115980,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\job\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\job\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116013,7 +116014,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\job\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\job\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116047,7 +116048,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\label\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\label\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116081,7 +116082,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\label\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\label\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116115,7 +116116,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\manufacturer\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\manufacturer\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116149,7 +116150,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\manufacturer\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\manufacturer\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116183,7 +116184,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\modelType\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\modelType\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116217,7 +116218,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\modelType\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\modelType\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116251,7 +116252,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\module\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\module\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116285,7 +116286,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\module\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\module\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116319,7 +116320,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Login.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Login.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Login.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116353,7 +116354,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Page404.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Page404.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page404.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116387,7 +116388,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Page500.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Page500.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Page500.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116421,7 +116422,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Register.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\pages\\Register.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Register.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116455,7 +116456,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\quality\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\quality\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116489,7 +116490,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\quality\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\quality\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116523,7 +116524,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\repairType\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\repairType\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116557,7 +116558,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\repairType\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\repairType\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116591,7 +116592,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\roletype\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\roletype\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116625,7 +116626,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\roletype\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\roletype\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116659,7 +116660,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spareType\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spareType\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116693,7 +116694,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spareType\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spareType\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116727,7 +116728,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spare\\form.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spare\\form.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] form.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -116761,7 +116762,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Bitnami\\wampstack-7.1.15-0\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spare\\list.vue"
+Component.options.__file = "C:\\Bitnami\\wampstack-7.1.13-1\\apache2\\htdocs\\jodumodhukodu\\resources\\assets\\js\\views\\spare\\list.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] list.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -127082,8 +127083,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.company.id),
-      expression: "asset.company.id"
+      value: (_vm.asset.company_id),
+      expression: "asset.company_id"
     }],
     staticClass: "form-control",
     attrs: {
@@ -127098,7 +127099,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.$set(_vm.asset.company, "id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+        _vm.$set(_vm.asset, "company_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
   }, [_c('option', {
@@ -127123,8 +127124,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.asset_model.id),
-      expression: "asset.asset_model.id"
+      value: (_vm.asset.asset_model_id),
+      expression: "asset.asset_model_id"
     }],
     staticClass: "form-control",
     attrs: {
@@ -127139,7 +127140,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.$set(_vm.asset.asset_model, "id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+        _vm.$set(_vm.asset, "asset_model_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
   }, [_c('option', {
@@ -127276,8 +127277,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.manufacturer.id),
-      expression: "asset.manufacturer.id"
+      value: (_vm.asset.manufacturer_id),
+      expression: "asset.manufacturer_id"
     }],
     staticClass: "form-control",
     attrs: {
@@ -127292,7 +127293,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.$set(_vm.asset.manufacturer, "id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+        _vm.$set(_vm.asset, "manufacturer_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
   }, [_c('option', {
@@ -127317,8 +127318,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.asset_location.id),
-      expression: "asset.asset_location.id"
+      value: (_vm.asset.asset_location_id),
+      expression: "asset.asset_location_id"
     }],
     staticClass: "form-control",
     attrs: {
@@ -127333,7 +127334,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.$set(_vm.asset.asset_location, "id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+        _vm.$set(_vm.asset, "asset_location_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
   }, [_c('option', {
@@ -127358,8 +127359,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.asset.quality.id),
-      expression: "asset.quality.id"
+      value: (_vm.asset.quality_id),
+      expression: "asset.quality_id"
     }],
     staticClass: "form-control",
     attrs: {
@@ -127374,7 +127375,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           var val = "_value" in o ? o._value : o.value;
           return val
         });
-        _vm.$set(_vm.asset.quality, "id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
+        _vm.$set(_vm.asset, "quality_id", $event.target.multiple ? $$selectedVal : $$selectedVal[0])
       }
     }
   }, [_c('option', {
@@ -127533,6 +127534,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       on: {
         "click": function($event) {
+          $event.preventDefault();
           _vm.removeAttachment(attachment)
         }
       }
