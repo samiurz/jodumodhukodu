@@ -66,6 +66,8 @@
                     block_id: "",
                     block_stat_id: "",
                     comments: "",
+                    is_enabled: "1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -144,6 +146,8 @@
                             this.accountBlockAssociation.block_id = "";
                             this.accountBlockAssociation.block_stat_id = "";
                             this.accountBlockAssociation.comments = "";
+                            this.accountBlockAssociation.is_enabled = "";
+                            this.accountBlockAssociation.created_by = "";
                             this.accountBlockAssociation.update_by = "";
                             alert("Account Block Association Added");
                             this.$router.push('/accountBlockAssociation/list');
@@ -178,6 +182,8 @@
                 this.accountBlockAssociation.block_id = accountBlockAssociation.block_id;
                 this.accountBlockAssociation.block_stat_id = accountBlockAssociation.block_stat_id;
                 this.accountBlockAssociation.comments = accountBlockAssociation.comments;
+                this.accountBlockAssociation.is_enabled = accountBlockAssociation.is_enabled;
+                this.accountBlockAssociation.created_by = accountBlockAssociation.created_by;
                 this.accountBlockAssociation.update_by = accountBlockAssociation.update_by;
             }
         }

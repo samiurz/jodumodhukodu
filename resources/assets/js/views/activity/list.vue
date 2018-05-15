@@ -4,7 +4,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>LIST</strong>
+                        <strong>Activity</strong>
                         <small>Form</small>
                         <router-link :to="{ name: 'Activity Form'}">
                             <button class="btn btn-warning">Add</button>
@@ -69,6 +69,7 @@
                     id: "",
                     name: "",
                     comments: "",
+                    created_by: "",
                     update_by: "1"
                 },
                 id: "",

@@ -44,6 +44,8 @@
                     id: "",
                     name: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -107,6 +109,9 @@
                         .then(data => {
                             this.roletype.name = "";
                             this.roletype.comments = "";
+                            this.roletype.is_enabled = "";
+                            this.roletype.created_by = "";
+                            this.roletype.update_by = "";
                             alert("roletype Added");
                             this.$router.push('/roletype/list');
                         })
@@ -134,6 +139,8 @@
                 this.roletype.id = roletype.id;
                 this.roletype.name = roletype.name;
                 this.roletype.comments = roletype.comments;
+                this.roletype.is_enabled = roletype.is_enabled;
+                this.roletype.created_by = roletype.created_by;
                 this.roletype.update_by = roletype.update_by;
             }
         }

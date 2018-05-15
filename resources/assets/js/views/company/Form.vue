@@ -80,6 +80,8 @@
                     email: "",
                     address: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -137,6 +139,8 @@
                             this.company.email = "";
                             this.company.address = "";
                             this.company.comments = "";
+                            this.company.is_enabled = "",
+                            this.company.created_by = "",
                             this.company.update_by = "";
                             alert("Company Added");
                             this.$router.push("/company/list");
@@ -170,6 +174,8 @@
                 this.company.email = company.email;
                 this.company.address = company.address;
                 this.company.comments = company.comments;
+                this.company.is_enabled = company.is_enabled;
+                this.company.created_by = company.created_by;
                 this.company.update_by = company.update_by;
             }
         }

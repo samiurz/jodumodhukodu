@@ -44,6 +44,8 @@
                     id: "",
                     name: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -71,6 +73,8 @@
                             this.blockStat.id = "";
                             this.blockStat.name = "";
                             this.blockStat.comments = "";
+                            this.blockStat.is_enabled = "";
+                            this.blockStat.created_by = "";
                             this.blockStat.update_by = "";
                             alert("Block Status Added");
                             this.$router.push("/blockStat/list");
@@ -89,6 +93,9 @@
                         .then(data => {
                             this.blockStat.name = "";
                             this.blockStat.comments = "";
+                            this.blockStat.is_enabled = "";
+                            this.blockStat.created_by = "";
+                            this.blockStat.update_by = "";
                             alert("Block Status Updated");
                             this.$router.push("/blockStat/list");
                         })
@@ -100,6 +107,8 @@
                 this.blockStat.id = blockStat.id;
                 this.blockStat.name = blockStat.name;
                 this.blockStat.comments = blockStat.comments;
+                this.blockStat.is_enabled = blockStat.is_enabled;
+                this.blockStat.created_by = blockStat.created_by;
                 this.blockStat.update_by = blockStat.update_by;
             }
         }

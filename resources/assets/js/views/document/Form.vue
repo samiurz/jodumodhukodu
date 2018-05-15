@@ -63,6 +63,8 @@
                     file: "",
                     url: "",
                     comments:"",
+                    is_enabled:"",
+                    created_by:"",
                     update_by: "1"
                 },
                 id: "",
@@ -117,6 +119,8 @@
                             this.document.url = "";
                             this.document.file = "";
                             this.document.comments = "";
+                            this.document.is_enabled="";
+                            this.document.created_by="";
                             this.document.update_by = "";
                             alert("document Added");
                             this.$router.push("/document/list");
@@ -139,6 +143,9 @@
                             this.document.url = "";
                             this.document.file = "";
                             this.document.comments = "";
+                            this.document.is_enabled="";
+                            this.document.created_by="";
+                            this.document.update_by = "";
                             alert("Document Updated");
                             this.$router.push("/document/list");
                         })
@@ -153,6 +160,8 @@
                 this.document.url = document.url;
                 this.document.file = document.file;
                 this.document.comments = document.comments;
+                this.document.is_enabled = document.is_enabled;
+                this.document.created_by = document.created_by;
                 this.document.update_by = document.update_by;
             }
         }

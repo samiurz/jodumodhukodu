@@ -70,6 +70,8 @@
                     company_id: "",
                     type: "",
                     comments: "",
+                    is_enabled:"",
+                    created_by:"",
                     update_by: "1"
                 },
                 id: "",
@@ -80,7 +82,6 @@
 
         created() {
             this.fetchJobTypes();
-            this.fetchCompanies();
         },
 
         methods: {

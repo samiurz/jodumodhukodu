@@ -47669,6 +47669,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 block_id: "",
                 block_stat_id: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -47757,6 +47759,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.accountBlockAssociation.block_id = "";
                     _this4.accountBlockAssociation.block_stat_id = "";
                     _this4.accountBlockAssociation.comments = "";
+                    _this4.accountBlockAssociation.is_enabled = "";
+                    _this4.accountBlockAssociation.created_by = "";
                     _this4.accountBlockAssociation.update_by = "";
                     alert("Account Block Association Added");
                     _this4.$router.push('/accountBlockAssociation/list');
@@ -47793,6 +47797,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.accountBlockAssociation.block_id = accountBlockAssociation.block_id;
             this.accountBlockAssociation.block_stat_id = accountBlockAssociation.block_stat_id;
             this.accountBlockAssociation.comments = accountBlockAssociation.comments;
+            this.accountBlockAssociation.is_enabled = accountBlockAssociation.is_enabled;
+            this.accountBlockAssociation.created_by = accountBlockAssociation.created_by;
             this.accountBlockAssociation.update_by = accountBlockAssociation.update_by;
         }
     }
@@ -47879,6 +47885,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 block_id: "",
                 block_stat_id: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -48036,6 +48044,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 name: "",
                 email: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -48107,6 +48117,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this3.account.name = "";
                     _this3.account.email = "";
                     _this3.account.comments = "";
+                    _this3.account.is_enabled = "";
                     alert("account Added");
                     _this3.$router.push('/account/list');
                 }).catch(function (err) {
@@ -48137,6 +48148,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.account.name = account.name;
             this.account.email = account.email;
             this.account.comments = account.comments;
+            this.account.is_enabled = account.is_enabled;
+            this.account.created_by = account.created_by;
             this.account.update_by = account.update_by;
         }
     }
@@ -48330,6 +48343,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -48400,6 +48415,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this3.activity.name = "";
                     _this3.activity.comments = "";
+                    _this3.activity.is_enabled = "";
+                    _this3.activity.created_by = "";
+                    _this3.activity.update_by = "";
                     alert("activity Added");
                     _this3.$router.push('/activity/list');
                 }).catch(function (err) {
@@ -48429,6 +48447,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.activity.id = activity.id;
             this.activity.name = activity.name;
             this.activity.comments = activity.comments;
+            this.activity.is_enabled = activity.is_enabled;
+            this.activity.created_by = activity.created_by;
             this.activity.update_by = activity.update_by;
         }
     }
@@ -48511,6 +48531,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -48628,6 +48649,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 location: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -48674,6 +48697,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.assetLocation.company_id = "";
                     _this2.assetLocation.location = "";
                     _this2.assetLocation.comments = "";
+                    _this2.assetLocation.is_enabled = "";
+                    _this2.assetLocation.created_by = "";
                     _this2.assetLocation.update_by = "";
                     alert("Asset Location Status Added");
                     _this2.$router.push("/assetLocation/list");
@@ -48706,6 +48731,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.assetLocation.company_id = assetLocation.company_id;
             this.assetLocation.location = assetLocation.location;
             this.assetLocation.comments = assetLocation.comments;
+            this.assetLocation.is_enabled = assetLocation.is_enabled;
+            this.assetLocation.created_by = assetLocation.created_by;
             this.assetLocation.update_by = assetLocation.update_by;
         }
     }
@@ -49607,6 +49634,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -49636,6 +49665,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this.blockStat.id = "";
                     _this.blockStat.name = "";
                     _this.blockStat.comments = "";
+                    _this.blockStat.is_enabled = "";
+                    _this.blockStat.created_by = "";
                     _this.blockStat.update_by = "";
                     alert("Block Status Added");
                     _this.$router.push("/blockStat/list");
@@ -49655,6 +49686,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this.blockStat.name = "";
                     _this.blockStat.comments = "";
+                    _this.blockStat.is_enabled = "";
+                    _this.blockStat.created_by = "";
+                    _this.blockStat.update_by = "";
                     alert("Block Status Updated");
                     _this.$router.push("/blockStat/list");
                 }).catch(function (err) {
@@ -49667,6 +49701,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.blockStat.id = blockStat.id;
             this.blockStat.name = blockStat.name;
             this.blockStat.comments = blockStat.comments;
+            this.blockStat.is_enabled = blockStat.is_enabled;
+            this.blockStat.created_by = blockStat.created_by;
             this.blockStat.update_by = blockStat.update_by;
         }
     }
@@ -49745,6 +49781,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -49854,6 +49892,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -49924,6 +49964,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this3.block.name = "";
                     _this3.block.comments = "";
+                    _this3.block.is_enabled = "";
+                    _this3.block.comments = "";
+                    _this3.block.created_by = "";
+                    _this3.block.update_by = "";
                     alert("block Added");
                     _this3.$router.push('/block/list');
                 }).catch(function (err) {
@@ -49953,6 +49997,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.block.id = block.id;
             this.block.name = block.name;
             this.block.comments = block.comments;
+            this.block.is_enabled = block.is_enabled;
+            this.block.created_by = block.created_by;
             this.block.update_by = block.update_by;
         }
     }
@@ -50034,6 +50080,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -50348,6 +50396,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 email: "",
                 address: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -50410,7 +50460,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.company.email = "";
                     _this2.company.address = "";
                     _this2.company.comments = "";
-                    _this2.company.update_by = "";
+                    _this2.company.is_enabled = "", _this2.company.created_by = "", _this2.company.update_by = "";
                     alert("Company Added");
                     _this2.$router.push("/company/list");
                 }).catch(function (err) {
@@ -50445,6 +50495,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.company.email = company.email;
             this.company.address = company.address;
             this.company.comments = company.comments;
+            this.company.is_enabled = company.is_enabled;
+            this.company.created_by = company.created_by;
             this.company.update_by = company.update_by;
         }
     }
@@ -50536,6 +50588,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 links: "",
                 email: "",
                 address: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -53998,6 +54052,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 module_id: "",
                 activity_id: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -54088,6 +54144,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this5.documentationType.company_id = "";
                     _this5.documentationType.type = "";
                     _this5.documentationType.comments = "";
+                    _this5.documentationType.is_enabled = "";
+                    _this5.documentationType.created_by = "";
                     _this5.documentationType.update_by = "";
                     alert("documentation type Added");
                     _this5.$router.push("/documentationType/list");
@@ -54120,6 +54178,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.documentationType.company_id = documentationType.company_id;
             this.documentationType.type = documentationType.type;
             this.documentationType.comments = documentationType.comments;
+            this.documentationType.is_enabled = documentationType.is_enabled;
+            this.documentationType.created_by = documentationType.created_by;
             this.documentationType.update_by = documentationType.update_by;
         }
     }
@@ -54207,6 +54267,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 module_id: "",
                 activity_id: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -54710,6 +54772,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 file: "",
                 url: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -54772,6 +54836,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this3.document.url = "";
                     _this3.document.file = "";
                     _this3.document.comments = "";
+                    _this3.document.is_enabled = "";
+                    _this3.document.created_by = "";
                     _this3.document.update_by = "";
                     alert("document Added");
                     _this3.$router.push("/document/list");
@@ -54795,6 +54861,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this3.document.url = "";
                     _this3.document.file = "";
                     _this3.document.comments = "";
+                    _this3.document.is_enabled = "";
+                    _this3.document.created_by = "";
+                    _this3.document.update_by = "";
                     alert("Document Updated");
                     _this3.$router.push("/document/list");
                 }).catch(function (err) {
@@ -54810,6 +54879,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.document.url = document.url;
             this.document.file = document.file;
             this.document.comments = document.comments;
+            this.document.is_enabled = document.is_enabled;
+            this.document.created_by = document.created_by;
             this.document.update_by = document.update_by;
         }
     }
@@ -54901,6 +54972,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 url: "",
                 file: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -55023,6 +55096,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -55103,6 +55178,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this3.documentationType.company_id = "";
                 _this3.documentationType.type = "";
                 _this3.documentationType.comments = "";
+                _this3.documentationType.is_enabled = "";
+                _this3.documentationType.created_by = "";
                 _this3.documentationType.update_by = "";
                 alert("documentation type Added");
                 _this3.$router.push("/documentationType/list");
@@ -55122,6 +55199,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }).then(function (data) {
                 _this3.documentationType.type = "";
                 _this3.documentationType.comments = "";
+                _this3.documentationType.is_enabled = "";
+                _this3.documentationType.created_by = "";
+                _this3.documentationType.update_by = "";
                 alert("documentation type Updated");
                 _this3.$router.push("/documentationType/list");
             }).catch(function (err) {
@@ -55134,6 +55214,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.documentationType.company_id = documentationType.company_id;
         this.documentationType.type = documentationType.type;
         this.documentationType.comments = documentationType.comments;
+        this.documentationType.is_enabled = documentationType.is_enabled;
+        this.documentationType.created_by = documentationType.created_by;
         this.documentationType.update_by = documentationType.update_by;
     }), _methods)
 });
@@ -55216,6 +55298,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -55359,6 +55443,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 asset_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -55421,6 +55507,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this3.faultType.asset_id = "";
                     _this3.faultType.type = "";
                     _this3.faultType.comments = "";
+                    _this3.faultType.is_enabled = "";
+                    _this3.faultType.created_by = "";
                     _this3.faultType.update_by = "";
                     alert("Fault type Added");
                     _this3.$router.push("/faultType/list");
@@ -55440,6 +55528,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this3.faultType.type = "";
                     _this3.faultType.comments = "";
+                    _this3.faultType.is_enabled = "";
+                    _this3.faultType.created_by = "";
+                    _this3.faultType.update_by = "";
                     alert("Fault type Updated");
                     _this3.$router.push("/faultType/list");
                 }).catch(function (err) {
@@ -55454,6 +55545,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.faultType.asset_id = faultType.asset_id;
             this.faultType.type = faultType.type;
             this.faultType.comments = faultType.comments;
+            this.faultType.is_enabled = faultType.is_enabled;
+            this.faultType.created_by = faultType.created_by;
             this.faultType.update_by = faultType.update_by;
         }
     }
@@ -55540,6 +55633,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 asset_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -59922,6 +60017,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 priority: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -59978,6 +60075,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.jobPriority.company_id = "";
                     _this2.jobPriority.priority = "";
                     _this2.jobPriority.comments = "";
+                    _this2.jobPriority.is_enabled = "";
+                    _this2.jobPriority.created_by = "";
                     _this2.jobPriority.update_by = "";
                     alert("Job type Added");
                     _this2.$router.push("/jobPriority/list");
@@ -59998,6 +60097,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.jobPriority.company_id = "";
                     _this2.jobPriority.priority = "";
                     _this2.jobPriority.comments = "";
+                    _this2.jobPriority.is_enabled = "";
+                    _this2.jobPriority.created_by = "";
+                    _this2.jobPriority.update_by = "";
                     alert("Job type Updated");
                     _this2.$router.push("/jobPriority/list");
                 }).catch(function (err) {
@@ -60011,6 +60113,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.jobPriority.company_id = jobPriority.company_id;
             this.jobPriority.type = jobPriority.priority;
             this.jobPriority.comments = jobPriority.comments;
+            this.jobPriority.is_enabled = jobPriority.is_enabled;
+            this.jobPriority.created_by = jobPriority.created_by;
             this.jobPriority.update_by = jobPriority.update_by;
         }
     }
@@ -60094,6 +60198,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 priority: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -60228,7 +60334,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 company_id: "",
                 type: "",
+                is_enabled: "1",
                 comments: "",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -60285,6 +60393,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.jobType.company_id = "";
                     _this2.jobType.type = "";
                     _this2.jobType.comments = "";
+                    _this2.jobType.is_enabled = "";
+                    _this2.jobType.created_by = "";
                     _this2.jobType.update_by = "";
                     alert("Job type Added");
                     _this2.$router.push("/jobType/list");
@@ -60317,6 +60427,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.jobType.company_id = jobType.company_id;
             this.jobType.type = jobType.type;
             this.jobType.comments = jobType.comments;
+            this.jobType.is_enabled = jobType.is_enabled;
+            this.jobType.created_by = jobType.created_by;
             this.jobType.update_by = jobType.update_by;
         }
     }
@@ -60400,6 +60512,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -60409,7 +60523,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     created: function created() {
         this.fetchJobTypes();
-        this.fetchCompanies();
     },
 
 
@@ -61332,6 +61445,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -61419,6 +61534,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.label.company_id = "";
                     _this4.label.name = "";
                     _this4.label.comments = "";
+                    _this4.label.is_enabled = "";
+                    _this4.label.created_by = "";
+                    _this4.label.update_by = "";
                     alert("Label Added");
                     _this4.$router.push('/label/list');
                 }).catch(function (err) {
@@ -61438,6 +61556,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this4.label.company_id = "";
                     _this4.label.name = "";
                     _this4.label.comments = "";
+                    _this4.label.is_enabled = "";
+                    _this4.label.created_by = "";
+                    _this4.label.update_by = "";
                     alert("Label Updated");
                     _this4.$router.push('/label/list');
                 }).catch(function (err) {
@@ -61451,6 +61572,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.label.company_id = label.company_id;
             this.label.name = label.name;
             this.label.comments = label.comments;
+            this.label.created_by = label.created_by;
+            this.label.is_enabled = label.is_enabled;
             this.label.update_by = label.update_by;
         }
     }
@@ -61529,6 +61652,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -61647,6 +61772,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -61703,6 +61830,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.manufacturer.company_id = "";
                     _this2.manufacturer.name = "";
                     _this2.manufacturer.comments = "";
+                    _this2.manufacturer.is_enabled = "";
+                    _this2.manufacturer.created_by = "";
                     _this2.manufacturer.update_by = "";
                     alert("Manufacturer Added");
                     _this2.$router.push("/manufacturer/list");
@@ -61722,6 +61851,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this2.manufacturer.name = "";
                     _this2.manufacturer.comments = "";
+                    _this2.manufacturer.is_enabled = "";
+                    _this2.manufacturer.created_by = "";
+                    _this2.manufacturer.update_by = "";
                     alert("Manufacturer Updated");
                     _this2.$router.push("/manufacturer/list");
                 }).catch(function (err) {
@@ -61735,6 +61867,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.manufacturer.company_id = manufacturer.company_id;
             this.manufacturer.name = manufacturer.name;
             this.manufacturer.comments = manufacturer.comments;
+            this.manufacturer.is_enabled = manufacturer.is_enabled;
+            this.manufacturer.created_by = manufacturer.created_by;
             this.manufacturer.update_by = manufacturer.update_by;
         }
     }
@@ -61957,7 +62091,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 make: "",
                 type: "",
+                is_enabled: "1",
                 comments: "",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -62015,6 +62151,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.modelType.make = "";
                     _this2.modelType.type = "";
                     _this2.modelType.comments = "";
+                    _this2.modelType.is_enabled = "";
+                    _this2.modelType.created_by = "";
                     _this2.modelType.update_by = "";
                     alert("Model type Added");
                     _this2.$router.push("/modelType/list");
@@ -62034,6 +62172,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this2.modelType.type = "";
                     _this2.modelType.comments = "";
+                    _this2.modelType.is_enabled = "";
+                    _this2.modelType.created_by = "";
+                    _this2.modelType.update_by = "";
                     alert("Model type Updated");
                     _this2.$router.push("/modelType/list");
                 }).catch(function (err) {
@@ -62048,6 +62189,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.modelType.company_id = modelType.company_id;
             this.modelType.type = modelType.type;
             this.modelType.comments = modelType.comments;
+            this.modelType.created_by = modelType.created_by;
+            this.modelType.is_enabled = modelType.is_enabled;
             this.modelType.update_by = modelType.update_by;
         }
     }
@@ -62134,6 +62277,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 make: "",
                 type: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -62267,6 +62412,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 block_id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -62323,6 +62470,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.module.block_id = "";
                     _this2.module.name = "";
                     _this2.module.comments = "";
+                    _this2.module.is_enabled = "";
+                    _this2.module.created_by = "";
                     _this2.module.update_by = "";
                     alert("module Added");
                     _this2.$router.push("/module/list");
@@ -62342,6 +62491,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this2.module.name = "";
                     _this2.module.comments = "";
+                    _this2.module.is_enabled = "";
+                    _this2.module.created_by = "";
+                    _this2.module.update_by = "";
                     alert("module Updated");
                     _this2.$router.push("/module/list");
                 }).catch(function (err) {
@@ -62355,6 +62507,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.module.block_id = module.block_id;
             this.module.name = module.name;
             this.module.comments = module.comments;
+            this.module.is_enabled = module.is_enabled;
+            this.module.created_by = module.created_by;
             this.module.update_by = module.update_by;
         }
     }
@@ -62438,6 +62592,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 block_id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -62742,6 +62898,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -62771,6 +62929,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this.quality.name = "";
                     _this.quality.comments = "";
+                    _this.quality.is_enabled = "";
+                    _this.quality.created_by = "";
+                    _this.quality.update_by = "";;
                     alert("quality Added");
                     _this.$router.push('/quality/list');
                 }).catch(function (err) {
@@ -62789,6 +62950,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this.quality.name = "";
                     _this.quality.comments = "";
+                    _this.quality.is_enabled = "";
+                    _this.quality.created_by = "";
+                    _this.quality.update_by = "";
                     alert("quality Updated");
                     _this.$router.push('/quality/list');
                 }).catch(function (err) {
@@ -62801,6 +62965,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.quality.id = quality.id;
             this.quality.name = quality.name;
             this.quality.comments = quality.comments;
+            this.quality.is_enabled = quality.is_enabled;
+            this.quality.created_by = quality.created_by;
             this.quality.update_by = quality.update_by;
         }
     }
@@ -62883,6 +63049,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -63004,6 +63172,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -63068,6 +63238,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this2.repairType.company_id = "";
                 _this2.repairType.type = "";
                 _this2.repairType.comments = "";
+                _this2.repairType.is_enabled = "";
+                _this2.repairType.created_by = "";
                 _this2.repairType.update_by = "";
                 alert("Repair Type Added");
                 _this2.$router.push("/repairType/list");
@@ -63087,6 +63259,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }).then(function (data) {
                 _this2.repairType.type = "";
                 _this2.repairType.comments = "";
+                _this2.repairType.type = "";
+                _this2.repairType.comments = "";
+                _this2.repairType.is_enabled = "";
+                _this2.repairType.created_by = "";
+                _this2.repairType.update_by = "";
                 alert("Repair Type Updated");
                 _this2.$router.push("/repairType/list");
             }).catch(function (err) {
@@ -63099,6 +63276,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         this.repairType.company_id = repairType.company_id;
         this.repairType.type = repairType.type;
         this.repairType.comments = repairType.comments;
+        this.repairType.is_enabled = repairType.is_enabled;
+        this.repairType.created_by = repairType.created_by;
         this.repairType.update_by = repairType.update_by;
     }), _methods)
 });
@@ -63179,6 +63358,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -63287,6 +63468,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -63357,6 +63540,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 }).then(function (data) {
                     _this3.roletype.name = "";
                     _this3.roletype.comments = "";
+                    _this3.roletype.is_enabled = "";
+                    _this3.roletype.created_by = "";
+                    _this3.roletype.update_by = "";
                     alert("roletype Added");
                     _this3.$router.push('/roletype/list');
                 }).catch(function (err) {
@@ -63386,6 +63572,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.roletype.id = roletype.id;
             this.roletype.name = roletype.name;
             this.roletype.comments = roletype.comments;
+            this.roletype.is_enabled = roletype.is_enabled;
+            this.roletype.created_by = roletype.created_by;
             this.roletype.update_by = roletype.update_by;
         }
     }
@@ -63468,6 +63656,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 id: "",
                 name: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -63586,6 +63776,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "1",
+                created_by: "1",
                 update_by: "1"
             },
             id: "",
@@ -63642,6 +63834,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     _this2.spareType.company_id = "";
                     _this2.spareType.type = "";
                     _this2.spareType.comments = "";
+                    _this2.spareType.is_enabeld = "";
+                    _this2.spareType.created_by = "";
                     _this2.spareType.update_by = "";
                     alert("Spare type Added");
                     _this2.$router.push("/spareType/list");
@@ -63674,6 +63868,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.spareType.company_id = spareType.company_id;
             this.spareType.type = spareType.type;
             this.spareType.comments = spareType.comments;
+            this.spareType.is_enabeld = spareType.is_enabeld;
+            this.spareType.created_by = spareType.created_by;
             this.spareType.update_by = spareType.update_by;
         }
     }
@@ -63757,6 +63953,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 company_id: "",
                 type: "",
                 comments: "",
+                is_enabled: "",
+                created_by: "",
                 update_by: "1"
             },
             id: "",
@@ -116913,7 +117111,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card"
   }, [_c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("LIST")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+  }, [_c('strong', [_vm._v("Activity")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
     attrs: {
       "to": {
         name: 'Activity Form'
@@ -118742,7 +118940,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card"
   }, [_c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("LIST")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+  }, [_c('strong', [_vm._v("Block")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
     attrs: {
       "to": {
         name: 'Block Form'
@@ -127293,7 +127491,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card"
   }, [_c('div', {
     staticClass: "card-header"
-  }, [_c('strong', [_vm._v("Label")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
+  }, [_c('strong', [_vm._v("Company")]), _vm._v(" "), _c('small', [_vm._v("Form")]), _vm._v(" "), _c('router-link', {
     attrs: {
       "to": {
         name: 'Company Form'

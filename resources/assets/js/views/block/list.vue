@@ -4,7 +4,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>LIST</strong>
+                        <strong>Block</strong>
                         <small>Form</small>
                         <router-link :to="{ name: 'Block Form'}">
                             <button class="btn btn-warning">Add</button>
@@ -68,6 +68,8 @@
                     id: "",
                     name: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",

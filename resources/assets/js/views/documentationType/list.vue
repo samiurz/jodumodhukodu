@@ -70,6 +70,8 @@
                     company_id: "",
                     type: "",
                     comments: "",
+                    is_enabled:"",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",

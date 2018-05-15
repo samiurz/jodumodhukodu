@@ -43,7 +43,9 @@
                 activity: {
                     id: "",
                     name: "",
-                    comments: "",
+                    comments: "", 
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -107,6 +109,9 @@
                         .then(data => {
                             this.activity.name = "";
                             this.activity.comments = "";
+                            this.activity.is_enabled = "";
+                            this.activity.created_by = "";
+                            this.activity.update_by = "";
                             alert("activity Added");
                             this.$router.push('/activity/list');
                         })
@@ -134,6 +139,8 @@
                 this.activity.id = activity.id;
                 this.activity.name = activity.name;
                 this.activity.comments = activity.comments;
+                this.activity.is_enabled = activity.is_enabled;
+                this.activity.created_by = activity.created_by;
                 this.activity.update_by = activity.update_by;
             }
         }

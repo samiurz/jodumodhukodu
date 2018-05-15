@@ -4,7 +4,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <strong>Label</strong>
+                        <strong>Company</strong>
                         <small>Form</small>
                         <router-link :to="{ name: 'Company Form'}">
                             <button class="btn btn-warning">Add</button>
@@ -78,6 +78,8 @@
                     links: "",
                     email: "",
                     address: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",

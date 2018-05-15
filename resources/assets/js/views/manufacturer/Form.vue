@@ -54,6 +54,8 @@
                     company_id: "",
                     name: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -105,6 +107,8 @@
                             this.manufacturer.company_id = "";
                             this.manufacturer.name = "";
                             this.manufacturer.comments = "";
+                            this.manufacturer.is_enabled = "";
+                            this.manufacturer.created_by = "";
                             this.manufacturer.update_by = "";
                             alert("Manufacturer Added");
                             this.$router.push("/manufacturer/list");
@@ -123,6 +127,9 @@
                         .then(data => {
                             this.manufacturer.name = "";
                             this.manufacturer.comments = "";
+                            this.manufacturer.is_enabled = "";
+                            this.manufacturer.created_by = "";
+                            this.manufacturer.update_by = "";
                             alert("Manufacturer Updated");
                             this.$router.push("/manufacturer/list");
                         })
@@ -135,6 +142,8 @@
                 this.manufacturer.company_id = manufacturer.company_id;
                 this.manufacturer.name = manufacturer.name;
                 this.manufacturer.comments = manufacturer.comments;
+                this.manufacturer.is_enabled = manufacturer.is_enabled;
+                this.manufacturer.created_by = manufacturer.created_by;
                 this.manufacturer.update_by = manufacturer.update_by;
             }
         }

@@ -54,6 +54,8 @@
                     company_id: "",
                     type: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -105,6 +107,8 @@
                             this.spareType.company_id = "";
                             this.spareType.type = "";
                             this.spareType.comments = "";
+                            this.spareType.is_enabeld = "";
+                            this.spareType.created_by = "";
                             this.spareType.update_by = "";
                             alert("Spare type Added");
                             this.$router.push("/spareType/list");
@@ -135,6 +139,8 @@
                 this.spareType.company_id = spareType.company_id;
                 this.spareType.type = spareType.type;
                 this.spareType.comments = spareType.comments;
+                this.spareType.is_enabeld = spareType.is_enabeld;
+                this.spareType.created_by = spareType.created_by;
                 this.spareType.update_by = spareType.update_by;
             }
         }

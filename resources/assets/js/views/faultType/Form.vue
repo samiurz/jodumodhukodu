@@ -63,6 +63,8 @@
                     asset_id: "",
                     type: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -117,6 +119,8 @@
                             this.faultType.asset_id = "";
                             this.faultType.type = "";
                             this.faultType.comments = "";
+                            this.faultType.is_enabled = "";
+                            this.faultType.created_by = "";
                             this.faultType.update_by = "";
                             alert("Fault type Added");
                             this.$router.push("/faultType/list");
@@ -135,6 +139,9 @@
                         .then(data => {
                             this.faultType.type = "";
                             this.faultType.comments = "";
+                            this.faultType.is_enabled = "";
+                            this.faultType.created_by = "";
+                            this.faultType.update_by = "";
                             alert("Fault type Updated");
                             this.$router.push("/faultType/list");
                         })
@@ -148,6 +155,8 @@
                 this.faultType.asset_id = faultType.asset_id;
                 this.faultType.type = faultType.type;
                 this.faultType.comments = faultType.comments;
+                this.faultType.is_enabled = faultType.is_enabled;
+                this.faultType.created_by = faultType.created_by;
                 this.faultType.update_by = faultType.update_by;
             }
         }

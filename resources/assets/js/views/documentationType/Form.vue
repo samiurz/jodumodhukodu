@@ -56,6 +56,8 @@
                     company_id: "",
                     type: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -129,6 +131,8 @@
                             this.documentationType.company_id = "";
                             this.documentationType.type = "";
                             this.documentationType.comments = "";
+                            this.documentationType.is_enabled = "";
+                            this.documentationType.created_by = "";
                             this.documentationType.update_by = "";
                             alert("documentation type Added");
                             this.$router.push("/documentationType/list");
@@ -147,6 +151,9 @@
                         .then(data => {
                             this.documentationType.type = "";
                             this.documentationType.comments = "";
+                            this.documentationType.is_enabled = "";
+                            this.documentationType.created_by = "";
+                            this.documentationType.update_by = "";
                             alert("documentation type Updated");
                             this.$router.push("/documentationType/list");
                         })
@@ -159,6 +166,8 @@
                 this.documentationType.company_id = documentationType.company_id;
                 this.documentationType.type = documentationType.type;
                 this.documentationType.comments = documentationType.comments;
+                this.documentationType.is_enabled = documentationType.is_enabled;
+                this.documentationType.created_by = documentationType.created_by;
                 this.documentationType.update_by = documentationType.update_by;
             }
         }

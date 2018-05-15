@@ -50,6 +50,8 @@
                     name: "",
                     email: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -114,6 +116,7 @@
                             this.account.name = "";
                             this.account.email = "";
                             this.account.comments = "";
+                            this.account.is_enabled = "";
                             alert("account Added");
                             this.$router.push('/account/list');
                         })
@@ -142,6 +145,8 @@
                 this.account.name = account.name;
                 this.account.email = account.email;
                 this.account.comments = account.comments;
+                this.account.is_enabled = account.is_enabled;
+                this.account.created_by = account.created_by;
                 this.account.update_by = account.update_by;
             }
         }

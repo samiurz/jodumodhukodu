@@ -43,6 +43,8 @@
                     id: "",
                     name: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -71,6 +73,9 @@
                         .then(data => {
                             this.quality.name = "";
                             this.quality.comments = "";
+                            this.quality.is_enabled = "";
+                            this.quality.created_by = "";
+                            this.quality.update_by = "";;
                             alert("quality Added");
                             this.$router.push('/quality/list');
                         })
@@ -88,6 +93,9 @@
                         .then(data => {
                             this.quality.name = "";
                             this.quality.comments = "";
+                            this.quality.is_enabled = "";
+                            this.quality.created_by = "";
+                            this.quality.update_by = "";
                             alert("quality Updated");
                             this.$router.push('/quality/list');
                         })
@@ -99,6 +107,8 @@
                 this.quality.id = quality.id;
                 this.quality.name = quality.name;
                 this.quality.comments = quality.comments;
+                this.quality.is_enabled = quality.is_enabled;
+                this.quality.created_by = quality.created_by;
                 this.quality.update_by = quality.update_by;
             }
         }

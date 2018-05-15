@@ -55,6 +55,8 @@
                     id: "",
                     name: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -132,6 +134,9 @@
                             this.label.company_id = "";
                             this.label.name = "";
                             this.label.comments = "";
+                            this.label.is_enabled = "";
+                            this.label.created_by = "";
+                            this.label.update_by = "";
                             alert("Label Added");
                             this.$router.push('/label/list');
                         })
@@ -150,6 +155,9 @@
                             this.label.company_id = "";
                             this.label.name = "";
                             this.label.comments = "";
+                            this.label.is_enabled = "";
+                            this.label.created_by = "";
+                            this.label.update_by = "";
                             alert("Label Updated");
                             this.$router.push('/label/list');
                         })
@@ -162,6 +170,8 @@
                 this.label.company_id = label.company_id;
                 this.label.name = label.name;
                 this.label.comments = label.comments;
+                this.label.created_by = label.created_by;
+                this.label.is_enabled = label.is_enabled;
                 this.label.update_by = label.update_by;
             }
         }

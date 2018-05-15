@@ -45,6 +45,8 @@
                     id: "",
                     name: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -108,6 +110,10 @@
                         .then(data => {
                             this.block.name = "";
                             this.block.comments = "";
+                            this.block.is_enabled = "";
+                            this.block.comments = "";
+                            this.block.created_by = "";
+                            this.block.update_by = "";
                             alert("block Added");
                             this.$router.push('/block/list');
                         })
@@ -135,6 +141,8 @@
                 this.block.id = block.id;
                 this.block.name = block.name;
                 this.block.comments = block.comments;
+                this.block.is_enabled = block.is_enabled;
+                this.block.created_by = block.created_by;
                 this.block.update_by = block.update_by;
             }
         }

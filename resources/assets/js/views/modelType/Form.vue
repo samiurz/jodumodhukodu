@@ -59,7 +59,9 @@
                     company_id: "",
                     make:"",
                     type: "",
+                    is_enabled:"1",
                     comments:"",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -112,6 +114,8 @@
                             this.modelType.make = "";
                             this.modelType.type = "";
                             this.modelType.comments = "";
+                            this.modelType.is_enabled = "";
+                            this.modelType.created_by = "";
                             this.modelType.update_by = "";
                             alert("Model type Added");
                             this.$router.push("/modelType/list");
@@ -130,6 +134,9 @@
                         .then(data => {
                             this.modelType.type = "";
                             this.modelType.comments = "";
+                            this.modelType.is_enabled = "";
+                            this.modelType.created_by = "";
+                            this.modelType.update_by = "";
                             alert("Model type Updated");
                             this.$router.push("/modelType/list");
                         })
@@ -143,6 +150,8 @@
                 this.modelType.company_id = modelType.company_id;
                 this.modelType.type = modelType.type;
                 this.modelType.comments = modelType.comments;
+                this.modelType.created_by = modelType.created_by;
+                this.modelType.is_enabled = modelType.is_enabled;
                 this.modelType.update_by = modelType.update_by;
             }
         }

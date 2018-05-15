@@ -53,6 +53,8 @@
                     company_id: "",
                     type: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -113,6 +115,8 @@
                             this.repairType.company_id = "";
                             this.repairType.type = "";
                             this.repairType.comments = "";
+                            this.repairType.is_enabled = "";
+                            this.repairType.created_by = "";
                             this.repairType.update_by = "";
                             alert("Repair Type Added");
                             this.$router.push("/repairType/list");
@@ -131,6 +135,11 @@
                         .then(data => {
                             this.repairType.type = "";
                             this.repairType.comments = "";
+                            this.repairType.type = "";
+                            this.repairType.comments = "";
+                            this.repairType.is_enabled = "";
+                            this.repairType.created_by = "";
+                            this.repairType.update_by = "";
                             alert("Repair Type Updated");
                             this.$router.push("/repairType/list");
                         })
@@ -143,6 +152,8 @@
                 this.repairType.company_id = repairType.company_id;
                 this.repairType.type = repairType.type;
                 this.repairType.comments = repairType.comments;
+                this.repairType.is_enabled = repairType.is_enabled;
+                this.repairType.created_by = repairType.created_by;
                 this.repairType.update_by = repairType.update_by;
             }
         }

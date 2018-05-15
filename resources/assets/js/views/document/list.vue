@@ -76,6 +76,8 @@
                     url: "",
                     file: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",

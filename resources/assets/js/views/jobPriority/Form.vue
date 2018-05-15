@@ -54,6 +54,8 @@
                     company_id: "",
                     priority: "",
                     comments: "",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -105,6 +107,8 @@
                             this.jobPriority.company_id = "";
                             this.jobPriority.priority = "";
                             this.jobPriority.comments = "";
+                            this.jobPriority.is_enabled = "";
+                            this.jobPriority.created_by = "";
                             this.jobPriority.update_by = "";
                             alert("Job type Added");
                             this.$router.push("/jobPriority/list");
@@ -124,6 +128,9 @@
                             this.jobPriority.company_id = "";
                             this.jobPriority.priority = "";
                             this.jobPriority.comments = "";
+                            this.jobPriority.is_enabled = "";
+                            this.jobPriority.created_by = "";
+                            this.jobPriority.update_by = "";
                             alert("Job type Updated");
                             this.$router.push("/jobPriority/list");
                         })
@@ -136,6 +143,8 @@
                 this.jobPriority.company_id = jobPriority.company_id;
                 this.jobPriority.type = jobPriority.priority;
                 this.jobPriority.comments = jobPriority.comments;
+                this.jobPriority.is_enabled = jobPriority.is_enabled;
+                this.jobPriority.created_by = jobPriority.created_by;
                 this.jobPriority.update_by = jobPriority.update_by;
             }
         }

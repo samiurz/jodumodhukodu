@@ -53,6 +53,8 @@
                     block_id: "",
                     name: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -104,6 +106,8 @@
                             this.module.block_id = "";
                             this.module.name = "";
                             this.module.comments = "";
+                            this.module.is_enabled = "";
+                            this.module.created_by = "";
                             this.module.update_by = "";
                             alert("module Added");
                             this.$router.push("/module/list");
@@ -122,6 +126,9 @@
                         .then(data => {
                             this.module.name = "";
                             this.module.comments = "";
+                            this.module.is_enabled = "";
+                            this.module.created_by = "";
+                            this.module.update_by = "";
                             alert("module Updated");
                             this.$router.push("/module/list");
                         })
@@ -134,6 +141,8 @@
                 this.module.block_id = module.block_id;
                 this.module.name = module.name;
                 this.module.comments = module.comments;
+                this.module.is_enabled = module.is_enabled;
+                this.module.created_by = module.created_by;
                 this.module.update_by = module.update_by;
             }
         }

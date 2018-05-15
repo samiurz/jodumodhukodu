@@ -54,7 +54,9 @@
                     id: "",
                     company_id: "",
                     type: "",
+                    is_enabled:"1",
                     comments:"",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -106,6 +108,8 @@
                             this.jobType.company_id = "";
                             this.jobType.type = "";
                             this.jobType.comments = "";
+                            this.jobType.is_enabled = "";
+                            this.jobType.created_by = "";
                             this.jobType.update_by = "";
                             alert("Job type Added");
                             this.$router.push("/jobType/list");
@@ -136,6 +140,8 @@
                 this.jobType.company_id = jobType.company_id;
                 this.jobType.type = jobType.type;
                 this.jobType.comments = jobType.comments;
+                this.jobType.is_enabled = jobType.is_enabled;
+                this.jobType.created_by = jobType.created_by;
                 this.jobType.update_by = jobType.update_by;
             }
         }

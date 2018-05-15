@@ -53,6 +53,8 @@
                     company_id: "",
                     location: "",
                     comments:"",
+                    is_enabled:"1",
+                    created_by:"1",
                     update_by: "1"
                 },
                 id: "",
@@ -94,6 +96,8 @@
                             this.assetLocation.company_id = "";
                             this.assetLocation.location = "";
                             this.assetLocation.comments = "";
+                            this.assetLocation.is_enabled = "";
+                            this.assetLocation.created_by = "";
                             this.assetLocation.update_by = "";
                             alert("Asset Location Status Added");
                             this.$router.push("/assetLocation/list");
@@ -124,6 +128,8 @@
                 this.assetLocation.company_id = assetLocation.company_id;
                 this.assetLocation.location = assetLocation.location;
                 this.assetLocation.comments = assetLocation.comments;
+                this.assetLocation.is_enabled = assetLocation.is_enabled;
+                this.assetLocation.created_by = assetLocation.created_by;
                 this.assetLocation.update_by = assetLocation.update_by;
             }
         }
