@@ -148,15 +148,15 @@ Route::delete('/attachments/', 'AssetController@deleteAttachment')->name('delete
 
 #Asset Model Routes
 // List Asset Models
-Route::get('assetmodels', 'AssetModelController@index');
+Route::get('assetModels', 'AssetModelController@index');
 // List asset model 
-Route::get('assetmodel/{id}', 'AssetModelController@show');
+Route::get('assetModel/{id}', 'AssetModelController@show');
 // Create new asset model
-Route::post('assetmodel', 'AssetModelController@store');
+Route::post('assetModel', 'AssetModelController@store');
 // Update asset model
-Route::put('assetmodel', 'AssetModelController@store');
+Route::put('assetModel', 'AssetModelController@store');
 // Delete asset model
-Route::delete('assetmodel/{id}', 'AssetModelController@destroy');
+Route::delete('assetModel/{id}', 'AssetModelController@destroy');
 
 # Model Type Routes
 // List Model Types

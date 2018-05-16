@@ -163,6 +163,11 @@
                             </router-link>
                         </li>
                         <li class="nav-item">
+                            <router-link :to="'/assetModel/list'" class="nav-link" exact>
+                                <i class="icon-calculator"></i> Asset Model
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
                             <router-link :to="'/faultType/list'" class="nav-link" exact>
                                 <i class="icon-calculator"></i> Fault Type
                             </router-link>

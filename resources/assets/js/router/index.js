@@ -124,6 +124,10 @@ import JobForm from '../views/job/form';
 import RepairTypeList from '../views/repairType/list';
 import RepairTypeForm from '../views/repairType/form';
 
+// Views - Asset Model
+import AssetModelList from '../views/assetModel/list';
+import AssetModelForm from '../views/assetModel/form';
+
 Vue.use(Router);
 
 export default new Router({
@@ -694,6 +698,26 @@ export default new Router({
                             path: 'list',
                             name: 'Repair Type List',
                             component: RepairTypeList
+                        }
+                    ]
+                },
+                {
+                    path: '/assetModel',
+                    redirect: '/assetModel/list',
+                    name: 'Asset Model Type',
+                    component: {
+                        render(c) { return c('router-view'); }
+                    },
+                    children: [
+                        {
+                            path: 'form',
+                            name: 'Asset Model Form',
+                            component: AssetModelForm
+                        },
+                        {
+                            path: 'list',
+                            name: 'Asset Model List',
+                            component: AssetModelList
                         }
                     ]
                 }

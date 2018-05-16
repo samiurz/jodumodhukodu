@@ -15,11 +15,11 @@ class AssetModelController extends Controller
      */
     public function index()
     {
-        // Get assetmodels
-        $assetmodels = AssetModel::orderBy('created_at', 'desc')->paginate(15);
+        // Get assetModels
+        $assetModels = AssetModel::orderBy('created_at', 'desc')->paginate(15);
 
-        // Return collection of assetmodels as a resource
-        return AssetModelResource::collection($assetmodels);
+        // Return collection of assetModels as a resource
+        return AssetModelResource::collection($assetModels);
     }
     /**
      * Store a newly created resource in storage.
@@ -29,23 +29,23 @@ class AssetModelController extends Controller
      */
     public function store(Request $request)
     {
-        $assetmodels = $request->isMethod('put') ? AssetModel::findOrFail($request->id) : new AssetModel;
+        $assetModels = $request->isMethod('put') ? AssetModel::findOrFail($request->id) : new AssetModel;
 
-        $assetmodels->id = $request->input('id');
-        $assetmodels->company_id = $request->input('company_id');
-        $assetmodels->model_type_id = $request->input('model_type_id');
-        $assetmodels->name = $request->input('name');
-        $assetmodels->image = $request->input('image');
-        $assetmodels->rent = $request->input('rent');
-        $assetmodels->frequency = $request->input('frequency');
-        $assetmodels->minimum_stock = $request->input('minimum_stock');
-        $assetmodels->current_stock = $request->input('current_stock');
-        $assetmodels->comments = $request->input('comments');
-        $assetmodels->is_enabled = $request->input('is_enabled');
-        $assetmodels->created_by = $request->input('created_by');
-        $assetmodels->update_by = $request->input('update_by');
-        if($assetmodels->save()) {
-            return new AssetModelResource($assetmodels);
+        $assetModels->id = $request->input('id');
+        $assetModels->company_id = $request->input('company_id');
+        $assetModels->model_type_id = $request->input('model_type_id');
+        $assetModels->name = $request->input('name');
+        $assetModels->image = $request->input('image');
+        $assetModels->rent = $request->input('rent');
+        $assetModels->frequency = $request->input('frequency');
+        $assetModels->minimum_stock = $request->input('minimum_stock');
+        $assetModels->current_stock = $request->input('current_stock');
+        $assetModels->comments = $request->input('comments');
+        $assetModels->is_enabled = $request->input('is_enabled');
+        $assetModels->created_by = $request->input('created_by');
+        $assetModels->update_by = $request->input('update_by');
+        if($assetModels->save()) {
+            return new AssetModelResource($assetModels);
         }
     }
     /**
@@ -56,11 +56,11 @@ class AssetModelController extends Controller
      */
     public function show($id)
     {
-        // Get assetmodels
-        $assetmodels = AssetModel::findOrFail($id);
+        // Get assetModels
+        $assetModels = AssetModel::findOrFail($id);
 
-        // Return single assetmodels as a resource
-        return new AssetModelResource($assetmodels);
+        // Return single assetModels as a resource
+        return new AssetModelResource($assetModels);
     }
     /**
      * Remove the specified resource from storage.
@@ -70,11 +70,11 @@ class AssetModelController extends Controller
      */
     public function destroy($id)
     {
-        // Get assetmodels
-        $assetmodels = AssetModel::findOrFail($id);
+        // Get assetModels
+        $assetModels = AssetModel::findOrFail($id);
 
-        if($assetmodels->delete()) {
-            return new AssetModelResource($assetmodels);
+        if($assetModels->delete()) {
+            return new AssetModelResource($assetModels);
         }    
     }
 }

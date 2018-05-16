@@ -12,8 +12,8 @@ class AssetModel extends Resource
 
         return [
             'id' => $this->id,
-            'company_id' => $this->company_id,
-            'model_type_id' => $this->model_type_id,
+            'company' => $this->company,
+            'modelType' => $this->modelType,
             'name' => $this->name,
             'image' => $this->image,
             'rent' => $this->rent,

@@ -4,7 +4,7 @@
             <div class="col-sm-12">
                 <div class="card card-inverse card-info">
                     <div class="card-header">
-                        <strong>Asset</strong>
+                        <strong>Asset Model</strong>
                         <small>Form</small>
                     </div>
                     <div class="card-block">
@@ -12,78 +12,47 @@
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label class="col-md-3 form-control-label" for="select">Select Company</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.company_id">
+                                    <select id="select" type="select" class="form-control" v-model="assetModel.company_id">
                                         <option value="">Select Company</option>
                                         <option v-for="company in companies" v-bind:key="company.id" v-bind:value="company.id">{{company.name}}</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <label class="col-md-3 form-control-label" for="select">Select Model</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.asset_model_id">
-                                        <option value="">Select Model</option>
-                                        <option v-for="assetModel in assetModels" v-bind:key="assetModel.id" v-bind:value="assetModel.id">{{assetModel.name}}</option>
+                                    <label class="col-md-3 form-control-label" for="select">Select Model Type</label>
+                                    <select id="select" type="select" class="form-control" v-model="assetModel.model_type_id">
+                                        <option value="">Select Model Type</option>
+                                         <option v-for="modelType in modelTypes" v-bind:key="modelType.id" v-bind:value="modelType.id">{{modelType.type}}</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">Asset Name</label>
-                                    <input type="text" class="form-control" placeholder="Enter Asset Name" v-model="asset.name">
-                                </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">Serial</label>
-                                    <input type="text" class="form-control" placeholder="Enter Serial" v-model="asset.serial">
-                                </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">BMB No</label>
-                                    <input type="text" class="form-control" placeholder="Enter BMB No" v-model="asset.label_value">
-                                </div>
-                                <div class="form-group col-sm-3">
-                                    <label for="customer">Cost</label>
-                                     <input type="text" class="form-control" placeholder="Enter Cost" v-model="asset.cost">
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="form-group col-sm-4">
-                                    <label class="col-md-3 form-control-label" for="select">Manufacturer</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.manufacturer_id">
-                                        <option value="">Select Manufacturer</option>
-                                        <option v-for="manufacturer in manufacturers" v-bind:key="manufacturer.id" v-bind:value="manufacturer.id">{{manufacturer.name}}</option>
-                                    </select>
+                                    <label for="customer">Model Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter asset model Name" v-model="assetModel.name">
                                 </div>
                                 <div class="form-group col-sm-4">
-                                     <label class="col-md-3 form-control-label" for="select">Status</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.asset_location_id">
-                                        <option value="">Select Location Status</option>
-                                        <option v-for="assetLocation in assetLocations" v-bind:key="assetLocation.id" v-bind:value="assetLocation.id">{{assetLocation.location}}</option>
-                                    </select>
+                                    <label for="customer">Rent</label>
+                                    <input type="text" class="form-control" placeholder="Enter rent" v-model="assetModel.rent">
                                 </div>
                                 <div class="form-group col-sm-4">
-                                     <label class="col-md-3 form-control-label" for="select">Quality</label>
-                                    <select id="select" type="select" class="form-control" v-model="asset.quality_id">
-                                        <option value="">Select Quality</option>
-                                        <option v-for="quality in qualities" v-bind:key="quality.id" v-bind:value="quality.id">{{quality.name}}</option>
-                                    </select>
+                                    <label for="customer">frequency</label>
+                                    <input type="text" class="form-control" placeholder="Enter frequency" v-model="assetModel.frequency">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-sm-6">
                                     <label for="customer">Minimum Stock</label>
-                                    <input type="text" class="form-control" placeholder="Minimum Stock" v-model="asset.minimum_stock">
+                                    <input type="text" class="form-control" placeholder="Minimum Stock" v-model="assetModel.minimum_stock">
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <label for="customer">Current Stock</label>
-                                    <input type="text" class="form-control" placeholder="Current Stock" v-model="asset.current_stock">
+                                    <input type="text" class="form-control" placeholder="Current Stock" v-model="assetModel.current_stock">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="customer">Description</label>
-                                    <textarea id="textarea-input" name="textarea-input" v-model="asset.description" rows="9" class="form-control" placeholder="Description.."></textarea>
-                                </div>
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-12">
                                     <label for="customer">Comments</label>
-                                    <textarea id="textarea-input" name="textarea-input" v-model="asset.comments" rows="9" class="form-control" placeholder="Comments.."></textarea>
+                                    <textarea id="textarea-input" name="textarea-input" v-model="assetModel.comments" rows="9" class="form-control" placeholder="Comments.."></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -114,7 +83,7 @@
                             </div>
                             <div class="form-actions">
                                 <button type="submit" class="btn btn-default">Save changes</button>
-                                <router-link :to="{ type: 'Asset List'}">
+                                <router-link :to="{ type: 'Asset Model List'}">
                                     <button type="button" class="btn btn-default">Cancel</button>
                                 </router-link>
                             </div>
@@ -128,29 +97,19 @@
 </template>
 <script>
     export default {
-        type: "asset",
+        type: "asset model",
         data() {
             return {
                 companies: [],
-                manufacturers: [],
-                qualities: [],
-                assetModels:[],
-                assetLocations:[],
-                asset: {
+                modelTypes:[],
+                assetModel: {
                     id: "",
                     company_id: "",
-                    asset_model_id: "",
+                    model_type_id: "",
                     name:"",
-                    serial: "",
-                    label_id:"1",
-                    label_value:"",
-                    description: "",
-                    quality_id: "",
-                    manufacturer_id:"",
-                    asset_status_id:"1",
-                    cost:"",
-                    asset_location_id:"",
-                    image:"",
+                    image: "",
+                    rent:"",
+                    frequency:"",
                     minimum_stock:"",
                     current_stock:"",
                     comments:"",
@@ -170,12 +129,9 @@
         created() {
             console.log(this.$route.params.data);
             this.fetchCompanies();
-            this.fetchManufacturar();
-            this.fetchAssetModel();
-            this.fetchQuality();
-            this.fetchAssetLocation();
+            this.fetchModelTypes();
             if (this.$route.params.data != undefined)
-                this.editAsset(this.$route.params.data);
+                this.editAssetModel(this.$route.params.data);
 
             this.start();
 
@@ -196,142 +152,93 @@
                     })
                     .catch(err => console.log(err));
             },
-            fetchManufacturar(page_url) {
+            fetchModelTypes(page_url) {
                 let vm = this;
-                page_url = page_url || "/api/manufacturers";
+                page_url = page_url || "/api/modelTypes";
                 fetch(page_url)
                     .then(res => res.json())
                     .then(res => {
-                        this.manufacturers = res.data;
-                        console.log(this.manufacturers);
+                        this.modelTypes = res.data;
+                        console.log(this.modelTypes);
                     })
                     .catch(err => console.log(err));
             },
-            fetchAssetLocation(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/assetLocations";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.assetLocations = res.data;
-                        console.log(this.assetLocations);
-                    })
-                    .catch(err => console.log(err));
-            },
-            fetchQuality(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/qualities";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.qualities = res.data;
-                        console.log(this.qualities);
-                    })
-                    .catch(err => console.log(err));
-            },
-            fetchAssetModel(page_url) {
-                let vm = this;
-                page_url = page_url || "/api/assetModels";
-                fetch(page_url)
-                    .then(res => res.json())
-                    .then(res => {
-                        this.assetModels = res.data;
-                        console.log(this.assetModels);
-                    })
-                    .catch(err => console.log(err));
-            },
-            addAsset() {
+            addAssetModel() {
                 //this.submit()
 
-                if(this.asset.image)
+                if(this.assetModel.image)
                 {
                     if (this.edit === false) {
                         // Add
-                        fetch("api/asset", {
+                        fetch("api/assetModel", {
                             method: "post",
-                            body: JSON.stringify(this.asset),
+                            body: JSON.stringify(this.assetModel),
                             headers: {
                                 "content-type": "application/json"
                             }
                         })
                         .then(res => res.json())
                         .then(data => {
-                            this.asset.id = "";
-                            this.asset.company_id = "";
-                            this.asset.asset_model_id = "";
-                            this.asset.name = "";
-                            this.asset.serial = "";
-                            this.asset.label_id = "";
-                            this.asset.label_value = "";
-                            this.asset.asset_status_id = "";
-                            this.asset.description = "";
-                            this.asset.image = "";
-                            this.asset.manufacturer_id = "";
-                            this.asset.quality_id = "";
-                            this.asset.asset_location_id = "";
-                            this.asset.minimum_stock = "";
-                            this.asset.current_stock = "";
-                            this.asset.comments = "";
-                            this.asset.created_by = "";
-                            this.asset.update_by = "";
-                            alert("Asset Added");
-                            this.$router.push("/asset/list");
+                            this.assetModel.id = "";
+                            this.assetModel.company_id = "";
+                            this.assetModel.model_type_id = "";
+                            this.assetModel.name = "";
+                            this.assetModel.image = "";
+                            this.assetModel.rent = "";
+                            this.assetModel.frequency = "";
+                            this.assetModel.minimum_stock = "";
+                            this.assetModel.current_stock = "";
+                            this.assetModel.comments = "";
+                            this.assetModel.created_by = "";
+                            this.assetModel.update_by = "";
+                            alert("Model Type Added");
+                            this.$router.push("/assetModel/list");
                         })
                         .catch(err => console.log(err));
                     } 
                     
                     else {
                         // Update
-                        fetch("api/asset", {
+                        fetch("api/assetModel", {
                             method: "put",
-                            body: JSON.stringify(this.asset),
+                            body: JSON.stringify(this.assetModel),
                             headers: {
                                 "content-type": "application/json"
                             }
                         })
                         .then(res => res.json())
                         .then(data => {
-                            this.asset.id = "";
-                            this.asset.company_id = "";
-                            this.asset.asset_model_id = "";
-                            this.asset.name = "";
-                            this.asset.serial = "";
-                            this.asset.label_id = "";
-                            this.asset.label_value = "";
-                            this.asset.asset_status_id = "";
-                            this.asset.description = "";
-                            this.asset.image = "";
-                            this.asset.manufacturer_id = "";
-                            this.asset.quality_id = "";
-                            this.asset.asset_location_id = "";
-                            this.asset.minimum_stock = "";
-                            this.asset.current_stock = "";
-                            this.asset.comments = "";
-                            this.asset.created_by = "";
-                            this.asset.update_by = "";
-                            alert("documentation type Updated");
-                            this.$router.push("/asset/list");
+                            this.assetModel.id = "";
+                            this.assetModel.company_id = "";
+                            this.assetModel.model_type_id = "";
+                            this.assetModel.name = "";
+                            this.assetModel.image = "";
+                            this.assetModel.rent = "";
+                            this.assetModel.frequency = "";
+                            this.assetModel.minimum_stock = "";
+                            this.assetModel.current_stock = "";
+                            this.assetModel.comments = "";
+                            this.assetModel.created_by = "";
+                            this.assetModel.update_by = "";
+                            alert("Model Type Updated");
+                            this.$router.push("/assetModel/list");
                         })
                         .catch(err => console.log(err));
                     }
                 }
             },
-            editAsset(asset) {
+            editAssetModel(assetModel) {
                 this.edit = true;
-                this.asset.id = asset.id;
-                this.asset.company_id = asset.company_id;
-                this.asset.asset_id = asset.asset_id;
-                this.asset.serial = asset.serial;
-                this.asset.type = asset.type;
-                this.asset.description = asset.description;
-                this.asset.image = asset.image;
-                this.asset.manufacturer_id = asset.manufacturer_id;
-                this.asset.quality_id = asset.quality_id;
-                this.asset.asset_location_id = asset.asset_location_id;
-                this.asset.minimum_stock = asset.minimum_stock;
-                this.asset.current_stock = asset.current_stock;
-                this.asset.comments = asset.comments;
-                this.asset.update_by = asset.update_by;
+                this.assetModel.id = assetModel.id;
+                this.assetModel.company_id = assetModel.company_id;
+                this.assetModel.model_type_id = assetModel.model_type_id;
+                this.assetModel.name = assetModel.name;
+                this.assetModel.image = assetModel.image;
+                this.assetModel.rent = assetModel.rent;
+                this.assetModel.minimum_stock = assetModel.minimum_stock;
+                this.assetModel.current_stock = assetModel.current_stock;
+                this.assetModel.comments = assetModel.comments;
+                this.assetModel.update_by = assetModel.update_by;
             },
             selectCategory(attachment, category_id) {
                 attachment.category_id = category_id;
@@ -411,8 +318,8 @@
                     console.log(response);
                     if (response.data.success) {
                         console.log('Successfull upload');
-                        this.asset.image = response.data.data
-                        this.addAsset()
+                        this.assetModel.image = response.data.data
+                        this.addAssetModel()
                         this.resetData()
                         
                         // Tell AttachmentList component to refresh its list
