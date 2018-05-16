@@ -88,18 +88,18 @@
 				assets: [],
 				asset: {
 					id: "",
-					company_id: "",
-					assets_model_id: "",
+					company: {},
+					asset_model: {},
 					name: "",
 					serial: "",
-					manufacturer_id:"",
+					manufacturer: {},
 					label_id: "",
 					label_value: "",
 					description: "",
 					image: "",
-					quality: "",
+					quality: {},
 					cost: "",
-					assetLocation_id: "",
+					assetLocation: {},
 					image: "",
 					minimum_stock: "",
 					current_stock: "",
@@ -119,13 +119,13 @@
 				let vm = this;
 				page_url = page_url || "/api/assets";
 				fetch(page_url)
-					.then(res => res.json())
-					.then(res => {
-						this.assets = res.data;
-						console.log(this.assets);
-						vm.makePagination(res.meta, res.links);
-					})
-					.catch(err => console.log(err));
+				.then(res => res.json())
+				.then(res => {
+					this.assets = res.data;
+					console.log(this.assets);
+					vm.makePagination(res.meta, res.links);
+				})
+				.catch(err => console.log(err));
 			},
 			makePagination(meta, links) {
 				let pagination = {
@@ -141,12 +141,12 @@
 					fetch(`api/asset/${id}`, {
 						method: "delete"
 					})
-						.then(res => res.json())
-						.then(data => {
-							alert("Asset Removed");
-							this.fetchAssets();
-						})
-						.catch(err => console.log(err));
+					.then(res => res.json())
+					.then(data => {
+						alert("Asset Removed");
+						this.fetchAssets();
+					})
+					.catch(err => console.log(err));
 				}
 			}
 		}

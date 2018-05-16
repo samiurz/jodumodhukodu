@@ -106,7 +106,7 @@
                                         <div class="attachment-holder animated fadeIn" v-cloak v-for="(attachment, index) in attachments"> 
                                             <div class="form-group">
                                                 <span class="label label-primary">{{ attachment.name + ' (' + Number((attachment.size / 1024 / 1024).toFixed(1)) + 'MB)'}}</span> 
-                                                <span style="background: red; cursor: pointer;" @click="removeAttachment(attachment)"><button class="btn btn-xs btn-danger">Remove</button></span>
+                                                <span style="background: red; cursor: pointer;" @click.prevent="removeAttachment(attachment)"><button class="btn btn-xs btn-danger">Remove</button></span>
                                             </div>
                                         </div>
                                     </div>
@@ -138,25 +138,26 @@
                 assetLocations:[],
                 asset: {
                     id: "",
-                    company_id: "",
-                    asset_model_id: "",
-                    name:"",
-                    serial: "",
-                    label_id:"1",
-                    label_value:"",
-                    description: "",
-                    quality_id: "",
-                    manufacturer_id:"",
-                    asset_status_id:"1",
-                    cost:"",
-                    asset_location_id:"",
-                    image:"",
-                    minimum_stock:"",
-                    current_stock:"",
-                    comments:"",
-                    is_enabled: "1",
+					company_id: "",
+					asset_model_id: "",
+					name: "",
+					serial: "",
+					manufacturer_id: "",
+					label_id: "1",
+					label_value: "",
+					description: "",
+					image: "",
+					quality_id: "",
+					cost: "",
+					asset_location_id: "",
+					image: "",
+                    asset_status_id: "1",
+					minimum_stock: "",
+					current_stock: "",
+					comments: "",
                     created_by: "1",
-                    update_by: "1",
+					update_by: "1",
+                    is_enabled: "1"
                 },
                 id: "",
                 edit: false,
@@ -168,21 +169,19 @@
             };
         },
         created() {
-            console.log(this.$route.params.data);
             this.fetchCompanies();
             this.fetchManufacturar();
             this.fetchAssetModel();
             this.fetchQuality();
             this.fetchAssetLocation();
-            if (this.$route.params.data != undefined)
+
+            // For Edit
+            if (this.$route.params.data != undefined) {
+                console.log('params', this.$route.params.data);
                 this.editAsset(this.$route.params.data);
+                this.pullAttachments(this.$route.params.data);
+            }
 
-            this.start();
-
-            // window.Event.listen('reload_files', function() {
-            //     console.log('Received Reload Files Event!');
-            //     this.pullAttachments(); // Pull attachments again
-            // }.bind(this));
         },
         methods: {
             fetchCompanies(page_url) {
@@ -192,7 +191,7 @@
                     .then(res => res.json())
                     .then(res => {
                         this.companies = res.data;
-                        console.log(this.companies);
+                        console.log('Companies', this.companies);
                     })
                     .catch(err => console.log(err));
             },
@@ -203,7 +202,7 @@
                     .then(res => res.json())
                     .then(res => {
                         this.manufacturers = res.data;
-                        console.log(this.manufacturers);
+                        console.log('Manufacturers', this.manufacturers);
                     })
                     .catch(err => console.log(err));
             },
@@ -214,7 +213,7 @@
                     .then(res => res.json())
                     .then(res => {
                         this.assetLocations = res.data;
-                        console.log(this.assetLocations);
+                        console.log('Asset Locations', this.assetLocations);
                     })
                     .catch(err => console.log(err));
             },
@@ -225,7 +224,7 @@
                     .then(res => res.json())
                     .then(res => {
                         this.qualities = res.data;
-                        console.log(this.qualities);
+                        console.log('Qualities', this.qualities);
                     })
                     .catch(err => console.log(err));
             },
@@ -319,19 +318,22 @@
             editAsset(asset) {
                 this.edit = true;
                 this.asset.id = asset.id;
-                this.asset.company_id = asset.company_id;
-                this.asset.asset_id = asset.asset_id;
+                this.asset.name = asset.name;
+                this.asset.company_id = asset.company.id;
+                this.asset.asset_model_id = asset.assetModel.id;
                 this.asset.serial = asset.serial;
                 this.asset.type = asset.type;
                 this.asset.description = asset.description;
                 this.asset.image = asset.image;
-                this.asset.manufacturer_id = asset.manufacturer_id;
-                this.asset.quality_id = asset.quality_id;
-                this.asset.asset_location_id = asset.asset_location_id;
+                this.asset.cost = asset.cost;
+                this.asset.manufacturer_id = asset.manufacturer.id;
+                this.asset.quality_id = asset.quality.id;
+                this.asset.asset_location_id = asset.assetLocation.id;
                 this.asset.minimum_stock = asset.minimum_stock;
                 this.asset.current_stock = asset.current_stock;
                 this.asset.comments = asset.comments;
                 this.asset.update_by = asset.update_by;
+                
             },
             selectCategory(attachment, category_id) {
                 attachment.category_id = category_id;
@@ -439,7 +441,6 @@
             },
 
             removeServerAttachment(attachment_id){
-
                 window.Event.fire('loading_on');
                 let data = {
                     params: 
@@ -468,12 +469,9 @@
                 
             },
 
-            pullAttachments() {
-
-                //window.Event.fire('loading_on');
-
+            pullAttachments(asset) {
                 // Make HTTP request to store announcement
-                axios.post('/api/attachments').then(function (response) {
+                axios.get(`api/asset/attachments/${asset.image}`).then(function (response) {
                     console.log(response);
                     if (response.data.success) {
                         this.attachments = response.data.data;
@@ -488,36 +486,26 @@
                 }.bind(this)) // Make sure we bind Vue Component object to this funtion so we get a handle of it in order to call its other methods
                 .catch(function (error) {
                     console.log(error);
-                    
                 });
 
             },
 
             getAttachmentSize() {
-
                 this.upload_size = 0; // Reset to beginningƒ
-
                 this.attachments.map((item) => { this.upload_size += parseInt(item.size); });
-                
                 this.upload_size = Number((this.upload_size).toFixed(1));
-
                 this.$forceUpdate();
-
             },
 
             removeAttachments(attachment) {
-
-                this.removeServerAttachment(attachment.id);
-
+                //this.removeServerAttachment(attachment.id);
                 this.attachments.splice(this.attachments.indexOf(attachment), 1);
-                
                 this.getAttachmentSize();
-
             },
 
             start() {
                 console.log('Starting Attachment List Component');
-                this.pullAttachments();
+                
             },
         }
     };

@@ -49614,34 +49614,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /* harmony default export */ __webpack_exports__["default"] = ({
     type: "asset",
     data: function data() {
+        var _asset;
+
         return {
             companies: [],
             manufacturers: [],
             qualities: [],
             assetModels: [],
             assetLocations: [],
-            asset: {
+            asset: (_asset = {
                 id: "",
                 company_id: "",
                 asset_model_id: "",
                 name: "",
                 serial: "",
+                manufacturer_id: "",
                 label_id: "1",
                 label_value: "",
                 description: "",
-                quality_id: "",
-                manufacturer_id: "",
-                asset_status_id: "1",
-                cost: "",
-                asset_location_id: "",
                 image: "",
-                minimum_stock: "",
-                current_stock: "",
-                comments: "",
-                is_enabled: "1",
-                created_by: "1",
-                update_by: "1"
-            },
+                quality_id: "",
+                cost: "",
+                asset_location_id: ""
+            }, _defineProperty(_asset, "image", ""), _defineProperty(_asset, "asset_status_id", "1"), _defineProperty(_asset, "minimum_stock", ""), _defineProperty(_asset, "current_stock", ""), _defineProperty(_asset, "comments", ""), _defineProperty(_asset, "created_by", "1"), _defineProperty(_asset, "update_by", "1"), _defineProperty(_asset, "is_enabled", "1"), _asset),
             id: "",
             edit: false,
             attachments: [],
@@ -49652,20 +49647,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         };
     },
     created: function created() {
-        console.log(this.$route.params.data);
         this.fetchCompanies();
         this.fetchManufacturar();
         this.fetchAssetModel();
         this.fetchQuality();
         this.fetchAssetLocation();
-        if (this.$route.params.data != undefined) this.editAsset(this.$route.params.data);
 
-        this.start();
-
-        // window.Event.listen('reload_files', function() {
-        //     console.log('Received Reload Files Event!');
-        //     this.pullAttachments(); // Pull attachments again
-        // }.bind(this));
+        // For Edit
+        if (this.$route.params.data != undefined) {
+            console.log('params', this.$route.params.data);
+            this.editAsset(this.$route.params.data);
+            this.pullAttachments(this.$route.params.data);
+        }
     },
 
     methods: (_methods = {
@@ -49678,7 +49671,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this.companies = res.data;
-                console.log(_this.companies);
+                console.log('Companies', _this.companies);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49692,7 +49685,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this2.manufacturers = res.data;
-                console.log(_this2.manufacturers);
+                console.log('Manufacturers', _this2.manufacturers);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49706,7 +49699,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this3.assetLocations = res.data;
-                console.log(_this3.assetLocations);
+                console.log('Asset Locations', _this3.assetLocations);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49720,7 +49713,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 return res.json();
             }).then(function (res) {
                 _this4.qualities = res.data;
-                console.log(_this4.qualities);
+                console.log('Qualities', _this4.qualities);
             }).catch(function (err) {
                 return console.log(err);
             });
@@ -49819,15 +49812,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         editAsset: function editAsset(asset) {
             this.edit = true;
             this.asset.id = asset.id;
-            this.asset.company_id = asset.company_id;
-            this.asset.asset_id = asset.asset_id;
+            this.asset.name = asset.name;
+            this.asset.company_id = asset.company.id;
+            this.asset.asset_model_id = asset.assetModel.id;
             this.asset.serial = asset.serial;
             this.asset.type = asset.type;
             this.asset.description = asset.description;
             this.asset.image = asset.image;
-            this.asset.manufacturer_id = asset.manufacturer_id;
-            this.asset.quality_id = asset.quality_id;
-            this.asset.asset_location_id = asset.asset_location_id;
+            this.asset.cost = asset.cost;
+            this.asset.manufacturer_id = asset.manufacturer.id;
+            this.asset.quality_id = asset.quality.id;
+            this.asset.asset_location_id = asset.assetLocation.id;
             this.asset.minimum_stock = asset.minimum_stock;
             this.asset.current_stock = asset.current_stock;
             this.asset.comments = asset.comments;
@@ -49933,7 +49928,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             this.attachments = [];
         },
         removeServerAttachment: function removeServerAttachment(attachment_id) {
-
             window.Event.fire('loading_on');
             var data = {
                 params: {
@@ -49956,12 +49950,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 console.log(error);
             });
         },
-        pullAttachments: function pullAttachments() {
-
-            //window.Event.fire('loading_on');
-
+        pullAttachments: function pullAttachments(asset) {
             // Make HTTP request to store announcement
-            axios.post('/api/attachments').then(function (response) {
+            axios.get("api/asset/attachments/" + asset.image).then(function (response) {
                 console.log(response);
                 if (response.data.success) {
                     this.attachments = response.data.data;
@@ -49981,24 +49972,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         var _this8 = this;
 
         this.upload_size = 0; // Reset to beginningƒ
-
         this.attachments.map(function (item) {
             _this8.upload_size += parseInt(item.size);
         });
-
         this.upload_size = Number(this.upload_size.toFixed(1));
-
         this.$forceUpdate();
     }), _defineProperty(_methods, "removeAttachments", function removeAttachments(attachment) {
-
-        this.removeServerAttachment(attachment.id);
-
+        //this.removeServerAttachment(attachment.id);
         this.attachments.splice(this.attachments.indexOf(attachment), 1);
-
         this.getAttachmentSize();
     }), _defineProperty(_methods, "start", function start() {
         console.log('Starting Attachment List Component');
-        this.pullAttachments();
     }), _methods)
 });
 
@@ -50102,18 +50086,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 			assets: [],
 			asset: (_asset = {
 				id: "",
-				company_id: "",
-				assets_model_id: "",
+				company: {},
+				asset_model: {},
 				name: "",
 				serial: "",
-				manufacturer_id: "",
+				manufacturer: {},
 				label_id: "",
 				label_value: "",
 				description: "",
 				image: "",
-				quality: "",
+				quality: {},
 				cost: "",
-				assetLocation_id: ""
+				assetLocation: {}
 			}, _defineProperty(_asset, "image", ""), _defineProperty(_asset, "minimum_stock", ""), _defineProperty(_asset, "current_stock", ""), _defineProperty(_asset, "comments", ""), _defineProperty(_asset, "update_by", "1"), _asset),
 			id: "",
 			pagination: {},
@@ -126021,6 +126005,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       on: {
         "click": function($event) {
+          $event.preventDefault();
           _vm.removeAttachment(attachment)
         }
       }
